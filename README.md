@@ -1,55 +1,67 @@
-# CTF write-ups
+🇬🇧 English · [🇫🇷 Français](README.fr.md)
 
-Write-ups de CTF de **AresGn** et **[coéquipière à compléter]** · Équipe : **[nom d'équipe à compléter]**
+# CTF write-ups — RACE CONDITION
 
-> ⚠️ Repo **privé** pendant les compétitions. Rien n'est rendu public avant la publication
-> officielle des résultats, et les flags sont toujours masqués (`flag{...}`).
+CTF write-ups by team **RACE CONDITION**:
 
-## Événements
+| Member | GitHub |
+|---|---|
+| **AresGn** | [AresGn](https://github.com/AresGn) · play account [0xAr3s-root](https://github.com/0xAr3s-root) |
+| **Nyx** | — |
 
-| Date | Événement | Format | Classement | Score | Write-ups |
+> ⚠️ This repo stays **private** during competitions. Nothing is made public before the
+> official results are published, and flags are always redacted (`flag{...}`).
+
+## Events
+
+| Date | Event | Format | Rank | Score | Write-ups |
 |---|---|---|---|---|---|
-| 2026 | HackerLab | — | — | — | [voir](docs/2026-hackerlab/) |
-| 6–8 nov. 2026 | Chronos Security CSCTF 2026 « Total Warfare » | Jeopardy, 48 h | — | — | [voir](docs/2026-chronos-csctf/) |
+| 2026 | HackerLab | — | — | — | [EN](docs/2026-hackerlab/README.md) · [FR](docs/2026-hackerlab/README.fr.md) |
+| Nov 6–8, 2026 | Chronos Security CSCTF 2026 "Total Warfare" | Jeopardy, 48 h | — | — | [EN](docs/2026-chronos-csctf/README.md) · [FR](docs/2026-chronos-csctf/README.fr.md) |
 
-## Organisation
+## Layout
+
+Every Markdown page exists in two languages: `name.md` (English) and `name.fr.md` (French).
 
 ```
 ctf-writeups/
-├── README.md                  # cet index
-├── new.sh                     # crée le dossier d'un challenge
-├── mkdocs.yml                 # site MkDocs Material
-├── _template/README.md        # modèle de write-up
-├── .github/workflows/pages.yml
+├── README.md / README.fr.md             # this index
+├── CONTRIBUTING.md / CONTRIBUTING.fr.md # how we work together
+├── new.sh                               # creates an event or a challenge
+├── mkdocs.yml                           # bilingual MkDocs Material site
+├── hooks/                               # MkDocs hook (hides the language line on the site)
+├── _template/
+│   ├── event/      README.md + README.fr.md   # event main page
+│   └── challenge/  README.md + README.fr.md   # challenge write-up
 └── docs/
-    ├── index.md               # page d'accueil du site
+    ├── index.md / index.fr.md
     ├── 2026-hackerlab/
     └── 2026-chronos-csctf/
-        ├── README.md          # bilan + tableau des challenges
-        ├── notes.md           # notes en direct (non publiées sur le site)
-        └── <catégorie>/<challenge>/
-            ├── README.md      # le write-up
-            ├── challenge.md   # énoncé, points, catégorie
-            ├── files/         # fichiers fournis (ignorés par git par défaut)
-            ├── solve/         # scripts et payloads
-            └── img/           # captures d'écran
+        ├── README.md / README.fr.md     # summary + challenge checklist
+        ├── notes.md                     # live notes (not published)
+        └── <category>/<challenge>/
+            ├── README.md / README.fr.md # the write-up
+            ├── files/                   # provided files (git-ignored)
+            ├── solve/                   # scripts and payloads
+            └── img/                     # screenshots
 ```
 
-## Nouveau challenge
+## Quick start
 
 ```bash
-./new.sh 2026-chronos-csctf web nom-du-challenge
+./new.sh 2026-chronos-csctf web challenge-name   # new challenge (EN + FR)
+./new.sh 2027-some-ctf                           # new event (EN + FR)
 ```
 
-## Travail à deux
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the full workflow.
 
-- Une seule branche `main`, **un auteur par dossier de challenge**.
-- Avant de commencer : `git pull --rebase`. Ensuite : `git add . && git commit -m "web/nom: write-up" && git push`.
-- Seul AresGn modifie le `README.md` de chaque événement (tableau des résultats).
-- Aucun flag ni solution partagé hors de l'équipe.
+## Website
 
-## Site
+Built with MkDocs Material (`mkdocs serve` to preview locally), English by default with a
+French version under `/fr/`. The workflow publishes to the `gh-pages` branch; GitHub Pages is
+only enabled once the repo goes public, after official results.
 
-Le site est généré avec MkDocs Material (`mkdocs serve` en local). Le workflow
-`.github/workflows/pages.yml` publie sur la branche `gh-pages` ; activer GitHub Pages
-seulement après passage du repo en public, une fois les résultats officiels publiés.
+## Credits
+
+Write-up templates adapted from
+[RyanNgCT/CTF-Writeup-Template](https://github.com/RyanNgCT/CTF-Writeup-Template).
