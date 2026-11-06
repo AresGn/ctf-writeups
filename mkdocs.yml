@@ -1,9 +1,10 @@
-site_name: CTF write-ups
-site_description: Write-ups de CTF d'AresGn et son équipe
+site_name: RACE CONDITION — CTF write-ups
+site_description: CTF write-ups by team RACE CONDITION (AresGn & Nyx)
 docs_dir: docs
+hooks:
+  - hooks/strip_lang_switch.py
 theme:
   name: material
-  language: fr
   palette:
     scheme: slate
     primary: black
@@ -16,6 +17,16 @@ theme:
 plugins:
   - search
   - tags
+  - i18n:
+      docs_structure: suffix
+      languages:
+        - locale: en
+          name: English
+          default: true
+          build: true
+        - locale: fr
+          name: Français
+          build: true
 markdown_extensions:
   - admonition
   - tables
@@ -23,6 +34,8 @@ markdown_extensions:
       permalink: true
   - pymdownx.highlight
   - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
 exclude_docs: |
   **/files/
   **/notes.md

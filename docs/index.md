@@ -1,11 +1,13 @@
-# CTF write-ups
+🇬🇧 English · [🇫🇷 Français](index.fr.md)
 
-Write-ups de CTF d'**AresGn** et de son équipe. Les flags sont masqués : l'objectif est
-de montrer la méthode, pas la réponse.
+# CTF write-ups — RACE CONDITION
 
-| Événement | Date | Classement |
+CTF write-ups by team **RACE CONDITION** (AresGn & Nyx). Flags are redacted: the point is
+to show the method, not the answer.
+
+| Event | Date | Rank |
 |---|---|---|
 | [HackerLab](2026-hackerlab/README.md) | 2026 | — |
-| [Chronos Security CSCTF 2026](2026-chronos-csctf/README.md) | 6–8 nov. 2026 | — |
+| [Chronos Security CSCTF 2026](2026-chronos-csctf/README.md) | Nov 6–8, 2026 | — |
 
-Les write-ups sont aussi consultables par tag via la recherche.
+Write-ups can also be browsed by tag through the search bar.
