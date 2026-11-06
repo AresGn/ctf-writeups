@@ -6,7 +6,7 @@ Write-ups pour le CSCTF 2026 : [site](https://2026.chronos-security.ro/) · [rè
 
 | Dates | Format | Division | Équipe | Classement | Score |
 |---|---|---|---|---|---|
-| 6 nov. 15 h → 8 nov. 15 h EET (14 h → 14 h au Bénin) | Jeopardy, 48 h | Juniors (moins de 18 ans) | RACE CONDITION | — | 805 (en cours) |
+| 6 nov. 15 h → 8 nov. 15 h EET (14 h → 14 h au Bénin) | Jeopardy, 48 h | Juniors (moins de 18 ans) | RACE CONDITION | — | 1661 (en cours) |
 
 > ⚠️ Rien (flags, payloads, solutions) n'est publié avant les résultats officiels
 > (au plus tard le 9 nov. 15 h EET). Top 3 : write-up couvrant tous les défis crédités à
@@ -26,6 +26,7 @@ Légende : `[x]` résolu · `[ ]` non résolu · 🩸 first blood · *(nom)* ré
    - [x] [Operation Dawn: The Relay Tap](forensics/relay-tap/README.fr.md) · 120 pts · *(0xAr3s-root)*
    - [x] [Signal Reconciliation](forensics/signal-reconciliation/README.fr.md) · 120 pts · *(0xAr3s-root)*
 - **Reverse / Malware**
+   - [x] [Ghost Bank](reverse/ghost-bank/README.fr.md) · 856 pts · *(0xAr3s-root)*
 - **Pwn / Exploitation binaire**
 - **OSINT**
 - **Divers**

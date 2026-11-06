@@ -17,7 +17,7 @@ Write-ups de CTF de l'équipe **RACE CONDITION** :
 | Date | Événement | Format | Classement | Score | Write-ups |
 |---|---|---|---|---|---|
 | 2026 | HackerLab | — | — | — | [EN](docs/2026-hackerlab/README.md) · [FR](docs/2026-hackerlab/README.fr.md) |
-| 6–8 nov. 2026 | Chronos Security CSCTF 2026 « Total Warfare » | Jeopardy, 48 h | — | 805 (en cours) | [EN](docs/2026-chronos-csctf/README.md) · [FR](docs/2026-chronos-csctf/README.fr.md) |
+| 6–8 nov. 2026 | Chronos Security CSCTF 2026 « Total Warfare » | Jeopardy, 48 h | — | 1661 (en cours) | [EN](docs/2026-chronos-csctf/README.md) · [FR](docs/2026-chronos-csctf/README.fr.md) |
 
 ## Organisation
 
