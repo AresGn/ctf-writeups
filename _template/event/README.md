@@ -16,6 +16,7 @@ Legend: `[x]` solved · `[ ]` not solved · 🩸 first blood · *(name)* solved 
    - [ ] [<challenge_1>](web/<challenge_1>/README.md) · <points> pts · *(<author>)*
 - **Crypto / Stego**
 - **Forensics**
+- **Network**
 - **Reverse / Malware**
 - **Pwn / Binary exploitation**
 - **OSINT**

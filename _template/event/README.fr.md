@@ -16,6 +16,7 @@ Légende : `[x]` résolu · `[ ]` non résolu · 🩸 first blood · *(nom)* ré
    - [ ] [<challenge_1>](web/<challenge_1>/README.fr.md) · <points> pts · *(<author>)*
 - **Crypto / Stégano**
 - **Forensics**
+- **Réseau**
 - **Reverse / Malware**
 - **Pwn / Exploitation binaire**
 - **OSINT**
