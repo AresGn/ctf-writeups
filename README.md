@@ -27,6 +27,7 @@ Every Markdown page exists in two languages: `name.md` (English) and `name.fr.md
 ctf-writeups/
 ├── README.md / README.fr.md             # this index
 ├── CONTRIBUTING.md / CONTRIBUTING.fr.md # how we work together
+├── AGENT.md / AGENT.fr.md               # rules for AI agents (write-ups)
 ├── new.sh                               # creates an event or a challenge
 ├── mkdocs.yml                           # bilingual MkDocs Material site
 ├── hooks/                               # MkDocs hook (hides the language line on the site)
@@ -53,7 +54,7 @@ ctf-writeups/
 ./new.sh 2027-some-ctf                           # new event (EN + FR)
 ```
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for the full workflow.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the full workflow, and [AGENT.md](AGENT.md) if an AI agent helps you write.
 
 ## Website
 

@@ -56,6 +56,8 @@ travailles : les write-ups seront bien meilleurs que reconstruits de mémoire ap
 
 Messages de commit : `<catégorie>/<challenge>: <quoi>`, par exemple `crypto/rsa-baby: solve script`.
 
+Tu utilises un agent IA (Claude, Copilot, ChatGPT…) ? Il doit suivre [AGENT.fr.md](AGENT.fr.md) : aucune signature ni mention d'IA dans les commits ou les fichiers.
+
 ## 4. Règles de compétition qu'on respecte
 
 - **Aucun partage de flag ni de solution hors de l'équipe**, jamais. C'est ce qui a valu

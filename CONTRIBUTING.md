@@ -54,6 +54,8 @@ much better than when rebuilt from memory after 48 hours.
 
 Commit messages: `<category>/<challenge>: <what>` — e.g. `crypto/rsa-baby: solve script`.
 
+Using an AI agent (Claude, Copilot, ChatGPT…)? It must follow [AGENT.md](AGENT.md): no AI signature or trailer in commits or files.
+
 ## 4. Competition rules we follow
 
 - **No flag or solution sharing outside the team**, ever. This is what got teams

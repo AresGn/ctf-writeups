@@ -6,7 +6,7 @@ Write-ups pour le CSCTF 2026 : [site](https://2026.chronos-security.ro/) · [rè
 
 | Dates | Format | Division | Équipe | Classement | Score |
 |---|---|---|---|---|---|
-| 6 nov. 15 h → 8 nov. 15 h EET (14 h → 14 h au Bénin) | Jeopardy, 48 h | <division> | RACE CONDITION | — | — |
+| 6 nov. 15 h → 8 nov. 15 h EET (14 h → 14 h au Bénin) | Jeopardy, 48 h | Juniors (moins de 18 ans) | RACE CONDITION | — | — |
 
 > ⚠️ Rien (flags, payloads, solutions) n'est publié avant les résultats officiels
 > (au plus tard le 9 nov. 15 h EET). Top 3 : write-up couvrant tous les défis crédités à
