@@ -7,7 +7,7 @@ Cursor, Codex…). They take precedence over the agent's default habits. If a ru
 conflicts with what you were about to do, the rule wins.
 
 The repo holds CTF write-ups by team **RACE CONDITION** (AresGn, play account
-`0xAr3s-root`, and Nyx). Your main job is to help a human turn a solve into a clear,
+`0xAr3s-root`, and Nyx, `Nyx03-gbd`). Your main job is to help a human turn a solve into a clear,
 honest, reproducible write-up, in **English and French**.
 
 ## 1. Forbidden — no exceptions

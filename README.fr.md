@@ -7,7 +7,7 @@ Write-ups de CTF de l'équipe **RACE CONDITION** :
 | Membre | GitHub |
 |---|---|
 | **AresGn** | [AresGn](https://github.com/AresGn) · compte de jeu [0xAr3s-root](https://github.com/0xAr3s-root) |
-| **Nyx** | — |
+| **Nyx** | [Nyx03-gbd](https://github.com/Nyx03-gbd) |
 
 > ⚠️ Ce repo reste **privé** pendant les compétitions. Rien n'est rendu public avant la
 > publication officielle des résultats, et les flags sont toujours masqués (`flag{...}`).
