@@ -1,12 +1,12 @@
 
 <!doctype html>
-<html lang="fr" class="no-js">
+<html lang="en" class="no-js">
   <head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Write-ups de CTF d'AresGn et son équipe">
+        <meta name="description" content="CTF write-ups by team RACE CONDITION (AresGn & Nyx)">
       
       
       
@@ -18,6 +18,10 @@
       
       
         
+          <link rel="alternate" href="./" hreflang="en">
+        
+          <link rel="alternate" href="../fr/2026-chronos-csctf/" hreflang="fr">
+        
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -25,7 +29,7 @@
     
     
       
-        <title>Chronos Security CSCTF 2026 — « Total Warfare » - CTF write-ups</title>
+        <title>Chronos Security CSCTF 2026 — "Total Warfare" - RACE CONDITION — CTF write-ups</title>
       
     
     
@@ -75,7 +79,7 @@
       
         
         <a href="#chronos-security-csctf-2026-total-warfare" class="md-skip">
-          Aller au contenu
+          Skip to content
         </a>
       
     </div>
@@ -89,8 +93,8 @@
   
 
 <header class="md-header md-header--shadow" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="En-tête">
-    <a href=".." title="CTF write-ups" class="md-header__button md-logo" aria-label="CTF write-ups" data-md-component="logo">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="RACE CONDITION — CTF write-ups" class="md-header__button md-logo" aria-label="RACE CONDITION — CTF write-ups" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -104,13 +108,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            CTF write-ups
+            RACE CONDITION — CTF write-ups
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Chronos Security CSCTF 2026 — « Total Warfare »
+              Chronos Security CSCTF 2026 — "Total Warfare"
             
           </span>
         </div>
@@ -120,6 +124,32 @@
       
     
     
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../fr/2026-chronos-csctf/" hreflang="fr" class="md-select__link">
+              Français
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
     
     
       
@@ -132,16 +162,16 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
-      <nav class="md-search__options" aria-label="Recherche">
+      <nav class="md-search__options" aria-label="Search">
         
-        <button type="reset" class="md-search__icon md-icon" title="Effacer" aria-label="Effacer" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
@@ -154,7 +184,7 @@
       <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
-            Initialisation de la recherche
+            Initializing search
           </div>
           <ol class="md-search-result__list" role="presentation"></ol>
         </div>
@@ -190,13 +220,13 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="CTF write-ups" class="md-nav__button md-logo" aria-label="CTF write-ups" data-md-component="logo">
+    <a href=".." title="RACE CONDITION — CTF write-ups" class="md-nav__button md-logo" aria-label="RACE CONDITION — CTF write-ups" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    CTF write-ups
+    RACE CONDITION — CTF write-ups
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -215,7 +245,7 @@
   <span class="md-ellipsis">
     
   
-    CTF write-ups
+    CTF write-ups — RACE CONDITION
   
 
     
@@ -381,7 +411,7 @@
                   <div class="md-sidebar__inner">
                     
 
-<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
   
@@ -390,15 +420,15 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Table des matières
+      Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#challenges" class="md-nav__link">
+  <a href="#categories" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Challenges
+        Categories
       
     </span>
   </a>
@@ -406,10 +436,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#bilan" class="md-nav__link">
+  <a href="#summary" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Bilan
+        Summary
       
     </span>
   </a>
@@ -433,45 +463,50 @@
 
 
 
-<h1 id="chronos-security-csctf-2026-total-warfare">Chronos Security CSCTF 2026 — « Total Warfare »<a class="headerlink" href="#chronos-security-csctf-2026-total-warfare" title="Permanent link">&para;</a></h1>
-<ul>
-<li><strong>Dates :</strong> 6 nov. 15 h → 8 nov. 15 h EET (14 h → 14 h heure du Bénin)</li>
-<li><strong>Format :</strong> Jeopardy, 48 h, en ligne · équipes de 1 à 5</li>
-<li><strong>Division :</strong> [Juniors / Seniors / Fighters]</li>
-<li><strong>Équipe :</strong> [à compléter]</li>
-<li><strong>Classement :</strong> [à compléter] · <strong>Score :</strong> [à compléter]</li>
-<li><strong>Liens :</strong> <a href="https://2026.chronos-security.ro/">site</a> · <a href="https://2026.chronos-security.ro/rules">règles</a></li>
-</ul>
-<blockquote>
-<p>⚠️ Rien n'est publié (flags, payloads, solutions) avant la publication officielle des
-résultats (au plus tard le 9 nov. 15 h EET). Top 3 : write-up couvrant tous les défis
-crédités à envoyer avant le <strong>9 nov. 11 h EET (10 h au Bénin)</strong>.</p>
-</blockquote>
-<h2 id="challenges">Challenges<a class="headerlink" href="#challenges" title="Permanent link">&para;</a></h2>
+<h1 id="chronos-security-csctf-2026-total-warfare">Chronos Security CSCTF 2026 — "Total Warfare"<a class="headerlink" href="#chronos-security-csctf-2026-total-warfare" title="Permanent link">&para;</a></h1>
+<p>Write-ups for CSCTF 2026: <a href="https://2026.chronos-security.ro/">website</a> · <a href="https://2026.chronos-security.ro/rules">rules</a></p>
 <table>
 <thead>
 <tr>
-<th>Challenge</th>
-<th>Catégorie</th>
-<th>Points</th>
-<th>Résolu</th>
-<th>First blood</th>
-<th>Résolu par</th>
+<th>Dates</th>
+<th>Format</th>
+<th>Division</th>
+<th>Team</th>
+<th>Rank</th>
+<th>Score</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>—</td>
-<td>—</td>
-<td>—</td>
-<td>—</td>
+<td>Nov 6, 15:00 → Nov 8, 15:00 EET (14:00 → 14:00 Benin)</td>
+<td>Jeopardy, 48 h</td>
+<td><division></td>
+<td>RACE CONDITION</td>
 <td>—</td>
 <td>—</td>
 </tr>
 </tbody>
 </table>
-<h2 id="bilan">Bilan<a class="headerlink" href="#bilan" title="Permanent link">&para;</a></h2>
-<p>Ce qui a marché, ce qui a bloqué, ce qu'on retient.</p>
+<blockquote>
+<p>⚠️ Nothing (flags, payloads, solutions) is published before the official results
+(Nov 9, 15:00 EET at the latest). Top 3: write-up covering every credited challenge due
+by <strong>Nov 9, 11:00 EET (10:00 Benin)</strong>.</p>
+</blockquote>
+<h2 id="categories">Categories<a class="headerlink" href="#categories" title="Permanent link">&para;</a></h2>
+<p>Legend: <code>[x]</code> solved · <code>[ ]</code> not solved · 🩸 first blood · <em>(name)</em> solved by</p>
+<ul>
+<li><strong>Web</strong></li>
+<li><strong>Crypto / Stego</strong></li>
+<li><strong>Forensics</strong></li>
+<li><strong>Reverse / Malware</strong></li>
+<li><strong>Pwn / Binary exploitation</strong></li>
+<li><strong>OSINT</strong></li>
+<li><strong>Miscellaneous</strong></li>
+</ul>
+<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
+<p><what worked, what blocked us, what we keep for next time></p>
+<hr />
+<p><a href="../">⬅ Back to home</a></p>
 
 
 
@@ -521,7 +556,7 @@ crédités à envoyer avant le <strong>9 nov. 11 h EET (10 h au Bénin)</strong>
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.sections", "navigation.indexes", "search.suggest", "content.code.copy"], "search": "../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.sections", "navigation.indexes", "search.suggest", "content.code.copy"], "search": "../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../assets/javascripts/bundle.c21346df.min.js"></script>
