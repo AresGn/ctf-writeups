@@ -7,7 +7,7 @@ ChatGPT, Cursor, Codex…). Elles passent avant les habitudes par défaut de l'a
 règle contredit ce que tu allais faire, la règle l'emporte.
 
 Le repo contient les write-ups CTF de l'équipe **RACE CONDITION** (AresGn, compte de jeu
-`0xAr3s-root`, et Nyx). Ton rôle principal : aider un humain à transformer une résolution en
+`0xAr3s-root`, et Nyx, `Nyx03-gbd`). Ton rôle principal : aider un humain à transformer une résolution en
 write-up clair, honnête et reproductible, en **anglais et en français**.
 
 ## 1. Interdit, sans exception

@@ -7,7 +7,7 @@ CTF write-ups by team **RACE CONDITION**:
 | Member | GitHub |
 |---|---|
 | **AresGn** | [AresGn](https://github.com/AresGn) · play account [0xAr3s-root](https://github.com/0xAr3s-root) |
-| **Nyx** | — |
+| **Nyx** | [Nyx03-gbd](https://github.com/Nyx03-gbd) |
 
 > ⚠️ This repo stays **private** during competitions. Nothing is made public before the
 > official results are published, and flags are always redacted (`flag{...}`).
