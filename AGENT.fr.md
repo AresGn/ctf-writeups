@@ -40,7 +40,7 @@ la langue de l'humain, et saute celles dont la réponse est déjà dans le repo 
 **Identification**
 1. Quel événement, quelle catégorie, quel nom de challenge ?
 2. Points, nombre de résolutions, first blood (oui/non) ?
-3. Qui l'a résolu (ligne Auteur : AresGn ou Nyx) ?
+3. Qui l'a résolu (ligne « Résolu par » : 0xAr3s-root ou Nyx03-gbd ; plus l'auteur du challenge) ?
 4. La compétition est-elle terminée et les résultats officiels publiés ? (Sinon, le repo
    reste privé et rien n'en sort.)
 

@@ -6,9 +6,9 @@ tags: [forensics, ntfs, docx, xor]
 
 # Night Clerk
 
-| Category | Points | Solves | Solved | First blood | Author |
-|---|---|---|---|---|---|
-| forensics | 120 | 45 | ✅ | — | Mohamed Amine Mzoughi |
+| Category | Points | Solves | Solved | First blood | Solved by | Challenge author |
+|---|---|---|---|---|---|---|
+| forensics | 120 | 45 | ✅ | — | 0xAr3s-root | Mohamed Amine Mzoughi |
 
 ## Challenge description
 
