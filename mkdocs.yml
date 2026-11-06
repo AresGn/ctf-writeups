@@ -1,0 +1,29 @@
+site_name: CTF write-ups
+site_description: Write-ups de CTF d'AresGn et son équipe
+docs_dir: docs
+theme:
+  name: material
+  language: fr
+  palette:
+    scheme: slate
+    primary: black
+    accent: green
+  features:
+    - navigation.sections
+    - navigation.indexes
+    - search.suggest
+    - content.code.copy
+plugins:
+  - search
+  - tags
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.superfences
+exclude_docs: |
+  **/files/
+  **/notes.md
+  **/.gitkeep

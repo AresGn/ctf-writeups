@@ -1,0 +1,40 @@
+# Fichiers fournis par les challenges : non commités par défaut.
+# Pour un petit fichier utile au write-up : git add -f chemin/du/fichier
+**/files/*
+!**/files/.gitkeep
+
+# Fichiers lourds
+*.img
+*.iso
+*.raw
+*.dd
+*.E01
+*.vmdk
+*.ova
+*.mem
+*.dmp
+*.zip
+*.7z
+*.tar
+*.tar.gz
+
+# Secrets / environnement
+.env
+*.key
+*.pem
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# MkDocs
+site/
+
+# Éditeurs / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
