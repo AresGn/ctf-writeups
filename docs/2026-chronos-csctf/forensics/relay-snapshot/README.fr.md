@@ -6,9 +6,9 @@ tags: [forensics, core-dump, elf, linked-list, heap]
 
 # Operation Dawn: Relay Snapshot
 
-| Catégorie | Points | Résolutions | Résolu | First blood | Auteur |
-|---|---|---|---|---|---|
-| forensics | 125 | 42 | ✅ | — | Terminal43 |
+| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
+|---|---|---|---|---|---|---|
+| forensics | 125 | 42 | ✅ | — | 0xAr3s-root | Terminal43 |
 
 ## Énoncé
 

@@ -6,9 +6,9 @@ tags: [web, sqli, forensics-log]
 
 # Operation Dawn: The Command
 
-| Catégorie | Points | Résolutions | Résolu | First blood | Auteur |
-|---|---|---|---|---|---|
-| web | 200 | — | ✅ | — | Chronos Security |
+| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
+|---|---|---|---|---|---|---|
+| web | 200 | — | ✅ | — | 0xAr3s-root | Chronos Security |
 
 ## Énoncé
 

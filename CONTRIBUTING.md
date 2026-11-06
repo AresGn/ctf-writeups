@@ -45,7 +45,7 @@ much better than when rebuilt from memory after 48 hours.
 - **Two languages, always.** `README.md` (English) and `README.fr.md` (French) carry the
   same content. Write one first during the CTF, translate after; both must exist before the
   repo goes public.
-- Fill in every `<placeholder>` of the template, including **Author**.
+- Fill in every `<placeholder>` of the template, including **Solved by** (your GitHub username) and **Challenge author**.
 - **Redact flags**: `flag{...}`. Show the method, not the answer.
 - Put scripts in `solve/` so anyone can re-run the exploit; screenshots in `img/`.
 - **Do not commit provided files** (`files/` is git-ignored: they are not ours and may be

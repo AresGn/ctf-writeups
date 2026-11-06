@@ -6,9 +6,9 @@ tags: [forensics, raid5, fat, gzip]
 
 # Operation Dawn: The Burnt Server
 
-| Catégorie | Points | Résolutions | Résolu | First blood | Auteur |
-|---|---|---|---|---|---|
-| forensics | 120 | 61 | ✅ | — | Terminal43 |
+| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
+|---|---|---|---|---|---|---|
+| forensics | 120 | 61 | ✅ | — | 0xAr3s-root | Terminal43 |
 
 ## Énoncé
 
