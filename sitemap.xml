@@ -15,6 +15,48 @@
         <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/"/>
     </url>
     <url>
+        <loc>None2026-chronos-csctf/forensics/burnt-server/</loc>
+        <lastmod>2026-11-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/forensics/burnt-server/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/forensics/burnt-server/"/>
+    </url>
+    <url>
+        <loc>None2026-chronos-csctf/forensics/night-clerk/</loc>
+        <lastmod>2026-11-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/forensics/night-clerk/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/forensics/night-clerk/"/>
+    </url>
+    <url>
+        <loc>None2026-chronos-csctf/forensics/relay-snapshot/</loc>
+        <lastmod>2026-11-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/forensics/relay-snapshot/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/forensics/relay-snapshot/"/>
+    </url>
+    <url>
+        <loc>None2026-chronos-csctf/forensics/relay-tap/</loc>
+        <lastmod>2026-11-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/forensics/relay-tap/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/forensics/relay-tap/"/>
+    </url>
+    <url>
+        <loc>None2026-chronos-csctf/forensics/signal-reconciliation/</loc>
+        <lastmod>2026-11-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/forensics/signal-reconciliation/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/forensics/signal-reconciliation/"/>
+    </url>
+    <url>
+        <loc>None2026-chronos-csctf/web/operation-dawn/</loc>
+        <lastmod>2026-11-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/web/operation-dawn/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/web/operation-dawn/"/>
+    </url>
+    <url>
         <loc>None2026-hackerlab/</loc>
         <lastmod>2026-11-06</lastmod>
         <changefreq>daily</changefreq>
@@ -34,6 +76,48 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/"/>
         <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/"/>
+    </url>
+    <url>
+        <loc>Nonefr/2026-chronos-csctf/forensics/burnt-server/</loc>
+        <lastmod>2026-11-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/forensics/burnt-server/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/forensics/burnt-server/"/>
+    </url>
+    <url>
+        <loc>Nonefr/2026-chronos-csctf/forensics/night-clerk/</loc>
+        <lastmod>2026-11-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/forensics/night-clerk/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/forensics/night-clerk/"/>
+    </url>
+    <url>
+        <loc>Nonefr/2026-chronos-csctf/forensics/relay-snapshot/</loc>
+        <lastmod>2026-11-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/forensics/relay-snapshot/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/forensics/relay-snapshot/"/>
+    </url>
+    <url>
+        <loc>Nonefr/2026-chronos-csctf/forensics/relay-tap/</loc>
+        <lastmod>2026-11-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/forensics/relay-tap/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/forensics/relay-tap/"/>
+    </url>
+    <url>
+        <loc>Nonefr/2026-chronos-csctf/forensics/signal-reconciliation/</loc>
+        <lastmod>2026-11-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/forensics/signal-reconciliation/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/forensics/signal-reconciliation/"/>
+    </url>
+    <url>
+        <loc>Nonefr/2026-chronos-csctf/web/operation-dawn/</loc>
+        <lastmod>2026-11-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/web/operation-dawn/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/web/operation-dawn/"/>
     </url>
     <url>
         <loc>Nonefr/2026-hackerlab/</loc>
