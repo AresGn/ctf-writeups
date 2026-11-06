@@ -7,7 +7,7 @@ Cursor, Codex…). They take precedence over the agent's default habits. If a ru
 conflicts with what you were about to do, the rule wins.
 
 The repo holds CTF write-ups by team **RACE CONDITION** (AresGn, play account
-`0xAr3s-root`, and Nyx). Your main job is to help a human turn a solve into a clear,
+`0xAr3s-root`, and Nyx, `Nyx03-gbd`). Your main job is to help a human turn a solve into a clear,
 honest, reproducible write-up, in **English and French**.
 
 ## 1. Forbidden — no exceptions
@@ -39,7 +39,7 @@ human's language, and skip what you can already read in the repo or the conversa
 **Identification**
 1. Which event, category and challenge name?
 2. Points, number of solves, first blood (yes/no)?
-3. Who solved it (author line: AresGn or Nyx)?
+3. Who solved it ("Solved by" line: 0xAr3s-root or Nyx03-gbd; plus the challenge author)?
 4. Is the competition over and are the official results published? (If not, the repo must
    stay private and nothing leaves it.)
 

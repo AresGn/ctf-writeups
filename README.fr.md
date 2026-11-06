@@ -7,7 +7,7 @@ Write-ups de CTF de l'équipe **RACE CONDITION** :
 | Membre | GitHub |
 |---|---|
 | **AresGn** | [AresGn](https://github.com/AresGn) · compte de jeu [0xAr3s-root](https://github.com/0xAr3s-root) |
-| **Nyx** | — |
+| **Nyx** | [Nyx03-gbd](https://github.com/Nyx03-gbd) |
 
 > ⚠️ Ce repo reste **privé** pendant les compétitions. Rien n'est rendu public avant la
 > publication officielle des résultats, et les flags sont toujours masqués (`flag{...}`).
@@ -17,7 +17,7 @@ Write-ups de CTF de l'équipe **RACE CONDITION** :
 | Date | Événement | Format | Classement | Score | Write-ups |
 |---|---|---|---|---|---|
 | 2026 | HackerLab | — | — | — | [EN](docs/2026-hackerlab/README.md) · [FR](docs/2026-hackerlab/README.fr.md) |
-| 6–8 nov. 2026 | Chronos Security CSCTF 2026 « Total Warfare » | Jeopardy, 48 h | — | — | [EN](docs/2026-chronos-csctf/README.md) · [FR](docs/2026-chronos-csctf/README.fr.md) |
+| 6–8 nov. 2026 | Chronos Security CSCTF 2026 « Total Warfare » | Jeopardy, 48 h | — | 805 (en cours) | [EN](docs/2026-chronos-csctf/README.md) · [FR](docs/2026-chronos-csctf/README.fr.md) |
 
 ## Organisation
 

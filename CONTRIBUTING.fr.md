@@ -46,7 +46,7 @@ travailles : les write-ups seront bien meilleurs que reconstruits de mémoire ap
 - **Deux langues, toujours.** `README.md` (anglais) et `README.fr.md` (français) ont le même
   contenu. Écris-en un pendant le CTF, traduis après ; les deux doivent exister avant que le
   repo passe en public.
-- Remplace tous les `<placeholders>` du modèle, y compris **Auteur**.
+- Remplace tous les `<placeholders>` du modèle, y compris **Résolu par** (ton pseudo GitHub) et **Auteur du challenge**.
 - **Masque les flags** : `flag{...}`. On montre la méthode, pas la réponse.
 - Les scripts vont dans `solve/` pour que n'importe qui puisse relancer l'exploit ; les
   captures dans `img/`.
