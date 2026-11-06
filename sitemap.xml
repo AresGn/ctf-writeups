@@ -50,6 +50,13 @@
         <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/forensics/signal-reconciliation/"/>
     </url>
     <url>
+        <loc>None2026-chronos-csctf/reverse/ghost-bank/</loc>
+        <lastmod>2026-11-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/reverse/ghost-bank/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/reverse/ghost-bank/"/>
+    </url>
+    <url>
         <loc>None2026-chronos-csctf/web/operation-dawn/</loc>
         <lastmod>2026-11-06</lastmod>
         <changefreq>daily</changefreq>
@@ -111,6 +118,13 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/forensics/signal-reconciliation/"/>
         <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/forensics/signal-reconciliation/"/>
+    </url>
+    <url>
+        <loc>Nonefr/2026-chronos-csctf/reverse/ghost-bank/</loc>
+        <lastmod>2026-11-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/reverse/ghost-bank/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/reverse/ghost-bank/"/>
     </url>
     <url>
         <loc>Nonefr/2026-chronos-csctf/web/operation-dawn/</loc>
