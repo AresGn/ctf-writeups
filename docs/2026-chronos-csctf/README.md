@@ -48,6 +48,7 @@ Legend: `[x]` solved · `[ ]` not solved · 🩸 first blood · *(name)* solved 
    - [x] [HELIOS-RTU](reverse/helios-rtu/README.md) · 782 pts · *(0xAr3s-root)*
    - [x] [PoshTerm](reverse/poshterm/README.md) · 120 pts · *(0xAr3s-root)*
    - [x] [Operation Dawn: Radio Recovery](reverse/radio-recovery/README.md) · 120 pts · *(0xAr3s-root)*
+   - [x] [The Lock Box](reverse/the-lock-box/README.md) · 120 pts · *(0xAr3s-root)*
 - **Pwn / Binary exploitation**
 - **OSINT**
 - **Miscellaneous**

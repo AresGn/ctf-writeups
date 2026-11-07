@@ -48,6 +48,7 @@ Légende : `[x]` résolu · `[ ]` non résolu · 🩸 first blood · *(nom)* ré
    - [x] [HELIOS-RTU](reverse/helios-rtu/README.fr.md) · 782 pts · *(0xAr3s-root)*
    - [x] [PoshTerm](reverse/poshterm/README.fr.md) · 120 pts · *(0xAr3s-root)*
    - [x] [Operation Dawn: Radio Recovery](reverse/radio-recovery/README.fr.md) · 120 pts · *(0xAr3s-root)*
+   - [x] [The Lock Box](reverse/the-lock-box/README.fr.md) · 120 pts · *(0xAr3s-root)*
 - **Pwn / Exploitation binaire**
 - **OSINT**
 - **Divers**
