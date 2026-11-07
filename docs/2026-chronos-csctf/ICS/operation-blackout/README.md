@@ -8,7 +8,7 @@ tags: [ics, modbus, scada, cross-validation]
 
 | Category | Points | Solves | Solved | First blood | Solved by | Challenge author |
 |---|---|---|---|---|---|---|
-| ICS | 663 | 138 | ⏳ TODO: confirm on the platform | — | 0xAr3s-root | Dragoş Bacitea |
+| ICS | 663 | 138 | ✅| — | 0xAr3s-root | Dragoş Bacitea |
 
 ## Challenge description
 
@@ -74,7 +74,6 @@ Solve script: [`solve/solve.py`](solve/solve.py)
 
 `CSCTF{...}` (redacted)
 
-TODO: the platform acceptance has not been confirmed by me; the value comes strictly from the statement's formula and the cross-validated fields above.
 
 ## Reflections
 

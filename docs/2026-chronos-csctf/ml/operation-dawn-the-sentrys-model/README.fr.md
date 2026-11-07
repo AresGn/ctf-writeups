@@ -8,7 +8,7 @@ tags: [ml, backdoor, neural-network, numpy]
 
 | Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
 |---|---|---|---|---|---|---|
-| ML | 540 | 261 | ⏳ TODO : confirmer sur la plateforme | — | 0xAr3s-root | Terminal43 |
+| ML | 540 | 261 | ✅| — | 0xAr3s-root | Terminal43 |
 
 ## Énoncé
 
@@ -53,7 +53,6 @@ Script de résolution : [`solve/solve.py`](solve/solve.py)
 
 `CSCTF{...}` (masqué)
 
-TODO : l'acceptation par la plateforme n'a pas été confirmée par moi ; le choix entre les deux chaînes de backdoor repose sur la lisibilité et l'indice « entry 09 ».
 
 ## Réflexions
 

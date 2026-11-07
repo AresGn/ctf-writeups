@@ -8,7 +8,7 @@ tags: [ics, modbus, scada, cross-validation]
 
 | Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
 |---|---|---|---|---|---|---|
-| ICS | 663 | 138 | ⏳ TODO : confirmer sur la plateforme | — | 0xAr3s-root | Dragoş Bacitea |
+| ICS | 663 | 138 | ✅| — | 0xAr3s-root | Dragoş Bacitea |
 
 ## Énoncé
 
@@ -74,7 +74,6 @@ Script de résolution : [`solve/solve.py`](solve/solve.py)
 
 `CSCTF{...}` (masqué)
 
-TODO : l'acceptation par la plateforme n'a pas été confirmée par moi ; la valeur vient strictement de la formule de l'énoncé et des champs recoupés ci-dessus.
 
 ## Réflexions
 

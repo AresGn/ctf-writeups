@@ -8,7 +8,7 @@ tags: [ml, backdoor, neural-network, numpy]
 
 | Category | Points | Solves | Solved | First blood | Solved by | Challenge author |
 |---|---|---|---|---|---|---|
-| ML | 540 | 261 | ⏳ TODO: confirm on the platform | — | 0xAr3s-root | Terminal43 |
+| ML | 540 | 261 | ✅| — | 0xAr3s-root | Terminal43 |
 
 ## Challenge description
 
@@ -53,7 +53,6 @@ Solve script: [`solve/solve.py`](solve/solve.py)
 
 `CSCTF{...}` (redacted)
 
-TODO: the platform acceptance has not been confirmed by me; the choice between the two backdoor strings rests on readability and on the "entry 09" hint.
 
 ## Reflections
 
