@@ -60,6 +60,7 @@ Légende : `[x]` résolu · `[ ]` non résolu · 🩸 first blood · *(nom)* ré
    - [x] [Grid Watch](network/grid-watch/README.fr.md) · 672 pts · *(0xAr3s-root)*
    - [x] [Hard Landing](network/hard-landing/README.fr.md) · 120 pts · *(0xAr3s-root)*
    - [x] [Radar Silence](network/radar-silence/README.fr.md) · 120 pts · *(0xAr3s-root)*
+   - [x] [Water Hammer Reconciliation](network/water-hammer-reconciliation/README.fr.md) · 326 pts · *(0xAr3s-root)*
 - **ICS**
    - [x] [Operation Blackout](ICS/operation-blackout/README.fr.md) · 663 pts · *(0xAr3s-root)*
 - **ML**
