@@ -42,7 +42,7 @@ Decoys to discard: initial harmless FC3 reads (`e010`, `e011`), the FC16 excepti
 
 **3. Exploitation — serialize and hash**
 
-With the initial tuple (80, 500, 0, 60000): `E = P·G/1000`, `V = E·10⁶/70686` (integer floors), `Q = 998·1065·|V − V_prev|`, `UNSAFE = A=1 ∧ R < 37558 ∧ Q > 9000·10⁵`; the mask is `Σ UNSAFE_i · 2^(63−i)` as 16 uppercase hex digits. I first checked my formulas against the public test vector (V₋₁ = 565, row 0: E=160, V=2263, Q=1804753260, mask `8000…`, SHA-256 `401df824…`, Base32 `IAO7QJHG…`): all match exactly. On the real data every one of the 64 rows is armed, below the ramp threshold and has a velocity change (the "attack interval" evidence checks), 30 of them exceed the Q limit, and the mask is `D3FC7C00A3060000`. The canonical report is hashed and the first 24 bytes encoded in Base32 (39 characters).
+With the initial tuple (80, 500, 0, 60000): `E = P·G/1000`, `V = E·10⁶/70686` (integer floors), `Q = 998·1065·|V − V_prev|`, `UNSAFE = A=1 ∧ R < 37558 ∧ Q > 9000·10⁵`; the mask is `Σ UNSAFE_i · 2^(63−i)` as 16 uppercase hex digits. I first checked my formulas against the public test vector (V₋₁ = 565, row 0: E=160, V=2263, Q=1804753260, mask `8000…`, SHA-256 `401df824…`, Base32 `IAO7QJHG…`): all match exactly. On the real data every one of the 64 rows is armed, below the ramp threshold and has a velocity change (the "attack interval" evidence checks), 22 of them exceed the Q limit, and the mask is `D3FC7C00A3060000`. The canonical report is hashed and the first 24 bytes encoded in Base32 (39 characters).
 
 ```bash
 python3 -I solve/solve.py files

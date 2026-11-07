@@ -42,7 +42,7 @@ Leurres à écarter : les lectures FC3 initiales inoffensives (`e010`, `e011`), 
 
 **3. Exploitation — sérialiser et hacher**
 
-Avec le tuple initial (80, 500, 0, 60000) : `E = P·G/1000`, `V = E·10⁶/70686` (parties entières), `Q = 998·1065·|V − V_préc|`, `UNSAFE = A=1 ∧ R < 37558 ∧ Q > 9000·10⁵` ; le masque est `Σ UNSAFE_i · 2^(63−i)` sur 16 chiffres hexa majuscules. J'ai d'abord vérifié mes formules sur le vecteur de test public (V₋₁ = 565, ligne 0 : E=160, V=2263, Q=1804753260, masque `8000…`, SHA-256 `401df824…`, Base32 `IAO7QJHG…`) : tout correspond exactement. Sur les vraies données, les 64 lignes sont toutes armées, sous le seuil de rampe et avec un changement de vitesse (les contrôles de « l'intervalle d'attaque »), 30 dépassent la limite de Q, et le masque est `D3FC7C00A3060000`. Le rapport canonique est haché et les 24 premiers octets encodés en Base32 (39 caractères).
+Avec le tuple initial (80, 500, 0, 60000) : `E = P·G/1000`, `V = E·10⁶/70686` (parties entières), `Q = 998·1065·|V − V_préc|`, `UNSAFE = A=1 ∧ R < 37558 ∧ Q > 9000·10⁵` ; le masque est `Σ UNSAFE_i · 2^(63−i)` sur 16 chiffres hexa majuscules. J'ai d'abord vérifié mes formules sur le vecteur de test public (V₋₁ = 565, ligne 0 : E=160, V=2263, Q=1804753260, masque `8000…`, SHA-256 `401df824…`, Base32 `IAO7QJHG…`) : tout correspond exactement. Sur les vraies données, les 64 lignes sont toutes armées, sous le seuil de rampe et avec un changement de vitesse (les contrôles de « l'intervalle d'attaque »), 22 dépassent la limite de Q, et le masque est `D3FC7C00A3060000`. Le rapport canonique est haché et les 24 premiers octets encodés en Base32 (39 caractères).
 
 ```bash
 python3 -I solve/solve.py files
