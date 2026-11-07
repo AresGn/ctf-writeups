@@ -57,6 +57,7 @@ Legend: `[x]` solved · `[ ]` not solved · 🩸 first blood · *(name)* solved 
    - [x] [Watch List Audit](misc/watch-list-audit/README.md) · 120 pts · *(0xAr3s-root)*
 - **Network**
    - [x] [Dark Anchorage Reconciliation](network/dark-anchorage-reconciliation/README.md) · 302 pts · *(0xAr3s-root)*
+   - [x] [Ghost Signal](network/ghost-signal/README.md) · 587 pts · *(0xAr3s-root)*
    - [x] [Grid Watch](network/grid-watch/README.md) · 672 pts · *(0xAr3s-root)*
    - [x] [Hard Landing](network/hard-landing/README.md) · 120 pts · *(0xAr3s-root)*
    - [x] [Radar Silence](network/radar-silence/README.md) · 120 pts · *(0xAr3s-root)*
