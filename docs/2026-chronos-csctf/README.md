@@ -60,6 +60,7 @@ Legend: `[x]` solved · `[ ]` not solved · 🩸 first blood · *(name)* solved 
    - [x] [Grid Watch](network/grid-watch/README.md) · 672 pts · *(0xAr3s-root)*
    - [x] [Hard Landing](network/hard-landing/README.md) · 120 pts · *(0xAr3s-root)*
    - [x] [Radar Silence](network/radar-silence/README.md) · 120 pts · *(0xAr3s-root)*
+   - [x] [Severed Link](network/severed-link/README.md) · 120 pts · *(0xAr3s-root)*
    - [x] [Water Hammer Reconciliation](network/water-hammer-reconciliation/README.md) · 326 pts · *(0xAr3s-root)*
 - **ICS**
    - [x] [Operation Blackout](ICS/operation-blackout/README.md) · 663 pts · *(0xAr3s-root)*
