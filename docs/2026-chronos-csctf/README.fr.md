@@ -42,6 +42,7 @@ Légende : `[x]` résolu · `[ ]` non résolu · 🩸 first blood · *(nom)* ré
    - [x] [Silent Breaker](forensics/silent-breaker/README.fr.md) · 369 pts · *(0xAr3s-root)*
    - [x] [Tone Burst](forensics/tone-burst/README.fr.md) · 120 pts · *(0xAr3s-root)*
 - **Reverse / Malware**
+   - [x] [Carrier Shadow](reverse/carrier-shadow/README.fr.md) · 540 pts · *(0xAr3s-root)*
    - [x] [Ghost Bank](reverse/ghost-bank/README.fr.md) · 856 pts · *(0xAr3s-root)*
    - [x] [Ground Lock](reverse/ground-lock/README.fr.md) · 120 pts · *(0xAr3s-root)*
    - [x] [HELIOS-RTU](reverse/helios-rtu/README.fr.md) · 782 pts · *(0xAr3s-root)*
