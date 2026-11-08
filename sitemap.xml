@@ -309,20 +309,6 @@
         <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/web/operation-dawn/"/>
     </url>
     <url>
-        <loc>None2026-chronos-csctf/web/switchboard/</loc>
-        <lastmod>2026-11-08</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/web/switchboard/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/web/switchboard/"/>
-    </url>
-    <url>
-        <loc>None2026-chronos-csctf/web/two-key-turn/</loc>
-        <lastmod>2026-11-08</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/web/two-key-turn/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/web/two-key-turn/"/>
-    </url>
-    <url>
         <loc>None2026-hackerlab/</loc>
         <lastmod>2026-11-08</lastmod>
         <changefreq>daily</changefreq>
@@ -636,20 +622,6 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/web/operation-dawn/"/>
         <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/web/operation-dawn/"/>
-    </url>
-    <url>
-        <loc>Nonefr/2026-chronos-csctf/web/switchboard/</loc>
-        <lastmod>2026-11-08</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/web/switchboard/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/web/switchboard/"/>
-    </url>
-    <url>
-        <loc>Nonefr/2026-chronos-csctf/web/two-key-turn/</loc>
-        <lastmod>2026-11-08</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/web/two-key-turn/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/web/two-key-turn/"/>
     </url>
     <url>
         <loc>Nonefr/2026-hackerlab/</loc>
