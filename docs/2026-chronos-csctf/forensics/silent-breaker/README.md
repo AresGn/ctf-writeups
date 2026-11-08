@@ -4,7 +4,7 @@ tags: [forensics, ics, iec-104, pcap, incident-response]
 
 🇬🇧 English · [🇫🇷 Français](README.fr.md)
 
-# silent-breaker
+# Silent Breaker
 
 | Category | Points | Solves | Solved | First blood | Solved by | Challenge author |
 |---|---|---|---|---|---|---|

@@ -4,7 +4,7 @@ tags: [misc, lsb-steganography]
 
 [🇬🇧 English](README.md) · 🇫🇷 Français
 
-# the-reconnaissance-plate
+# The Reconnaissance Plate
 
 | Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
 |---|---|---|---|---|---|---|

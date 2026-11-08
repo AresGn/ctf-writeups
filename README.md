@@ -31,6 +31,8 @@ ctf-writeups/
 ├── new.sh                               # creates an event or a challenge
 ├── mkdocs.yml                           # bilingual MkDocs Material site
 ├── hooks/                               # MkDocs hook (hides the language line on the site)
+├── tools/build_submission.py            # builds the submission (MD, HTML, PDF, site zip)
+├── submission/<event>/                  # generated submission files, EN + FR
 ├── _template/
 │   ├── event/      README.md + README.fr.md   # event main page
 │   └── challenge/  README.md + README.fr.md   # challenge write-up

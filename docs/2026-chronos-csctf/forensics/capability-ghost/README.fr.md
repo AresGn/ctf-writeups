@@ -4,7 +4,7 @@ tags: [forensics, xattr, journald, hmac, xor]
 
 [🇬🇧 English](README.md) · 🇫🇷 Français
 
-# capability-ghost
+# Capability Ghost
 
 | Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
 |---|---|---|---|---|---|---|

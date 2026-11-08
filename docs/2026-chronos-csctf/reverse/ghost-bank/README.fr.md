@@ -4,7 +4,7 @@ tags: [reverse, aarch64, gdb-rsp, mmio, chacha20, unicorn, splitmix]
 
 [🇬🇧 English](README.md) · 🇫🇷 Français
 
-# ghost-bank
+# Ghost Bank
 
 | Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
 |---|---|---|---|---|---|---|

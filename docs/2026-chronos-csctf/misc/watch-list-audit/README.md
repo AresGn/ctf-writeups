@@ -4,7 +4,7 @@ tags: [misc, changepoint, linear-regression]
 
 🇬🇧 English · [🇫🇷 Français](README.fr.md)
 
-# watch-list-audit
+# Watch List Audit
 
 | Category | Points | Solves | Solved | First blood | Solved by | Challenge author |
 |---|---|---|---|---|---|---|

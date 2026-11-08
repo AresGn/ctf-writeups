@@ -4,7 +4,7 @@ tags: [reverse, steganography, elf, dwarf, eh-frame, huffman]
 
 🇬🇧 English · [🇫🇷 Français](README.fr.md)
 
-# carrier-shadow
+# Carrier Shadow
 
 | Category | Points | Solves | Solved | First blood | Solved by | Challenge author |
 |---|---|---|---|---|---|---|

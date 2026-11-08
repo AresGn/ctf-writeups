@@ -4,7 +4,7 @@ tags: [network, mavlink, cryptography]
 
 [🇬🇧 English](README.md) · 🇫🇷 Français
 
-# grid-watch
+# Grid Watch
 
 | Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
 |---|---|---|---|---|---|---|

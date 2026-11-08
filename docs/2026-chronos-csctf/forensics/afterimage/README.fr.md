@@ -4,7 +4,7 @@ tags: [forensics, png, acropalypse, deflate]
 
 [🇬🇧 English](README.md) · 🇫🇷 Français
 
-# afterimage
+# Afterimage
 
 | Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
 |---|---|---|---|---|---|---|

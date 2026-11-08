@@ -4,7 +4,7 @@ tags: [forensics, audio, fsk, signal-processing]
 
 [🇬🇧 English](README.md) · 🇫🇷 Français
 
-# tone-burst
+# Tone Burst
 
 | Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
 |---|---|---|---|---|---|---|

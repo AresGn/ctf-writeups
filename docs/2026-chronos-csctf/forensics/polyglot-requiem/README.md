@@ -4,7 +4,7 @@ tags: [forensics, git, polyglot, sqlite, reverse]
 
 🇬🇧 English · [🇫🇷 Français](README.fr.md)
 
-# polyglot-requiem
+# Polyglot Requiem
 
 | Category | Points | Solves | Solved | First blood | Solved by | Challenge author |
 |---|---|---|---|---|---|---|

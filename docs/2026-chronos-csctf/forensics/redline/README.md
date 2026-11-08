@@ -4,7 +4,7 @@ tags: [forensics, docx, tracked-changes, ooxml]
 
 🇬🇧 English · [🇫🇷 Français](README.fr.md)
 
-# redline
+# Redline
 
 | Category | Points | Solves | Solved | First blood | Solved by | Challenge author |
 |---|---|---|---|---|---|---|

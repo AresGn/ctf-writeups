@@ -4,7 +4,7 @@ tags: [ics, modbus, scada, cross-validation]
 
 🇬🇧 English · [🇫🇷 Français](README.fr.md)
 
-# operation-blackout
+# Operation Blackout
 
 | Category | Points | Solves | Solved | First blood | Solved by | Challenge author |
 |---|---|---|---|---|---|---|

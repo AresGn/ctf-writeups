@@ -4,7 +4,7 @@ tags: [forensics, sqlite, wal, database]
 
 🇬🇧 English · [🇫🇷 Français](README.fr.md)
 
-# last-commit
+# Last Commit
 
 | Category | Points | Solves | Solved | First blood | Solved by | Challenge author |
 |---|---|---|---|---|---|---|

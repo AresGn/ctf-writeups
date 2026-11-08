@@ -4,7 +4,7 @@ tags: [network, modbus, pcap, tcp-reassembly, forensics]
 
 🇬🇧 English · [🇫🇷 Français](README.fr.md)
 
-# water-hammer-reconciliation
+# Water Hammer Reconciliation
 
 | Category | Points | Solves | Solved | First blood | Solved by | Challenge author |
 |---|---|---|---|---|---|---|

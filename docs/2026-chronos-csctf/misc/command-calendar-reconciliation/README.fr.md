@@ -4,7 +4,7 @@ tags: [misc, icalendar, rfc5545, rrule, exdate, recurrence-id, python]
 
 [🇬🇧 English](README.md) · 🇫🇷 Français
 
-# command-calendar-reconciliation
+# Command Calendar Reconciliation
 
 | Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
 |---|---|---|---|---|---|---|

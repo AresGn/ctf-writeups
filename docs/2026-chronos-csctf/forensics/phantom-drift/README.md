@@ -4,7 +4,7 @@ tags: [forensics, json, parser-differential, drone]
 
 🇬🇧 English · [🇫🇷 Français](README.fr.md)
 
-# phantom-drift
+# Phantom Drift
 
 | Category | Points | Solves | Solved | First blood | Solved by | Challenge author |
 |---|---|---|---|---|---|---|

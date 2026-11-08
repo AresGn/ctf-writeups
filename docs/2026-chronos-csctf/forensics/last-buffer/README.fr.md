@@ -4,7 +4,7 @@ tags: [forensics, vim, swap-file, base64]
 
 [🇬🇧 English](README.md) · 🇫🇷 Français
 
-# last-buffer
+# Last Buffer
 
 | Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
 |---|---|---|---|---|---|---|

@@ -4,7 +4,7 @@ tags: [ml, backdoor, neural-network, numpy]
 
 🇬🇧 English · [🇫🇷 Français](README.fr.md)
 
-# operation-dawn-the-sentrys-model
+# Operation Dawn: The Sentry's Model
 
 | Category | Points | Solves | Solved | First blood | Solved by | Challenge author |
 |---|---|---|---|---|---|---|

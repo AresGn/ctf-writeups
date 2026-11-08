@@ -4,7 +4,7 @@ tags: [forensics, file-carving, png, fragmentation]
 
 🇬🇧 English · [🇫🇷 Français](README.fr.md)
 
-# flotsam
+# Flotsam
 
 | Category | Points | Solves | Solved | First blood | Solved by | Challenge author |
 |---|---|---|---|---|---|---|

@@ -4,7 +4,7 @@ tags: [network, sensor-fusion, ais, radar, geodesy, blind-api]
 
 🇬🇧 English · [🇫🇷 Français](README.fr.md)
 
-# dark-anchorage-reconciliation
+# Dark Anchorage Reconciliation
 
 | Category | Points | Solves | Solved | First blood | Solved by | Challenge author |
 |---|---|---|---|---|---|---|

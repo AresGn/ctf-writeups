@@ -4,7 +4,7 @@ tags: [misc, federated-learning, gradient-inversion, numpy, mlp]
 
 [🇬🇧 English](README.md) · 🇫🇷 Français
 
-# operation-dawn-the-shared-model
+# Operation Dawn: The Shared Model
 
 | Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
 |---|---|---|---|---|---|---|
