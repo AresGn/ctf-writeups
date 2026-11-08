@@ -18,6 +18,7 @@ Legend: `[x]` solved · `[ ]` not solved · 🩸 first blood · *(name)* solved 
 
 - **Web**
    - [x] [Operation Dawn: The Command](web/operation-dawn/README.md) · 200 pts · *(0xAr3s-root)*
+   - [x] [Two-Key Turn](web/two-key-turn/README.md) · 120 pts · *(0xAr3s-root)*
 - **Crypto / Stego**
 - **Forensics**
    - [x] [Afterimage](forensics/afterimage/README.md) · 345 pts · *(0xAr3s-root)*
