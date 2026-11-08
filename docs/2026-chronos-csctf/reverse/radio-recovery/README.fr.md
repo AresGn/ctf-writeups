@@ -6,9 +6,9 @@ tags: [reverse, firmware, dwfw, uboot, zlib, cpio, xor]
 
 # Operation Dawn: Radio Recovery
 
-| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
+| Catégorie | Résolutions | Résolu | First blood | Indice utilisé | Résolu par | Auteur du challenge |
 |---|---|---|---|---|---|---|
-| reverse | 120 | 156 | ✅ | — | 0xAr3s-root | Terminal43 |
+| reverse | 156 | ✅ | — | non | 0xAr3s-root | Terminal43 |
 
 ## Énoncé
 

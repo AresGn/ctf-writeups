@@ -6,9 +6,9 @@ tags: [reverse, elf, constructors, static-analysis]
 
 # The Lock Box
 
-| Category | Points | Solves | Solved | First blood | Solved by | Challenge author |
+| Category | Solves | Solved | First blood | Hint used | Solved by | Challenge author |
 |---|---|---|---|---|---|---|
-| reverse engineering | 120 | 166 | ✅ | — | 0xAr3s-root | Terminal43 |
+| reverse engineering | 166 | ✅ | — | no | 0xAr3s-root | Terminal43 |
 
 ## Challenge description
 

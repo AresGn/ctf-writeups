@@ -6,9 +6,9 @@ tags: [forensics, windows, lnk, registry, webdav, 7zip]
 
 # Briefing for One
 
-| Category | Points | Solves | Solved | First blood | Solved by | Challenge author |
+| Category | Solves | Solved | First blood | Hint used | Solved by | Challenge author |
 |---|---|---|---|---|---|---|
-| forensics | 270 | 82 | ✅ | — | 0xAr3s-root | Chronos Security |
+| forensics | 82 | ✅ | — | no | 0xAr3s-root | Chronos Security |
 
 ## Challenge description
 

@@ -6,9 +6,9 @@ tags: [network, ss7, diameter, telecom-fraud, cross-validation]
 
 # Ghost Signal
 
-| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
+| Catégorie | Résolutions | Résolu | First blood | Indice utilisé | Résolu par | Auteur du challenge |
 |---|---|---|---|---|---|---|
-| network | 587 | 145 | ✅ | — | 0xAr3s-root | Dragoş Bacitea |
+| network | 145 | ✅ | — | oui | 0xAr3s-root | Dragoş Bacitea |
 
 ## Énoncé
 

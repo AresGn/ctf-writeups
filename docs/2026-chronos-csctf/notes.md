@@ -5,7 +5,7 @@ Notes en direct (EN ou FR, non publiées) : commandes essayées, pistes, impasse
 
 Format: `HH:MM [challenge] note`
 
-## [ICS] Operation Blackout (Hard, 900pts, 0 solves, author CSA Romania)
+## [ICS] Operation Blackout (Hard, 0 solves, author CSA Romania)
 
 Fichiers fournis dans `docs/2026-chronos-csctf/ICS/`: scada_network.pcap, hmi_config.xml,
 plc_firmware.bin, substation_log.json, alarm_override.dat. Flag format `CSCTF{8_lowercase_hex}`.

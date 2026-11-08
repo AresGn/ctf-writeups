@@ -6,9 +6,9 @@ tags: [reverse, aarch64, gdb-rsp, mmio, chacha20, unicorn, splitmix]
 
 # Ghost Bank
 
-| Category | Points | Solves | Solved | First blood | Solved by | Challenge author |
+| Category | Solves | Solved | First blood | Hint used | Solved by | Challenge author |
 |---|---|---|---|---|---|---|
-| reverse | 856 | 29 | ✅ | — | 0xAr3s-root | Chronos Security |
+| reverse | 29 | ✅ | — | no | 0xAr3s-root | Chronos Security |
 
 ## Challenge description
 

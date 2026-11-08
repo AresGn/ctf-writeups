@@ -6,9 +6,9 @@ tags: [misc, changepoint, linear-regression]
 
 # Watch List Audit
 
-| Category | Points | Solves | Solved | First blood | Solved by | Challenge author |
+| Category | Solves | Solved | First blood | Hint used | Solved by | Challenge author |
 |---|---|---|---|---|---|---|
-| misc | 120 | 243 | ✅ | — | 0xAr3s-root | Terminal43 |
+| misc | 243 | ✅ | — | no | 0xAr3s-root | Terminal43 |
 
 ## Challenge description
 

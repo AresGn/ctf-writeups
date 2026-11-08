@@ -6,9 +6,9 @@ tags: [forensics, sqlite, wal, database]
 
 # Last Commit
 
-| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
+| Catégorie | Résolutions | Résolu | First blood | Indice utilisé | Résolu par | Auteur du challenge |
 |---|---|---|---|---|---|---|
-| forensics | 332 | 118 | ✅ | — | 0xAr3s-root | Chronos Security |
+| forensics | 118 | ✅ | — | non | 0xAr3s-root | Chronos Security |
 
 ## Énoncé
 

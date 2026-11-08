@@ -10,10 +10,10 @@ Write-ups pour <ctf_name> : [site](<ctf_link>)
 
 ## Catégories
 
-Légende : `[x]` résolu · `[ ]` non résolu · 🩸 first blood · *(nom)* résolu par
+Légende : `[x]` résolu · `[ ]` non résolu · 🩸 first blood · 💡 indice utilisé · *(nom)* résolu par
 
 - **Web**
-   - [ ] [<challenge_1>](web/<challenge_1>/README.fr.md) · <points> pts · *(<author>)*
+   - [ ] [<challenge_1>](web/<challenge_1>/README.fr.md) · *(<solver>)*
 - **Crypto / Stégano**
 - **Forensics**
 - **Réseau**

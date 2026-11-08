@@ -6,9 +6,9 @@ tags: [network, mavlink, cryptography, key-reuse]
 
 # Severed Link
 
-| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
+| Catégorie | Résolutions | Résolu | First blood | Indice utilisé | Résolu par | Auteur du challenge |
 |---|---|---|---|---|---|---|
-| network | 120 | 84 | ✅ | — | 0xAr3s-root | Teodor Giurgica |
+| network | 84 | ✅ | — | non | 0xAr3s-root | Teodor Giurgica |
 
 ## Énoncé
 

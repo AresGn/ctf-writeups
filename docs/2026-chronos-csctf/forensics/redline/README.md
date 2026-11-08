@@ -6,9 +6,9 @@ tags: [forensics, docx, tracked-changes, ooxml]
 
 # Redline
 
-| Category | Points | Solves | Solved | First blood | Solved by | Challenge author |
+| Category | Solves | Solved | First blood | Hint used | Solved by | Challenge author |
 |---|---|---|---|---|---|---|
-| forensics | 120 | 127 | ✅ | — | 0xAr3s-root | Chronos Security |
+| forensics | 127 | ✅ | — | no | 0xAr3s-root | Chronos Security |
 
 ## Challenge description
 

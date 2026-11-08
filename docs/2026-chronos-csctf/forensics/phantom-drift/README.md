@@ -6,9 +6,9 @@ tags: [forensics, json, parser-differential, drone]
 
 # Phantom Drift
 
-| Category | Points | Solves | Solved | First blood | Solved by | Challenge author |
+| Category | Solves | Solved | First blood | Hint used | Solved by | Challenge author |
 |---|---|---|---|---|---|---|
-| forensics | 675 | 124 | ✅ | — | 0xAr3s-root | Dragoş Bacitea |
+| forensics | 124 | ✅ | — | no | 0xAr3s-root | Dragoş Bacitea |
 
 ## Challenge description
 

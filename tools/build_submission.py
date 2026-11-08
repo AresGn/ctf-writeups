@@ -41,10 +41,12 @@ CATS = [  # folder, EN, FR
 ]
 
 T = {
-    "en": dict(cat="Category", pts="Points", solves="Solves", ch="Challenge", total="Total",
+    "en": dict(cat="Category", solves="Solves", ch="Challenge", notes="Notes",
+               hint="hint used", nc="not counted on the scoreboard",
                appendix="Appendix — solve scripts", see="see Appendix",
                summary="Summary", contents="Contents"),
-    "fr": dict(cat="Catégorie", pts="Points", solves="Résolutions", ch="Challenge", total="Total",
+    "fr": dict(cat="Catégorie", solves="Résolutions", ch="Challenge", notes="Notes",
+               hint="indice utilisé", nc="non comptabilisé au classement",
                appendix="Annexe — scripts de résolution", see="voir l'annexe",
                summary="Résumé", contents="Sommaire"),
 }
@@ -100,21 +102,22 @@ def collect():
             cells = [c.strip() for c in row.strip("|").split("|")]
             items.append(dict(cat=key, en=en, fr=fr, slug=d.parent.name, dir=d.parent,
                               title=title if title != d.parent.name else d.parent.name.replace("-", " ").title(),
-                              pts=int(re.sub(r"\D", "", cells[1]) or 0), solves=cells[2]))
+                              solves=cells[1], counted="(" not in cells[2],
+                              hint=cells[4].lower() in ("yes", "oui")))
     order = {k: i for i, (k, _, _) in enumerate(CATS)}
-    items.sort(key=lambda x: (order[x["cat"]], -x["pts"], x["title"]))
+    items.sort(key=lambda x: (order[x["cat"]], x["title"].lower()))
     return items
 
 
 def build_md(lang, items, img_map):
     t = T[lang]
-    total = sum(i["pts"] for i in items)
-    md = [CFG[lang]["header"].format(n=len(items), total=f"{total:,}".replace(",", " ")).strip(), ""]
-    md += [f"## {t['summary']}", "", f"| # | {t['ch']} | {t['cat']} | {t['pts']} | {t['solves']} |",
+    md = [CFG[lang]["header"].format(n=len(items)).strip(), ""]
+    md += [f"## {t['summary']}", "", f"| # | {t['ch']} | {t['cat']} | {t['solves']} | {t['notes']} |",
            "|---|---|---|---|---|"]
     for n, i in enumerate(items, 1):
-        md.append(f"| {n} | [{i['title']}](#@@{i['title']}@@) | {i[lang]} | {i['pts']} | {i['solves']} |")
-    md += [f"| | **{t['total']}** | | **{total}** | |", ""]
+        notes = ", ".join(x for x, on in ((t["hint"], i["hint"]), (t["nc"], not i["counted"])) if on)
+        md.append(f"| {n} | [{i['title']}](#@@{i['title']}@@) | {i[lang]} | {i['solves']} | {notes} |")
+    md += [""]
     md += [CFG[lang]["methodology"].strip(), ""]
     current = None
     for i in items:

@@ -6,9 +6,9 @@ tags: [reverse, x86-64, splitmix64, inversion]
 
 # Ground Lock
 
-| Category | Points | Solves | Solved | First blood | Solved by | Challenge author |
+| Category | Solves | Solved | First blood | Hint used | Solved by | Challenge author |
 |---|---|---|---|---|---|---|
-| reverse | 120 | 163 | ✅ | — | 0xAr3s-root | Chronos Security |
+| reverse | 163 | ✅ | — | no | 0xAr3s-root | Chronos Security |
 
 ## Challenge description
 

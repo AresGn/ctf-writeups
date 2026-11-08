@@ -6,9 +6,9 @@ tags: [forensics, raid5, ext4, sqlite-wal, syslog, http]
 
 # Dawn Array
 
-| Category | Points | Solves | Solved | First blood | Solved by | Challenge author |
+| Category | Solves | Solved | First blood | Hint used | Solved by | Challenge author |
 |---|---|---|---|---|---|---|
-| forensics | 285 | 99 | ✅ | — | 0xAr3s-root | Chronos Security |
+| forensics | 99 | ✅ | — | no | 0xAr3s-root | Chronos Security |
 
 ## Challenge description
 

@@ -6,9 +6,9 @@ tags: [forensics, entra-id, phishing, device-code, inbox-rule]
 
 # Code Red Freight
 
-| Category | Points | Solves | Solved | First blood | Solved by | Challenge author |
+| Category | Solves | Solved | First blood | Hint used | Solved by | Challenge author |
 |---|---|---|---|---|---|---|
-| forensics | 270 | 102 | ✅ | — | 0xAr3s-root | Marius Merai |
+| forensics | 102 | ✅ | — | no | 0xAr3s-root | Marius Merai |
 
 ## Challenge description
 

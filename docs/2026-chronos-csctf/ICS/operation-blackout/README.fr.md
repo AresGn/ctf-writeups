@@ -6,9 +6,9 @@ tags: [ics, modbus, scada, cross-validation]
 
 # Operation Blackout
 
-| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
+| Catégorie | Résolutions | Résolu | First blood | Indice utilisé | Résolu par | Auteur du challenge |
 |---|---|---|---|---|---|---|
-| ICS | 663 | 138 | ✅| — | 0xAr3s-root | Dragoş Bacitea |
+| ICS | 138 | ✅ | — | non | 0xAr3s-root | Dragoş Bacitea |
 
 ## Énoncé
 

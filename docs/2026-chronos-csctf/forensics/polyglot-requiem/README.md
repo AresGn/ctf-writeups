@@ -6,9 +6,9 @@ tags: [forensics, git, polyglot, sqlite, reverse]
 
 # Polyglot Requiem
 
-| Category | Points | Solves | Solved | First blood | Solved by | Challenge author |
+| Category | Solves | Solved | First blood | Hint used | Solved by | Challenge author |
 |---|---|---|---|---|---|---|
-| forensics | 342 | 108 | ✅ | — | 0xAr3s-root | Mohamed Amine Mzoughi |
+| forensics | 108 | ✅ | — | no | 0xAr3s-root | Mohamed Amine Mzoughi |
 
 ## Challenge description
 

@@ -6,9 +6,9 @@ tags: [forensics, ics, iec-104, pcap, incident-response]
 
 # Silent Breaker
 
-| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
+| Catégorie | Résolutions | Résolu | First blood | Indice utilisé | Résolu par | Auteur du challenge |
 |---|---|---|---|---|---|---|
-| forensics | 369 | 81 | ✅ | — | 0xAr3s-root | Dan-Andrei Grigorescu |
+| forensics | 81 | ✅ | — | non | 0xAr3s-root | Dan-Andrei Grigorescu |
 
 ## Énoncé
 

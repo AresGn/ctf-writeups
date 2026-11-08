@@ -6,9 +6,9 @@ tags: [reverse, avr, atmega328p, debugwire, isp, bootloader, aes, cbc-mac]
 
 # HELIOS-RTU
 
-| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
+| Catégorie | Résolutions | Résolu | First blood | Indice utilisé | Résolu par | Auteur du challenge |
 |---|---|---|---|---|---|---|
-| reverse | 782 | 52 | ✅ | — | 0xAr3s-root | Ionut Coserea |
+| reverse | 52 | ✅ | — | non | 0xAr3s-root | Ionut Coserea |
 
 ## Énoncé
 

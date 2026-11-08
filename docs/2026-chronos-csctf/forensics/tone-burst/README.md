@@ -6,9 +6,9 @@ tags: [forensics, audio, fsk, signal-processing]
 
 # Tone Burst
 
-| Category | Points | Solves | Solved | First blood | Solved by | Challenge author |
+| Category | Solves | Solved | First blood | Hint used | Solved by | Challenge author |
 |---|---|---|---|---|---|---|
-| forensics | 120 | 113 | ✅ | — | 0xAr3s-root | Chronos Security |
+| forensics | 113 | ✅ | — | no | 0xAr3s-root | Chronos Security |
 
 ## Challenge description
 

@@ -6,9 +6,9 @@ tags: [network, mavlink, cryptography]
 
 # Grid Watch
 
-| Category | Points | Solves | Solved | First blood | Solved by | Challenge author |
+| Category | Solves | Solved | First blood | Hint used | Solved by | Challenge author |
 |---|---|---|---|---|---|---|
-| network | 672 | 75 | ✅ | — | 0xAr3s-root | Marius Merai |
+| network | 75 | ✅ | — | no | 0xAr3s-root | Marius Merai |
 
 ## Challenge description
 

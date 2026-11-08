@@ -6,9 +6,9 @@ tags: [misc, federated-learning, gradient-inversion, numpy, mlp]
 
 # Operation Dawn: The Shared Model
 
-| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
+| Catégorie | Résolutions | Résolu | First blood | Indice utilisé | Résolu par | Auteur du challenge |
 |---|---|---|---|---|---|---|
-| misc | 120 | 213 | ✅ | — | 0xAr3s-root | Terminal43 |
+| misc | 213 | ✅ | — | non | 0xAr3s-root | Terminal43 |
 
 ## Énoncé
 

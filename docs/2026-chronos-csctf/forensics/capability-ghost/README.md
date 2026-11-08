@@ -6,9 +6,9 @@ tags: [forensics, xattr, journald, hmac, xor]
 
 # Capability Ghost
 
-| Category | Points | Solves | Solved | First blood | Solved by | Challenge author |
+| Category | Solves | Solved | First blood | Hint used | Solved by | Challenge author |
 |---|---|---|---|---|---|---|
-| forensics | 120 | 106 | ✅ | — | 0xAr3s-root | Mohamed Amine Mzoughi |
+| forensics | 106 | ✅ | — | no | 0xAr3s-root | Mohamed Amine Mzoughi |
 
 ## Challenge description
 

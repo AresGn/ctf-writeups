@@ -6,9 +6,9 @@ tags: [forensics, file-carving, png, fragmentation]
 
 # Flotsam
 
-| Category | Points | Solves | Solved | First blood | Solved by | Challenge author |
+| Category | Solves | Solved | First blood | Hint used | Solved by | Challenge author |
 |---|---|---|---|---|---|---|
-| forensics | 120 | 100 | ✅ | — | 0xAr3s-root | Chronos Security |
+| forensics | 100 | ✅ | — | no | 0xAr3s-root | Chronos Security |
 
 ## Challenge description
 

@@ -6,9 +6,9 @@ tags: [reverse, steganography, elf, dwarf, eh-frame, huffman]
 
 # Carrier Shadow
 
-| Category | Points | Solves | Solved | First blood | Solved by | Challenge author |
+| Category | Solves | Solved | First blood | Hint used | Solved by | Challenge author |
 |---|---|---|---|---|---|---|
-| reverse | 540 | 264 | ✅ | — | 0xAr3s-root | Armand Alexandru Balint |
+| reverse | 264 | ✅ | — | no | 0xAr3s-root | Armand Alexandru Balint |
 
 ## Challenge description
 

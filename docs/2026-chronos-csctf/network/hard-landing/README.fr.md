@@ -6,9 +6,9 @@ tags: [network, pcap, http, hmac, session-hijacking]
 
 # Hard Landing
 
-| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
+| Catégorie | Résolutions | Résolu | First blood | Indice utilisé | Résolu par | Auteur du challenge |
 |---|---|---|---|---|---|---|
-| network | 120 | 86 | ✅ | — | 0xAr3s-root | Teodor Giurgica |
+| network | 86 | ✅ | — | non | 0xAr3s-root | Teodor Giurgica |
 
 ## Énoncé
 

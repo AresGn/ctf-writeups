@@ -38,7 +38,7 @@ human's language, and skip what you can already read in the repo or the conversa
 
 **Identification**
 1. Which event, category and challenge name?
-2. Points, number of solves, first blood (yes/no)?
+2. Number of solves, first blood (yes/no), hint used (yes/no)? Never write challenge points.
 3. Who solved it ("Solved by" line: 0xAr3s-root or Nyx03-gbd; plus the challenge author)?
 4. Is the competition over and are the official results published? (If not, the repo must
    stay private and nothing leaves it.)

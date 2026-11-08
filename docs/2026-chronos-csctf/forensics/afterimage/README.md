@@ -6,9 +6,9 @@ tags: [forensics, png, acropalypse, deflate]
 
 # Afterimage
 
-| Category | Points | Solves | Solved | First blood | Solved by | Challenge author |
+| Category | Solves | Solved | First blood | Hint used | Solved by | Challenge author |
 |---|---|---|---|---|---|---|
-| forensics | 345 | 105 | ✅ | — | 0xAr3s-root | Chronos Security |
+| forensics | 105 | ✅ | — | no | 0xAr3s-root | Chronos Security |
 
 ## Challenge description
 

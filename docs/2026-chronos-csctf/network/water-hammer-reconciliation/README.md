@@ -6,9 +6,9 @@ tags: [network, modbus, pcap, tcp-reassembly, forensics]
 
 # Water Hammer Reconciliation
 
-| Category | Points | Solves | Solved | First blood | Solved by | Challenge author |
+| Category | Solves | Solved | First blood | Hint used | Solved by | Challenge author |
 |---|---|---|---|---|---|---|
-| network | 326 | 124 | ✅ | — | 0xAr3s-root | Cosmin Gorea |
+| network | 124 | ✅ | — | no | 0xAr3s-root | Cosmin Gorea |
 
 ## Challenge description
 

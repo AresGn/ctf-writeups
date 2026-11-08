@@ -6,9 +6,9 @@ tags: [forensics, navigation, integer-arithmetic, gnss]
 
 # Signal Reconciliation
 
-| Category | Points | Solves | Solved | First blood | Solved by | Challenge author |
+| Category | Solves | Solved | First blood | Hint used | Solved by | Challenge author |
 |---|---|---|---|---|---|---|
-| forensics | 120 | 51 | ✅ | — | 0xAr3s-root | — |
+| forensics | 51 | ✅ | — | no | 0xAr3s-root | — |
 
 ## Challenge description
 

@@ -6,9 +6,9 @@ tags: [<category>]
 
 # <challenge_name>
 
-| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
+| Catégorie | Résolutions | Résolu | First blood | Indice utilisé | Résolu par | Auteur du challenge |
 |---|---|---|---|---|---|---|
-| <category> | <points> | <solves> | <oui/non> | <oui/non> | <solver> | <challenge_author> |
+| <category> | <solves> | <oui/non> | <oui/non> | <oui/non> | <solver> | <challenge_author> |
 
 ## Énoncé
 

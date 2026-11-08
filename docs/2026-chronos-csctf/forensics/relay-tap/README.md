@@ -6,9 +6,9 @@ tags: [forensics, pcap, custom-protocol, crypto, xor]
 
 # Operation Dawn: The Relay Tap
 
-| Category | Points | Solves | Solved | First blood | Solved by | Challenge author |
+| Category | Solves | Solved | First blood | Hint used | Solved by | Challenge author |
 |---|---|---|---|---|---|---|
-| forensics | 120 | 36 | ✅ | — | 0xAr3s-root | Terminal43 |
+| forensics | 36 | ✅ | — | no | 0xAr3s-root | Terminal43 |
 
 ## Challenge description
 

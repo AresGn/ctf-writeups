@@ -6,9 +6,9 @@ tags: [forensics, navigation, integer-arithmetic, gnss]
 
 # Signal Reconciliation
 
-| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
+| Catégorie | Résolutions | Résolu | First blood | Indice utilisé | Résolu par | Auteur du challenge |
 |---|---|---|---|---|---|---|
-| forensics | 120 | 51 | ✅ | — | 0xAr3s-root | — |
+| forensics | 51 | ✅ | — | non | 0xAr3s-root | — |
 
 ## Énoncé
 

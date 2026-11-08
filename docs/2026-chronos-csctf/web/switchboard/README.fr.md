@@ -6,9 +6,9 @@ tags: [web, ssrf, host-header, mass-assignment, session-forgery]
 
 # Switchboard
 
-| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
+| Catégorie | Résolutions | Résolu | First blood | Indice utilisé | Résolu par | Auteur du challenge |
 |---|---|---|---|---|---|---|
-| web | 120 | 170 | ✅ | — | 0xAr3s-root | Iulian Schifirnet |
+| web | 170 | ✅ (non comptabilisé) | — | non | 0xAr3s-root | Iulian Schifirnet |
 
 ## Énoncé
 

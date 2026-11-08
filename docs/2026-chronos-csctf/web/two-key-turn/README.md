@@ -6,9 +6,9 @@ tags: [web, race-condition, toctou, api, authorization-bypass]
 
 # Two-Key Turn
 
-| Category | Points | Solves | Solved | First blood | Solved by | Challenge author |
+| Category | Solves | Solved | First blood | Hint used | Solved by | Challenge author |
 |---|---|---|---|---|---|---|
-| web | 120 | 194 | ✅ | — | 0xAr3s-root | Chronos Security |
+| web | 194 | ✅ (not counted) | — | no | 0xAr3s-root | Chronos Security |
 
 ## Challenge description
 

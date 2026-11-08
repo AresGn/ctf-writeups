@@ -6,9 +6,9 @@ tags: [forensics, ext4, ransomware, carving, xorshift]
 
 # Ghost in the Historian
 
-| Category | Points | Solves | Solved | First blood | Solved by | Challenge author |
+| Category | Solves | Solved | First blood | Hint used | Solved by | Challenge author |
 |---|---|---|---|---|---|---|
-| forensics | 275 | 107 | ✅ | — | 0xAr3s-root | Mohamed Amine Mzoughi |
+| forensics | 107 | ✅ | — | no | 0xAr3s-root | Mohamed Amine Mzoughi |
 
 ## Challenge description
 

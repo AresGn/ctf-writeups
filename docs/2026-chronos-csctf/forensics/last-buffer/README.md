@@ -6,9 +6,9 @@ tags: [forensics, vim, swap-file, base64]
 
 # Last Buffer
 
-| Category | Points | Solves | Solved | First blood | Solved by | Challenge author |
+| Category | Solves | Solved | First blood | Hint used | Solved by | Challenge author |
 |---|---|---|---|---|---|---|
-| forensics | 120 | 119 | ✅ | — | 0xAr3s-root | Chronos Security |
+| forensics | 119 | ✅ | — | no | 0xAr3s-root | Chronos Security |
 
 ## Challenge description
 

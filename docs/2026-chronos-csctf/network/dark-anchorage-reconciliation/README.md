@@ -6,9 +6,9 @@ tags: [network, sensor-fusion, ais, radar, geodesy, blind-api]
 
 # Dark Anchorage Reconciliation
 
-| Category | Points | Solves | Solved | First blood | Solved by | Challenge author |
+| Category | Solves | Solved | First blood | Hint used | Solved by | Challenge author |
 |---|---|---|---|---|---|---|
-| network | 302 | 101 | ✅ | — | 0xAr3s-root | Chronos Security |
+| network | 101 | ✅ | — | yes | 0xAr3s-root | Chronos Security |
 
 ## Challenge description
 

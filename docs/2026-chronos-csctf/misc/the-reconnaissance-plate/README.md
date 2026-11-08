@@ -6,9 +6,9 @@ tags: [misc, lsb-steganography]
 
 # The Reconnaissance Plate
 
-| Category | Points | Solves | Solved | First blood | Solved by | Challenge author |
+| Category | Solves | Solved | First blood | Hint used | Solved by | Challenge author |
 |---|---|---|---|---|---|---|
-| misc | 120 | 96 | ✅ | — | 0xAr3s-root | — |
+| misc | 96 | ✅ | — | no | 0xAr3s-root | — |
 
 ## Challenge description
 

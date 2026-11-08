@@ -32,8 +32,8 @@ case $# in
     done
     echo "created: docs/$1/$2/$3 (README.md + README.fr.md)"
     echo "line for the event checklist (AresGn):"
-    echo "  EN:   - [x] [$3]($2/$3/README.md) · <points> pts · *(<author>)*"
-    echo "  FR:   - [x] [$3]($2/$3/README.fr.md) · <points> pts · *(<author>)*"
+    echo "  EN:   - [x] [$3]($2/$3/README.md) · *(<solver>)*"
+    echo "  FR:   - [x] [$3]($2/$3/README.fr.md) · *(<solver>)*"
     ;;
   *)
     echo "usage: $0 <event> | $0 <event> <category> <challenge>" >&2

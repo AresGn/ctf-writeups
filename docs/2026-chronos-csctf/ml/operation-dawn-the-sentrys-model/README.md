@@ -6,9 +6,9 @@ tags: [ml, backdoor, neural-network, numpy]
 
 # Operation Dawn: The Sentry's Model
 
-| Category | Points | Solves | Solved | First blood | Solved by | Challenge author |
+| Category | Solves | Solved | First blood | Hint used | Solved by | Challenge author |
 |---|---|---|---|---|---|---|
-| ML | 540 | 261 | ✅| — | 0xAr3s-root | Terminal43 |
+| ML | 261 | ✅ | — | no | 0xAr3s-root | Terminal43 |
 
 ## Challenge description
 

@@ -6,9 +6,9 @@ tags: [network, pcap, dns, exfiltration, base32]
 
 # Radar Silence
 
-| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
+| Catégorie | Résolutions | Résolu | First blood | Indice utilisé | Résolu par | Auteur du challenge |
 |---|---|---|---|---|---|---|
-| network | 120 | 158 | ✅ | — | 0xAr3s-root | Chronos Security |
+| network | 158 | ✅ | — | non | 0xAr3s-root | Chronos Security |
 
 ## Énoncé
 

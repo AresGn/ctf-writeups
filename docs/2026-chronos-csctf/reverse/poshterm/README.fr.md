@@ -6,9 +6,9 @@ tags: [reverse, windows, dotnet, js, rc4, wikipedia, jpl]
 
 # PoshTerm
 
-| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
+| Catégorie | Résolutions | Résolu | First blood | Indice utilisé | Résolu par | Auteur du challenge |
 |---|---|---|---|---|---|---|
-| reverse | 120 | 126 | ✅ | — | 0xAr3s-root | Swyam Kumar |
+| reverse | 126 | ✅ | — | non | 0xAr3s-root | Swyam Kumar |
 
 ## Énoncé
 

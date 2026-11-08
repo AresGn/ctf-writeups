@@ -6,9 +6,9 @@ tags: [misc, icalendar, rfc5545, rrule, exdate, recurrence-id, python]
 
 # Command Calendar Reconciliation
 
-| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
+| Catégorie | Résolutions | Résolu | First blood | Indice utilisé | Résolu par | Auteur du challenge |
 |---|---|---|---|---|---|---|
-| misc | 120 | 141 | ✅ | — | 0xAr3s-root | Chronos Security |
+| misc | 141 | ✅ | — | non | 0xAr3s-root | Chronos Security |
 
 ## Énoncé
 
