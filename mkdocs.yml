@@ -40,3 +40,5 @@ exclude_docs: |
   **/files/
   **/notes.md
   **/.gitkeep
+  2026-chronos-csctf/web/switchboard/
+  2026-chronos-csctf/web/two-key-turn/

@@ -9,7 +9,7 @@ Write-ups pour le CSCTF 2026 : [site](https://2026.chronos-security.ro/) · [rè
 | 6 nov. 15 h → 8 nov. 15 h EET (14 h → 14 h au Bénin) | Jeopardy, 48 h | Juniors (moins de 18 ans) | RACE CONDITION | 216e | 10046 |
 
 > ✅ **Compétition terminée** (8 nov. 15 h EET). Classement final : **216e, 10 046 points**, 42 résolutions
-> comptabilisées (coût des indices inclus). Deux autres challenges ont été résolus sans être comptabilisés.
+> comptabilisées (coût des indices inclus).
 >
 > ⚠️ **Aucun partage de write-up avant la date limite de soumission : 9 nov. 11 h EET (10 h au Bénin).**
 > Les write-ups passent uniquement par le canal de soumission des organisateurs. Ce repo reste
@@ -25,8 +25,6 @@ Légende : `[x]` résolu · `[ ]` non résolu · 🩸 first blood · 💡 indice
 
 - **Web**
    - [x] [Operation Dawn: The Command](web/operation-dawn/README.fr.md) · *(0xAr3s-root)*
-   - [x] [Switchboard](web/switchboard/README.fr.md) · *(non comptabilisé)* · *(0xAr3s-root)*
-   - [x] [Two-Key Turn](web/two-key-turn/README.fr.md) · *(non comptabilisé)* · *(0xAr3s-root)*
 - **Crypto / Stégano**
 - **Forensics**
    - [x] [Afterimage](forensics/afterimage/README.fr.md) · *(0xAr3s-root)*

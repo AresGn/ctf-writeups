@@ -8,7 +8,7 @@ tags: [web, race-condition, toctou, api, authorization-bypass]
 
 | Catégorie | Résolutions | Résolu | First blood | Indice utilisé | Résolu par | Auteur du challenge |
 |---|---|---|---|---|---|---|
-| web | 194 | ✅ (non comptabilisé) | — | non | 0xAr3s-root | Chronos Security |
+| web | 194 | ✅ | — | non | 0xAr3s-root | Chronos Security |
 
 ## Énoncé
 

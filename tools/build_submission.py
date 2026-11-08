@@ -42,11 +42,11 @@ CATS = [  # folder, EN, FR
 
 T = {
     "en": dict(cat="Category", solves="Solves", ch="Challenge", notes="Notes",
-               hint="hint used", nc="not counted on the scoreboard",
+               hint="hint used",
                appendix="Appendix — solve scripts", see="see Appendix",
                summary="Summary", contents="Contents"),
     "fr": dict(cat="Catégorie", solves="Résolutions", ch="Challenge", notes="Notes",
-               hint="indice utilisé", nc="non comptabilisé au classement",
+               hint="indice utilisé",
                appendix="Annexe — scripts de résolution", see="voir l'annexe",
                summary="Résumé", contents="Sommaire"),
 }
@@ -96,13 +96,15 @@ def collect():
     items = []
     for key, en, fr in CATS:
         for d in sorted((SRC / key).glob("*/README.md")) if (SRC / key).is_dir() else []:
+            if f"{key}/{d.parent.name}" in CFG.get("exclude", []):
+                continue
             txt = d.read_text()
             title = re.search(r"^# (.+)$", txt, re.M).group(1).strip()
             row = re.search(r"^\| Category .*\n\|[-|]+\n(\|.*\|)", txt, re.M).group(1)
             cells = [c.strip() for c in row.strip("|").split("|")]
             items.append(dict(cat=key, en=en, fr=fr, slug=d.parent.name, dir=d.parent,
                               title=title if title != d.parent.name else d.parent.name.replace("-", " ").title(),
-                              solves=cells[1], counted="(" not in cells[2],
+                              solves=cells[1],
                               hint=cells[4].lower() in ("yes", "oui")))
     order = {k: i for i, (k, _, _) in enumerate(CATS)}
     items.sort(key=lambda x: (order[x["cat"]], x["title"].lower()))
@@ -115,7 +117,7 @@ def build_md(lang, items, img_map):
     md += [f"## {t['summary']}", "", f"| # | {t['ch']} | {t['cat']} | {t['solves']} | {t['notes']} |",
            "|---|---|---|---|---|"]
     for n, i in enumerate(items, 1):
-        notes = ", ".join(x for x, on in ((t["hint"], i["hint"]), (t["nc"], not i["counted"])) if on)
+        notes = t["hint"] if i["hint"] else ""
         md.append(f"| {n} | [{i['title']}](#@@{i['title']}@@) | {i[lang]} | {i['solves']} | {notes} |")
     md += [""]
     md += [CFG[lang]["methodology"].strip(), ""]

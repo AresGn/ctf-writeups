@@ -8,7 +8,7 @@ tags: [web, ssrf, host-header, mass-assignment, session-forgery]
 
 | Catégorie | Résolutions | Résolu | First blood | Indice utilisé | Résolu par | Auteur du challenge |
 |---|---|---|---|---|---|---|
-| web | 170 | ✅ (non comptabilisé) | — | non | 0xAr3s-root | Iulian Schifirnet |
+| web | 170 | ✅ | — | non | 0xAr3s-root | Iulian Schifirnet |
 
 ## Énoncé
 
