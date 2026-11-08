@@ -6,9 +6,9 @@ tags: [forensics, modbus, pcapng, sha256]
 
 # Interlock Witness
 
-| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
-|---|---|---|---|---|---|---|
-| forensics | 270 | 99 | ✅ | — | 0xAr3s-root | Chronos Security |
+| Catégorie | Points | Résolutions | Résolu | First blood | Auteur |
+|---|---|---|---|---|---|
+| forensics | 270 | 99 | ✅ | — | Chronos Security |
 
 ## Énoncé
 

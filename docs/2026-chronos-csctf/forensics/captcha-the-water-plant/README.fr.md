@@ -6,9 +6,9 @@ tags: [forensics, kape, windows, browser]
 
 # CAPTCHA THE WATER PLANT
 
-| Catégorie | Points | Résolutions | Résolu | First blood | Résolu par | Auteur du challenge |
-|---|---|---|---|---|---|---|
-| forensics | 168 | 32 | ✅ | — | 0xAr3s-root | Marius Merai |
+| Catégorie | Points | Résolutions | Résolu | First blood | Auteur |
+|---|---|---|---|---|---|
+| forensics | 168 | 32 | ✅ | — | Marius Merai |
 
 ## Énoncé
 
