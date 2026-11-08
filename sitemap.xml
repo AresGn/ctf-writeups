@@ -2,308 +2,658 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
         <loc>None./</loc>
-        <lastmod>2026-11-06</lastmod>
+        <lastmod>2026-11-08</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="None"/>
         <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/"/>
     </url>
     <url>
         <loc>None2026-chronos-csctf/</loc>
-        <lastmod>2026-11-06</lastmod>
+        <lastmod>2026-11-08</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/"/>
     </url>
     <url>
+        <loc>None2026-chronos-csctf/ICS/operation-blackout/</loc>
+        <lastmod>2026-11-08</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/ICS/operation-blackout/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/ICS/operation-blackout/"/>
+    </url>
+    <url>
+        <loc>None2026-chronos-csctf/forensics/afterimage/</loc>
+        <lastmod>2026-11-08</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/forensics/afterimage/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/forensics/afterimage/"/>
+    </url>
+    <url>
         <loc>None2026-chronos-csctf/forensics/briefing-for-one/</loc>
-        <lastmod>2026-11-06</lastmod>
+        <lastmod>2026-11-08</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/forensics/briefing-for-one/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/forensics/briefing-for-one/"/>
     </url>
     <url>
         <loc>None2026-chronos-csctf/forensics/burnt-server/</loc>
-        <lastmod>2026-11-06</lastmod>
+        <lastmod>2026-11-08</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/forensics/burnt-server/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/forensics/burnt-server/"/>
     </url>
     <url>
+        <loc>None2026-chronos-csctf/forensics/capability-ghost/</loc>
+        <lastmod>2026-11-08</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/forensics/capability-ghost/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/forensics/capability-ghost/"/>
+    </url>
+    <url>
         <loc>None2026-chronos-csctf/forensics/captcha-the-water-plant/</loc>
-        <lastmod>2026-11-06</lastmod>
+        <lastmod>2026-11-08</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/forensics/captcha-the-water-plant/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/forensics/captcha-the-water-plant/"/>
     </url>
     <url>
         <loc>None2026-chronos-csctf/forensics/code-red-freight/</loc>
-        <lastmod>2026-11-06</lastmod>
+        <lastmod>2026-11-08</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/forensics/code-red-freight/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/forensics/code-red-freight/"/>
     </url>
     <url>
         <loc>None2026-chronos-csctf/forensics/dawn-array/</loc>
-        <lastmod>2026-11-06</lastmod>
+        <lastmod>2026-11-08</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/forensics/dawn-array/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/forensics/dawn-array/"/>
     </url>
     <url>
+        <loc>None2026-chronos-csctf/forensics/flotsam/</loc>
+        <lastmod>2026-11-08</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/forensics/flotsam/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/forensics/flotsam/"/>
+    </url>
+    <url>
         <loc>None2026-chronos-csctf/forensics/ghost-in-the-historian/</loc>
-        <lastmod>2026-11-06</lastmod>
+        <lastmod>2026-11-08</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/forensics/ghost-in-the-historian/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/forensics/ghost-in-the-historian/"/>
     </url>
     <url>
         <loc>None2026-chronos-csctf/forensics/interlock-witness/</loc>
-        <lastmod>2026-11-06</lastmod>
+        <lastmod>2026-11-08</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/forensics/interlock-witness/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/forensics/interlock-witness/"/>
     </url>
     <url>
+        <loc>None2026-chronos-csctf/forensics/last-buffer/</loc>
+        <lastmod>2026-11-08</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/forensics/last-buffer/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/forensics/last-buffer/"/>
+    </url>
+    <url>
+        <loc>None2026-chronos-csctf/forensics/last-commit/</loc>
+        <lastmod>2026-11-08</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/forensics/last-commit/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/forensics/last-commit/"/>
+    </url>
+    <url>
         <loc>None2026-chronos-csctf/forensics/night-clerk/</loc>
-        <lastmod>2026-11-06</lastmod>
+        <lastmod>2026-11-08</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/forensics/night-clerk/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/forensics/night-clerk/"/>
     </url>
     <url>
+        <loc>None2026-chronos-csctf/forensics/phantom-drift/</loc>
+        <lastmod>2026-11-08</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/forensics/phantom-drift/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/forensics/phantom-drift/"/>
+    </url>
+    <url>
+        <loc>None2026-chronos-csctf/forensics/polyglot-requiem/</loc>
+        <lastmod>2026-11-08</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/forensics/polyglot-requiem/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/forensics/polyglot-requiem/"/>
+    </url>
+    <url>
+        <loc>None2026-chronos-csctf/forensics/redline/</loc>
+        <lastmod>2026-11-08</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/forensics/redline/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/forensics/redline/"/>
+    </url>
+    <url>
         <loc>None2026-chronos-csctf/forensics/relay-snapshot/</loc>
-        <lastmod>2026-11-06</lastmod>
+        <lastmod>2026-11-08</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/forensics/relay-snapshot/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/forensics/relay-snapshot/"/>
     </url>
     <url>
         <loc>None2026-chronos-csctf/forensics/relay-tap/</loc>
-        <lastmod>2026-11-06</lastmod>
+        <lastmod>2026-11-08</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/forensics/relay-tap/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/forensics/relay-tap/"/>
     </url>
     <url>
         <loc>None2026-chronos-csctf/forensics/signal-reconciliation/</loc>
-        <lastmod>2026-11-06</lastmod>
+        <lastmod>2026-11-08</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/forensics/signal-reconciliation/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/forensics/signal-reconciliation/"/>
     </url>
     <url>
+        <loc>None2026-chronos-csctf/forensics/silent-breaker/</loc>
+        <lastmod>2026-11-08</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/forensics/silent-breaker/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/forensics/silent-breaker/"/>
+    </url>
+    <url>
+        <loc>None2026-chronos-csctf/forensics/tone-burst/</loc>
+        <lastmod>2026-11-08</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/forensics/tone-burst/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/forensics/tone-burst/"/>
+    </url>
+    <url>
+        <loc>None2026-chronos-csctf/misc/command-calendar-reconciliation/</loc>
+        <lastmod>2026-11-08</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/misc/command-calendar-reconciliation/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/misc/command-calendar-reconciliation/"/>
+    </url>
+    <url>
+        <loc>None2026-chronos-csctf/misc/operation-dawn-the-shared-model/</loc>
+        <lastmod>2026-11-08</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/misc/operation-dawn-the-shared-model/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/misc/operation-dawn-the-shared-model/"/>
+    </url>
+    <url>
+        <loc>None2026-chronos-csctf/misc/the-reconnaissance-plate/</loc>
+        <lastmod>2026-11-08</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/misc/the-reconnaissance-plate/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/misc/the-reconnaissance-plate/"/>
+    </url>
+    <url>
+        <loc>None2026-chronos-csctf/misc/watch-list-audit/</loc>
+        <lastmod>2026-11-08</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/misc/watch-list-audit/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/misc/watch-list-audit/"/>
+    </url>
+    <url>
+        <loc>None2026-chronos-csctf/ml/operation-dawn-the-sentrys-model/</loc>
+        <lastmod>2026-11-08</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/ml/operation-dawn-the-sentrys-model/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/ml/operation-dawn-the-sentrys-model/"/>
+    </url>
+    <url>
+        <loc>None2026-chronos-csctf/network/dark-anchorage-reconciliation/</loc>
+        <lastmod>2026-11-08</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/network/dark-anchorage-reconciliation/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/network/dark-anchorage-reconciliation/"/>
+    </url>
+    <url>
+        <loc>None2026-chronos-csctf/network/ghost-signal/</loc>
+        <lastmod>2026-11-08</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/network/ghost-signal/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/network/ghost-signal/"/>
+    </url>
+    <url>
+        <loc>None2026-chronos-csctf/network/grid-watch/</loc>
+        <lastmod>2026-11-08</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/network/grid-watch/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/network/grid-watch/"/>
+    </url>
+    <url>
         <loc>None2026-chronos-csctf/network/hard-landing/</loc>
-        <lastmod>2026-11-06</lastmod>
+        <lastmod>2026-11-08</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/network/hard-landing/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/network/hard-landing/"/>
     </url>
     <url>
         <loc>None2026-chronos-csctf/network/radar-silence/</loc>
-        <lastmod>2026-11-06</lastmod>
+        <lastmod>2026-11-08</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/network/radar-silence/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/network/radar-silence/"/>
     </url>
     <url>
+        <loc>None2026-chronos-csctf/network/severed-link/</loc>
+        <lastmod>2026-11-08</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/network/severed-link/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/network/severed-link/"/>
+    </url>
+    <url>
+        <loc>None2026-chronos-csctf/network/water-hammer-reconciliation/</loc>
+        <lastmod>2026-11-08</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/network/water-hammer-reconciliation/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/network/water-hammer-reconciliation/"/>
+    </url>
+    <url>
+        <loc>None2026-chronos-csctf/reverse/carrier-shadow/</loc>
+        <lastmod>2026-11-08</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/reverse/carrier-shadow/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/reverse/carrier-shadow/"/>
+    </url>
+    <url>
         <loc>None2026-chronos-csctf/reverse/ghost-bank/</loc>
-        <lastmod>2026-11-06</lastmod>
+        <lastmod>2026-11-08</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/reverse/ghost-bank/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/reverse/ghost-bank/"/>
     </url>
     <url>
         <loc>None2026-chronos-csctf/reverse/ground-lock/</loc>
-        <lastmod>2026-11-06</lastmod>
+        <lastmod>2026-11-08</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/reverse/ground-lock/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/reverse/ground-lock/"/>
     </url>
     <url>
         <loc>None2026-chronos-csctf/reverse/helios-rtu/</loc>
-        <lastmod>2026-11-06</lastmod>
+        <lastmod>2026-11-08</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/reverse/helios-rtu/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/reverse/helios-rtu/"/>
     </url>
     <url>
         <loc>None2026-chronos-csctf/reverse/poshterm/</loc>
-        <lastmod>2026-11-06</lastmod>
+        <lastmod>2026-11-08</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/reverse/poshterm/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/reverse/poshterm/"/>
     </url>
     <url>
         <loc>None2026-chronos-csctf/reverse/radio-recovery/</loc>
-        <lastmod>2026-11-06</lastmod>
+        <lastmod>2026-11-08</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/reverse/radio-recovery/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/reverse/radio-recovery/"/>
     </url>
     <url>
+        <loc>None2026-chronos-csctf/reverse/the-lock-box/</loc>
+        <lastmod>2026-11-08</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/reverse/the-lock-box/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/reverse/the-lock-box/"/>
+    </url>
+    <url>
         <loc>None2026-chronos-csctf/web/operation-dawn/</loc>
-        <lastmod>2026-11-06</lastmod>
+        <lastmod>2026-11-08</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/web/operation-dawn/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/web/operation-dawn/"/>
     </url>
     <url>
+        <loc>None2026-chronos-csctf/web/switchboard/</loc>
+        <lastmod>2026-11-08</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/web/switchboard/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/web/switchboard/"/>
+    </url>
+    <url>
+        <loc>None2026-chronos-csctf/web/two-key-turn/</loc>
+        <lastmod>2026-11-08</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/web/two-key-turn/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/web/two-key-turn/"/>
+    </url>
+    <url>
         <loc>None2026-hackerlab/</loc>
-        <lastmod>2026-11-06</lastmod>
+        <lastmod>2026-11-08</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="None2026-hackerlab/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-hackerlab/"/>
     </url>
     <url>
         <loc>Nonefr/</loc>
-        <lastmod>2026-11-06</lastmod>
+        <lastmod>2026-11-08</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/"/>
         <xhtml:link rel="alternate" hreflang="en" href="None"/>
     </url>
     <url>
         <loc>Nonefr/2026-chronos-csctf/</loc>
-        <lastmod>2026-11-06</lastmod>
+        <lastmod>2026-11-08</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/"/>
         <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/"/>
     </url>
     <url>
+        <loc>Nonefr/2026-chronos-csctf/ICS/operation-blackout/</loc>
+        <lastmod>2026-11-08</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/ICS/operation-blackout/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/ICS/operation-blackout/"/>
+    </url>
+    <url>
+        <loc>Nonefr/2026-chronos-csctf/forensics/afterimage/</loc>
+        <lastmod>2026-11-08</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/forensics/afterimage/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/forensics/afterimage/"/>
+    </url>
+    <url>
         <loc>Nonefr/2026-chronos-csctf/forensics/briefing-for-one/</loc>
-        <lastmod>2026-11-06</lastmod>
+        <lastmod>2026-11-08</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/forensics/briefing-for-one/"/>
         <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/forensics/briefing-for-one/"/>
     </url>
     <url>
         <loc>Nonefr/2026-chronos-csctf/forensics/burnt-server/</loc>
-        <lastmod>2026-11-06</lastmod>
+        <lastmod>2026-11-08</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/forensics/burnt-server/"/>
         <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/forensics/burnt-server/"/>
     </url>
     <url>
+        <loc>Nonefr/2026-chronos-csctf/forensics/capability-ghost/</loc>
+        <lastmod>2026-11-08</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/forensics/capability-ghost/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/forensics/capability-ghost/"/>
+    </url>
+    <url>
         <loc>Nonefr/2026-chronos-csctf/forensics/captcha-the-water-plant/</loc>
-        <lastmod>2026-11-06</lastmod>
+        <lastmod>2026-11-08</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/forensics/captcha-the-water-plant/"/>
         <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/forensics/captcha-the-water-plant/"/>
     </url>
     <url>
         <loc>Nonefr/2026-chronos-csctf/forensics/code-red-freight/</loc>
-        <lastmod>2026-11-06</lastmod>
+        <lastmod>2026-11-08</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/forensics/code-red-freight/"/>
         <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/forensics/code-red-freight/"/>
     </url>
     <url>
         <loc>Nonefr/2026-chronos-csctf/forensics/dawn-array/</loc>
-        <lastmod>2026-11-06</lastmod>
+        <lastmod>2026-11-08</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/forensics/dawn-array/"/>
         <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/forensics/dawn-array/"/>
     </url>
     <url>
+        <loc>Nonefr/2026-chronos-csctf/forensics/flotsam/</loc>
+        <lastmod>2026-11-08</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/forensics/flotsam/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/forensics/flotsam/"/>
+    </url>
+    <url>
         <loc>Nonefr/2026-chronos-csctf/forensics/ghost-in-the-historian/</loc>
-        <lastmod>2026-11-06</lastmod>
+        <lastmod>2026-11-08</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/forensics/ghost-in-the-historian/"/>
         <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/forensics/ghost-in-the-historian/"/>
     </url>
     <url>
         <loc>Nonefr/2026-chronos-csctf/forensics/interlock-witness/</loc>
-        <lastmod>2026-11-06</lastmod>
+        <lastmod>2026-11-08</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/forensics/interlock-witness/"/>
         <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/forensics/interlock-witness/"/>
     </url>
     <url>
+        <loc>Nonefr/2026-chronos-csctf/forensics/last-buffer/</loc>
+        <lastmod>2026-11-08</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/forensics/last-buffer/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/forensics/last-buffer/"/>
+    </url>
+    <url>
+        <loc>Nonefr/2026-chronos-csctf/forensics/last-commit/</loc>
+        <lastmod>2026-11-08</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/forensics/last-commit/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/forensics/last-commit/"/>
+    </url>
+    <url>
         <loc>Nonefr/2026-chronos-csctf/forensics/night-clerk/</loc>
-        <lastmod>2026-11-06</lastmod>
+        <lastmod>2026-11-08</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/forensics/night-clerk/"/>
         <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/forensics/night-clerk/"/>
     </url>
     <url>
+        <loc>Nonefr/2026-chronos-csctf/forensics/phantom-drift/</loc>
+        <lastmod>2026-11-08</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/forensics/phantom-drift/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/forensics/phantom-drift/"/>
+    </url>
+    <url>
+        <loc>Nonefr/2026-chronos-csctf/forensics/polyglot-requiem/</loc>
+        <lastmod>2026-11-08</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/forensics/polyglot-requiem/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/forensics/polyglot-requiem/"/>
+    </url>
+    <url>
+        <loc>Nonefr/2026-chronos-csctf/forensics/redline/</loc>
+        <lastmod>2026-11-08</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/forensics/redline/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/forensics/redline/"/>
+    </url>
+    <url>
         <loc>Nonefr/2026-chronos-csctf/forensics/relay-snapshot/</loc>
-        <lastmod>2026-11-06</lastmod>
+        <lastmod>2026-11-08</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/forensics/relay-snapshot/"/>
         <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/forensics/relay-snapshot/"/>
     </url>
     <url>
         <loc>Nonefr/2026-chronos-csctf/forensics/relay-tap/</loc>
-        <lastmod>2026-11-06</lastmod>
+        <lastmod>2026-11-08</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/forensics/relay-tap/"/>
         <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/forensics/relay-tap/"/>
     </url>
     <url>
         <loc>Nonefr/2026-chronos-csctf/forensics/signal-reconciliation/</loc>
-        <lastmod>2026-11-06</lastmod>
+        <lastmod>2026-11-08</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/forensics/signal-reconciliation/"/>
         <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/forensics/signal-reconciliation/"/>
     </url>
     <url>
+        <loc>Nonefr/2026-chronos-csctf/forensics/silent-breaker/</loc>
+        <lastmod>2026-11-08</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/forensics/silent-breaker/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/forensics/silent-breaker/"/>
+    </url>
+    <url>
+        <loc>Nonefr/2026-chronos-csctf/forensics/tone-burst/</loc>
+        <lastmod>2026-11-08</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/forensics/tone-burst/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/forensics/tone-burst/"/>
+    </url>
+    <url>
+        <loc>Nonefr/2026-chronos-csctf/misc/command-calendar-reconciliation/</loc>
+        <lastmod>2026-11-08</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/misc/command-calendar-reconciliation/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/misc/command-calendar-reconciliation/"/>
+    </url>
+    <url>
+        <loc>Nonefr/2026-chronos-csctf/misc/operation-dawn-the-shared-model/</loc>
+        <lastmod>2026-11-08</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/misc/operation-dawn-the-shared-model/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/misc/operation-dawn-the-shared-model/"/>
+    </url>
+    <url>
+        <loc>Nonefr/2026-chronos-csctf/misc/the-reconnaissance-plate/</loc>
+        <lastmod>2026-11-08</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/misc/the-reconnaissance-plate/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/misc/the-reconnaissance-plate/"/>
+    </url>
+    <url>
+        <loc>Nonefr/2026-chronos-csctf/misc/watch-list-audit/</loc>
+        <lastmod>2026-11-08</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/misc/watch-list-audit/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/misc/watch-list-audit/"/>
+    </url>
+    <url>
+        <loc>Nonefr/2026-chronos-csctf/ml/operation-dawn-the-sentrys-model/</loc>
+        <lastmod>2026-11-08</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/ml/operation-dawn-the-sentrys-model/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/ml/operation-dawn-the-sentrys-model/"/>
+    </url>
+    <url>
+        <loc>Nonefr/2026-chronos-csctf/network/dark-anchorage-reconciliation/</loc>
+        <lastmod>2026-11-08</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/network/dark-anchorage-reconciliation/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/network/dark-anchorage-reconciliation/"/>
+    </url>
+    <url>
+        <loc>Nonefr/2026-chronos-csctf/network/ghost-signal/</loc>
+        <lastmod>2026-11-08</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/network/ghost-signal/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/network/ghost-signal/"/>
+    </url>
+    <url>
+        <loc>Nonefr/2026-chronos-csctf/network/grid-watch/</loc>
+        <lastmod>2026-11-08</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/network/grid-watch/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/network/grid-watch/"/>
+    </url>
+    <url>
         <loc>Nonefr/2026-chronos-csctf/network/hard-landing/</loc>
-        <lastmod>2026-11-06</lastmod>
+        <lastmod>2026-11-08</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/network/hard-landing/"/>
         <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/network/hard-landing/"/>
     </url>
     <url>
         <loc>Nonefr/2026-chronos-csctf/network/radar-silence/</loc>
-        <lastmod>2026-11-06</lastmod>
+        <lastmod>2026-11-08</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/network/radar-silence/"/>
         <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/network/radar-silence/"/>
     </url>
     <url>
+        <loc>Nonefr/2026-chronos-csctf/network/severed-link/</loc>
+        <lastmod>2026-11-08</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/network/severed-link/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/network/severed-link/"/>
+    </url>
+    <url>
+        <loc>Nonefr/2026-chronos-csctf/network/water-hammer-reconciliation/</loc>
+        <lastmod>2026-11-08</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/network/water-hammer-reconciliation/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/network/water-hammer-reconciliation/"/>
+    </url>
+    <url>
+        <loc>Nonefr/2026-chronos-csctf/reverse/carrier-shadow/</loc>
+        <lastmod>2026-11-08</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/reverse/carrier-shadow/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/reverse/carrier-shadow/"/>
+    </url>
+    <url>
         <loc>Nonefr/2026-chronos-csctf/reverse/ghost-bank/</loc>
-        <lastmod>2026-11-06</lastmod>
+        <lastmod>2026-11-08</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/reverse/ghost-bank/"/>
         <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/reverse/ghost-bank/"/>
     </url>
     <url>
         <loc>Nonefr/2026-chronos-csctf/reverse/ground-lock/</loc>
-        <lastmod>2026-11-06</lastmod>
+        <lastmod>2026-11-08</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/reverse/ground-lock/"/>
         <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/reverse/ground-lock/"/>
     </url>
     <url>
         <loc>Nonefr/2026-chronos-csctf/reverse/helios-rtu/</loc>
-        <lastmod>2026-11-06</lastmod>
+        <lastmod>2026-11-08</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/reverse/helios-rtu/"/>
         <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/reverse/helios-rtu/"/>
     </url>
     <url>
         <loc>Nonefr/2026-chronos-csctf/reverse/poshterm/</loc>
-        <lastmod>2026-11-06</lastmod>
+        <lastmod>2026-11-08</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/reverse/poshterm/"/>
         <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/reverse/poshterm/"/>
     </url>
     <url>
         <loc>Nonefr/2026-chronos-csctf/reverse/radio-recovery/</loc>
-        <lastmod>2026-11-06</lastmod>
+        <lastmod>2026-11-08</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/reverse/radio-recovery/"/>
         <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/reverse/radio-recovery/"/>
     </url>
     <url>
+        <loc>Nonefr/2026-chronos-csctf/reverse/the-lock-box/</loc>
+        <lastmod>2026-11-08</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/reverse/the-lock-box/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/reverse/the-lock-box/"/>
+    </url>
+    <url>
         <loc>Nonefr/2026-chronos-csctf/web/operation-dawn/</loc>
-        <lastmod>2026-11-06</lastmod>
+        <lastmod>2026-11-08</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/web/operation-dawn/"/>
         <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/web/operation-dawn/"/>
     </url>
     <url>
+        <loc>Nonefr/2026-chronos-csctf/web/switchboard/</loc>
+        <lastmod>2026-11-08</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/web/switchboard/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/web/switchboard/"/>
+    </url>
+    <url>
+        <loc>Nonefr/2026-chronos-csctf/web/two-key-turn/</loc>
+        <lastmod>2026-11-08</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-chronos-csctf/web/two-key-turn/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="None2026-chronos-csctf/web/two-key-turn/"/>
+    </url>
+    <url>
         <loc>Nonefr/2026-hackerlab/</loc>
-        <lastmod>2026-11-06</lastmod>
+        <lastmod>2026-11-08</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="fr" href="Nonefr/2026-hackerlab/"/>
         <xhtml:link rel="alternate" hreflang="en" href="None2026-hackerlab/"/>
